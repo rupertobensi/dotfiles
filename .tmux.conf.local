@@ -312,3 +312,8 @@ unbind-key -T copy-mode-vi MouseDragEnd1Pane
 ### dracula purple: #bd93f9 ; greybar: #302f2f
 
 #set -g status-bg default
+
+set allow-rename off
+set -g visual-activity off
+setw -g monitor-activity off
+set-option -g bell-action none

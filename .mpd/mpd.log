@@ -31965,3 +31965,62 @@ Mar 11 11:33 : exception: OutputThread could not get realtime scheduling, contin
 Mar 11 11:35 : client: [0] opened from 127.0.0.1:34152
 Mar 11 12:49 : client: [1] opened from 127.0.0.1:34560
 Mar 11 12:50 : client: [1] closed
+Mar 11 16:00 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 11 16:15 : player: played "Brodka/Monika Brodka - Granda [2010]/02-brodka-granda.mp3"
+Mar 11 16:50 : client: [0] closed
+Mar 11 16:50 : client: [2] opened from 127.0.0.1:37294
+Mar 11 16:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 11 16:50 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 11 16:50 : client: [2] closed
+Mar 11 16:51 : client: [3] opened from 127.0.0.1:37298
+Mar 11 16:51 : client: [3] closed
+Mar 11 16:51 : client: [4] opened from 127.0.0.1:37302
+Mar 11 17:23 : client: [4] closed
+Mar 11 17:23 : client: [5] opened from 127.0.0.1:37406
+Mar 11 17:23 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 11 17:23 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 11 17:23 : exception: Failed to play on "pulse audio" (pulse): suspended
+Mar 11 17:24 : client: [5] closed
+Mar 11 17:24 : client: [6] opened from 127.0.0.1:37450
+Mar 11 17:24 : exception: Failed to set mixer for 'pulse audio': disconnected
+Mar 11 17:26 : client: [6] closed
+Mar 11 17:26 : client: [7] opened from 127.0.0.1:37554
+Mar 11 17:26 : player: played "A$AP ROCKY/A$AP Rocky - LiveLoveA$AP (2011)/01 Asap Rocky - Palace [Prod. By Clams Casino].mp3"
+Mar 11 17:27 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 11 17:27 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 11 17:27 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 11 17:27 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 11 17:28 : client: [7] closed
+Mar 11 17:28 : client: [8] opened from 127.0.0.1:37562
+Mar 11 17:29 : client: [8] closed
+Mar 11 17:30 : client: [9] opened from 127.0.0.1:37586
+Mar 11 17:30 : client: [9] closed
+Mar 11 17:31 : client: [10] opened from 127.0.0.1:37598
+Mar 11 17:32 : client: [10] closed
+Mar 11 17:32 : client: [11] opened from 127.0.0.1:37602
+Mar 11 17:33 : client: [11] closed
+Mar 11 17:33 : client: [12] opened from 127.0.0.1:37614
+Mar 11 17:40 : client: [12] closed
+Mar 11 17:40 : client: [13] opened from 127.0.0.1:37698
+Mar 11 17:41 : client: [13] closed
+Mar 11 17:42 : client: [14] opened from 127.0.0.1:37702
+Mar 11 17:43 : client: [14] closed
+Mar 11 17:44 : client: [15] opened from 127.0.0.1:37714
+Mar 11 17:56 : client: [15] closed
+Mar 11 17:56 : client: [16] opened from 127.0.0.1:37740
+Mar 11 17:57 : client: [16] closed
+Mar 11 17:57 : client: [17] opened from 127.0.0.1:37744
+Mar 11 17:58 : client: [17] closed
+Mar 11 17:58 : client: [18] opened from 127.0.0.1:37748
+Mar 11 17:58 : player: played "21 Savage/Issa (2017)/01 Famous.mp3"
+Mar 11 18:25 : client: [18] closed
+Mar 11 18:25 : client: [19] opened from 127.0.0.1:37794
+Mar 11 18:26 : client: [19] closed
+Mar 11 18:26 : client: [20] opened from 127.0.0.1:37802
+Mar 11 18:26 : client: [20] closed
+Mar 11 18:26 : client: [21] opened from 127.0.0.1:37806
+Mar 11 20:55 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 11 20:55 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 11 22:06 : player: played "21 Savage/21 Savage & Metro Boomin - Savage Mode (2016)/01 No Advance.m4a"
+Mar 11 22:09 : player: played "Lil Uzi Vert/Lil Uzi Vert - Luv Is Rage 2 (Deluxe) (2017)/01 Two®.mp3"
+Mar 11 23:10 : player: played "Lil Uzi Vert/Lil Uzi Vert - Luv Is Rage 2 (Deluxe) (2017)/02 444+222.mp3"
