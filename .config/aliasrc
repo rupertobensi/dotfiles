@@ -1,0 +1,66 @@
+
+#!/bin/sh
+
+# Use neovim for vim if present.
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	bat="cat /sys/class/power_supply/BAT?/capacity" \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -v" \
+	mkd="mkdir -pv" \
+	YT="youtube-dl --add-metadata -i" \
+	YTA="YT -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	g="git" \
+	trem="transmission-remote" \
+	yt="straw-viewer" \
+	sdn="sudo shutdown -h now" \
+	rdn="sudo reboot" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	
+	
+alias grep="rg"	
+alias ra="ranger"	
+alias ncm="ncmpcpp"  
+alias weather="curl wttr.in"
+alias cheat="curl cheat.sh/"
+alias katmux="tmux kill-server"
+alias katmuxa="tmux kill-session -a"
+alias tilixp="tilix --preferences"
+
+alias notes="nvim /home/robi/Dropbox/notes.txt"
+alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.txt"
+alias notesa="nvim /home/robi/Dropbox/Linux/ARCH.txt"
+alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.txt"
+
+alias dotfiles='/usr/bin/git --git-dir=/home/robi/.dotfiles/ --work-tree=/home/robi'
+
+# Changing "ls" to "exa"
+
+alias ls='exa -a --color=always --group-directories-first' # my preferred listing
+alias ll='exa -al --color=always --group-directories-first' # my preferred listing
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+
+# this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
+
+alias xc="xclip -sel clipboard"
+
+# scripts:
+alias auds="/home/robi/.config/.myscripts/au.sh"

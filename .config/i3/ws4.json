@@ -1,0 +1,69 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1030,
+       "width": 624,
+       "x": 648,
+       "y": 30
+    },
+    "name": "Messenger",
+    "percent": 0.38125,
+    "swallows": [
+       {
+        "class": "^Caprine$",
+        "instance": "^caprine$",
+        "title": "^Messenger$",
+        "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1030,
+       "width": 1252,
+       "x": 20,
+       "y": 30
+    },
+    "name": "Riot | elliot",
+    "percent": 0.47,
+    "swallows": [
+       {
+        "class": "^Riot$",
+        "instance": "^riot$",
+        "title": "^Riot\\ \\|\\ elliot$",
+        "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1030,
+       "width": 612,
+       "x": 1288,
+       "y": 30
+    },
+    "name": "Friends List",
+    "percent": 0.14,
+    "swallows": [
+       {
+        "class": "^Steam$",
+        "instance": "^Steam$",
+        "title": "^Friends\\ List$"
+       }
+    ],
+    "type": "con"
+}
+

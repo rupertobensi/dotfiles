@@ -1,0 +1,45 @@
+
+{
+   "border": "pixel",
+   "current_border_width": 1,
+   "floating": "auto_off",
+   "name": "~",
+   "percent": 0.4,
+   "swallows": [
+      {
+       "class": "^systemsettings$"
+      }
+   ],
+   "type": "con"
+}
+
+{
+   "border": "pixel",
+   "current_border_width": 1,
+   "floating": "auto_off",
+   "name": "~",
+   "percent": 0.35,
+   "swallows": [
+      {
+       "class": "^ksysguard$"
+      }
+   ],
+   "type": "con"
+}
+
+{
+   "border": "pixel",
+   "current_border_width": 1,
+   "floating": "auto_off",
+   "name": "~",
+   "percent": 0.25,
+   "swallows": [
+      {
+      "class": "^Pavucontrol$",
+      "instance": "^pavucontrol$",
+      "title": "^Volume\\ Control$"
+      }
+   ],
+   "type": "con"
+}
+

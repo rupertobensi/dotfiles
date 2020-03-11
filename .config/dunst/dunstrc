@@ -1,0 +1,7 @@
+[ignore]
+# This notification will not be displayed
+appname = "*"
+format = ""
+
+appname = "caprine"
+format = ""
