@@ -5,7 +5,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Noto Sans 9
+font pango:Noto Sans 8
 
 # Custom hack for adjusted titlebar centered text
 for_window [class=".*"] title_format "                                                                                                                                          %title"#
@@ -143,10 +143,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+Shift+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -228,21 +228,33 @@ bindsym $mod+r mode "resize"
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 
 bindsym $mod+p 					exec /home/robi/.config/.myscripts/au.sh
-bindsym $mod+bracketleft        exec --no-startup-id pactl set-sink-mute 0 toggle
 
-#################
-##end of keybinds
-#################
 
-## Gaps
-# #a1429b #d8dee8
+bindsym $mod+bracketleft exec --no-startup-id amixer set Master toggle
+
+
+#================================================================================
+#================================================================================
+#================================================================================
+#================================================================================
+#                                   end of keybinds
+#================================================================================
+#================================================================================
+#================================================================================
+#================================================================================
+
+# optional rounder borders, requires rounded corners fork
+#border_radius 4
 
 hide_edge_borders smart
 for_window [class=".*"] border pixel 3
 for_window [floating]  border pixel 0
+for_window [class="mpv"] border pixel 0
+
 #for_window [class="Tilix"] border pixel 0
 #for_window [workspace=1]  border pixel 0
 
+# Gaps    #a1429b #d8dee8
 
 gaps inner 15
 gaps outer 15
@@ -275,21 +287,23 @@ exec --no-startup-id setxkbmap pl -variant intl
 no_focus [class=firefox|chromium|dolphin|steam|Steam|caprine|riot|riot-desktop|Riot|pavucontrol|libreoffice*|ksysguard|lollypop|krusader|systemsettings5|systemsettings|nemo]
 
 #xprop | grep CLASS
-# i3-save-tree --workspace 4 > lay.json
+# i3-save-tree --workspace 4 > ws4.json
 
+for_window [class="Lollypop"] layout tabbed
+#for_window [class="Thunderbird"] layout tabbed
 
 exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/ws4.json'"
+exec --no-startup-id "i3-msg 'workspace 6; append_layout /home/robi/.config/i3/ws6.json'"
 exec --no-startup-id "i3-msg 'workspace 7; append_layout /home/robi/.config/i3/ws7.json'"
 
-exec nemo
-exec --no-startup-id  "sleep 2; i3-msg '[instance=nemo] mark nemoscratch, move scratchpad'"
-
-
+for_window [class=Nemo] move scratchpad
+exec --no-startup-id i3-msg 'workspace 2; exec nemo'
 
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/krusader'
 exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/dolphin'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/systemsettings5'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/ksysguard'
+exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/chromium'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/caprine'
@@ -299,6 +313,7 @@ exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/steam -noverifyfiles'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/pavucontrol'
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
+
 
 
 assign [class=firefox|Chromium] 2

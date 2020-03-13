@@ -14,12 +14,13 @@ fi
 # Customize to your needs...
 
 
-
-# below Luke Smith's
+#
+### below Luke Smith's
+#
 
 # Enable colors and change prompt:
-autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+#autoload -U colors && colors
+#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # History in cache directory:
 HISTSIZE=10000
@@ -94,3 +95,10 @@ set -o ignoreeof
 
 #if [ "$TMUX" = "" ]; then tmux; fi
 
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,bold
+#ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,underline
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue,bold

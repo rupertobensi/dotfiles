@@ -32,13 +32,12 @@
        "x": 20,
        "y": 30
     },
-    "name": "Riot | elliot",
+    "name": "Riot",
     "percent": 0.48,
     "swallows": [
        {
         "class": "^Riot$",
-        "instance": "^riot$",
-        "title": "^Riot\\ \\|\\ elliot$",
+        "instance": "^riot$",     
         "window_role": "^browser\\-window$"
        }
     ],

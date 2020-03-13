@@ -313,7 +313,14 @@ unbind-key -T copy-mode-vi MouseDragEnd1Pane
 
 #set -g status-bg default
 
+# disable notifications:
+
 set allow-rename off
 set -g visual-activity off
 setw -g monitor-activity off
 set-option -g bell-action none
+
+# if run as "tmux attach", create a session if one does not already exist
+new-session -n $HOST
+
+bind-key -n C-F3 set-option -g status #Ctrl+F3 Combo
