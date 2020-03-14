@@ -166,7 +166,7 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %index% 
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
@@ -468,15 +468,3 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
-
-ws-icon-0 = Term;;
-ws-icon-1 = Web;;
-ws-icon-2 = Mail;;
-ws-icon-3 = Code;;
-ws-icon-4 = Fic;;
-ws-icon-5 = Fir;;
-ws-icon-6 = Ftp;;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-default = 
-

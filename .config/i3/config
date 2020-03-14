@@ -35,7 +35,8 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec $term -e tmux
-bindsym F12 exec xfce4-terminal --drop-down
+bindsym F12 exec tilix --quake
+#bindsym F12 exec xfce4-terminal --drop-down
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -166,6 +167,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+#                      
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -229,9 +231,10 @@ bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 
 bindsym $mod+p 					exec /home/robi/.config/.myscripts/au.sh
 
-
 bindsym $mod+bracketleft exec --no-startup-id amixer set Master toggle
 
+bindsym Print exec spectacle
+#bindsym Print exec scrot "%Y-%m-%d_%H:%M:%S_$wx$h.png" -e 'mv $f ~/Pictures/$f'
 
 #================================================================================
 #================================================================================

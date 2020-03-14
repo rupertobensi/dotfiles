@@ -21,6 +21,8 @@ x-scheme-handler/chrome=chromium.desktop;
 x-scheme-handler/ftp=chromium.desktop;
 x-scheme-handler/http=chromium.desktop;
 x-scheme-handler/https=chromium.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-II93G0.desktop;
+message/rfc822=userapp-Thunderbird-II93G0.desktop;
 
 [Default Applications]
 application/lrf=calibre-lrfviewer.desktop
@@ -48,7 +50,8 @@ x-scheme-handler/ftp=chromium.desktop
 x-scheme-handler/http=chromium.desktop;
 x-scheme-handler/https=chromium.desktop;
 x-scheme-handler/irc=weechat.desktop
-x-scheme-handler/mailto=chromium.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-II93G0.desktop
+message/rfc822=userapp-Thunderbird-II93G0.desktop
 
 [Removed Associations]
 image/png=feh-2.desktop;
