@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #26502e59
+background = #00502e59
 #background = #26502e59
 #background = #222
 background-alt = #444
@@ -461,7 +461,7 @@ screenchange-reload = true
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
-#pseudo-transparency = true
+pseudo-transparency = true
 
 [global/wm]
 margin-top = 5

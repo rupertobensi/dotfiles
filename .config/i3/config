@@ -47,13 +47,13 @@ bindsym $mod+Shift+Delete	exec --no-startup-id amixer sset Master mute ; exec --
 bindsym $mod+t			split toggle
 bindsym $mod+Shift+t		gaps inner current set 15; gaps outer current set 15; gaps left current set 5; gaps right current set 5; gaps bottom current set 5
 
-bindsym $mod+z			gaps outer current plus 5
-bindsym $mod+Shift+z		gaps outer current minus 5
+bindsym $mod+a			gaps outer current plus 5
+bindsym $mod+Shift+a		gaps outer current minus 5
 
 bindsym $mod+s			gaps inner current plus 5
 bindsym $mod+Shift+s		gaps inner current minus 5
 
-bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
+bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0
 
 #bindsym $mod+y			exec $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+Shift+y		exec --no-startup-id i3resize left
@@ -66,9 +66,6 @@ bindsym $mod+Shift+i		exec --no-startup-id i3resize up
 
 bindsym $mod+o			sticky toggle
 bindsym $mod+Shift+o		exec --no-startup-id i3resize right
-
-#bindsym $mod+a			exec --no-startup-id ddspawn dropdowncalc -f mono:pixelsize=24
-#bindsym $mod+Shift+a		exec $term -e pulsemixer
 
 bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
@@ -103,12 +100,12 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -nb "#9c76b5" -sb "#b042cf" -h "22" -fn "Consolas-12"
+
+bindsym $mod+d exec dmenu_run -nb "#9770ae" -sb "#2c53c3" -h "22" -x 580 -w 800 -o 0.99 -fn "Consolas-12"
+
+#bindsym $mod+d exec dmenu_run -nb "#9c76b5" -sb "#b042cf" -h "22" -x 700 -w 600 -fn "Consolas-12"
+bindsym $mod+Shift+d exec rofi -lines 4 -padding 18 -width 12 -location 0 -show drun -sidebar-mode -columns 1 -font 'Noto Sans 10'
 bindsym $mod+Shift+e exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 11'
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 bindsym $mod+Shift+b		bar mode toggle
 bindsym $mod+b		        floating toggle; sticky toggle; exec --no-startup-id hover left
@@ -150,7 +147,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -230,8 +227,8 @@ bindsym $mod+r mode "resize"
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 
 bindsym $mod+p 					exec /home/robi/.config/.myscripts/au.sh
-
-bindsym $mod+bracketleft exec --no-startup-id amixer set Master toggle
+bindsym $mod+bracketleft exec --no-startup-id mpc toggle
+bindsym $mod+bracketright exec --no-startup-id amixer set Master toggle
 
 bindsym Print exec spectacle
 #bindsym Print exec scrot "%Y-%m-%d_%H:%M:%S_$wx$h.png" -e 'mv $f ~/Pictures/$f'

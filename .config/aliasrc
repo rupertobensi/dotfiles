@@ -39,8 +39,12 @@ alias \
 alias grep="rg"	
 alias ra="ranger"	
 alias ncm="ncmpcpp"  
-alias weather="curl wttr.in"
-alias cheat="curl cheat.sh/"
+alias newsb="newsboat"
+
+alias wttr="curl wttr.in"
+alias cheat="curl cheat.sh/ "
+alias bitcoin="curl rate.sx"
+
 alias katmux="tmux kill-server"
 alias katmuxa="tmux kill-session -a"
 alias tilixp="tilix --preferences"
@@ -50,7 +54,7 @@ alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.txt"
 alias notesa="nvim /home/robi/Dropbox/Linux/ARCH.txt"
 alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.txt"
 
-alias dotfiles='/usr/bin/git --git-dir=/home/robi/.dotfiles/ --work-tree=/home/robi'
+#alias dotfiles='/usr/bin/git --git-dir=/home/robi/.dotfiles/ --work-tree=/home/robi'
 
 # Changing "ls" to "exa"
 
@@ -64,3 +68,9 @@ alias xc="xclip -sel clipboard"
 
 # scripts:
 alias auds="/home/robi/.config/.myscripts/au.sh"
+
+# backups:
+
+#bkpdots=sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} ~/.dotfiles/ /home/backups/.dotfiles/
+
+#bkpall="sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/.Trash-0/*","/home/backups/*","/home/Data/*"} / /home/backups/bkp/"

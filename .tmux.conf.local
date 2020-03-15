@@ -185,7 +185,7 @@ tmux_conf_theme_right_separator_sub=''
 #     - #{username_ssh}
 tmux_conf_theme_status_left=' ♥ #S '
 #| ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} 
-tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},}  ,  , %R'
+tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},}  ,  , '
 
 #tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} '
 
@@ -196,7 +196,7 @@ tmux_conf_theme_status_left_bg='#28065c,#b36eba,#b36eba'  # yellow, pink, white 
 tmux_conf_theme_status_left_attr='bold,none,none'
 
 #QQ####### status right style
-tmux_conf_theme_status_right_fg='#ffffff,#e4e4e4,#28065c' # light gray, white, black
+tmux_conf_theme_status_right_fg='#f5e1c4,#e4e4e4,#28065c' # light gray, white, black
 tmux_conf_theme_status_right_bg='#28065c,#d70000,#e4e4e4' # dracgray , red, white
 tmux_conf_theme_status_right_attr='none,none,none'
 
@@ -323,4 +323,6 @@ set-option -g bell-action none
 # if run as "tmux attach", create a session if one does not already exist
 new-session -n $HOST
 
-bind-key -n C-F3 set-option -g status #Ctrl+F3 Combo
+# Disable status bar; Control+F1 for toggling tmux status bar
+set -g status off
+bind-key -n C-F1 set-option -g status 

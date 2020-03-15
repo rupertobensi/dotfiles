@@ -1,6 +1,34 @@
+-------------------------
+-------YOUTUBE-----------
+-------------------------
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~YOUTUBE: DistroTube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~YOUTUBE: Luke Smith"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~YOUTUBE: Brodie Robertson"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCt7fwAhXDy3oNFTAzF2o8Pw "~YOUTUBE: needledrop"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCnxQ8o9RpqxGF2oLHcCn9VQ "~YOUTUBE: fantano"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzQUP1qoWDoEbmsQxvdjxgQ "~YOUTUBE: powerfulJRE"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCnxGkOGNMqQEUMvroOWps6Q "~YOUTUBE: JRE Clips"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-lHJZR3Gqxm24_Vd_AJ5Yw "~YOUTUBE: PewDiePie"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrtofE1HQSNW_4_lq846vjw "~YOUTUBE: MsHera"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCuP8PSvXtD6XzGAYcbT5BRA "~YOUTUBE: Reckful"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCD6VugMZKRhSyzWEWA9W2fg "~YOUTUBE: SsethTzeentach"
+-------------------------
+-------REDDIT------------
+-------------------------
+https://www.reddit.com/r/worldnews.rss "~REDDIT: r/worldnews"
+https://old.reddit.com/r/news.rss "~REDDIT: r/news"
+https://www.reddit.com/r/europe.rss "~REDDIT: r/europe"
+https://www.reddit.com/r/hiphopheads.rss "~REDDIT: r/HHH"
+https://www.reddit.com/r/soccer.rss "~REDDIT: r/soccer"
+https://old.reddit.com/r/pcgaming.rss "~REDDIT: r/pcgaming"
+https://old.reddit.com/r/gaming.rss "~REDDIT: r/gaming"
 ------------------------
 -------NEWSFEEDS--------
 ------------------------
+https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.htm "~NEWSFEED: gazeta.pl wiadomosci"
+
 https://distrowatch.com/news/dw.xml "~NEWSFEED: DistroWatch" 
 http://lxer.com/module/newswire/headlines.rss "~NEWSFEED: LXer"
 https://www.linux.com/feeds/news/rss "~NEWSFEED: Linux.com"
@@ -21,14 +49,14 @@ http://feeds.arstechnica.com/arstechnica/open-source "~NEWSFEED: ArsTechnica (Op
 https://www.linuxinsider.com/perl/syndication/rssfull.pl "~NEWSFEED: Linux Insider"
 https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
 https://www.gamingonlinux.com/article_rss.php "~NEWSFEED: Gaming On Linux"
--------------------------
--------YOUTUBE-----------
--------------------------
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~YOUTUBE: DistroTube"
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+-------extras--------------------------------------------------------------------------------------------
+---------yt----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwY9B5_8QDGP8niZhBtTh8w "~YOUTUBE: TWiT Netcast"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHugE6eRhqB9_AZQh4DDbIw "~YOUTUBE: Jupiter Broadcasting"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkK9UDm_ZNrq_rIXCz3xCGA "~YOUTUBE: Bryan Lunduke"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~YOUTUBE: Luke Smith"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCbHXJGd7c8Hy4z0-YX1Jf3Q "~YOUTUBE: Matt Hartley"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCWJUSpXVHTaHErtGWC5qPlQ "~YOUTUBE: Destination Linux"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC4w1YQAJMWOz4qtxinq55LQ "~YOUTUBE: Level1Techs"
@@ -39,6 +67,10 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "~Y
 -------------------------
 -------REDDIT------------
 -------------------------
+https://www.reddit.com/r/worldnews.rss "~REDDIT: r/worldnews"
+https://www.reddit.com/r/europe.rss "~REDDIT: r/europe"
+https://www.reddit.com/r/soccer.rss "~REDDIT: r/soccer"
+https://www.reddit.com/r/hiphopheads.rss "~REDDIT: r/HHH"
 https://www.reddit.com/r/linux.rss "~REDDIT: r/linux"
 https://www.reddit.com/r/commandline.rss "~REDDIT: r/commandline"
 https://www.reddit.com/r/linux4noobs.rss "~REDDIT: r/linux4noobs"
