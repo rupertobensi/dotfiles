@@ -497,8 +497,8 @@ set smartcase
 " Automatically re-read file if a change was detected outside of vim
 set autoread
 
-" Enable spellcheck for markdown files
-autocmd BufRead,BufNewFile *.md setlocal spell
+" DISABLE spellcheck for markdown files
+"autocmd BufRead,BufNewFile *.md setlocal spell
 
 " Set backups
 if has('persistent_undo')
@@ -514,7 +514,6 @@ set noswapfile
 if exists('g:loaded_webdevicons')
   call webdevicons#refresh()
 endif
-
 
 
 " Toggle transparent background

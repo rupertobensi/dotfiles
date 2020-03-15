@@ -50,9 +50,9 @@ alias katmuxa="tmux kill-session -a"
 alias tilixp="tilix --preferences"
 
 alias notes="nvim /home/robi/Dropbox/notes.txt"
-alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.txt"
-alias notesa="nvim /home/robi/Dropbox/Linux/ARCH.txt"
-alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.txt"
+alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.md"
+alias notesa="nvim /home/robi/Dropbox/Linux/ARCH.md"
+alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.md"
 
 #alias dotfiles='/usr/bin/git --git-dir=/home/robi/.dotfiles/ --work-tree=/home/robi'
 
@@ -61,6 +61,7 @@ alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.txt"
 alias ls='exa -a --color=always --group-directories-first' # my preferred listing
 alias ll='exa -al --color=always --group-directories-first' # my preferred listing
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias li='exa -a --color=always --icons --group-directories-first' # my pref with icons
 
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 
