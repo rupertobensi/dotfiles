@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 # Use neovim for vim if present.
@@ -54,7 +53,6 @@ alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.md"
 alias notesa="nvim /home/robi/Dropbox/Linux/ARCH.md"
 alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.md"
 
-#alias dotfiles='/usr/bin/git --git-dir=/home/robi/.dotfiles/ --work-tree=/home/robi'
 
 # Changing "ls" to "exa"
 
@@ -69,6 +67,7 @@ alias xc="xclip -sel clipboard"
 
 # scripts:
 alias auds="/home/robi/.config/.myscripts/au.sh"
+alias gitdots="/home/robi/.config/.myscripts/gitdots.sh"
 
 # backups:
 
