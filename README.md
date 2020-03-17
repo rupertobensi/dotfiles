@@ -9,6 +9,7 @@ My terminal emulator preferences are tilix/xfce4terminal/kitty in that order.
 
 ![current setup](desktop.png)
 ![+1](desktop2.png)
+![pywal](desktop3.png)
 How to deploy this very setup?
 -----------------
 

@@ -247,7 +247,7 @@ for_window [floating]  border pixel 0
 for_window [class="mpv"] border pixel 0
 
 #for_window [class="Tilix"] border pixel 0
-#for_window [workspace=1]  border pixel 0
+for_window [workspace=1]  border pixel 0
 
 # Gaps    #a1429b #d8dee8
 
