@@ -133,8 +133,9 @@ endfunction
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+     \ <SID>check_back_space() ? "\<TAB>" :
+     \ coc#refresh()
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
 
 "Close preview window when completion is done.
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif

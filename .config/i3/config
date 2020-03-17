@@ -8,8 +8,8 @@ set $mod Mod4
 font pango:Noto Sans 8
 
 # Custom hack for adjusted titlebar centered text
-for_window [class=".*"] title_format "                                                                                                                                          %title"#
-#
+for_window [class=".*"] title_format " %title"
+#for_window [class=".*"] title_format "                                                                                                                                          %title"#
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -56,22 +56,21 @@ bindsym $mod+Shift+s		gaps inner current minus 5
 bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0
 
 #bindsym $mod+y			exec $term -e calcurse -D ~/.config/calcurse
-bindsym $mod+Shift+y		exec --no-startup-id i3resize left
+bindsym $mod+Shift+y		resize shrink width 2 px or 2 ppt
 
 bindsym $mod+u			exec --no-startup-id $term -e htop
-bindsym $mod+Shift+u		exec --no-startup-id i3resize down
+bindsym $mod+Shift+u		resize grow height 2 px or 2 ppt
 
 bindsym $mod+i 			exec --no-startup-id $term -e ranger
-bindsym $mod+Shift+i		exec --no-startup-id i3resize up
+bindsym $mod+Shift+i		resize shrink height 2 px or 2 ppt
 
 bindsym $mod+o			sticky toggle
-bindsym $mod+Shift+o		exec --no-startup-id i3resize right
+bindsym $mod+Shift+o		resize grow width 2 px or 2 ppt
 
 bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
 bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
-#bindsym $mod+Shift+n	exec --no-startup-id amixer sset Master toggle
 
 bindsym $mod+h			focus left
 bindsym $mod+Shift+h		move left 30
@@ -125,10 +124,9 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-#### disabled
+# currently disabled
 # split in horizontal orientation
 #bindsym $mod+h split h
-####
 # split in vertical orientation
 #bindsym $mod+v split v
 
@@ -190,12 +188,8 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# reload the configuration file
-#bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# restart
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -279,9 +273,11 @@ exec --no-startup-id "compton -b --config ~/.config/compton/compton.conf"
 exec --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
 exec_always --no-startup-id /home/robi/.config/polybar/launch.sh
-exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
+exec --no-startup-id /home/robi/.config/i3/urgent.sh
+#exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
-exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
+exec --no-startup-id nitrogen --restore
+#exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
 #exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
 
 exec --no-startup-id setxkbmap pl -variant intl
@@ -313,16 +309,13 @@ exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/systemsettings5'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/ksysguard'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/pavucontrol'
 
-
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/chromium'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/riot-desktop'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/steam -noverifyfiles'
 
-
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
-
 
 
 assign [class=firefox|Chromium] 2
@@ -368,5 +361,3 @@ for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Require
 for_window [title="^Steam Keyboard$"] floating enable
 
 for_window [class="^Steam$" title="Steam"] floating enable
-
-

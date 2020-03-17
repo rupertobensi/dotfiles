@@ -8,7 +8,7 @@ tmux and finally a zpresto's zsh as my current shell.
 My terminal emulator preferences are tilix/xfce4terminal/kitty in that order.
 
 ![current setup](desktop.png)
-
+![+1](desktop2.png)
 How to deploy this very setup?
 -----------------
 

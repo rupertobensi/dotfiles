@@ -47,6 +47,7 @@ alias bitcoin="curl rate.sx"
 alias katmux="tmux kill-server"
 alias katmuxa="tmux kill-session -a"
 alias tilixp="tilix --preferences"
+alias nitrogens="nitrogen --set-zoom-fill --save"
 
 alias notes="nvim /home/robi/Dropbox/notes.txt"
 alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.md"
