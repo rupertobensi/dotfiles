@@ -56,7 +56,6 @@ alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.md"
 alias notesa="nvim /home/robi/Dropbox/Linux/ARCH.md"
 alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.md"
 
-
 # Changing "ls" to "exa"
 alias ls='exa -a --color=always --group-directories-first' # my preferred listing
 alias ll='exa -al --color=always --group-directories-first' # my preferred listing
@@ -73,6 +72,8 @@ alias pcp="pycp --preserve --global-pbar -i"
 # scripts:
 alias auds="/home/robi/.config/.myscripts/au.sh"
 alias gitdots="/home/robi/.config/.myscripts/gitdots.sh"
+alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
+#alias music='tmux new-session "tmux source-file ~/.ncmpcpp/tmux_session"' # Tmux session with ncmpcpp and cover art 
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.
 alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
@@ -176,3 +177,4 @@ if (( $+commands[apt-get] )); then
   alias aptL="dpkg-deb -c"
   alias aptor="sudo apt autoremove"
 fi
+

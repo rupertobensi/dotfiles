@@ -113,8 +113,8 @@ Recent URLs[$e]=file:$HOME/Stuff/
 detailViewIconSize=0
 
 [KPropertiesDialog]
-Height 1080=518
-Width 1920=438
+Height 1080=456
+Width 1920=341
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -227,7 +227,7 @@ Sort Column=1
 [KrViewerWindow]
 Window Height=1026
 Window Maximized=false
-Window Width=620
+Window Width=928
 
 [ListPanelButtons]
 Icons=false

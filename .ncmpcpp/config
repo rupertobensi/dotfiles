@@ -106,3 +106,5 @@ current_item_suffix = $(end)
 
 media_library_primary_tag = album_artist
 startup_screen = media_library
+
+execute_on_song_change = "~/.ncmpcpp/art.sh"
