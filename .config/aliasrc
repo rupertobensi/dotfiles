@@ -33,19 +33,19 @@ alias \
 	e="$EDITOR" \
 	v="$EDITOR" \
 	p="sudo pacman" \
-	
-	
-alias grep="rg"	
-alias ra="ranger"	
-alias ncm="ncmpcpp"  
+
+
+alias grep="rg"
+alias ra="ranger"
+alias ncm="ncmpcpp"
 alias newsb="newsboat"
 
 alias wttr="curl wttr.in"
 alias cheat="curl cheat.sh/ "
 alias bitcoin="curl rate.sx"
 
-alias katmux="tmux kill-server"
-alias katmuxa="tmux kill-session -a"
+#alias katmux="tmux kill-server"
+#alias katmuxa="tmux kill-session -a"
 
 alias tilixp="tilix --preferences"
 alias nitrogens="nitrogen --set-zoom-fill --save"
@@ -58,22 +58,121 @@ alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.md"
 
 
 # Changing "ls" to "exa"
-
 alias ls='exa -a --color=always --group-directories-first' # my preferred listing
 alias ll='exa -al --color=always --group-directories-first' # my preferred listing
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias li='exa -a --color=always --icons --group-directories-first' # my pref with icons
 
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
-
 alias xc="xclip -sel clipboard"
+
+# copy with status bars:
+alias pmv="pymv --preserve --global-pbar -i"
+alias pcp="pycp --preserve --global-pbar -i"
 
 # scripts:
 alias auds="/home/robi/.config/.myscripts/au.sh"
 alias gitdots="/home/robi/.config/.myscripts/gitdots.sh"
 
+# KDE logout with confirmation, without and locking widgets. Also, i3 exit.
+alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
+alias kdeL="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
+alias i3e="i3 exit"
+
+#alias kdew='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(false)'
+#alias kdeW='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(true)'
+
 # backups:
 
 #bkpdots=sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} ~/.dotfiles/ /home/backups/.dotfiles/
-
 #bkpall="sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/.Trash-0/*","/home/backups/*","/home/Data/*"} / /home/backups/bkp/"
+
+# Tmux aliases
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'
+
+alias Xrdb='xrdb ~/.Xresources'
+
+alias -g P="| $PAGER"
+alias -g F="| fzf"
+alias -g G="| grep -i"
+alias -g C="| wc -m"
+alias -g W="| wc -w"
+alias -g L="| wc -l"
+
+if (( $+commands[pip] )); then
+  alias pipi="pip install --upgrade"
+  alias pipI="pip install --upgrade --user"
+  alias pipr="pip uninstall"
+  alias pipl="pip list --format=columns --local"
+  alias pipL="pip list --format=columns --user"
+  alias pipf="pip freeze --local --all"
+  alias pipfr="pip freeze --local --all >| requirements.txt"
+  alias pipF="pip freeze --user"
+  alias pipFr="pip freeze --user >| requirements.txt"
+  alias pipd="pipdeptree -l"
+  alias pipdd="pipdeptree -l | =grep -P '^(?!pip)(?!setuptools)(?!nvim)[\w0-9\-=.]+'"
+  alias pipD="pipdeptree --user-only"
+  alias pipu="pip-upgrade"
+  alias pipU="pip-upgrade --skip-virtualenv-check"
+
+  alias pyv="python3 -m venv"
+  alias pyV="python3 -m venv --system-site-packages"
+  alias pya="source bin/activate"
+  alias pyd="deactivate"
+fi
+
+if (( $+commands[yay] )); then
+  alias yayu="yay -Suy"
+  alias yayU="yay -Su"
+  alias yayy="yay -Sy"
+  alias yayY="sudo yay -Fy"
+  alias yayi="yay -S"
+  alias yayI="sudo yay -U"
+  alias yays="yay --sync --search"
+  alias yayS="yay --query --search"
+  alias yayq="yay --sync --info -i"
+  alias yayQ="yay --query --info"
+  alias yayl="yay --files --list"
+  alias yayL="yay --query --list"
+  alias yayo="yay --files --regex"
+  alias yayO="yay --query --owns"
+  alias yayk="sudo yay --query --check"
+  alias yayc="sudo yay -Scc"
+  alias yayx="sudo yay --remove --nosave"
+  alias yayX="sudo yay --remove --nosave --recursive"
+  alias yayr="sudo yay --remove --nosave --recursive --cascade"
+  alias yayR="sudo yay --remove --nosave --recursive --recursive --cascade"
+  alias yayol="yay -Qdt"
+  alias yayor="yayr \$(yay -Qdtq)"
+  alias yayb="makepkg -scCif"
+  alias yayd="yay -G"
+  alias yayD="yay -Gd"
+
+  aurd() git clone https://aur.archlinux.org/$1.git
+
+  compdef '_dispatch pacman pacman' yay
+fi
+
+if (( $+commands[apt-get] )); then
+  alias aptu="sudo apt update; sudo apt full-upgrade"
+  alias aptU="sudo apt full-upgrade"
+  alias apty="sudo apt update"
+  alias apti="sudo apt install"
+  alias aptI="sudo dpkg --install"
+  alias aptx="sudo apt remove"
+  alias aptr="sudo apt purge"
+  alias aptc="sudo apt clean"
+  alias aptq="apt show"
+  alias aptp="apt policy"
+  alias apts="apt search"
+  alias aptS="dpkg-query -l"
+  alias apto="dpkg-query -S"
+  alias aptl="dpkg-query -L"
+  alias aptL="dpkg-deb -c"
+  alias aptor="sudo apt autoremove"
+fi

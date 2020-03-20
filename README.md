@@ -5,7 +5,7 @@ In this repository I've gather all of my essential dotfiles. I use i3 as my
 tiling window manager, rofi + dmenu2 as launchers, polybar, customized gpakosz's 
 tmux and finally a zpresto's zsh as my current shell.
 
-My terminal emulator preferences are tilix/xfce4terminal/kitty in that order.
+My terminal emulator preferences are suckless terminal/tilix in that order.
 
 ![current setup](desktop.png)
 ![+1](desktop2.png)

@@ -5,6 +5,8 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+export PATH="~/.emacs.d/bin:$PATH"
+
 #
 # Browser
 #
@@ -15,7 +17,7 @@ export BROWSER="chromium"
 # Editors
 #
 
-export TERMINAL="tilix"
+export TERMINAL="st"
 export EDITOR='nvim'
 export VISUAL='nvim'
 export PAGER='less'

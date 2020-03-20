@@ -3,13 +3,22 @@ MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAAD4PwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAoAAAD4AAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAGoQAAA+AAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 Width 1920=1882
 
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
 [General]
 Version=200
 ViewPropsTimestamp=2020,3,15,0,43,44
 
+[IconsMode]
+FontWeight=50
+
 [KPropertiesDialog]
-Height 1080=605
-Width 1920=621
+Height 1080=518
+Width 1920=471
 
 [MainWindow]
 Height 1080=1012
@@ -22,6 +31,9 @@ Width 1920=1882
 CompletionMode=1
 History=gea
 
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+
 [SettingsDialog]
-Height 1080=462
+Height 1080=456
 Width 1920=561
