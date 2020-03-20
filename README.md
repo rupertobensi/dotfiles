@@ -14,7 +14,8 @@ How to deploy this very setup?
 -----------------
 
 I've found GNU Stow to be the easiest program to help with it. Simply clone
-these .dotfiles, cd into .dotfiles and use command: 'stow .'
+these .dotfiles, cd into .dotfiles and use command:
+``` stow . ```
 This will create symlinks in the same architecture as my .dotfiles.
 
 
