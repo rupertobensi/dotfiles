@@ -327,6 +327,7 @@ new-session -n $HOST
 set -g status off
 bind-key -n C-F1 set-option -g status 
 
+# Alt + Esc to enter copy mode
 bind -n M-Escape copy-mode
-bind M-Escape if $is_remote "send M-Escape"
+
 
