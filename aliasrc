@@ -41,8 +41,9 @@ alias ncm="ncmpcpp"
 alias newsb="newsboat"
 
 alias wttr="curl wttr.in"
-alias cheat="curl cheat.sh/ "
+#alias cheat="curl cheat.sh/ "
 alias bitcoin="curl rate.sx"
+alias google="googler"
 
 #alias katmux="tmux kill-server"
 #alias katmuxa="tmux kill-session -a"
@@ -73,6 +74,7 @@ alias pcp="pycp --preserve --global-pbar -i"
 alias auds="/home/robi/.config/.myscripts/au.sh"
 alias gitdots="/home/robi/.config/.myscripts/gitdots.sh"
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
+alias music="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art 
 #alias music='tmux new-session "tmux source-file ~/.ncmpcpp/tmux_session"' # Tmux session with ncmpcpp and cover art 
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.

@@ -228,6 +228,7 @@ bindsym $mod+bracketright exec --no-startup-id amixer set Master toggle
 
 bindsym Print exec spectacle
 #bindsym Print exec scrot "%Y-%m-%d_%H:%M:%S_$wx$h.png" -e 'mv $f ~/Pictures/$f'
+bindsym Pause exec leafpad
 
 #================================================================================
 #================================================================================
@@ -247,8 +248,8 @@ for_window [class=".*"] border pixel 3
 for_window [floating]  border pixel 0
 for_window [class="mpv"] border pixel 0
 
-#for_window [class="Tilix"] border pixel 0
-for_window [workspace=1]  border pixel 0
+for_window [class=Tilix|St] border pixel 0
+#for_window [workspace=1]  border pixel 0
 
 # Gaps    #a1429b #d8dee8
 
@@ -269,7 +270,8 @@ client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #2f343f
 
 # Nitrogen or Pywal configs:
-exec_always --no-startup-id wal -R  
+exec --no-startup-id wal -R
+#exec_always --no-startup-id wal -R  
 #exec --no-startup-id nitrogen --restore  
 
 # Regular wallpaper using feh
