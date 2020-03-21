@@ -113,8 +113,8 @@ Recent URLs[$e]=file:$HOME/Stuff/
 detailViewIconSize=0
 
 [KPropertiesDialog]
-Height 1080=456
-Width 1920=341
+Height 1080=518
+Width 1920=471
 
 [KTextEditor Document]
 Allow End of Line Detection=true

@@ -290,10 +290,11 @@ exec /home/robi/.config/i3/urgent.sh
 exec --no-startup-id setxkbmap pl -variant intl
 #exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,pl -variant ,qwerty"
 
-no_focus [class=firefox|chromium|dolphin|steam|Steam|caprine|riot|riot-desktop|Riot|pavucontrol|libreoffice*|ksysguard|lollypop|krusader|systemsettings5|systemsettings|nemo|spacefm]
+no_focus [class=firefox|chromium|dolphin|steam|Steam|caprine|riot|riot-desktop|Riot|pavucontrol-qt|libreoffice*|ksysguard|lollypop|krusader|systemsettings5|systemsettings|nemo|spacefm]
 
-#xprop | grep CLASS
+# xprop | grep CLASS
 # i3-save-tree --workspace 4 > ws4.json
+# sudo i3-msg -t get_workspaces
 
 for_window [class="Lollypop"] layout tabbed
 #for_window [class="Thunderbird"] layout tabbed
@@ -317,7 +318,7 @@ exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/systemsettings5'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/ksysguard'
-exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/pavucontrol'
+
 
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 #exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/chromium'
@@ -325,6 +326,8 @@ exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/riot-desktop'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/steam -noverifyfiles'
+
+exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/pavucontrol-qt'
 
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
@@ -334,12 +337,12 @@ assign [class=firefox|Chromium] 2
 assign [class=libreoffice*|krusader] 3       # okular
 assign [class=steam|Steam|Caprine|Riot] 4
 assign [class=dolphin|nemo|qBittorrent] 5
-assign [class=Pavucontrol|GParted|systemsettings|ksysguard] 7
+assign [class=(?i)pavucontrol-qt|GParted|systemsettings|systemsettings5|ksysguard] 7
 
 for_window [class=feh|mpv|gwenview|Sxiv|Leafpad] floating enable
 for_window [class=feh|mpv|gwenview|Sxiv|Leafpad] resize set 1024 768
 for_window [class=feh|mpc|gwenview|Sxiv|Leafpad] move position center
-for_window [class=libreoffice*|okular] focus
+#for_window [class=libreoffice*|okular] focus
 for_window [class=feh] --auto-zoom --scale-down
 
 # KDE INTEGRATION
@@ -355,6 +358,9 @@ for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="(?i)*nextcloud*"] floating disable
 for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px, no_focus
+
+for_window [class="(?i)pavucontrol-qt"] floating disable # for some reason it's set floating by def
+#for_window [class=systemsettings5|systemsettings] floating enable
 
 # STEAM SETTINGS
 
