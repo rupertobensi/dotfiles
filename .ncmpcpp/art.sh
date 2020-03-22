@@ -6,7 +6,7 @@
 #-------------------------------#
 
 MUSIC_DIR="/mnt/e/[media]/[music]/albums/" 
-COVER="/tmp/cover.png"
+COVER="/home/robi/.dotfiles/.ncmpcpp/cover.png"
 COVER_SIZE=300
 
 BORDERS=false

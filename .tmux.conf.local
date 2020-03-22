@@ -315,7 +315,7 @@ unbind-key -T copy-mode-vi MouseDragEnd1Pane
 
 # disable notifications:
 
-set allow-rename off
+#set allow-rename off
 set -g visual-activity off
 setw -g monitor-activity off
 set-option -g bell-action none
@@ -329,5 +329,4 @@ bind-key -n C-F1 set-option -g status
 
 # Alt + Esc to enter copy mode
 bind -n M-Escape copy-mode
-
 

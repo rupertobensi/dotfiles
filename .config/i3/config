@@ -100,12 +100,10 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # start dmenu (a program launcher)
-
 bindsym $mod+d exec dmenu_run -nb "#9770ae" -sb "#2c53c3" -h "22" -x 580 -w 800 -o 0.99 -fn "Consolas-12"
-
 #bindsym $mod+d exec dmenu_run -nb "#9c76b5" -sb "#b042cf" -h "22" -x 700 -w 600 -fn "Consolas-12"
-bindsym $mod+Shift+d exec rofi -lines 4 -padding 18 -width 12 -location 0 -show drun -sidebar-mode -columns 1 -font 'Noto Sans 10'
-bindsym $mod+Shift+e exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 11'
+bindsym $mod+Shift+e exec rofi -lines 4 -padding 18 -width 12 -location 0 -show drun -sidebar-mode -columns 1 -font 'Noto Sans 10'
+bindsym $mod+Shift+d exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 11'
 
 bindsym $mod+Shift+b		bar mode toggle
 bindsym $mod+b		        floating toggle; sticky toggle; exec --no-startup-id hover left
@@ -270,8 +268,7 @@ client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #2f343f
 
 # Nitrogen or Pywal configs:
-exec --no-startup-id wal -R
-#exec_always --no-startup-id wal -R  
+exec_always --no-startup-id wal -R
 #exec --no-startup-id nitrogen --restore  
 
 # Regular wallpaper using feh
@@ -283,10 +280,7 @@ exec --no-startup-id "compton -b --config ~/.config/compton/compton.conf"
 exec --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
 exec --no-startup-id --no-startup-id /home/robi/.config/polybar/launch.sh
-#exec_always --no-startup-id /home/robi/.config/polybar/launch.sh
-exec --no-startup-id /home/robi/.config/i3/urgent.sh
-exec /home/robi/.config/i3/urgent.sh
-#exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
+exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 
 exec --no-startup-id setxkbmap pl -variant intl
@@ -312,7 +306,6 @@ exec --no-startup-id i3-msg 'workspace 2; exec spacefm'
 #exec --no-startup-id i3-msg 'workspace 2; exec nemo'
 
 
-
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/krusader'
 exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/dolphin'
 exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
@@ -320,7 +313,6 @@ exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/systemsettings5'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/ksysguard'
-
 
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 #exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/chromium'
@@ -332,8 +324,7 @@ exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/steam -noverifyfiles'
 exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/pavucontrol-qt'
 
 exec --no-startup-id i3-msg "workspace $ws1"
-exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
-
+#exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
 
 assign [class=firefox|Chromium] 2
 assign [class=libreoffice*|krusader] 3       # okular
@@ -366,8 +357,6 @@ for_window [class="(?i)pavucontrol-qt"] floating disable # for some reason it's 
 
 # STEAM SETTINGS
 
-#for_window [class=Steam] floating enable; border none
-
 for_window [class="^Steam$" title="^Friends$"] floating disable
 #for_window [class="^Steam$" title="^Friends$"] floating enable
 for_window [class="^Steam$" title="Steam - News"] floating enable; border none
@@ -379,5 +368,5 @@ for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable; bor
 for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable; border none
 for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable; border none
 for_window [title="^Steam Keyboard$"] floating enable; border none
-
 for_window [class="^Steam$" title="Steam"] floating enable
+

@@ -56,6 +56,7 @@ alias notes="nvim /home/robi/Dropbox/notes.txt"
 alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.md"
 alias notesa="nvim /home/robi/Dropbox/Linux/ARCH.md"
 alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.md"
+alias notesl="nvim /home/robi/Dropbox/Linux/notes_LIN.txt"
 
 # Changing "ls" to "exa"
 alias ls='exa -a --color=always --group-directories-first' # my preferred listing
