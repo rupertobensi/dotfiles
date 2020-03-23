@@ -1,4 +1,4 @@
-neww
+#neww
 set -g status off
 
 send-keys 'ncmpcpp' C-m

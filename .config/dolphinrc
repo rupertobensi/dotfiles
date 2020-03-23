@@ -30,7 +30,7 @@ Width 1920=1882
 
 [Open-with settings]
 CompletionMode=1
-History=gea
+History=zat,gea
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail

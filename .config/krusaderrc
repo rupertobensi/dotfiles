@@ -270,7 +270,7 @@ Confirm Root Mode=false
 
 [Open-with settings]
 CompletionMode=1
-History=kate,gean,gea,ra,juk,zat,sub,kat,code,gn,ter,mpv,kid,feh,kid3
+History=gwe,kate,gean,gea,ra,juk,zat,sub,kat,code,gn,ter,mpv,kid,feh
 
 [PanelLayout]
 FrameColor=none

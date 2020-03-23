@@ -116,7 +116,7 @@ Word Completion Remove Tail=true
 
 [KTextEditor::Search]
 Replace History=
-Search History=tilix,comm,comment,dD,delete,dT,dd,trash,workspace,pavucontr,Pavuc,floating,qt,en_US,set -g @continuum-restore ,EDITOR,split v,i3-msg v s,i3-msg,split,vertical,horizontal,mod+s,$konsole,shift,scale,caprine,raise,plus,volume,10,s,layout, $mod+Shift+Left, $mod+slash,gaps inner,move up,konsole,ranger,brows,st,preview,font,bar,show_hidden,fe4515,artist,git,tools,2,default
+Search History=pum,tilix,comm,comment,dD,delete,dT,dd,trash,workspace,pavucontr,Pavuc,floating,qt,en_US,set -g @continuum-restore ,EDITOR,split v,i3-msg v s,i3-msg,split,vertical,horizontal,mod+s,$konsole,shift,scale,caprine,raise,plus,volume,10,s,layout, $mod+Shift+Left, $mod+slash,gaps inner,move up,konsole,ranger,brows,st,preview,font,bar,show_hidden,fe4515,artist,git,tools,2,default
 
 [Konsole]
 AutoSyncronize=true

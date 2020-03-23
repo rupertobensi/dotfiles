@@ -1,5 +1,5 @@
 [Added Associations]
-application/pdf=org.kde.okular.desktop;
+application/pdf=org.pwmt.zathura.desktop;org.kde.okular.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/x-extension-htm=chromium.desktop;
 application/x-extension-html=chromium.desktop;
@@ -28,7 +28,7 @@ x-scheme-handler/mailto=userapp-Thunderbird-II93G0.desktop;
 
 [Default Applications]
 application/lrf=calibre-lrfviewer.desktop
-application/pdf=org.kde.okular.desktop;
+application/pdf=org.pwmt.zathura.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 application/x-extension-htm=chromium.desktop
 application/x-extension-html=chromium.desktop
