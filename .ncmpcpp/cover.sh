@@ -9,7 +9,7 @@ function ImageLayer {
     ueberzug layer -sp json
 }
 
-COVER="/home/robi/.dotfiles/.ncmpcpp/cover.png"
+COVER="$HOME/.dotfiles/.ncmpcpp/cover.png"
 X_PADDING=1
 Y_PADDING=0
 
