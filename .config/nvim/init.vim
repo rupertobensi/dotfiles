@@ -534,3 +534,4 @@ endfunction
 nnoremap <F5> : call Toggle_transparent()<CR>
 
 "echo has('clipboard')
+

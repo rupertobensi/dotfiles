@@ -85,14 +85,19 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-"Goyo
+" =====================
+
+" Goyo
 Plug 'junegunn/goyo.vim'
 
-"Indent line
+" Indent line
 Plug 'Yggdroot/indentLine'
 
-"Sneak vim
+" Sneak vim
 Plug 'justinmk/vim-sneak'
+
+" Vim Startify
+Plug 'mhinz/vim-startify'
 
 " Initialize plugin system
 call plug#end()
