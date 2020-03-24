@@ -286,10 +286,10 @@ function! s:custom_jarvis_colors()
   hi link CocErrorSign WarningMsg
   hi link CocWarningSign Number
   hi link CocInfoSign Type
-
-" Make background transparent for many things        
-  hi Normal ctermbg=NONE guibg=NONE
-  hi NonText ctermbg=NONE guibg=NONE
+  
+" Make background transparent for many things. Uncomment first two for transparency.        
+"  hi Normal ctermbg=NONE guibg=NONE
+"  hi NonText ctermbg=NONE guibg=NONE
   "hi LineNr ctermfg=NONE guibg=NONE
 
   hi SignColumn ctermfg=NONE guibg=NONE
@@ -331,9 +331,9 @@ function! Handle_Win_Enter()
   endif
 endfunction
 
-" Editor theme
+" Editor theme. Change 1 for 0 for transparency (?)
 
-let g:dracula_colorterm = 0
+let g:dracula_colorterm = 1
 set background=dark
 try
   colorscheme dracula
