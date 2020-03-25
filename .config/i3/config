@@ -59,13 +59,13 @@ bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0
 #bindsym $mod+y			exec $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+Shift+y		resize shrink width 2 px or 2 ppt
 
-bindsym $mod+u			exec --no-startup-id $term -e htop
+bindsym $mod+u			sticky toggle
 bindsym $mod+Shift+u		resize grow height 2 px or 2 ppt
 
-bindsym $mod+i 			exec --no-startup-id $term -e ranger
+bindsym $mod+i			exec --no-startup-id $term -e htop
 bindsym $mod+Shift+i		resize shrink height 2 px or 2 ppt
 
-bindsym $mod+o			sticky toggle
+bindsym $mod+o 			exec --no-startup-id $term -e ranger
 bindsym $mod+Shift+o		resize grow width 2 px or 2 ppt
 
 bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks

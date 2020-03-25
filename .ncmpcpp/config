@@ -1,3 +1,5 @@
+## SETTINGS ##
+
 mpd_music_dir = "/mnt/e/[media]/[music]/albums/"  
 lyrics_directory  = ~/.ncmpcpp/lyrics
 ncmpcpp_directory  = ~/.ncmpcpp
@@ -26,7 +28,10 @@ header_window_color = "cyan"
 volume_color = "white"  
 progressbar_color = "magenta"  
 statusbar_color = "magenta"  
-active_column_color = "cyan"  
+#active_column_color = "cyan"  
+#WARNING: Variable 'active_column_color' is deprecated and will be removed in 0.9 (replaced by current_item_inactive_column_prefix and current_item_inactive_column_suffix).
+current_item_inactive_column_prefix="cyan"
+current_item_inactive_column_suffix="cyan"
 active_window_border = "blue"
 main_window_color = white  
 color1 = white
@@ -81,7 +86,7 @@ incremental_seeking = "yes"
 seek_time = "1"
 
 ## Visibility ##
-header_visibility = "no"
+header_visibility = "yes"
 statusbar_visibility = "yes"
 titles_visibility = "yes"
 

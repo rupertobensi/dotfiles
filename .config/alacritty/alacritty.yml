@@ -38,7 +38,7 @@ window:
     y: 0
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: true
+  dynamic_padding: false
 
   # Window decorations
   #
@@ -151,7 +151,7 @@ font:
 
   # Point size
   # size: 8.5
-  size: 12.0
+  size: 11
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -163,8 +163,8 @@ font:
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   glyph_offset:
-    x: 1
-    y: 1
+    x: 0
+    y: 0
 
   # Thin stroke font rendering (macOS only)
   #
@@ -183,7 +183,7 @@ font:
   use_thin_strokes: false
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night Bright)
 #colors:
@@ -561,33 +561,31 @@ key_bindings:
  - { key: L,        mods: Alt|Shift,       action: ResetFontSize }
  
  
-
-
-# Colors (Dracula)
+# BEGIN ACE
 colors:
-  # Default colors
   primary:
-    background: '#282a36'
-    foreground: '#f8f8f2'
-
-  # Normal colors
+    background: '0x0d0a0b'
+    foreground: '0x95becb'
+  cursor:
+    text:       '0x0d0a0b'
+    cursor:     '0x95becb'
   normal:
-    black:   '#000000'
-    red:     '#ff5555'
-    green:   '#50fa7b'
-    yellow:  '#f1fa8c'
-    blue:    '#caa9fa'
-    magenta: '#ff79c6'
-    cyan:    '#8be9fd'
-    white:   '#bfbfbf'
-
-  # Bright colors
+    black:      '0x0d0a0b'
+    red:        '0x62486F'
+    green:      '0x983D61'
+    yellow:     '0x1D668B'
+    blue:       '0x60608A'
+    magenta:    '0x9D6A91'
+    cyan:       '0xCC6D93'
+    white:      '0x95becb'
   bright:
-    black:   '#575b70'
-    red:     '#ff6e67'
-    green:   '#5af78e'
-    yellow:  '#f4f99d'
-    blue:    '#caa9fa'
-    magenta: '#ff92d0'
-    cyan:    '#9aedfe'
-    white:   '#e6e6e6'
+    black:      '0x68858e'
+    red:        '0x62486F'
+    green:      '0x983D61'
+    yellow:     '0x1D668B'
+    blue:       '0x60608A'
+    magenta:    '0x9D6A91'
+    cyan:       '0xCC6D93'
+    white:      '0x95becb'
+
+# END ACE

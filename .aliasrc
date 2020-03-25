@@ -39,6 +39,7 @@ alias grep="rg"
 alias ra="ranger"
 alias ncm="ncmpcpp"
 alias newsb="newsboat"
+alias kal="calcurse"
 
 alias wttr="curl wttr.in"
 #alias cheat="curl cheat.sh/ "
@@ -47,7 +48,10 @@ alias google="googler"
 
 alias tilixp="tilix --preferences"
 alias nitrogens="nitrogen --set-zoom-fill --save"
+alias walr="wal -R"
+alias walR="/home/robi/.config/.myscripts/alapyw.sh"
 alias wali="wal -i"
+
 
 alias notes="nvim /home/robi/Dropbox/notes.txt"
 alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.md"

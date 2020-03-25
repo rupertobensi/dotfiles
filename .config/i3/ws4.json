@@ -1,7 +1,7 @@
 // vim:ts=4:sw=4:et
 {
     "border": "pixel",
-    "current_border_width": 1,
+    "current_border_width": 3,
     "floating": "auto_off",
     "geometry": {
        "height": 1030,
@@ -10,7 +10,7 @@
        "y": 30
     },
     "name": "Messenger",
-    "percent": 0.38125,
+    "percent": 0.333333333333333,
     "swallows": [
        {
         "class": "^Caprine$",
@@ -23,30 +23,82 @@
 }
 
 {
-    "border": "pixel",
-    "current_border_width": 1,
+    // splitv split container with 1 children
+    "border": "normal",
     "floating": "auto_off",
-    "geometry": {
-       "height": 1030,
-       "width": 1252,
-       "x": 20,
-       "y": 30
-    },
-    "name": "Riot",
-    "percent": 0.48,
-    "swallows": [
-       {
-        "class": "^Riot$",
-        "instance": "^riot$",     
-        "window_role": "^browser\\-window$"
-       }
-    ],
-    "type": "con"
+    "layout": "splitv",
+    "percent": 0.503645833333333,
+    "type": "con",
+    "nodes": [
+        {
+            // tabbed split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "tabbed",
+            "percent": 1,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 3,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1030,
+                       "width": 1252,
+                       "x": 20,
+                       "y": 30
+                    },
+                    "name": "Riot | elliot",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^Riot$",
+                        "instance": "^riot$",
+                        "title": "^Riot\\ \\|\\ elliot$",
+                        "window_role": "^browser\\-window$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    // tabbed split container with 1 children
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "layout": "tabbed",
+                    "percent": 0.5,
+                    "type": "con",
+                    "nodes": [
+                        {
+                            "border": "pixel",
+                            "current_border_width": 0,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 1032,
+                               "width": 454,
+                               "x": 1447,
+                               "y": 29
+                            },
+                            "name": "Chat",
+                            "percent": 1,
+                            "swallows": [
+                               {
+                                "class": "^Steam$",
+                                "instance": "^Steam$",
+                                "title": "^Chat$"
+                               }
+                            ],
+                            "type": "con"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
 
 {
     "border": "pixel",
-    "current_border_width": 1,
+    "current_border_width": 0,
     "floating": "auto_off",
     "geometry": {
        "height": 1030,
@@ -55,7 +107,7 @@
        "y": 30
     },
     "name": "Friends List",
-    "percent": 0.13,
+    "percent": 0.163020833333333,
     "swallows": [
        {
         "class": "^Steam$",

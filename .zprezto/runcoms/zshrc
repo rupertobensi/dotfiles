@@ -106,3 +106,5 @@ ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue,bold
 # pywal
 #(cat ~/.cache/wal/sequences &)
 #wal -r && clear
+
+

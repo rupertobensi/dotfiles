@@ -16,8 +16,8 @@ export BROWSER="chromium"
 # Editors
 #
 
-#export TERMINAL="alacritty"
-export TERMINAL="st"
+export TERMINAL="alacritty"
+#export TERMINAL="st"
 export EDITOR='nvim'
 export VISUAL='nvim'
 export PAGER='less'
