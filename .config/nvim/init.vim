@@ -126,6 +126,7 @@ endtry
 
 " === Coc.nvim === "
 " use <tab> for trigger completion and navigate to next complete item
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
@@ -136,9 +137,6 @@ inoremap <silent><expr> <TAB>
      \ <SID>check_back_space() ? "\<TAB>" :
      \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-     
-" Changes below don't work properly:
-"inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
 
 "Close preview window when completion is done.
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
@@ -534,4 +532,5 @@ endfunction
 nnoremap <F5> : call Toggle_transparent()<CR>
 
 "echo has('clipboard')
+
 

@@ -485,9 +485,10 @@ def_key "P"
   show_playlist
 
 def_key "."
-  seek_forward 
+  seek_forward
 def_key ","
-  seek_backward 
+  seek_backward
 
 def_key "L"
     show_lyrics
+

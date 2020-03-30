@@ -30,8 +30,8 @@ progressbar_color = "magenta"
 statusbar_color = "magenta"  
 #active_column_color = "cyan"  
 #WARNING: Variable 'active_column_color' is deprecated and will be removed in 0.9 (replaced by current_item_inactive_column_prefix and current_item_inactive_column_suffix).
-current_item_inactive_column_prefix="cyan"
-current_item_inactive_column_suffix="cyan"
+#current_item_inactive_column_prefix="cyan"
+#current_item_inactive_column_suffix="cyan"
 active_window_border = "blue"
 main_window_color = white  
 color1 = white
@@ -83,7 +83,7 @@ discard_colors_if_item_is_selected = "no"
 
 ## Seeking ##
 incremental_seeking = "yes"
-seek_time = "1"
+seek_time = "3"
 
 ## Visibility ##
 header_visibility = "yes"
@@ -117,3 +117,4 @@ media_library_primary_tag = album_artist
 startup_screen = media_library
 
 execute_on_song_change = "~/.ncmpcpp/art.sh"
+

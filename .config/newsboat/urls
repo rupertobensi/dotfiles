@@ -1,6 +1,4 @@
--------------------------
--------YOUTUBE-----------
--------------------------
+"-------YOUTUBE-----------"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~YOUTUBE: DistroTube"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~YOUTUBE: Luke Smith"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~YOUTUBE: Brodie Robertson"
@@ -9,14 +7,17 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCt7fwAhXDy3oNFTAzF2o8Pw "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCnxQ8o9RpqxGF2oLHcCn9VQ "~YOUTUBE: fantano"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzQUP1qoWDoEbmsQxvdjxgQ "~YOUTUBE: powerfulJRE"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCnxGkOGNMqQEUMvroOWps6Q "~YOUTUBE: JRE Clips"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDWIvJwLJsE4LG1Atne2blQ "~YOUTUBE: h3h3Productions"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdtNjOwfQpgVK0FyOeLyzrg "~YOUTUBE: Hotboxin' with Mike Tyson"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4P1wf7gNZ1A19xNw863KwQ "~YOUTUBE: PaymoneyWubby"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCn8zNIfYAQNdrFRrr8oibKw "~YOUTUBE: VICE"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UC-lHJZR3Gqxm24_Vd_AJ5Yw "~YOUTUBE: PewDiePie"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCrtofE1HQSNW_4_lq846vjw "~YOUTUBE: MsHera"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCuP8PSvXtD6XzGAYcbT5BRA "~YOUTUBE: Reckful"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCD6VugMZKRhSyzWEWA9W2fg "~YOUTUBE: SsethTzeentach"
--------------------------
 -------REDDIT------------
--------------------------
 https://www.reddit.com/r/worldnews.rss "~REDDIT: r/worldnews"
 https://old.reddit.com/r/news.rss "~REDDIT: r/news"
 https://www.reddit.com/r/europe.rss "~REDDIT: r/europe"
@@ -24,9 +25,7 @@ https://www.reddit.com/r/hiphopheads.rss "~REDDIT: r/HHH"
 https://www.reddit.com/r/soccer.rss "~REDDIT: r/soccer"
 https://old.reddit.com/r/pcgaming.rss "~REDDIT: r/pcgaming"
 https://old.reddit.com/r/gaming.rss "~REDDIT: r/gaming"
-------------------------
 -------NEWSFEEDS--------
-------------------------
 https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.htm "~NEWSFEED: gazeta.pl wiadomosci"
 
 https://distrowatch.com/news/dw.xml "~NEWSFEED: DistroWatch" 
@@ -49,11 +48,8 @@ http://feeds.arstechnica.com/arstechnica/open-source "~NEWSFEED: ArsTechnica (Op
 https://www.linuxinsider.com/perl/syndication/rssfull.pl "~NEWSFEED: Linux Insider"
 https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
 https://www.gamingonlinux.com/article_rss.php "~NEWSFEED: Gaming On Linux"
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
--------extras--------------------------------------------------------------------------------------------
----------yt----------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
+-------extras---------
+---------yt-----------
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwY9B5_8QDGP8niZhBtTh8w "~YOUTUBE: TWiT Netcast"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHugE6eRhqB9_AZQh4DDbIw "~YOUTUBE: Jupiter Broadcasting"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkK9UDm_ZNrq_rIXCz3xCGA "~YOUTUBE: Bryan Lunduke"
@@ -67,10 +63,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "~Y
 -------------------------
 -------REDDIT------------
 -------------------------
-https://www.reddit.com/r/worldnews.rss "~REDDIT: r/worldnews"
-https://www.reddit.com/r/europe.rss "~REDDIT: r/europe"
-https://www.reddit.com/r/soccer.rss "~REDDIT: r/soccer"
-https://www.reddit.com/r/hiphopheads.rss "~REDDIT: r/HHH"
 https://www.reddit.com/r/linux.rss "~REDDIT: r/linux"
 https://www.reddit.com/r/commandline.rss "~REDDIT: r/commandline"
 https://www.reddit.com/r/linux4noobs.rss "~REDDIT: r/linux4noobs"

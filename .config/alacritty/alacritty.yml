@@ -17,9 +17,9 @@ window:
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
+  dimensions:
+    columns: 180
+    lines: 50
 
   # Window position (changes require restart)
   #
@@ -49,7 +49,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  decorations: none
+  decorations: full
 
   # Startup Mode (changes require restart)
   #
@@ -560,32 +560,36 @@ key_bindings:
  - { key: J,        mods: Alt|Shift,       action: DecreaseFontSize }
  - { key: L,        mods: Alt|Shift,       action: ResetFontSize }
  
+
+mouse_bindings:
+- { mouse: Middle, action: PasteSelection }
+
  
 # BEGIN ACE
 colors:
   primary:
-    background: '0x0d0a0b'
-    foreground: '0x95becb'
+    background: '0x1b1622'
+    foreground: '0xa5c2d1'
   cursor:
-    text:       '0x0d0a0b'
-    cursor:     '0x95becb'
+    text:       '0x1b1622'
+    cursor:     '0xa5c2d1'
   normal:
-    black:      '0x0d0a0b'
-    red:        '0x62486F'
-    green:      '0x983D61'
-    yellow:     '0x1D668B'
-    blue:       '0x60608A'
-    magenta:    '0x9D6A91'
-    cyan:       '0xCC6D93'
-    white:      '0x95becb'
+    black:      '0x1b1622'
+    red:        '0xC69874'
+    green:      '0x0E518B'
+    yellow:     '0x1E6DA0'
+    blue:       '0x4B7692'
+    magenta:    '0xAB6D8B'
+    cyan:       '0x3C82AA'
+    white:      '0xa5c2d1'
   bright:
-    black:      '0x68858e'
-    red:        '0x62486F'
-    green:      '0x983D61'
-    yellow:     '0x1D668B'
-    blue:       '0x60608A'
-    magenta:    '0x9D6A91'
-    cyan:       '0xCC6D93'
-    white:      '0x95becb'
+    black:      '0x738792'
+    red:        '0xC69874'
+    green:      '0x0E518B'
+    yellow:     '0x1E6DA0'
+    blue:       '0x4B7692'
+    magenta:    '0xAB6D8B'
+    cyan:       '0x3C82AA'
+    white:      '0xa5c2d1'
 
 # END ACE

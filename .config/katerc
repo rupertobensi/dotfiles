@@ -116,7 +116,7 @@ Word Completion Remove Tail=true
 
 [KTextEditor::Search]
 Replace History=
-Search History=map r,with,vi,vim,overrides,overri,trans,transpar,dracula,transp,background,classi,autocenter_mode,progressbar_color,copy,pum,tilix,comm,comment,dD,delete,dT,dd,trash,workspace,pavucontr,Pavuc,floating,qt,en_US,set -g @continuum-restore ,EDITOR,split v,i3-msg v s,i3-msg,split,vertical,horizontal,mod+s,$konsole,shift,scale,caprine,raise,plus,volume,10,s,layout, $mod+Shift+Left, $mod+slash,gaps inner,move up,konsole,ranger,brows,st,preview,font,bar,show_hidden,fe4515,artist,git,tools,2,default
+Search History=cpu,padding,eth,ka steam,middle,dT,map dT,map r,with,vi,vim,overrides,overri,trans,transpar,dracula,transp,background,classi,autocenter_mode,progressbar_color,copy,pum,tilix,comm,comment,dD,delete,dd,trash,workspace,pavucontr,Pavuc,floating,qt,en_US,set -g @continuum-restore ,EDITOR,split v,i3-msg v s,i3-msg,split,vertical,horizontal,mod+s,$konsole,shift,scale,caprine,raise,plus,volume,10,s,layout, $mod+Shift+Left, $mod+slash,gaps inner,move up,konsole,ranger,brows,st,preview,font,bar,show_hidden,fe4515,artist,git,tools,2,default
 
 [Konsole]
 AutoSyncronize=true
@@ -125,10 +125,10 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-Height 1080=1012
-State=AAAA/wAAAAD9AAAAAAAAB1oAAAPWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+Height 1080=1026
+State=AAAA/wAAAAD9AAAAAAAAA6AAAAPkAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1882
+Width 1920=928
 
 [Notification Messages]
 HideMenuBarWarning=false

@@ -17,26 +17,26 @@ Width 1920=1920
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=$HOME/Screenshots/2020-03-06-010429_1920x1080_scrot.png
-File10[$e]=$HOME/Wallpapers/gallery_XOygnM3/003-NENbpbY.jpg
-File2[$e]=$HOME/Screenshots/2020-03-07-204324_1920x1080_scrot.png
-File3[$e]=$HOME/Screenshots/2020-03-07-212710_1920x1080_scrot.png
-File4[$e]=$HOME/Screenshots/2020-03-12-153002_1920x1080_scrot.png
-File5[$e]=$HOME/Screenshots/python_screenkay_error.jpg
-File6[$e]=$HOME/Screenshots/aq.png
-File7[$e]=$HOME/Dropbox/Linux/other/installations/MINE_noluks/Using Btrfs for Easy Backup and Rollback | John Ramsden_files/a_data/avatar92.jpg
-File8[$e]=$HOME/Dropbox/Linux/other/5fmqo3b0i1j31.png
-File9[$e]=$HOME/Wallpapers/1388287.jpg
-Name1[$e]=2020-03-06-010429_1920x1080_scrot.png
-Name10[$e]=003-NENbpbY.jpg
-Name2[$e]=2020-03-07-204324_1920x1080_scrot.png
-Name3[$e]=2020-03-07-212710_1920x1080_scrot.png
-Name4[$e]=2020-03-12-153002_1920x1080_scrot.png
-Name5[$e]=python_screenkay_error.jpg
-Name6[$e]=aq.png
-Name7[$e]=avatar92.jpg
-Name8[$e]=5fmqo3b0i1j31.png
-Name9[$e]=1388287.jpg
+File1[$e]=$HOME/Screenshots/2020-03-07-204324_1920x1080_scrot.png
+File10[$e]=$HOME/.cache/qutebrowser/webengine/Cache/f_000056
+File2[$e]=$HOME/Screenshots/2020-03-07-212710_1920x1080_scrot.png
+File3[$e]=$HOME/Screenshots/2020-03-12-153002_1920x1080_scrot.png
+File4[$e]=$HOME/Screenshots/python_screenkay_error.jpg
+File5[$e]=$HOME/Screenshots/aq.png
+File6[$e]=$HOME/Dropbox/Linux/other/installations/MINE_noluks/Using Btrfs for Easy Backup and Rollback | John Ramsden_files/a_data/avatar92.jpg
+File7[$e]=$HOME/Dropbox/Linux/other/5fmqo3b0i1j31.png
+File8[$e]=$HOME/Wallpapers/gallery_XOygnM3/003-NENbpbY.jpg
+File9[$e]=/mnt/e/Robert/DATA/archives/old_pulpit.bmp
+Name1[$e]=2020-03-07-204324_1920x1080_scrot.png
+Name10[$e]=f_000056
+Name2[$e]=2020-03-07-212710_1920x1080_scrot.png
+Name3[$e]=2020-03-12-153002_1920x1080_scrot.png
+Name4[$e]=python_screenkay_error.jpg
+Name5[$e]=aq.png
+Name6[$e]=avatar92.jpg
+Name7[$e]=5fmqo3b0i1j31.png
+Name8[$e]=003-NENbpbY.jpg
+Name9[$e]=old_pulpit.bmp
 
 [SideBar]
 IsVisible ViewMode=false
