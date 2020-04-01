@@ -10,7 +10,7 @@
 # Browser
 #
 
-export BROWSER="chromium"
+export BROWSER="firefox"
 
 #
 # Editors

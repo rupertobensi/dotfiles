@@ -4,9 +4,9 @@ copyImageToClipboard=false
 copySaveLocation=false
 default-save-image-format=png
 default-save-location[$e]=file:$HOME/Screenshots/
-lastSaveAsFile=file:///home/robi/Screenshots/lukesmithwow.png
-lastSaveFile=file:///home/robi/Screenshots/Screenshot_20200330_114439.png
-save-filename-format=%D%M%y_%H%m%S
+lastSaveAsFile=file:///home/robi/Screenshots/term.png
+lastSaveFile=file:///home/robi/Screenshots/30-03-20_20.24.41.png
+save-filename-format=%D-%M-%y_%H.%m.%S
 
 [GuiConfig]
 alwaysRememberRegion=false
@@ -14,6 +14,7 @@ captureDelay=0
 captureModeIndex=0
 compressionQuality=90
 cropRegion=0,0,0,0
+includePointer=false
 lastUsedSaveMode=0
 onClickChecked=true
 printKeyActionRunning=0
@@ -21,9 +22,9 @@ rememberLastRectangularRegion=true
 showMagnifier=false
 useLightMaskColour=false
 useReleaseToCapture=false
-window-position=102,51
+window-position=1012,434
 
 [KFileDialog Settings]
-Recent Files[$e]=desktop.png,file:$HOME/Screenshots/lukesmithwow.png,file:$HOME/.dotfiles/desktop.png
+Recent Files[$e]=desktop.png,file:$HOME/Screenshots/term.png,file:$HOME/.dotfiles/desktop.png
 Recent URLs[$e]=file:$HOME/Screenshots/
 detailViewIconSize=0

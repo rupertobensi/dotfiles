@@ -31,7 +31,7 @@
     "type": "con",
     "nodes": [
         {
-            // tabbed split container with 3 children
+            // tabbed split container with 4 children
             "border": "normal",
             "floating": "auto_off",
             "layout": "tabbed",
@@ -49,13 +49,34 @@
                        "y": 30
                     },
                     "name": "Riot | elliot",
-                    "percent": 0.333333333333333,
+                    "percent": 0.25,
                     "swallows": [
                        {
                         "class": "^Riot$",
                         "instance": "^riot$",
                         "title": "^Riot\\ \\|\\ elliot$",
                         "window_role": "^browser\\-window$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "user_off",
+                    "geometry": {
+                       "height": 1033,
+                       "width": 1119,
+                       "x": 377,
+                       "y": 38
+                    },
+                    "name": "Steam",
+                    "percent": 0.25,
+                    "swallows": [
+                       {
+                        "class": "^Steam$",
+                        "instance": "^Steam$",
+                        "title": "^Steam$"
                        }
                     ],
                     "type": "con"
@@ -71,11 +92,9 @@
                        "y": 29
                     },
                     "name": "Telegram",
-                    "percent": 0.333333333333333,
+                    "percent": 0.25,
                     "swallows": [
                        {
-                        "class": "^TelegramDesktop$",
-                        "instance": "^telegram\\-desktop$",
                         "title": "^Telegram$"
                        }
                     ],
@@ -92,11 +111,9 @@
                        "y": 29
                     },
                     "name": "roman",
-                    "percent": 0.333333333333333,
+                    "percent": 0.25,
                     "swallows": [
                        {
-                        "class": "^Steam$",
-                        "instance": "^Steam$",
                         "title": "^roman$"
                        }
                     ],
