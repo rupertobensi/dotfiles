@@ -38,7 +38,7 @@ window:
     y: 0
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -87,9 +87,6 @@ scrolling:
   # scrollback is enabled (history > 0).
   #multiplier: 3
 
-  # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: false
-
 # Spaces per Tab (changes require restart)
 #
 # This setting defines the width of a tab in cells.
@@ -97,7 +94,7 @@ scrolling:
 # Some applications, like Emacs, rely on knowing about the width of a tab.
 # To prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
-tabspaces: 4
+#tabspaces: 4  - OPTION DEPRECATED
 
 # Font configuration
 font:
@@ -568,28 +565,28 @@ mouse_bindings:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x1b1622'
-    foreground: '0xa5c2d1'
+    background: '0x030E18'
+    foreground: '0xa7c0c3'
   cursor:
-    text:       '0x1b1622'
-    cursor:     '0xa5c2d1'
+    text:       '0x030E18'
+    cursor:     '0xa7c0c3'
   normal:
-    black:      '0x1b1622'
-    red:        '0xC69874'
-    green:      '0x0E518B'
-    yellow:     '0x1E6DA0'
-    blue:       '0x4B7692'
-    magenta:    '0xAB6D8B'
-    cyan:       '0x3C82AA'
-    white:      '0xa5c2d1'
+    black:      '0x030E18'
+    red:        '0x2E4953'
+    green:      '0x2B5562'
+    yellow:     '0x595F66'
+    blue:       '0x8A7774'
+    magenta:    '0x7E8A67'
+    cyan:       '0x4F7686'
+    white:      '0xa7c0c3'
   bright:
-    black:      '0x738792'
-    red:        '0xC69874'
-    green:      '0x0E518B'
-    yellow:     '0x1E6DA0'
-    blue:       '0x4B7692'
-    magenta:    '0xAB6D8B'
-    cyan:       '0x3C82AA'
-    white:      '0xa5c2d1'
+    black:      '0x748688'
+    red:        '0x2E4953'
+    green:      '0x2B5562'
+    yellow:     '0x595F66'
+    blue:       '0x8A7774'
+    magenta:    '0x7E8A67'
+    cyan:       '0x4F7686'
+    white:      '0xa7c0c3'
 
 # END ACE

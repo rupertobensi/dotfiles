@@ -11,7 +11,7 @@ save-filename-format=%D-%M-%y_%H.%m.%S
 [GuiConfig]
 alwaysRememberRegion=false
 captureDelay=0
-captureModeIndex=0
+captureModeIndex=1
 compressionQuality=90
 cropRegion=0,0,0,0
 includePointer=false
@@ -22,7 +22,7 @@ rememberLastRectangularRegion=true
 showMagnifier=false
 useLightMaskColour=false
 useReleaseToCapture=false
-window-position=1012,434
+window-position=373,399
 
 [KFileDialog Settings]
 Recent Files[$e]=desktop.png,file:$HOME/Screenshots/term.png,file:$HOME/.dotfiles/desktop.png

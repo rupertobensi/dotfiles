@@ -47,18 +47,16 @@ alias bitcoin="curl rate.sx"
 alias google="googler"
 
 alias tilixp="tilix --preferences"
-alias pbr="/home/robi/.dotfiles/.config/polybar/launch.sh"
 alias nitrogens="nitrogen --set-zoom-fill --save"
 alias walr="wal -R"
-alias walR="alapyw"
 alias wali="wal -i"
 
 
-alias notes="nvim /home/robi/Dropbox/notes.txt"
-alias notesc="nvim /home/robi/Dropbox/Linux/cheatsheet.md"
-alias notesa="nvim /home/robi/Dropbox/Linux/ARCH.md"
-alias notesyay="nvim /home/robi/Dropbox/Linux/yaypacman.md"
-alias notesl="nvim /home/robi/Dropbox/Linux/notes_LIN.txt"
+alias notes="nvim /mnt/e/Robert/DROPBOX/notes.txt"
+alias notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md"
+alias notesa="nvim /mnt/e/Robert/DROPBOX/Linux/ARCH.md"
+alias notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
+alias notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.txt"
 
 # Changing "ls" to "exa"
 alias ls='exa -a --color=always --group-directories-first' # my preferred listing
