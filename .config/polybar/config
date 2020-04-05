@@ -66,9 +66,9 @@ module-margin-right = 1
 
 font-0 = Ubuntu:pixelsize=10;1  # main
 font-1 = unifont:fontformat=truetype:size=9:antialias=false;1  # polyweather text
-font-2 = siji:pixelsize=10;3
+font-2 = siji:pixelsize=10;2
 font-3 = FontAwesome:pixelsize=14;4
-font-4 = Ubuntu:pixelsize=11:weight=bold;3        # time center
+font-4 = Ubuntu:pixelsize=11:weight=bold;4        # time center
 font-5 = Ubuntu:italic:pixelsize=10;3
 font-6 = Weather Icons:pixelsize=13;3
 
@@ -181,10 +181,10 @@ label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
-; urgent = Workspace with urgency hint set
-label-urgent = %index%
-label-urgent-background = ${module/bspwm.label-urgent-background}
-label-urgent-padding = ${module/bspwm.label-urgent-padding}
+; urgent = Workspace with urgency hint set #DISABLED
+##label-urgent = %index%
+##label-urgent-background = ${module/bspwm.label-urgent-background}
+##label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -318,7 +318,8 @@ date =%{T1}%A %d/%m/%y
 time = %H:%M
 #time-alt = %H:%M:%S
 
-format-prefix = 
+#format-prefix =
+#format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 #format-underline = #0a6cf5
 
@@ -334,8 +335,8 @@ date = %d-%m
 time = %{T5}%H:%M
 #time-alt = %H:%M:%S
 
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+#format-prefix = 
+#format-prefix-foreground = ${colors.foreground-alt}
 #format-underline = #0a6cf5
 
 label = %time%

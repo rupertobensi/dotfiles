@@ -253,7 +253,7 @@ let g:indentLine_enabled = 0
 set termguicolors
 
 " Vim airline theme
-let g:airline_theme='dracula'
+ let g:airline_theme='dracula'
 
 " Change vertical split character to be a space (essentially hide it)
 set fillchars+=vert:.
@@ -273,10 +273,10 @@ set winbl=10
 "
 " Add custom highlights in method that is executed every time a colorscheme is sourced
 " See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
-function! TrailingSpaceHighlights() abort
-  " Hightlight trailing whitespace
-  highlight Trail ctermbg=blue guibg=#bd93f9
-  call matchadd('Trail', '\s\+$', 100)
+ function! TrailingSpaceHighlights() abort
+   " Hightlight trailing whitespace
+   highlight Trail ctermbg=blue guibg=#bd93f9
+call matchadd('Trail', '\s\+$', 100)
 endfunction
 
 function! s:custom_jarvis_colors()
@@ -516,21 +516,4 @@ set noswapfile
 if exists('g:loaded_webdevicons')
   call webdevicons#refresh()
 endif
-
-
-" Toggle transparent background
-let t:is_transparent = 0
-function! Toggle_transparent()
-    if t:is_transparent == 0
-        hi Normal guibg=NONE ctermbg=NONE
-        let t:is_transparent = 1
-    else
-        set background=dark
-        let t:is_tranparent = 0
-    endif
-endfunction
-nnoremap <F5> : call Toggle_transparent()<CR>
-
-"echo has('clipboard')
-
 

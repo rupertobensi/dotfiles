@@ -14,17 +14,17 @@ Confirm Move=false
 Confirm Unempty Dir=false
 
 [Archives]
-Supported Packers=tar,gzip,bzip2,lzma,xz,unzip,zip,cbz,7z
+Supported Packers=tar,gzip,bzip2,lzma,xz,unzip,zip,cbz,unrar,7z
 
 [Colors]
 Alternate Background=Background
 Alternate Marked Background=
-Background=200,191,229
+Background=213,203,243
 Current Background=195,168,216
 Current Foreground=
-Dim Factor=81
+Dim Factor=90
 Dim Inactive Colors=true
-Dim Target Color=125,125,125
+Dim Target Color=0,0,0
 Directory Foreground=
 Enable Alternate Background=true
 Executable Foreground=
@@ -96,12 +96,13 @@ sha384sum=/usr/bin/sha384sum
 sha512sum=/usr/bin/sha512sum
 tar=/usr/bin/tar
 umount=/usr/bin/umount
+unrar=/usr/bin/unrar
 unzip=/usr/bin/unzip
 xz=/usr/bin/xz
 zip=/usr/bin/zip
 
 [General]
-Editor=Kate
+Editor=/usr/bin/kate
 Move To Trash=true
 Terminal=alacritty
 
@@ -109,13 +110,13 @@ Terminal=alacritty
 Queue Mode=false
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/Stuff/krusader_color_scheme
-Recent URLs[$e]=file:$HOME/Stuff/
+Recent Files[$e]=kate,file:///usr/bin/atool,file:///usr/bin/kate
+Recent URLs[$e]=file:///usr/bin/,file:///mnt/e/Downloads/QQ/
 detailViewIconSize=0
 
 [KPropertiesDialog]
-Height 1080=456
-Width 1920=367
+Height 1080=518
+Width 1920=471
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -272,7 +273,7 @@ Confirm Root Mode=false
 
 [Open-with settings]
 CompletionMode=1
-History=kate,leaf,mpv,gwe,gean,gea,ra,juk,zat,sub,kat,code,gn,ter,kid
+History=/usr/bin/atool,atool,kate,leaf,mpv,gwe,gean,gea,ra,juk,zat,sub,kat,code,gn
 
 [PanelLayout]
 FrameColor=none
@@ -281,8 +282,8 @@ FrameShape=Panel
 Layout=krusader:compact
 
 [Private]
-PopularUrls=file:///home/robi/,file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/.local/bin/statusbar/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/.local/bin/cron/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/.local/bin/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/.config/i3/,file:///home/robi/.config/.myscripts/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/.local/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/.local/bin/i3cmds/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/.config/,file:///mnt/e/Robert/DROPBOX/Stuff/,file:///mnt/e/Robert/DROPBOX/Stuff/csgo/,file:///mnt/e/Robert/DROPBOX/,krarc:/mnt/e/Downloads/stuff-20200330T203952Z-001.zip/stuff/,file:///home/robi/.config/,krarc:/mnt/e/Downloads/stuff-20200330T203952Z-001.zip/stuff/bookmarks/,krarc:/mnt/e/Downloads/stuff-20200330T203952Z-001.zip/stuff/girl/,krarc:/mnt/e/Downloads/stuff-20200330T203952Z-001.zip/stuff/CV/,krarc:/mnt/e/Downloads/stuff-20200330T203952Z-001.zip/stuff/Plan_siłka/,krarc:/mnt/e/Downloads/stuff-20200330T203952Z-001.zip/stuff/P_mag/,krarc:/mnt/e/Downloads/stuff-20200330T203952Z-001.zip/stuff/csgo/,krarc:/mnt/e/Downloads/stuff-20200330T203952Z-001.zip/,file:///mnt/e/Downloads/stuff/skifree.js-master/,file:///mnt/e/Downloads/stuff/
-PopularUrlsRank=2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrls=file:///mnt/e/Downloads/qq/,file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///home/robi/.zprezto/,file:///home/robi/.zprezto/runcoms/,file:///home/robi/.dotfiles/.config/rofi2/themes/,file:///home/robi/.dotfiles/.config/rofi2/,file:///home/backups/.dotfiles/.config/,file:///home/backups/.dotfiles/,file:///home/backups/,file:///home/,file:///home/Data/,file:///home/robi/.dotfiles/.config/rofi/themes/,file:///home/robi/.dotfiles/.config/rofi/,file:///home/robi/.dotfiles/.config/,file:///home/robi/.dotfiles/.config/rofi/themes/launchers-git/,file:///home/robi/.dotfiles/.config/rofi/themes/launchers/,file:///mnt/e/Downloads/rofi-master/themes/,file:///mnt/e/Downloads/rofi-master/themes/colorschemes/,file:///mnt/e/Downloads/rofi-master/android/,file:///mnt/e/Downloads/rofi-master/,file:///mnt/e/Downloads/rofi-master/bin/,file:///mnt/e/Downloads/rofi-master/launchers-git/,file:///mnt/e/Downloads/rofi-master/launchers/,file:///home/robi/.dotfiles/.config/rofi/themes/colorschemes/
+PopularUrlsRank=5,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Start Position=19,29
 Start Size=928,1026
 cmdline history=
@@ -318,7 +319,7 @@ Show Terminal Emulator=false
 Show status bar=false
 Splitter Sizes=464,463
 Start To Tray=false
-State=\x00\x00\x00\xff\x00\x00\x00\x00\xfd\x00\x00\x00\x00\x00\x00\x07Z\x00\x00\x03\xc2\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x08\xfc\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x16\x00m\x00a\x00i\x00n\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x01\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00j\x00o\x00b\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1c\x00a\x00c\x00t\x00i\x00o\x00n\x00s\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00
+State=\x00\x00\x00\xff\x00\x00\x00\x00\xfd\x00\x00\x00\x00\x00\x00\x03\xa0\x00\x00\x03\xc5\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x08\xfc\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x16\x00m\x00a\x00i\x00n\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x01\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00j\x00o\x00b\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1c\x00a\x00c\x00t\x00i\x00o\x00n\x00s\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00
 Terminal Emulator Splitter Sizes=100,100
 Update Default Panel Settings=true
 Vertical Mode=false

@@ -1,6 +1,7 @@
 [Added Associations]
 application/pdf=org.pwmt.zathura.desktop;org.kde.okular.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+application/x-bittorrent=torrent.desktop;
 application/x-extension-htm=chromium.desktop;
 application/x-extension-html=chromium.desktop;
 application/x-extension-shtml=chromium.desktop;
@@ -8,12 +9,13 @@ application/x-extension-xht=chromium.desktop;
 application/x-extension-xhtml=chromium.desktop;
 application/x-shellscript=org.kde.kate.desktop;geany.desktop;code-oss.desktop;
 application/x-zerosize=org.kde.kate.desktop;
+application/x.bittorrent=torrent.desktop;
 application/xhtml+xml=chromium.desktop;code-oss.desktop;
 application/xml=code-oss.desktop;
 audio/mpeg=mpv.desktop;
 image/jpeg=sxiv-rifle.desktop;org.kde.gwenview.desktop;feh.desktop;com.github.maoschanz.drawing.desktop;gimp.desktop;
 image/png=sxiv-rifle.desktop;org.kde.gwenview.desktop;feh.desktop;com.github.maoschanz.drawing.desktop;gimp.desktop;
-inode/directory=baobab.desktop;org.kde.filelight.desktop;net.sourceforge.kid3.desktop;
+inode/directory=org.kde.dolphin.desktop;baobab.desktop;net.sourceforge.kid3.desktop;
 message/rfc822=userapp-Thunderbird-II93G0.desktop;
 text/html=chromium.desktop;
 text/markdown=org.kde.kate.desktop;geany.desktop;
@@ -26,6 +28,7 @@ x-scheme-handler/chrome=chromium.desktop;
 x-scheme-handler/ftp=chromium.desktop;
 x-scheme-handler/http=chromium.desktop;
 x-scheme-handler/https=chromium.desktop;
+x-scheme-handler/magnet=torrent.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-II93G0.desktop;
 
 [Default Applications]
@@ -44,7 +47,7 @@ application/xml=code-oss.desktop;
 audio/mpeg=mpv.desktop;
 image/jpeg=sxiv-rifle.desktop;
 image/png=sxiv-rifle.desktop;
-inode/directory=baobab.desktop;
+inode/directory=org.kde.dolphin.desktop;
 message/rfc822=userapp-Thunderbird-II93G0.desktop
 text/html=firefox.desktop
 text/markdown=org.kde.kate.desktop;
@@ -64,5 +67,5 @@ x-scheme-handler/mailto=thunderbird.desktop;
 [Removed Associations]
 image/jpeg=sxiv.desktop;okularApplication_kimgio.desktop;wine-extension-jpe.desktop;wine-extension-jfif.desktop;
 image/png=feh-2.desktop;sxiv.desktop;okularApplication_kimgio.desktop;wine-extension-png.desktop;sxiv.desktop;okularApplication_kimgio.desktop;wine-extension-png.desktop;
-inode/directory=org.kde.gwenview.desktop;org.kde.krusader.desktop;org.kde.dolphin.desktop;ranger.desktop;spacefm-folder-handler.desktop;spacefm-find.desktop;spacefm.desktop;vifm.desktop;nemo.desktop;baobab.desktop;
+inode/directory=org.kde.gwenview.desktop;org.kde.krusader.desktop;ranger.desktop;spacefm-folder-handler.desktop;spacefm-find.desktop;spacefm.desktop;vifm.desktop;nemo.desktop;
 text/plain=okularApplication_txt.desktop;wine-extension-txt.desktop;vim.desktop;wine-extension-ini.desktop;okularApplication_txt.desktop;vim.desktop;wine-extension-ini.desktop;wine-extension-txt.desktop;

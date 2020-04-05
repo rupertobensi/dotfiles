@@ -1,5 +1,3 @@
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
 set $term --no-startup-id $TERMINAL
 set $browser --no-startup-id $BROWSER
 set $mod Mod4
@@ -10,7 +8,6 @@ font pango:Noto Sans 8
 
 # Custom hack for adjusted titlebar centered text
 for_window [class=".*"] title_format " %title"
-#for_window [class=".*"] title_format "                                                                                                                                          %title"#
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -34,12 +31,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
 bindsym $mod+Return exec $term -e tmux
-#bindsym F12 exec tilix --quake -e tmux at
-#bindsym F12 exec tilix --quake -e tmux new -s F12
-#bindsym F12 exec xfce4-terminal --drop-down
 
+bindsym $mod+apostrophe		split horizontal ; exec $term -e tmux at
+bindsym $mod+slash		split vertical ; exec $term -e tmux at
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -58,11 +53,10 @@ bindsym $mod+Shift+s		gaps inner current minus 5
 
 bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0
 
-#bindsym $mod+y			exec $term -e calcurse -D ~/.config/calcurse
-#bindsym $mod+Shift+y		resize shrink width 2 px or 2 ppt
+bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3resize left
 
-bindsym $mod+u			sticky toggle
+bindsym $mod+u			exec $term -e pulsemixer
 bindsym $mod+Shift+u		exec --no-startup-id i3resize down
 
 bindsym $mod+i			exec --no-startup-id $term -e htop
@@ -95,18 +89,13 @@ bindsym $mod+Ctrl+l		move workspace to output right
 bindsym $mod+shift+grave        move scratchpad
 bindsym $mod+grave              scratchpad show, resize set 1400 700, move position center
 
-bindsym $mod+apostrophe		split horizontal ; exec $term -e tmux at
-bindsym $mod+slash		split vertical ; exec $term -e tmux at
 
 #Pseudo alt+tab
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
-# start dmenu (a program launcher)
+# dmenu and rofi
 bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-12" -sb "#9770ae"
-#bindsym $mod+d exec dmenu_run -nb "#9770ae" -sb "#2c53c3" -h "22" -x 580 -w 800 -o 0.99 -fn "Consolas-12"
-#bindsym $mod+d exec dmenu_run -nb "#9c76b5" -sb "#b042cf" -h "22" -x 700 -w 600 -fn "Consolas-12"
-#bindsym $mod+Shift+e exec rofi -lines 4 -padding 18 -width 12 -location 0 -show drun -sidebar-mode -columns 1 -font 'Noto Sans 10'
 bindsym $mod+Shift+d exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 11'
 
 bindsym $mod+Shift+b		bar mode toggle
@@ -202,7 +191,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # restart
-bindsym $mod+Shift+r restart; exec pbr
+bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -285,20 +274,15 @@ client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #2f343f
 
-# Nitrogen or Pywal configs:
+# Wallpaper + transparency
 exec_always --no-startup-id wal -R
 #exec --no-startup-id nitrogen --restore
-
-# Regular wallpaper using feh
 #exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
-
-# compton for transparency
 exec --no-startup-id "compton -b --config ~/.config/compton/compton.conf"
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-#exec_always --no-startup-id --no-startup-id /home/robi/.config/polybar/launch.sh
-exec_always --no-startup-id pbr
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 exec --no-startup-id setxkbmap pl -variant intl
@@ -308,51 +292,23 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### i3-save-tree --workspace 4 > ws4.json
 ### sudo i3-msg -t get_workspaces
 
-for_window [class=Lollypop|dolphin] layout tabbed
-#for_window [class="Thunderbird"] layout tabbed
-
-exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/ws4.json'"
-#exec --no-startup-id "i3-msg 'workspace 6; append_layout /home/robi/.config/i3/ws6.json'"
-exec --no-startup-id "i3-msg 'workspace 7; append_layout /home/robi/.config/i3/ws7.json'"
-
-### call out programs by /usr/bin/ path!
-for_window [class=Spacefm] move scratchpad
-#exec --no-startup-id i3-msg 'workspace 2; exec spacefm'
-#for_window [class=Nemo] move scratchpad
-#exec --no-startup-id i3-msg 'workspace 2; exec nemo'
+assign [class=Caprine|Riot|Steam] 3
+assign [class=csgo_linux64|dota2|quakelivesteam|MEGAsync|dolphin|krusader] 4
 
 
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/krusader'
-exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/dolphin'
-#exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
+exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/chats.json'"
 
-exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/thunderbird'
-exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/systemsettings5'
-#exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/ksysguard'
+
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/riot-desktop'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
-#exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/chromium'
-
-exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/caprine'
-exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/riot-desktop'
-exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/steam -noverifyfiles'
-
-exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/pavucontrol-qt'
-#exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/megasync'
 
 exec --no-startup-id i3-msg "workspace $ws1"
-exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
+exec i3-msg 'workspace 1; exec $term -e tmux'
 
-#assign [class=firefox|Chromium] 2
-assign [class=libreoffice*|krusader] 3       # okular
-assign [class=steam|Steam|Caprine|Riot] 4
-assign [class=dolphin|nemo|Lollypop|qBittorrent] 5
-assign [class="^Steam$" title="Steam"] 5
-assign [class=Thunderbird] 6
-assign [class=csgo_linux64|dota2|quakelivesteam] 6
-assign [class=(?i)pavucontrol-qt|GParted|systemsettings|systemsettings5|ksysguard|megaSYNC] 7
-
-no_focus [class=firefox|chromium|dolphin|steam|Steam|caprine|riot|riot-desktop|Riot|pavucontrol-qt|libreoffice*|ksysguard|Lollypop|krusader|systemsettings5|systemsettings|nemo|spacefm|MEGAsync]
+no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 
 for_window [class=feh|mpv|gwenview|Sxiv|Leafpad|MEGAsync|Lutris|SimpleScreenRecorder] floating enable
 for_window [class=feh|mpv|gwenview|Sxiv|Leafpad] resize set 1024 768
@@ -382,7 +338,6 @@ for_window [class="(?i)pavucontrol-qt"] floating disable # for some reason it's 
 # STEAM SETTINGS
 
 for_window [class="^Steam$" title="^Friends$"] floating disable
-#for_window [class="^Steam$" title="^Friends$"] floating enable
 for_window [class="^Steam$" title="Steam - News"] floating enable; border none
 for_window [class="^Steam$" title=".* - Chat"] floating enable; border none
 for_window [class="^Steam$" title="^Settings$"] floating enable; border none
@@ -400,7 +355,6 @@ for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Default - Wine desktop"] floating enable
 
 # dropterm with alacritty (mod+i hide/show)
-exec_always --no-startup-id $term --class dropdown_term -e tmux new -s F12 &
-#exec --no-startup-id $term --class dropdown_term -e tmux new -s F12 &
+exec_always --no-startup-id $term --class dropdown_term -e tmux new -s F12
 bindsym F12 [instance="dropdown_term"] scratchpad show, move position 60 -2
 for_window [instance="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2

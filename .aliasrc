@@ -34,19 +34,27 @@ alias \
 	v="$EDITOR" \
 	p="sudo pacman" \
 
+alias monitor2off="xrandr --output DVI-I-1 --off"
+alias monitor2on="xrandr --output HDMI-1 --primary --mode 1920x1080 --output DVI-I-1 --mode 1280x1024 --right-of HDMI-1; (pbr &)"
 
 alias grep="rg"
+alias du='cdu -idh'
 alias ra="ranger"
 alias ncm="ncmpcpp"
 alias newsb="newsboat"
 alias kal="calcurse"
 
+alias tra="transmission-remote-cli"
 alias wttr="curl wttr.in"
 #alias cheat="curl cheat.sh/ "
-alias bitcoin="curl rate.sx"
+alias stock="mop"
+alias bitcoin="cointop"
+alias bitcoin2="curl rate.sx"
+alias corona="curl -L covid19.trackercli.com"
 alias google="googler"
 
 alias tilixp="tilix --preferences"
+alias tmuxsrc="tmux source-file ~/.tmux.conf"
 alias nitrogens="nitrogen --set-zoom-fill --save"
 alias walr="wal -R"
 alias wali="wal -i"
@@ -73,8 +81,8 @@ alias pcp="pycp --preserve --global-pbar -i"
 
 # scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
-alias music="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art 
-#alias music='tmux new-session "tmux source-file ~/.ncmpcpp/tmux_session"' # Tmux session with ncmpcpp and cover art 
+alias music="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
+#alias music='tmux new-session "tmux source-file ~/.ncmpcpp/tmux_session"' # Tmux session with ncmpcpp and cover art
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.
 alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
@@ -102,7 +110,7 @@ alias tkso='tmux kill-session -a'
 #alias katmux="tmux kill-server"
 #alias katmuxa="tmux kill-session -a"
 
-alias Src="source /home/robi/.dotfiles/.zprezto/runcoms/zshrc"
+alias Src="source ~/.dotfiles/.zprezto/runcoms/.zshrc"
 alias Xrdb='xrdb ~/.Xresources'
 
 alias -g P="| $PAGER"
@@ -150,6 +158,8 @@ fi
 
 # last 20 installed packages:
 alias yay20="expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n 20"
+# last 100 installed packages:
+alias yay100="expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n 100"
 # browse ALL installed packages with an instant preview of each package:
 alias yayfzfa="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 # browse installed by ME packages with an instant preview of each package:

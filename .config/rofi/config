@@ -1,4 +1,3 @@
-rofi.theme: /usr/share/rofi/themes/Arc-Dark-Orchid.rasi
 
 
 rofi.kb-row-up:                      Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab
@@ -9,3 +8,4 @@ rofi.kb-remove-to-eol:               Control+Shift+e
 rofi.kb-mode-next:                   Shift+Right,Control+Tab,Control+l
 rofi.kb-mode-previous:               Shift+Left,Control+Shift+Tab,Control+h
 rofi.kb-remove-char-back:            BackSpace
+rofi.theme: /home/robi/.config/rofi/themes/colors-rofi-dark.rasi
