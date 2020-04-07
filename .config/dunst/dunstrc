@@ -1,10 +1,8 @@
-#[ignore]
-#
+[ignore]
 # This notification will not be displayed
-#
-# ignore all:
-#appname = "*"
-#format = ""
+# ...to ignore all:
+appname = "*"
+format = ""
 
 
 

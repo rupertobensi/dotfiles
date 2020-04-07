@@ -1,23 +1,12 @@
-#
-# Browser
-#
+# Default programs:
 
-export BROWSER="firefox"
-
-#
-# Editors
-#
-
-#export TERMINAL="tilix"
+export EDITOR="nvim"
 export TERMINAL="alacritty"
-#export TERMINAL="st"
-export EDITOR='nvim'
-export VISUAL='nvim'
-export PAGER='less'
+export BROWSER="firefox"
+export READER="zathura"
+export FILE="ranger"
 
-#
 # Language
-#
 
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
@@ -28,10 +17,7 @@ export LC_TIME=en_IE.UTF-8
 # equivalent to euro one below:
 #export LC_TIME=en_150
 
-#
 # Paths
-#
-
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
@@ -41,11 +27,11 @@ typeset -gU cdpath fpath mailpath path
 #   $cdpath
 # )
 
-# Set the list of directories that Zsh searches for programs.
-path=(
-  /usr/local/{bin,sbin}
-  $path
-)
+## # Set the list of directories that Zsh searches for programs.
+## path=(
+##   /usr/local/{bin,sbin}
+##   $path
+## )
 
 #
 # Less

@@ -25,7 +25,6 @@ alias \
 alias \
 	ka="killall" \
 	g="git" \
-	trem="transmission-remote" \
 	yt="straw-viewer" \
 	sdn="sudo shutdown -h now" \
 	rdn="sudo reboot" \
@@ -37,15 +36,19 @@ alias \
 alias monitor2off="xrandr --output DVI-I-1 --off"
 alias monitor2on="xrandr --output HDMI-1 --primary --mode 1920x1080 --output DVI-I-1 --mode 1280x1024 --right-of HDMI-1; (pbr &)"
 
+
 alias grep="rg"
 alias du='cdu -idh'
 alias ra="ranger"
+alias vifm="vifmrun"
+
 alias ncm="ncmpcpp"
 alias newsb="newsboat"
 alias kal="calcurse"
 
-alias tra="transmission-remote-cli"
+alias tra="tremc"
 alias wttr="curl wttr.in"
+alias emoticon="echo 😺"
 #alias cheat="curl cheat.sh/ "
 alias stock="mop"
 alias bitcoin="cointop"
@@ -55,6 +58,7 @@ alias google="googler"
 
 alias tilixp="tilix --preferences"
 alias tmuxsrc="tmux source-file ~/.tmux.conf"
+alias imgur="imgur_downloader"
 alias nitrogens="nitrogen --set-zoom-fill --save"
 alias walr="wal -R"
 alias wali="wal -i"

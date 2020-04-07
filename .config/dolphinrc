@@ -10,7 +10,7 @@ FontWeight=50
 FontWeight=50
 
 [DownloadDialog Settings]
-Height 1080=494
+Height 1080=464
 Width 1920=700
 
 [General]
@@ -22,22 +22,22 @@ ViewPropsTimestamp=2020,3,15,0,43,44
 FontWeight=50
 
 [KPropertiesDialog]
-Height 1080=383
-Width 1920=390
+Height 1080=424
+Width 1920=268
 
 [MainWindow]
-Height 1080=1026
+Height 1080=1032
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAwAAAAAAAADmAAAD2vwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAoAAAD2gAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAACuQAAA9oAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAwAAAAAAAADmAAAD4PwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAoAAAD4AAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAGcwAAA+AAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
-Width 1920=928
+Width 1920=1882
 
 [Open-with settings]
 CompletionMode=1
 History=torrent,tran,torr,subd,zat,gea
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
 
 [Search]
 Location=Everywhere

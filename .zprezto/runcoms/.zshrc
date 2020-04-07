@@ -3,18 +3,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-#
-### below Luke Smith's
-#
-
 # Enable colors and change prompt:
 #autoload -U colors && colors
 #PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+## HISTSIZE=10000
+## SAVEHIST=10000
+## HISTFILE=~/.cache/zsh/history
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -23,16 +19,17 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# vi mode
-bindkey -v
-export KEYTIMEOUT=1
-
-# Use vim keys in tab complete menu (with TAB pressed):
+# Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -91,8 +88,8 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Load aliases and shortcuts if existent.
-#[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/shortcutrc"
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
+#[ -f "$HOME/.shortcutrc" ] && source "$HOME/.shortcutrc"
 
 # Load zsh-syntax-highlighting; should be last.
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
@@ -111,6 +108,3 @@ ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,bold
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,bold
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue,bold
 
-# pywal
-#(cat ~/.cache/wal/sequences &)
-#wal -r && clear

@@ -54,21 +54,24 @@ bindsym $mod+Shift+s		gaps inner current minus 5
 bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0
 
 bindsym $mod+y			sticky toggle
+#bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3resize left
 
-bindsym $mod+u			exec $term -e pulsemixer
+bindsym $mod+u			exec $term -e tmux split-window -h pulsemixer
 bindsym $mod+Shift+u		exec --no-startup-id i3resize down
 
-bindsym $mod+i			exec --no-startup-id $term -e htop
+bindsym $mod+i			exec --no-startup-id $term -e tmux split-window -h nvim
 bindsym $mod+Shift+i		exec --no-startup-id i3resize up
 
-bindsym $mod+o 			exec --no-startup-id $term -e ranger
+bindsym $mod+o 			exec --no-startup-id $term -e tmux split-window -h ranger
 bindsym $mod+Shift+o		exec --no-startup-id i3resize right
 
 bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
 bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
+
+bindsym $mod+bar		exec $term -e tmux split-window -h htop
 
 bindsym $mod+h			focus left
 bindsym $mod+Shift+h		move left 30
@@ -88,7 +91,6 @@ bindsym $mod+Ctrl+l		move workspace to output right
 
 bindsym $mod+shift+grave        move scratchpad
 bindsym $mod+grave              scratchpad show, resize set 1400 700, move position center
-
 
 #Pseudo alt+tab
 bindsym $mod+Tab workspace next
@@ -191,7 +193,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # restart
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r restart;exec $HOME/.config/polybar/launch.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -235,6 +237,21 @@ bindsym $mod+Scroll_Lock        exec simplescreenrecorder
 bindsym Pause 	              	exec audiodevice_swapcurrent
 bindsym $mod+Pause              exec cool-retro-term
 
+# #---Function Buttons---# #
+#bindsym $mod+F1
+bindsym $mod+F2		restart
+bindsym $mod+F3		exec --no-startup-id displayselect
+#bindsym $mod+F4		exec --no-startup-id prompt "Hibernate computer?" "$hibernate"
+#bindsym $mod+F5		exec --no-startup-id $netrefresh
+#bindsym $mod+F6		exec --no-startup-id torwrap
+bindsym $mod+F5		exec $term -e tremc
+bindsym $mod+F6		exec --no-startup-id td-toggle
+#bindsym $mod+F8		exec --no-startup-id mailsync
+bindsym $mod+F7		exec --no-startup-id dmenumount
+bindsym $mod+F8 	exec --no-startup-id dmenuumount
+#bindsym $mod+F11	exec --no-startup-id ducksearch
+#bindsym $mod+F12	exec $term -e nmtui
+
 #================================================================================
 #================================================================================
 #================================================================================
@@ -253,7 +270,7 @@ for_window [class=".*"] border pixel 3
 for_window [floating]  border pixel 0
 for_window [class="mpv"] border pixel 0
 
-for_window [class=Tilix|MEGAsync|St] border pixel 0
+for_window [class=MEGAsync] border pixel 0
 #for_window [workspace=1]  border pixel 0
 
 # Gaps    #a1429b #d8dee8
@@ -278,7 +295,7 @@ client.background           #2f343f
 exec_always --no-startup-id wal -R
 #exec --no-startup-id nitrogen --restore
 #exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
-exec --no-startup-id "compton -b --config ~/.config/compton/compton.conf"
+exec --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
@@ -293,11 +310,10 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Riot|Steam] 3
-assign [class=csgo_linux64|dota2|quakelivesteam|MEGAsync|dolphin|krusader] 4
-
+assign [class=csgo_linux64|dota2|quakelivesteam|MEGAsync] 4
+assign [class=discord] 5
 
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/chats.json'"
-
 
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/riot-desktop'
@@ -307,6 +323,7 @@ exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 
 exec --no-startup-id i3-msg "workspace $ws1"
 exec i3-msg 'workspace 1; exec $term -e tmux'
+#exec i3-msg 'workspace 1; exec $term -e tmux a -t 0 \; neww'
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 
@@ -354,7 +371,7 @@ for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Default - Wine desktop"] floating enable
 
-# dropterm with alacritty (mod+i hide/show)
-exec_always --no-startup-id $term --class dropdown_term -e tmux new -s F12
+# dropterm with alacritty
+exec_always --no-startup-id $term --class dropdown_term -e tmux new -s 2
 bindsym F12 [instance="dropdown_term"] scratchpad show, move position 60 -2
 for_window [instance="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2

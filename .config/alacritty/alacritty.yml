@@ -290,13 +290,13 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.8
+background_opacity: 0.85
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 # Allow terminal applications to change Alacritty's window title.
 dynamic_title: true
@@ -550,43 +550,43 @@ mouse:
   #- { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   #- { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
 
-key_bindings:  
+key_bindings:
  - { key: V,        mods: Alt, action: Paste            }
  - { key: C,        mods: Alt, action: Copy             }
  - { key: K,        mods: Alt|Shift,       action: IncreaseFontSize }
  - { key: J,        mods: Alt|Shift,       action: DecreaseFontSize }
  - { key: L,        mods: Alt|Shift,       action: ResetFontSize }
- 
+
 
 mouse_bindings:
 - { mouse: Middle, action: PasteSelection }
 
- 
+
 # BEGIN ACE
 colors:
   primary:
-    background: '0x090e10'
-    foreground: '0xbfbfb1'
+    background: '0x030E18'
+    foreground: '0xa7c0c3'
   cursor:
-    text:       '0x090e10'
-    cursor:     '0xbfbfb1'
+    text:       '0x030E18'
+    cursor:     '0xa7c0c3'
   normal:
-    black:      '0x090e10'
-    red:        '0x333E41'
-    green:      '0x3A4546'
-    yellow:     '0x3C5D5F'
-    blue:       '0x47514D'
-    magenta:    '0x646B60'
-    cyan:       '0x7C816E'
-    white:      '0xbfbfb1'
+    black:      '0x030E18'
+    red:        '0x2E4953'
+    green:      '0x2B5562'
+    yellow:     '0x595F66'
+    blue:       '0x8A7774'
+    magenta:    '0x7E8A67'
+    cyan:       '0x4F7686'
+    white:      '0xa7c0c3'
   bright:
-    black:      '0x85857b'
-    red:        '0x333E41'
-    green:      '0x3A4546'
-    yellow:     '0x3C5D5F'
-    blue:       '0x47514D'
-    magenta:    '0x646B60'
-    cyan:       '0x7C816E'
-    white:      '0xbfbfb1'
+    black:      '0x748688'
+    red:        '0x2E4953'
+    green:      '0x2B5562'
+    yellow:     '0x595F66'
+    blue:       '0x8A7774'
+    magenta:    '0x7E8A67'
+    cyan:       '0x4F7686'
+    white:      '0xa7c0c3'
 
 # END ACE

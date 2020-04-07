@@ -1,9 +1,6 @@
 #
 # Defines environment variables.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 
 # Ensure that a non-login, non-interactive shell has a defined environment.
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
@@ -11,6 +8,7 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 
+# Allows scripts to run
 export XDG_BIN_HOME="$HOME/.local/bin"
 
 typeset -U path
