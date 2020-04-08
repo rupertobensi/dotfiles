@@ -36,13 +36,12 @@ alias \
 alias monitor2off="xrandr --output DVI-I-1 --off"
 alias monitor2on="xrandr --output HDMI-1 --primary --mode 1920x1080 --output DVI-I-1 --mode 1280x1024 --right-of HDMI-1; (pbr &)"
 
-
 alias grep="rg"
 alias du='cdu -idh'
-alias ra="ranger"
 alias vifm="vifmrun"
 
 alias ncm="ncmpcpp"
+alias audio="pulsemixer"
 alias newsb="newsboat"
 alias kal="calcurse"
 
@@ -57,7 +56,7 @@ alias corona="curl -L covid19.trackercli.com"
 alias google="googler"
 
 alias tilixp="tilix --preferences"
-alias tmuxsrc="tmux source-file ~/.tmux.conf"
+alias tmuxSrc="tmux source-file ~/.tmux.conf"
 alias imgur="imgur_downloader"
 alias nitrogens="nitrogen --set-zoom-fill --save"
 alias walr="wal -R"
@@ -70,6 +69,7 @@ alias notesa="nvim /mnt/e/Robert/DROPBOX/Linux/ARCH.md"
 alias notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
 alias notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.txt"
 
+
 # Changing "ls" to "exa"
 alias ls='exa -a --color=always --group-directories-first' # my preferred listing
 alias ll='exa -al --color=always --group-directories-first' # my preferred listing
@@ -79,14 +79,13 @@ alias li='exa -a --color=always --icons --group-directories-first' # my pref wit
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 alias xc="xclip -sel clipboard"
 
-# copy with status bars:
+# copy with progress bars:
 alias pmv="pymv --preserve --global-pbar -i"
 alias pcp="pycp --preserve --global-pbar -i"
 
 # scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
 alias music="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
-#alias music='tmux new-session "tmux source-file ~/.ncmpcpp/tmux_session"' # Tmux session with ncmpcpp and cover art
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.
 alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
@@ -97,11 +96,6 @@ alias i3s="i3-save-tree"
 #alias kdew='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(false)'
 #alias kdeW='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(true)'
 
-# backups:
-
-#bkpdots=sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} ~/.dotfiles/ /home/backups/.dotfiles/
-#bkpall="sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/.Trash-0/*","/home/backups/*","/home/Data/*"} / /home/backups/bkp/"
-
 # Tmux aliases
 alias ta='tmux attach -t'
 alias tad='tmux attach -d -t'
@@ -111,13 +105,12 @@ alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 alias tkso='tmux kill-session -a'
 
-#alias katmux="tmux kill-server"
-#alias katmuxa="tmux kill-session -a"
-
+# Reloading configurations
 alias Src="source ~/.dotfiles/.zprezto/runcoms/.zshrc"
 alias Xrdb='xrdb ~/.Xresources'
 
-alias -g P="| $PAGER"
+# Pipe shortcuts
+alias -g E="| $EDITOR"
 alias -g F="| fzf"
 alias -g G="| grep -i"
 alias -g C="| wc -m"

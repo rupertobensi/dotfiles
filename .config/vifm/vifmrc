@@ -235,6 +235,8 @@ filextype *.html,*.htm
         \ uzbl-browser %f %i &,
 filetype *.html,*.htm links, lynx
 
+"fileviewer *.html,*.go,*.css highlight -O xterm256 -s dante %c
+
 " Object
 filetype *.o nm %f | less
 
@@ -484,6 +486,10 @@ nnoremap <f5> :copy<cr>
 nnoremap <f6> :move<cr>
 nnoremap <f7> :mkdir<space>
 nnoremap <f8> :delete<cr>
+
+" PDF-preview integration
+map > :!vifmimg inc<CR>
+map < :!vifmimg dec<CR>
 
 " ------------------------------------------------------------------------------
 

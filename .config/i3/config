@@ -31,9 +31,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-bindsym $mod+Return exec $term -e tmux
-
-bindsym $mod+apostrophe		split horizontal ; exec $term -e tmux at
+bindsym $mod+Return exec $term -e tmux at
+bindsym $mod+apostrophe		split horizontal ; exec $term -e tmux
 bindsym $mod+slash		split vertical ; exec $term -e tmux at
 
 # kill focused window
@@ -57,7 +56,7 @@ bindsym $mod+y			sticky toggle
 #bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3resize left
 
-bindsym $mod+u			exec $term -e tmux split-window -h pulsemixer
+bindsym $mod+u			exec $term -e pulsemixer
 bindsym $mod+Shift+u		exec --no-startup-id i3resize down
 
 bindsym $mod+i			exec --no-startup-id $term -e tmux split-window -h nvim
@@ -71,7 +70,7 @@ bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -
 bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
 
-bindsym $mod+bar		exec $term -e tmux split-window -h htop
+bindsym $mod+bar		exec $term -e htop
 
 bindsym $mod+h			focus left
 bindsym $mod+Shift+h		move left 30
@@ -193,7 +192,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # restart
-bindsym $mod+Shift+r restart;exec $HOME/.config/polybar/launch.sh
+bindsym $mod+Shift+r restart;exec_always $HOME/.config/polybar/launch.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -247,8 +246,8 @@ bindsym $mod+F3		exec --no-startup-id displayselect
 bindsym $mod+F5		exec $term -e tremc
 bindsym $mod+F6		exec --no-startup-id td-toggle
 #bindsym $mod+F8		exec --no-startup-id mailsync
-bindsym $mod+F7		exec --no-startup-id dmenumount
-bindsym $mod+F8 	exec --no-startup-id dmenuumount
+bindsym $mod+F7 	exec --no-startup-id dmenuumount
+bindsym $mod+F8		exec --no-startup-id dmenumount
 #bindsym $mod+F11	exec --no-startup-id ducksearch
 #bindsym $mod+F12	exec $term -e nmtui
 
@@ -364,7 +363,7 @@ for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable; bor
 for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable; border none
 for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable; border none
 for_window [title="^Steam Keyboard$"] floating enable; border none
-for_window [class="^Steam$" title="Steam"] floating enable
+#for_window [class="^Steam$" title="Steam"] floating enable
 
 #
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600

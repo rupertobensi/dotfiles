@@ -110,11 +110,11 @@
                        "x": 1447,
                        "y": 29
                     },
-                    "name": "roman",
+                    "name": "akiyuki",
                     "percent": 0.25,
                     "swallows": [
                        {
-                        "title": "^roman$"
+                        "title": "^akiyuki$"
                        }
                     ],
                     "type": "con"
