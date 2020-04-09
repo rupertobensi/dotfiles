@@ -11,6 +11,9 @@ unclutter -idle 2 &
 #exec startplasma-x11
 exec i3
 
+# ssh-keychain
+#eval "$(ssh-agent -s)"
+
 # for the font size to be right on every resolution/dpi (alacritty) 
 #WINIT_X11_SCALE_FACTOR=1
 

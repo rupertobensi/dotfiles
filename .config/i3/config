@@ -32,7 +32,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 bindsym $mod+Return exec $term -e tmux at
-bindsym $mod+apostrophe		split horizontal ; exec $term -e tmux
+bindsym $mod+apostrophe		split horizontal ; exec $term -e tmux at
 bindsym $mod+slash		split vertical ; exec $term -e tmux at
 
 # kill focused window
@@ -309,7 +309,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Riot|Steam] 3
-assign [class=csgo_linux64|dota2|quakelivesteam|MEGAsync] 4
+assign [class=csgo_linux64|dota2|quakelive_steam.exe|steam_app_282440|MEGAsync] 4
 assign [class=discord] 5
 
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/chats.json'"
@@ -374,3 +374,4 @@ for_window [title="Default - Wine desktop"] floating enable
 exec_always --no-startup-id $term --class dropdown_term -e tmux new -s 2
 bindsym F12 [instance="dropdown_term"] scratchpad show, move position 60 -2
 for_window [instance="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
+

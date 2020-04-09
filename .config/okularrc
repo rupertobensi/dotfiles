@@ -3,31 +3,31 @@ State=AAAA/wAAAAD9AAAAAAAAA6AAAAPkAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG
 Width 1920=928
 
 [Desktop Entry]
-FullScreen=true
+FullScreen=false
 shouldShowMenuBarComingFromFullScreen=false
 shouldShowToolBarComingFromFullScreen=false
 
 [MainWindow]
-Height 1080=1080
+Height 1080=1026
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAQ4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1920
+Width 1920=928
 
 [Recent Files]
-File1[$e]=$HOME/.dotfiles/README.md
-File2[$e]=$HOME/Dropbox/Linux/cheatsheet.md
-File3[$e]=$HOME/Dropbox/Linux/yaypacman.md
-File4[$e]=$HOME/.wine/dosdevices/z:/home/robi/Dropbox/Linux/other/ubunturef.pdf
-File5[$e]=$HOME/Dropbox/Linux/other/TLCL-17.10.pdf
-File6[$e]=/mnt/e/Robert/DATA/linux_ppls_configs/rice-master/README.md
-File7[$e]=$HOME/Dropbox/Linux/KDE.md
-File8[$e]=$HOME/Dropbox/Linux/ARCH.md
-Name1[$e]=README.md
-Name2[$e]=cheatsheet.md
-Name3[$e]=yaypacman.md
-Name4[$e]=ubunturef.pdf
-Name5[$e]=TLCL-17.10.pdf
-Name6[$e]=README.md
-Name7[$e]=KDE.md
-Name8[$e]=ARCH.md
+File1[$e]=$HOME/Dropbox/Linux/cheatsheet.md
+File2[$e]=$HOME/Dropbox/Linux/yaypacman.md
+File3[$e]=$HOME/.wine/dosdevices/z:/home/robi/Dropbox/Linux/other/ubunturef.pdf
+File4[$e]=$HOME/Dropbox/Linux/other/TLCL-17.10.pdf
+File5[$e]=/mnt/e/Robert/DATA/linux_ppls_configs/rice-master/README.md
+File6[$e]=$HOME/Dropbox/Linux/KDE.md
+File7[$e]=$HOME/Dropbox/Linux/ARCH.md
+File8[$e]=$HOME/.dotfiles/README.md
+Name1[$e]=cheatsheet.md
+Name2[$e]=yaypacman.md
+Name3[$e]=ubunturef.pdf
+Name4[$e]=TLCL-17.10.pdf
+Name5[$e]=README.md
+Name6[$e]=KDE.md
+Name7[$e]=ARCH.md
+Name8[$e]=README.md

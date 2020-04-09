@@ -115,8 +115,8 @@ Recent URLs[$e]=file:///usr/bin/,file:///mnt/e/Downloads/QQ/
 detailViewIconSize=0
 
 [KPropertiesDialog]
-Height 1080=483
-Width 1920=433
+Height 1080=506
+Width 1920=412
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -282,8 +282,8 @@ FrameShape=Panel
 Layout=krusader:compact
 
 [Private]
-PopularUrls=file:///mnt/e/lin_games/Steam/steamapps/common/Counter-Strike Global Offensive/,file:///mnt/e/lin_games/Steam/steamapps/common/,file:///mnt/e/lin_games/Steam/steamapps/common/dota 2 beta/,file:///mnt/e/lin_games/Steam/steamapps/,file:///mnt/e/lin_games/Steam/,file:///mnt/e/lin_games/,file:///mnt/e/,file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///mnt/e/Robert/DATA/memes/,file:///mnt/e/Robert/DATA/,file:///home/robi/.config/.myscripts/,file:///home/robi/.config/,file:///home/robi/Wallpapers/WoW/,file:///home/robi/Wallpapers/,file:///mnt/e/Robert/Tools/,file:///mnt/e/Downloads/qq/,file:///home/robi/.zprezto/,file:///home/robi/.zprezto/runcoms/,file:///home/robi/.dotfiles/.config/rofi2/themes/,file:///home/robi/.dotfiles/.config/rofi2/,file:///home/backups/.dotfiles/.config/,file:///home/backups/.dotfiles/,file:///home/backups/,file:///home/
-PopularUrlsRank=13,12,11,9,8,7,6,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrls=file:///run/media/robi/ESD-USB/,file:///media/USB/,file:///media/,file:///,file:///run/media/robi/KINGSTON/,file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///home/,file:///mnt/e/lin_games/Steam/steamapps/common/Counter-Strike Global Offensive/,file:///mnt/e/lin_games/Steam/steamapps/common/,file:///mnt/e/lin_games/Steam/steamapps/common/dota 2 beta/,file:///mnt/e/lin_games/Steam/steamapps/,file:///mnt/e/lin_games/Steam/,file:///mnt/e/lin_games/,file:///mnt/e/,file:///mnt/e/Robert/DATA/memes/,file:///mnt/e/Robert/DATA/,file:///home/robi/.config/.myscripts/,file:///home/robi/.config/,file:///home/robi/Wallpapers/WoW/,file:///home/robi/Wallpapers/,file:///mnt/e/Robert/Tools/,file:///mnt/e/Downloads/qq/,file:///home/robi/.zprezto/,file:///home/robi/.zprezto/runcoms/
+PopularUrlsRank=20,12,11,10,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Start Position=19,29
 Start Size=928,1026
 cmdline history=
