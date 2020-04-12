@@ -14,7 +14,7 @@ Confirm Move=false
 Confirm Unempty Dir=false
 
 [Archives]
-Supported Packers=tar,gzip,bzip2,lzma,xz,unzip,zip,cbz,unrar,7z
+Supported Packers=tar,gzip,bzip2,lzma,xz,unzip,zip,cbz,unrar,rar,cbr,7z
 
 [Colors]
 Alternate Background=Background
@@ -43,7 +43,7 @@ Inactive Marked Current Foreground=
 Inactive Marked Foreground=
 Inactive Symlink Foreground=
 Invalid Symlink Foreground=
-KDE Default=false
+KDE Default=true
 Marked Background=
 Marked Current Foreground=
 Marked Foreground=
@@ -89,6 +89,7 @@ lzma=/usr/bin/lzma
 mailer=/usr/bin/thunderbird
 md5sum=/usr/bin/md5sum
 mount=/usr/bin/mount
+rar=/usr/bin/rar
 sha1sum=/usr/bin/sha1sum
 sha224sum=/usr/bin/sha224sum
 sha256sum=/usr/bin/sha256sum
@@ -282,8 +283,8 @@ FrameShape=Panel
 Layout=krusader:compact
 
 [Private]
-PopularUrls=file:///run/media/robi/ESD-USB/,file:///media/USB/,file:///media/,file:///,file:///run/media/robi/KINGSTON/,file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///home/,file:///mnt/e/lin_games/Steam/steamapps/common/Counter-Strike Global Offensive/,file:///mnt/e/lin_games/Steam/steamapps/common/,file:///mnt/e/lin_games/Steam/steamapps/common/dota 2 beta/,file:///mnt/e/lin_games/Steam/steamapps/,file:///mnt/e/lin_games/Steam/,file:///mnt/e/lin_games/,file:///mnt/e/,file:///mnt/e/Robert/DATA/memes/,file:///mnt/e/Robert/DATA/,file:///home/robi/.config/.myscripts/,file:///home/robi/.config/,file:///home/robi/Wallpapers/WoW/,file:///home/robi/Wallpapers/,file:///mnt/e/Robert/Tools/,file:///mnt/e/Downloads/qq/,file:///home/robi/.zprezto/,file:///home/robi/.zprezto/runcoms/
-PopularUrlsRank=20,12,11,10,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrls=file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///mnt/e/[media]/[tv series]/Bojack.Horseman.Season-1-720p.WEBRip.x264-W4F/,file:///mnt/e/[media]/[tv series]/,file:///mnt/e/[media]/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/,file:///mnt/e/,file:///mnt/e/Robert/DATA/,file:///mnt/e/Robert/DROPBOX/Linux/,file:///mnt/e/Robert/DROPBOX/Linux/other/,file:///mnt/e/Robert/DROPBOX/Linux/bkp_txt/,file:///mnt/e/Robert/DROPBOX/,file:///run/media/robi/ESD-USB/,file:///media/USB/,file:///media/,file:///,file:///run/media/robi/KINGSTON/,file:///home/,file:///mnt/e/lin_games/Steam/steamapps/common/Counter-Strike Global Offensive/,file:///mnt/e/lin_games/Steam/steamapps/common/,file:///mnt/e/lin_games/Steam/steamapps/common/dota 2 beta/,file:///mnt/e/lin_games/Steam/steamapps/,file:///mnt/e/lin_games/Steam/,file:///mnt/e/lin_games/,file:///mnt/e/Robert/DATA/memes/
+PopularUrlsRank=2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Start Position=19,29
 Start Size=928,1026
 cmdline history=
@@ -319,7 +320,7 @@ Show Terminal Emulator=false
 Show status bar=false
 Splitter Sizes=464,463
 Start To Tray=false
-State=\x00\x00\x00\xff\x00\x00\x00\x00\xfd\x00\x00\x00\x00\x00\x00\x07Z\x00\x00\x03\xc3\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x08\xfc\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x16\x00m\x00a\x00i\x00n\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x01\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00j\x00o\x00b\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1c\x00a\x00c\x00t\x00i\x00o\x00n\x00s\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00
+State=\x00\x00\x00\xff\x00\x00\x00\x00\xfd\x00\x00\x00\x00\x00\x00\x03\xa0\x00\x00\x03\xb9\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x08\xfc\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x16\x00m\x00a\x00i\x00n\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x01\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00j\x00o\x00b\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1c\x00a\x00c\x00t\x00i\x00o\x00n\x00s\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00
 Terminal Emulator Splitter Sizes=100,100
 Update Default Panel Settings=true
 Vertical Mode=false

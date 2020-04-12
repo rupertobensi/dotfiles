@@ -54,7 +54,8 @@
                        {
                         "class": "^Riot$",
                         "instance": "^riot$",
-                        "title": "^Riot\\ \\|\\ elliot$",
+                        "title": "^Riot*",
+                        //"title": "^Riot\\ \\|\\ elliot$",
                         "window_role": "^browser\\-window$"
                        }
                     ],

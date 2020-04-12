@@ -36,7 +36,6 @@ alias \
 alias monitor2off="xrandr --output DVI-I-1 --off"
 alias monitor2on="xrandr --output HDMI-1 --primary --mode 1920x1080 --output DVI-I-1 --mode 1280x1024 --right-of HDMI-1; (pbr &)"
 
-alias grep="rg"
 alias du='cdu -idh'
 alias vifm="vifmrun"
 

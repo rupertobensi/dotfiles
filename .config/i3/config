@@ -56,14 +56,16 @@ bindsym $mod+y			sticky toggle
 #bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3resize left
 
-bindsym $mod+u			exec $term -e pulsemixer
+#bindsym $mod+u			exec $term -e pulsemixer
 bindsym $mod+Shift+u		exec --no-startup-id i3resize down
 
-bindsym $mod+i			exec --no-startup-id $term -e tmux split-window -h nvim
+bindsym $mod+i			exec $term -e pulsemixer
 bindsym $mod+Shift+i		exec --no-startup-id i3resize up
 
 bindsym $mod+o 			exec --no-startup-id $term -e tmux split-window -h ranger
 bindsym $mod+Shift+o		exec --no-startup-id i3resize right
+
+bindsym $mod+p 	              	exec --no-startup-id $term -e tmux split-window -h nvim
 
 bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
@@ -96,7 +98,7 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # dmenu and rofi
-bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-12" -sb "#9770ae"
+bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-11" -sb "#9770ae"
 bindsym $mod+Shift+d exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 11'
 
 bindsym $mod+Shift+b		bar mode toggle
@@ -223,7 +225,6 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 
-bindsym $mod+p 	              	exec displayselect
 bindsym $mod+period 		exec kill_urgent
 bindsym $mod+bracketleft        exec --no-startup-id mpc toggle
 bindsym $mod+bracketright       exec --no-startup-id amixer set Master toggle
@@ -237,8 +238,8 @@ bindsym Pause 	              	exec audiodevice_swapcurrent
 bindsym $mod+Pause              exec cool-retro-term
 
 # #---Function Buttons---# #
-#bindsym $mod+F1
-bindsym $mod+F2		restart
+bindsym $mod+F1		exec dolphin
+bindsym $mod+F2         exec krusader
 bindsym $mod+F3		exec --no-startup-id displayselect
 #bindsym $mod+F4		exec --no-startup-id prompt "Hibernate computer?" "$hibernate"
 #bindsym $mod+F5		exec --no-startup-id $netrefresh
@@ -371,7 +372,7 @@ for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Default - Wine desktop"] floating enable
 
 # dropterm with alacritty
-exec_always --no-startup-id $term --class dropdown_term -e tmux new -s 2
+exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/dropdown.yml --class dropdown_term -e tmux new -s 2
 bindsym F12 [instance="dropdown_term"] scratchpad show, move position 60 -2
 for_window [instance="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
 

@@ -253,7 +253,7 @@ let g:indentLine_enabled = 0
 set termguicolors
 
 " Vim airline theme
- let g:airline_theme='dracula'
+" let g:airline_theme='dracula'
 
 " Change vertical split character to be a space (essentially hide it)
 set fillchars+=vert:.
@@ -517,3 +517,5 @@ if exists('g:loaded_webdevicons')
   call webdevicons#refresh()
 endif
 
+" Increase left padding for startify
+let g:startify_padding_left = 28

@@ -18,12 +18,13 @@ tiling window manager, and rest as follows:
 
 ![+1](desktop2.png)
 
-# How to deploy this very setup?
+How to deploy this very setup?
+------------------------------
 
 I've found GNU Stow to be the easiest program to help with it. Simply clone
 these .dotfiles, cd into .dotfiles and use command:  
-**$stow .**    
-This will create then symlinks in the same architecture as my .dotfiles.
+**$ stow .**    
+This then will create symlinks in the same architecture as my .dotfiles.
 
 
 [1]: https://github.com/sorin-ionescu/prezto

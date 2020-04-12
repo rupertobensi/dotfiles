@@ -14,7 +14,11 @@ Height 1080=464
 Width 1920=700
 
 [General]
+AutoExpandFolders=true
+BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
+ShowFullPath=true
+UseTabForSwitchingSplitView=true
 Version=200
 ViewPropsTimestamp=2020,3,15,0,43,44
 
@@ -22,29 +26,29 @@ ViewPropsTimestamp=2020,3,15,0,43,44
 FontWeight=50
 
 [KPropertiesDialog]
-Height 1080=424
-Width 1920=268
+Height 1080=441
+Width 1920=394
 
 [MainWindow]
-Height 1080=1032
+Height 1080=1026
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAwAAAAAAAADmAAAD4PwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAoAAAD4AAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAGcwAAA+AAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAwAAAAAAAADhAAAD2PwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAqAAAD2AAAADoA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAAAgD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAIA////AAACuAAAA9gAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
-Width 1920=1882
+Width 1920=928
 
 [Open-with settings]
 CompletionMode=1
 History=torrent,tran,torr,subd,zat,gea
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
 
 [Search]
 Location=Everywhere
 
 [SettingsDialog]
-Height 1080=456
-Width 1920=561
+Height 1080=444
+Width 1920=540
 
 [VersionControl]
 enabledPlugins=Dropbox
