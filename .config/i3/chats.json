@@ -48,14 +48,13 @@
                        "x": 20,
                        "y": 30
                     },
-                    "name": "Riot | elliot",
+                    "name": "Riot [1] | linux_talk",
                     "percent": 0.25,
                     "swallows": [
                        {
                         "class": "^Riot$",
                         "instance": "^riot$",
-                        "title": "^Riot*",
-                        //"title": "^Riot\\ \\|\\ elliot$",
+                        "title": "^Riot\\ \\[1\\]\\ \\|\\ linux_talk$",
                         "window_role": "^browser\\-window$"
                        }
                     ],
@@ -63,13 +62,13 @@
                 },
                 {
                     "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "user_off",
+                    "current_border_width": 3,
+                    "floating": "auto_off",
                     "geometry": {
-                       "height": 1033,
-                       "width": 1119,
-                       "x": 377,
-                       "y": 38
+                       "height": 1026,
+                       "width": 1010,
+                       "x": 910,
+                       "y": 32
                     },
                     "name": "Steam",
                     "percent": 0.25,
@@ -78,6 +77,27 @@
                         "class": "^Steam$",
                         "instance": "^Steam$",
                         "title": "^Steam$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 3,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1032,
+                       "width": 454,
+                       "x": 1447,
+                       "y": 29
+                    },
+                    "name": "akiyuki",
+                    "percent": 0.25,
+                    "swallows": [
+                       {
+                        "class": "^Steam$",
+                        "instance": "^Steam$",
+                        "title": "^akiyuki$"
                        }
                     ],
                     "type": "con"
@@ -100,25 +120,6 @@
                        }
                     ],
                     "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 1032,
-                       "width": 454,
-                       "x": 1447,
-                       "y": 29
-                    },
-                    "name": "akiyuki",
-                    "percent": 0.25,
-                    "swallows": [
-                       {
-                        "title": "^akiyuki$"
-                       }
-                    ],
-                    "type": "con"
                 }
             ]
         }
@@ -127,7 +128,7 @@
 
 {
     "border": "pixel",
-    "current_border_width": 0,
+    "current_border_width": 3,
     "floating": "auto_off",
     "geometry": {
        "height": 1030,

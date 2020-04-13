@@ -6,19 +6,19 @@
 
 unmountusb() {
 	[ -z "$drives" ] && exit
-	chosen=$(echo "$drives" | dmenu -i -p "Unmount which drive?" | awk '{print $1}')
+	chosen=$(echo "$drives" | dmenu -h "22" -fn "Consolas-11" -sb "#9770ae" -l 6 -i -p "Unmount which drive?" | awk '{print $1}')
 	[ -z "$chosen" ] && exit
 	sudo -A umount "$chosen" && notify-send "💻 USB unmounting" "$chosen unmounted."
 	}
 
 unmountandroid() { \
-	chosen=$(awk '/simple-mtpfs/ {print $2}' /etc/mtab | dmenu -i -p "Unmount which device?")
+	chosen=$(awk '/simple-mtpfs/ {print $2}' /etc/mtab | dmenu -h "22" -fn "Consolas-11" -sb "#9770ae" -l 6 -i -p "Unmount which device?")
 	[ -z "$chosen" ] && exit
 	sudo -A umount -l "$chosen" && notify-send "🤖 Android unmounting" "$chosen unmounted."
 	}
 
 asktype() { \
-	case "$(printf "USB\\nAndroid" | dmenu -i -p "Unmount a USB drive or Android device?")" in
+	case "$(printf "USB\\nAndroid" | dmenu -h "22" -fn "Consolas-11" -sb "#9770ae" -l 6 -i -p "Unmount a USB drive or Android device?")" in
 		USB) unmountusb ;;
 		Android) unmountandroid ;;
 	esac

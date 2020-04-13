@@ -56,7 +56,7 @@ bindsym $mod+y			sticky toggle
 #bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3resize left
 
-#bindsym $mod+u			exec $term -e pulsemixer
+#bindsym $mod+u			exec --no-startup-id ddspawn tmuxdd
 bindsym $mod+Shift+u		exec --no-startup-id i3resize down
 
 bindsym $mod+i			exec $term -e pulsemixer
@@ -229,19 +229,18 @@ bindsym $mod+period 		exec kill_urgent
 bindsym $mod+bracketleft        exec --no-startup-id mpc toggle
 bindsym $mod+bracketright       exec --no-startup-id amixer set Master toggle
 
-bindsym Print                   exec maimpick
-#bindsym Print                   exec spectacle
-bindsym $mod+Print              exec scrot "%Y-%m-%d_%H:%M:%S_$wx$h.png" -e 'mv $f ~/Screenshots/$f'
+bindsym Print 			exec --no-startup-id maim pic-full-"$(date '+%y%m%d-%H%M-%S').png"
+bindsym $mod+Print              exec maimpick
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Scroll_Lock        exec simplescreenrecorder
 bindsym Pause 	              	exec audiodevice_swapcurrent
 bindsym $mod+Pause              exec cool-retro-term
 
 # #---Function Buttons---# #
-bindsym $mod+F1		exec dolphin
-bindsym $mod+F2         exec krusader
+bindsym $mod+F1		exec --no-startup-id dolphin
+bindsym $mod+F2         exec --no-startup-id krusader
 bindsym $mod+F3		exec --no-startup-id displayselect
-#bindsym $mod+F4		exec --no-startup-id prompt "Hibernate computer?" "$hibernate"
+bindsym $mod+F4		exec --no-startup-id dmenulogout
 #bindsym $mod+F5		exec --no-startup-id $netrefresh
 #bindsym $mod+F6		exec --no-startup-id torwrap
 bindsym $mod+F5		exec $term -e tremc
@@ -372,7 +371,7 @@ for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [title="Default - Wine desktop"] floating enable
 
 # dropterm with alacritty
-exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/dropdown.yml --class dropdown_term -e tmux new -s 2
+exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/dropdown.yml --class dropdown_term -e tmux new -s 1
 bindsym F12 [instance="dropdown_term"] scratchpad show, move position 60 -2
 for_window [instance="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
 
