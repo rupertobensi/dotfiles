@@ -48,13 +48,13 @@
                        "x": 20,
                        "y": 30
                     },
-                    "name": "Riot [1] | linux_talk",
+                    "name": "Riot*",
                     "percent": 0.25,
                     "swallows": [
                        {
-                        "class": "^Riot$",
-                        "instance": "^riot$",
-                        "title": "^Riot\\ \\[1\\]\\ \\|\\ linux_talk$",
+                        "class": "^Riot*",
+                        "instance": "^riot*",
+                        "title": "^Riot*",
                         "window_role": "^browser\\-window$"
                        }
                     ],
