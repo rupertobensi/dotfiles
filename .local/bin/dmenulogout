@@ -6,12 +6,12 @@
 
 DMENU='dmenu -i -h "22" -fn "Consolas-11" -sb #9770ae '
 
-choice=$(echo -e "logout\nshutdown\nreboot\nsuspend\nhibernate" | $DMENU)
+choice=$(echo -e "reboot\nshutdown\nlogout\nsuspend\nhibernate" | $DMENU)
 
 case "$choice" in
-  logout) i3-msg exit & ;;
-  shutdown) shutdown -h now & ;;
   reboot) shutdown -r now & ;;
+  shutdown) shutdown -h now & ;;
+  logout) i3-msg exit & ;;
   suspend) pm-suspend & ;;
   hibernate) pm-hibernate & ;;
 esac

@@ -3,9 +3,9 @@ adobe-source-serif-pro-fonts
 alacritty
 alsa-utils
 amarok
-amdvlk
 apper
 arandr
+arc-gtk-theme
 arch-wiki-lite
 ark
 asciiquarium
@@ -43,6 +43,7 @@ dconf-editor
 deezloader-remix-git
 discord
 discover
+doas
 dolphin
 dolphin-megasync-git
 dolphin-plugins
@@ -61,6 +62,7 @@ fakeroot
 fd
 feh
 ffmpegthumbnailer
+ffmpegthumbs
 file
 findutils
 firefox
@@ -86,9 +88,8 @@ highlight
 htop-vim-git
 i3-gaps
 i3-layout-manager-git
-i3blocks
 i3ipc-python-git
-i3status
+i3keys
 icedtea-web
 iftop
 imgur-downloader-git
@@ -98,7 +99,6 @@ inxi
 jre8-openjdk
 kate
 kcolorchooser
-kde-gtk-config
 kdenlive
 keditbookmarks
 kfind
@@ -106,9 +106,10 @@ kid3
 kompare
 krusader
 kunst-git
+kvantum-qt5
+kvantum-theme-arc
 leafpad
 lf-bin
-lib32-amdvlk
 lib32-vulkan-radeon
 libmpack
 libmythes
@@ -125,6 +126,7 @@ lshw
 lsof
 lutris
 lxappearance-gtk3
+lxdm-themes
 lxtask-gtk3
 lyvi-git
 m4
@@ -141,6 +143,7 @@ mpd-notification
 mpv
 mtpfs
 mutt-wizard-git
+nano
 navi
 ncdu
 ncmpcpp-git
@@ -156,6 +159,7 @@ nodejs-mapscii
 noto-fonts-emoji
 nsnake
 ntfs-3g
+ocs-url
 octopi
 office-code-pro
 okular
@@ -202,7 +206,6 @@ rofi
 rsync
 rtv
 screenkey
-scrot
 sddm
 sddm-kcm
 sed
@@ -231,7 +234,6 @@ terminus-font
 texinfo
 thunderbird
 tmux
-tmux-resurrect
 transmission-cli
 trash-cli
 tree
@@ -264,7 +266,6 @@ unzip
 vifm
 vim
 vlc
-vulkan-amdgpu-pro
 vulkan-mesa-layer
 vulkan-radeon
 w3m

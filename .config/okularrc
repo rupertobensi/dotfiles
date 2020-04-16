@@ -16,15 +16,17 @@ Width 1920=928
 
 [Recent Files]
 File1[$e]=$HOME/Dropbox/Linux/cheatsheet.md
+File10[$e]=/mnt/e/Robert/DROPBOX/Linux/other/TLCL-17.10.pdf
 File2[$e]=$HOME/Dropbox/Linux/yaypacman.md
 File3[$e]=$HOME/.wine/dosdevices/z:/home/robi/Dropbox/Linux/other/ubunturef.pdf
 File4[$e]=$HOME/Dropbox/Linux/other/TLCL-17.10.pdf
 File5[$e]=/mnt/e/Robert/DATA/linux_ppls_configs/rice-master/README.md
 File6[$e]=$HOME/Dropbox/Linux/KDE.md
 File7[$e]=$HOME/Dropbox/Linux/ARCH.md
-File8[$e]=$HOME/.dotfiles/README.md
-File9[$e]=/mnt/e/Robert/DROPBOX/Linux/README.md
+File8[$e]=/mnt/e/Robert/DROPBOX/Linux/README.md
+File9[$e]=$HOME/.dotfiles/README.md
 Name1[$e]=cheatsheet.md
+Name10[$e]=TLCL-17.10.pdf
 Name2[$e]=yaypacman.md
 Name3[$e]=ubunturef.pdf
 Name4[$e]=TLCL-17.10.pdf

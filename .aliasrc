@@ -33,8 +33,8 @@ alias \
 	v="$EDITOR" \
 	p="sudo pacman" \
 
-alias monitor2off="xrandr --output DVI-I-1 --off"
-alias monitor2on="xrandr --output HDMI-1 --primary --mode 1920x1080 --output DVI-I-1 --mode 1280x1024 --right-of HDMI-1; (pbr &)"
+alias monitor2off="xrandr --output DVI-I-0 --off"
+alias monitor2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-1; (pbr &)"
 
 alias du='cdu -idh'
 alias vifm="vifmrun"
@@ -160,8 +160,9 @@ alias yay100="expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n 100"
 alias yayfzfa="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 # browse installed by ME packages with an instant preview of each package:
 alias yayfzf="pacman -Qeq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
+# remove orphans
+alias yayorphan="sudo yay -Rns $(yay -Qtdq)"
 
-#
 ## python pip
 #
 

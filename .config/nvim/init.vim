@@ -37,6 +37,7 @@ set shiftwidth=2
 set nowrap
 
 " Don't highlight current cursor line
+"set cursorline
 set nocursorline
 
 " Disable line/column number in status line

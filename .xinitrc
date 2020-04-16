@@ -1,6 +1,6 @@
 # Disable monitor 2
-xrandr --output HDMI-1 --primary --rate 60 --mode 1920x1080 --output DVI-I-1 --off
-#xrandr --output DVI-I-1 --off
+#xrandr --output HDMI-0 --primary --rate 60 --mode 1920x1080 --output DVI-0 --off
+xrandr --output DVI-I-0 --off
 
 # run rebinds script to swap caps etc.
 rebinds &
