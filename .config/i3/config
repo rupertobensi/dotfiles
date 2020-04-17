@@ -296,7 +296,9 @@ client.background           #2f343f
 
 # Wallpaper + transparency
 exec --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
-exec_always --no-startup-id wal -R
+
+#exec_always --no-startup-id wal -R
+exec_always wal -i ~/.config/wall.png
 #exec --no-startup-id nitrogen --restore
 #exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
 

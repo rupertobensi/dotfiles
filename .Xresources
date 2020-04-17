@@ -24,7 +24,7 @@ rofi.font: Consolas 11
 *.alpha: 0.80
 
 !! Set a default font and font size as below
- *.font: Consolas:pixelsize=17:antialias=true:autohint=true
+ *.font: Consolas:pixelsize=15:antialias=true:autohint=true
 !! *.font: Fira Code:pixelsize=15:antialias=true:autohint=true
 
 /* name		dark	light */
@@ -178,3 +178,37 @@ rofi.font: Consolas 11
 /* *.color256: 0#1d2021 */
 /* *.color257: 15#ebdbb2 */
 
+
+! Colors 0-15.
+*.color0: #030E18
+*color0:  #030E18
+*.color1: #2E4953
+*color1:  #2E4953
+*.color2: #2B5562
+*color2:  #2B5562
+*.color3: #595F66
+*color3:  #595F66
+*.color4: #8A7774
+*color4:  #8A7774
+*.color5: #7E8A67
+*color5:  #7E8A67
+*.color6: #4F7686
+*color6:  #4F7686
+*.color7: #a7c0c3
+*color7:  #a7c0c3
+*.color8: #748688
+*color8:  #748688
+*.color9: #2E4953
+*color9:  #2E4953
+*.color10: #2B5562
+*color10:  #2B5562
+*.color11: #595F66
+*color11:  #595F66
+*.color12: #8A7774
+*color12:  #8A7774
+*.color13: #7E8A67
+*color13:  #7E8A67
+*.color14: #4F7686
+*color14:  #4F7686
+*.color15: #a7c0c3
+*color15:  #a7c0c3

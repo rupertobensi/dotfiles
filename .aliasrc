@@ -43,6 +43,8 @@ alias ncm="ncmpcpp"
 alias audio="pulsemixer"
 alias newsb="newsboat"
 alias kal="calcurse"
+alias tp="trash-put"
+alias tli="trash-list"
 
 alias tra="tremc"
 alias wttr="curl wttr.in"
