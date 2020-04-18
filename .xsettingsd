@@ -3,4 +3,4 @@ Xft/HintStyle "hintslight"
 Xft/Antialias 1
 Xft/RGBA "rgb"
 
-Xft/Autohint 1
+#Xft/Autohint 1
