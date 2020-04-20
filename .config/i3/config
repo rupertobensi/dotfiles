@@ -304,8 +304,9 @@ exec_always wal -i ~/.config/wall.png
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
+exec_always --no-startup-id polybar barTOP
+#exec_always --no-startup-id /home/robi/.config/polybar/launch.sh
+#exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 exec --no-startup-id setxkbmap pl -variant intl
 #exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,pl -variant ,qwerty"
@@ -326,8 +327,8 @@ exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 
-exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
 exec --no-startup-id i3-msg "workspace $ws1"
+exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 

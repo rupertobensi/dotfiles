@@ -6,7 +6,7 @@ set listchars=tab:>\ ,nbsp:ø,trail:-,extends:»,precedes:«
 " ===                           EDITING OPTIONS                            === "
 " ============================================================================ "
 
-" Remap leader key to space 
+" Remap leader key to space
 let g:mapleader=' '
 
 " Enable line numbers
@@ -173,51 +173,51 @@ try
 
 " === Vim airline ==== "
 " Enable extensions
-let g:airline_extensions = ['branch', 'hunks', 'coc']
+"@let g:airline_extensions = ['branch', 'hunks', 'coc']
 
 " Update section z to just have line number
-let g:airline_section_z = airline#section#create(['linenr'])
+"@ let g:airline_section_z = airline#section#create(['linenr'])
 
 " Do not draw separators for empty sections (only for the active window) >
-let g:airline_skip_empty_sections = 1
+"@let g:airline_skip_empty_sections = 1
 
 " Smartly uniquify buffers names with similar filename, suppressing common parts of paths.
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+"@let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " Custom setup that removes filetype/whitespace from default vim airline bar
-let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
+"@let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
 
-let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
+"@let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
 
-let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
+"@let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
 
 " Configure error/warning section to use coc.nvim
-let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
-let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
+"@let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+"@let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 
 " Hide the Nerdtree status line to avoid clutter
 let g:NERDTreeStatusline = ''
 
 " Disable vim-airline in preview mode
-let g:airline_exclude_preview = 1
+"@let g:airline_exclude_preview = 1
 
 " Enable powerline fonts
-let g:airline_powerline_fonts = 1
+"@let g:airline_powerline_fonts = 1
 
 " Enable caching of syntax highlighting groups
-let g:airline_highlighting_cache = 1
+"@let g:airline_highlighting_cache = 1
 
 " Define custom airline symbols
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
+"@if !exists('g:airline_symbols')
+"@  let g:airline_symbols = {}
+"@endif
 
 " Don't show git changes to current file in airline
-let g:airline#extensions#hunks#enabled=0
+"@let g:airline#extensions#hunks#enabled=0
 
-catch
-  echo 'Airline not installed. It should work after running :PlugInstall'
-endtry
+"@ catch
+"@   echo 'Airline not installed. It should work after running :PlugInstall'
+"@ endtry
 
 " === echodoc === "
 " Enable echodoc on startup
@@ -239,7 +239,7 @@ let g:signify_sign_delete = '-'
 
 " === indentLines === "
 let g:indentLine_char ='▏'
-let g:indentLine_enabled = 0
+let g:indentLine_enabled = 1
 "let g:indentLine_color_term = 141
 " ¦, ┆, │, ⎸, or ▏
 "set conceallevel=1
@@ -274,7 +274,7 @@ set winbl=10
 "
 " Add custom highlights in method that is executed every time a colorscheme is sourced
 " See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
- function! TrailingSpaceHighlights() abort
+function! TrailingSpaceHighlights() abort
    " Hightlight trailing whitespace
    highlight Trail ctermbg=blue guibg=#bd93f9
 call matchadd('Trail', '\s\+$', 100)
@@ -285,8 +285,8 @@ function! s:custom_jarvis_colors()
   hi link CocErrorSign WarningMsg
   hi link CocWarningSign Number
   hi link CocInfoSign Type
-  
-" Make background transparent for many things. Uncomment first two for transparency.        
+
+" Make background transparent for many things. Uncomment first two for transparency.
 "  hi Normal ctermbg=NONE guibg=NONE
 "  hi NonText ctermbg=NONE guibg=NONE
   "hi LineNr ctermfg=NONE guibg=NONE
@@ -314,8 +314,8 @@ function! s:custom_jarvis_colors()
   hi SignifySignChange guifg=#c594c5
 endfunction
 
-autocmd! ColorScheme * call TrailingSpaceHighlights()
-autocmd! ColorScheme dracula call s:custom_jarvis_colors()
+ autocmd! ColorScheme * call TrailingSpaceHighlights()
+ autocmd! ColorScheme dracula call s:custom_jarvis_colors()
 
 " Call method on window enter
 augroup WindowManagement
@@ -509,7 +509,7 @@ if has('persistent_undo')
   set undolevels=3000
   set undoreload=10000
 endif
-set backupdir=~/.local/share/nvim/backup " Don't put backups in current dir
+set backupdir=/home/robi/.local/share/nvim/backup " Don't put backups in current dir
 set backup
 set noswapfile
 
@@ -520,3 +520,34 @@ endif
 
 " Increase left padding for startify
 let g:startify_padding_left = 28
+
+"" CHANGES IN PROGRESS BELOW:
+"set list
+"set listchars+=trail:◦
+
+"let g:sneak#label = 1
+endtry
+
+"set statusline=
+"set statusline+=%#DiffAdd#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+"set statusline+=%#DiffChange#%{(mode()=='i')?'\ \ INSERT\ ':''}
+"set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
+"set statusline+=%#Cursor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+"set statusline+=\ %n\           " buffer number
+set statusline+=%#Visual#       " colour
+set statusline+=%{&paste?'\ PASTE\ ':''}
+set statusline+=%{&spell?'\ SPELL\ ':''}
+set statusline+=%#CursorIM#     " colour
+set statusline+=%R                        " readonly flag
+set statusline+=%M                        " modified [+] flag
+set statusline+=%#Cursor#               " colour
+set statusline+=%#CursorLine#     " colour
+set statusline+=\ %t\                   " short file name
+set statusline+=%=                          " right align
+set statusline+=%#CursorLine#   " colour
+set statusline+=\ %Y\                   " file type
+set statusline+=%#CursorIM#     " colour
+"set statusline+=\ %3l:%-2c\         " line + column
+set statusline+=%#Cursor#       " colour
+"set statusline+=\ %3p%%\                " percentage
+

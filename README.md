@@ -1,5 +1,5 @@
 rupertobensi's dotfiles
-===================
+=======================
 
 In this repository I've gathered all of my essential .dotfiles. I use **i3** as my
 tiling window manager, and rest as follows:

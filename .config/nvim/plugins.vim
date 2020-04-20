@@ -78,8 +78,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'mhartington/oceanic-next'
 
 " Customized vim status line
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 " Icons
 Plug 'ryanoasis/vim-devicons'

@@ -19,25 +19,21 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #00502e59
-#background = #26502e59
-#background = #222
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
-primary = #a1429b
-#primary = #ffb52a
+primary = ${xrdb:color2:#222}
+#primary = #a1429b
 secondary = #e60053
 alert = #b55598
 #alert = #222
-#alert = #d06b79
+#222 is fallback
 
-
-
-[bar/example]
+[bar/barTOP]
 top = true
 #bottom = true
-monitor = ${env:MONITOR:LVDS-1}
+monitor = ${env:MONITOR:HDMI-A-0}
 width = 100%
 height = 21
 ;offset-x = 1%
@@ -56,12 +52,10 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
-
+padding-right = 9
 
 module-margin-left = 0
 module-margin-right = 1
-
 
 
 font-0 = Ubuntu:pixelsize=10;1  # main
@@ -75,13 +69,14 @@ font-6 = Weather Icons:pixelsize=13;3
 
 modules-left = i3
 modules-center = datecen
-modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
+modules-right = string1 pulseaudio separator weather separator filesystem separator cpu separator memory separator date
+#modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
 
-#tray-position = right
-#tray-padding = 2
-;tray-transparent = true
-;tray-detached = true
-;tray-background = #0063ff
+tray-position = right
+tray-padding = 2
+tray-transparent = true
+tray-detached = true
+#tray-background = #0063ff
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -94,7 +89,6 @@ wm-restack = i3
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
-
 
 #cursor-click = pointer
 #cursor-scroll = ns-resize
@@ -302,11 +296,13 @@ format-disconnected =
 
 [module/separator]
 type = custom/text
-content =%{F#a1429b}•%{F-}
+content = •
+content-foreground = ${colors.primary}
+#content =%{F#a1429b}•%{F-}
 
 [module/separator2]
 type = custom/text
-content = 
+content =
 
 [module/date]
 type = internal/date
@@ -315,7 +311,7 @@ interval = 1
 
 date =%{T1}%A %d.%m.%Y
 #date = %d%{F#a1429b}/%{F-}%m%{F#a1429b}/%{F-}%y
-#date-alt = " %Y-%m-%d" 
+#date-alt = " %Y-%m-%d" 
 
 time = %H:%M
 #time-alt = %H:%M:%S
@@ -343,11 +339,16 @@ time = %{T5}%H:%M
 
 label = %time%
 
+[module/string1]
+type = custom/text
+content = VOL
+content-foreground = ${colors.primary}
+
 [module/pulseaudio]
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = %{F#a1429b}VOL%{F-} %percentage%%
+label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted

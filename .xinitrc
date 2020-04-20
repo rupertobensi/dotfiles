@@ -5,20 +5,21 @@ xrandr --output DVI-I-0 --off
 # Fix hinting outside of PLASMA/GNOME
 xrdb -merge .Xdefaults &
 
+# Apply pywal at the startup
 wal -R
 
 # run rebinds script to swap caps etc.
 rebinds &
 
-# Hide mouse cursor after 2 seconds
-unclutter -idle 2 &
+# Hide mouse cursor after X seconds
+unclutter -idle 3 &
 
 #exec startplasma-x11
 exec i3
 
 
 
-# for the font size to be right on every resolution/dpi (alacritty) 
+# for the font size to be right on every resolution/dpi (alacritty)
 #WINIT_X11_SCALE_FACTOR=1
 #
 #fbset -xres 1920 -yres 1080
