@@ -73,6 +73,7 @@ bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%- && pkill -RTMIN
 bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
 
 bindsym $mod+bar		exec $term -e htop
+bindsym $mod+Shift+bar		exec ksysguard
 
 bindsym $mod+h			focus left
 bindsym $mod+Shift+h		move left 30
@@ -242,6 +243,7 @@ bindsym $mod+Pause              exec cool-retro-term
 # #---Function Buttons---# #
 bindsym $mod+F1		exec --no-startup-id dolphin
 bindsym $mod+F2         exec --no-startup-id krusader
+bindsym $mod+Shift+F2         exec --no-startup-id sudo krusader
 bindsym $mod+F3		exec --no-startup-id displayselect
 bindsym $mod+F4		exec --no-startup-id dmenulogout
 #bindsym $mod+F5		exec --no-startup-id $netrefresh
@@ -304,14 +306,14 @@ exec_always wal -i ~/.config/wall.png
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-exec_always --no-startup-id polybar barTOP
-#exec_always --no-startup-id /home/robi/.config/polybar/launch.sh
+exec_always --no-startup-id pbr
 #exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 exec --no-startup-id setxkbmap pl -variant intl
 #exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,pl -variant ,qwerty"
 
 ### xprop | grep CLASS
+### xprop | grep WM_NAME
 ### i3-save-tree --workspace 4 > ws4.json
 ### sudo i3-msg -t get_workspaces
 

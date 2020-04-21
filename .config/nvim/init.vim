@@ -21,7 +21,7 @@ set noshowcmd
 set clipboard=unnamed
 
 " Hides buffers instead of closing them
-"set hidden
+set hidden
 
 " === TAB/Space settings === "
 " Insert spaces when TAB is pressed.
@@ -238,8 +238,10 @@ let g:used_javascript_libs = 'underscore,requirejs,chai,jquery'
 let g:signify_sign_delete = '-'
 
 " === indentLines === "
+" Set a char for indentline
 let g:indentLine_char ='▏'
-let g:indentLine_enabled = 1
+" Enable/disable indentline
+let g:indentLine_enabled = 0
 "let g:indentLine_color_term = 141
 " ¦, ┆, │, ⎸, or ▏
 "set conceallevel=1

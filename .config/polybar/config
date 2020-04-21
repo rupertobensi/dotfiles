@@ -9,11 +9,7 @@
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;
 ;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/jaagr/polybar
-;
-;   The README contains alot of information
-;
+;   https://github.com/jaagr/polybar
 ;==========================================================
 
 [colors]
@@ -74,7 +70,6 @@ modules-right = string1 pulseaudio separator weather separator filesystem separa
 
 tray-position = right
 tray-padding = 2
-tray-transparent = true
 tray-detached = true
 #tray-background = #0063ff
 
@@ -93,6 +88,72 @@ scroll-down = i3wm-wsprev
 #cursor-click = pointer
 #cursor-scroll = ns-resize
 
+####
+
+
+[bar/barBTM]
+bottom = true
+monitor = ${env:MONITOR:HDMI-A-0}
+width = 100%
+height = 21
+;offset-x = 1%
+#offset-y = 1%
+radius = 0.0
+#fixed-center = false
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 0
+module-margin-right = 1
+
+
+font-0 = Ubuntu:pixelsize=10;1  # main
+font-1 = unifont:fontformat=truetype:size=9:antialias=false;1  # polyweather text
+font-2 = siji:pixelsize=10;2
+font-3 = FontAwesome:pixelsize=14;4
+font-4 = Ubuntu:pixelsize=11:weight=bold;4        # time center
+font-5 = Ubuntu:italic:pixelsize=10;3
+font-6 = Weather Icons:pixelsize=13;3
+
+
+modules-left = mpd
+modules-center = eth
+modules-right = xkeyboard
+#modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
+
+#tray-position = right
+#tray-padding = 2
+#tray-detached = true
+#tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+override-redirect = true
+wm-restack = i3
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+#cursor-click = pointer
+#cursor-scroll = ns-resize
+
+
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
@@ -103,15 +164,15 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+#format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
+#label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
+#label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
@@ -191,15 +252,16 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 
-format-online =  %{T6}%{F#a1429b}🎜  <label-song>                 %{F-} 
+format-online =  %{T6}  <label-song>
+#format-online-foreground = ${colors.primary} 🎜
 
-#format-online =  %{T6}%{F#a1429b} <label-song> <icon-prev> <icon-stop> <toggle> <icon-next>%{F-} 
+#format-online =  %{T6}%{F#a1429b} <label-song> <icon-prev> <icon-stop> <toggle> <icon-next>%{F-}
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+#icon-prev = 
+#icon-stop = 
+#icon-play = 
+#icon-pause = 
+#icon-next = 
 
 label-song-maxlen = 90
 label-song-ellipsis = false
@@ -287,7 +349,7 @@ interval = 1.0
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 #label-connected = %local_ip%
-label-connected =     %upspeed:0:9:% %{F#a1429b}•%{F-}    %downspeed:0:6%
+label-connected = %local_ip%          %downspeed:0:6%         %upspeed:0:9:%
 format-disconnected =
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
