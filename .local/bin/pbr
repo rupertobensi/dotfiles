@@ -6,12 +6,10 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Launch bars
+# Launch Polybar, using default config location ~/.config/polybar/config
 polybar barTOP &
 polybar barBTM &
 
-for m in $(polybar --list-monitors | cut -d":" -f1); do
-    MONITOR=$m polybar --reload barTOP &
-done
-
+# Make bottom bar show on mouse-over
 sleep 3 && hideIt.sh --name '^polybar-barBTM_HDMI-A-0$' --hover -d bottom
+

@@ -48,7 +48,7 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 9
+padding-right = 2
 
 module-margin-left = 0
 module-margin-right = 1
@@ -69,8 +69,11 @@ modules-right = string1 pulseaudio separator weather separator filesystem separa
 #modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
 
 tray-position = right
-tray-padding = 2
-tray-detached = true
+tray-padding = 3
+tray-detached = false
+tray-offset-x = 0
+tray-offset-y = 1
+tray-scale = 0.90
 #tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -118,7 +121,7 @@ module-margin-left = 0
 module-margin-right = 1
 
 
-font-0 = Ubuntu:pixelsize=10;1  # main
+font-0 = Ubuntu:pixelsize=10;3  # main
 font-1 = unifont:fontformat=truetype:size=9:antialias=false;1  # polyweather text
 font-2 = siji:pixelsize=10;2
 font-3 = FontAwesome:pixelsize=14;4
@@ -129,13 +132,8 @@ font-6 = Weather Icons:pixelsize=13;3
 
 modules-left = mpd
 modules-center = eth
-modules-right = xkeyboard
+modules-right = xkeyboard powermenu
 #modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
-
-#tray-position = right
-#tray-padding = 2
-#tray-detached = true
-#tray-background = #0063ff
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -252,7 +250,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 
-format-online =  %{T6}  <label-song>
+format-online =  %{T6}  <label-song>
 #format-online-foreground = ${colors.primary} 🎜
 
 #format-online =  %{T6}%{F#a1429b} <label-song> <icon-prev> <icon-stop> <toggle> <icon-next>%{F-}

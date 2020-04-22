@@ -8,8 +8,10 @@
 read -p "Choose a number. Do you want to backup:
 1. .dotfiles
 2. everything
-3. prepare a Dropbox (notes-only) backup?
-4. create a yay -Qeq list?
+
+or...
+3. prepare a Dropbox (notes-only) backup
+4. create a [albums] backup
 " option
 
 if [ $option -eq 1 ]
@@ -23,7 +25,7 @@ elif [ $option -eq 3 ]
        dropbox &
 
 elif [ $option -eq 4 ]
-  then yay -Qeq >! ~/.dotfiles/.stowignore/yayqeq.txt
+  then sudo rsync -aAXv --delete --progress --stats /mnt/e/[media]/[music]/albums/  /mnt/d/backup/albums/
 
 else
   echo "Wrong choice..."

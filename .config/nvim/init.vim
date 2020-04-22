@@ -28,10 +28,12 @@ set hidden
 set expandtab
 
 " Change number of spaces that a <Tab> counts for during editing ops
-set softtabstop=2
+"@set softtabstop=2
+set tabstop=4
 
 " Indentation amount for < and > commands.
-set shiftwidth=2
+"@set shiftwidth=2
+set shiftwidth=4
 
 " do not wrap long lines by default
 set nowrap
@@ -528,6 +530,7 @@ let g:startify_padding_left = 28
 "set listchars+=trail:◦
 
 "let g:sneak#label = 1
+" End try closure
 endtry
 
 "set statusline=

@@ -34,7 +34,7 @@ alias \
 	p="sudo pacman" \
 
 alias monitor2off="xrandr --output DVI-I-0 --off"
-alias monitor2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-1; (pbr &)"
+alias monitor2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-A-0; (pbr &)"
 
 alias du='cdu -idh'
 alias vifm="vifmrun"
@@ -55,6 +55,7 @@ alias bitcoin="cointop"
 alias bitcoin2="curl rate.sx"
 alias corona="curl -L covid19.trackercli.com"
 alias google="googler"
+alias MEGA="DO_NOT_UNSET_QT_QPA_PLATFORMTHEME=1 DO_NOT_SET_DESKTOP_SETTINGS_UNAWARE=1 megasync"
 
 alias tilixp="tilix --preferences"
 alias tmuxSrc="tmux source-file ~/.tmux.conf"
