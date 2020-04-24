@@ -61,11 +61,11 @@ font-3 = FontAwesome:pixelsize=14;4
 font-4 = Ubuntu:pixelsize=11:weight=bold;4        # time center
 font-5 = Ubuntu:italic:pixelsize=10;3
 font-6 = Weather Icons:pixelsize=13;3
-
+font-7 = Symbola:pixelsize=10;1
 
 modules-left = i3
 modules-center = datecen
-modules-right = string1 pulseaudio separator weather separator filesystem separator cpu separator memory separator date
+modules-right = pulseaudio separator weather separator filesystem separator cpu separator memory separator date
 #modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
 
 tray-position = right
@@ -407,7 +407,7 @@ content-foreground = ${colors.primary}
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = VOL  <label-volume> <bar-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 

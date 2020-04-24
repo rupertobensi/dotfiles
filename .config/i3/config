@@ -41,8 +41,8 @@ bindsym $mod+Shift+q kill
 #STOP/HIDE EVERYTHING:
 bindsym $mod+Shift+Delete	exec --no-startup-id amixer sset Master mute ; exec --no-startup-id mpv pause && pkill -RTMIN+10 i3blocks ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e htop
 
-bindsym $mod+t			split toggle
-bindsym $mod+Shift+t		gaps inner current set 15; gaps outer current set 15; gaps left current set 5; gaps right current set 5; gaps bottom current set 5
+bindsym $mod+t		gaps inner current set 15; gaps outer current set 15; gaps left current set 5; gaps right current set 5; gaps bottom current set 5
+bindsym $mod+Shift+t			split toggle
 
 bindsym $mod+a			gaps outer current plus 5
 bindsym $mod+Shift+a		gaps outer current minus 5
@@ -50,13 +50,13 @@ bindsym $mod+Shift+a		gaps outer current minus 5
 bindsym $mod+s			gaps inner current plus 5
 bindsym $mod+Shift+s		gaps inner current minus 5
 
-bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0
+bindsym $mod+g		gaps inner current set 0; gaps outer current set 0
 
 bindsym $mod+y			sticky toggle
 #bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3_resize left
 
-#bindsym $mod+u			exec --no-startup-id ddspawn tmuxdd
+bindsym $mod+u			exec --no-startup-id %browser
 bindsym $mod+Shift+u		exec --no-startup-id i3_resize down
 
 bindsym $mod+i			exec $term -e pulsemixer
@@ -103,7 +103,8 @@ bindsym $mod+z exec i3-msg move to container workspace $(($(wmctrl -d | wc -l) +
 
 # dmenu and rofi
 bindsym $mod+c exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 11'
-bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-11" -sb "#9770ae"
+bindsym $mod+d exec dmen
+#bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-11" -sb "#9770ae"
 
 bindsym $mod+Shift+b		bar mode toggle
 bindsym $mod+b		        floating toggle; sticky toggle; exec --no-startup-id hover left
@@ -244,7 +245,7 @@ bindsym $mod+Pause              exec cool-retro-term
 bindsym $mod+F1		exec --no-startup-id dolphin
 bindsym $mod+Shift+F1		exec --no-startup-id onboard
 bindsym $mod+F2         exec --no-startup-id krusader
-bindsym $mod+Shift+F2         exec --no-startup-id sudo krusader
+bindsym $mod+Shift+F2         exec --no-startup-id screenkey
 bindsym $mod+F3		exec --no-startup-id displayselect
 bindsym $mod+F4		exec --no-startup-id dmenulogout
 #bindsym $mod+F5		exec --no-startup-id $netrefresh
@@ -287,6 +288,9 @@ gaps left 5
 gaps right 5
 gaps bottom 5
 
+workspace $ws5 gaps inner 0
+workspace $ws5 gaps outer 0
+
 # colour of                 border,   bg  ,  text, indicator,child_border  # changed last two of those
 client.focused              #d8dee8 #2f343f #d8dee8 #9d6da3 #9d6da3
 #client.focused             #d8dee8 #2f343f #d8dee8 #d8dee8 #d8dee8
@@ -307,7 +311,8 @@ exec_always wal -i ~/.config/wall.png
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-exec_always --no-startup-id pbr
+exec_always --no-startup-id polybar barTOP
+#exec_always --no-startup-id pbr
 #exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 exec --no-startup-id setxkbmap pl -variant intl
@@ -333,7 +338,7 @@ exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
 
-exec_always --nostartup-id i3_fib
+#exec_always --nostartup-id i3_fib
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 
@@ -377,3 +382,5 @@ exec_always --no-startup-id $term -c dropdown_term -e tmux new -s dd
 bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 for_window [class="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
 
+# apply i3-fibonacci
+exec_always ~/.dotfiles/.local/bin/i3_fib

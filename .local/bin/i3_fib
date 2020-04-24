@@ -7,6 +7,9 @@ import getopt
 import sys
 import os
 
+import time
+time.sleep(3)
+
 
 def find_parent(window_id):
     """
