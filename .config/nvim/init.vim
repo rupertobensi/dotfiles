@@ -463,17 +463,18 @@ nmap <leader>z :JsDoc<CR>
 " Vim's default buffer
 vnoremap <leader>p "_dP
 
-" Goyo mode
-map <F9> :Goyo <CR>
+
+" Toggle wrap
+map <F5> :set wrap!<CR>
+
+" Toggle indentLine
+map <F6> :IndentLinesToggle <CR>
 
 "Toggle Nerdtree
 nmap <F8> :NERDTreeToggle<CR>
 
-" Toggle wrap
-map <F7> :set wrap!<CR>
-
-" Toggle indentLine
-map <F6> :IndentLinesToggle <CR>
+" Goyo mode
+map <F9> :Goyo <CR>
 
 " Copy to clipboard using leader
 vnoremap  <leader>y  "+y

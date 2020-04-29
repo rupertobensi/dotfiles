@@ -116,8 +116,8 @@ Recent URLs[$e]=file:///usr/bin/,file:///mnt/e/Downloads/QQ/
 detailViewIconSize=0
 
 [KPropertiesDialog]
-Height 1080=350
-Width 1920=310
+Height 1080=422
+Width 1920=394
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -274,7 +274,7 @@ Confirm Root Mode=false
 
 [Open-with settings]
 CompletionMode=1
-History=/usr/bin/atool,atool,kate,leaf,mpv,gwe,gean,gea,ra,juk,zat,sub,kat,code,gn
+History=puddletag,puddle,/usr/bin/atool,atool,kate,leaf,mpv,gwe,gean,gea,ra,juk,zat,sub,kat
 
 [PanelLayout]
 FrameColor=none
@@ -283,8 +283,8 @@ FrameShape=Panel
 Layout=krusader:compact
 
 [Private]
-PopularUrls=file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///home/robi/,file:///home/robi/.config/mpv/,file:///home/robi/.dotfiles/,file:///home/robi/.config/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///usr/bin/,file:///mnt/e/[media]/[music]/albums/,file:///mnt/e/[media]/[music]/albums/Arctic Monkeys - Essentials (2018)/,file:///mnt/e/[media]/[music]/,file:///home/robi/Xxx/,file:///home/robi/Xxx/.stfolder/,file:///mnt/e/[media]/,file:///mnt/e/[media]/[tv series]/Bojack.Horseman.Season-1-720p.WEBRip.x264-W4F/,file:///mnt/e/[media]/[tv series]/,file:///mnt/e/Robert/DATA/linux_ppls_configs/voidrice-master_LUKE/,file:///mnt/e/,file:///mnt/e/Robert/DATA/,file:///mnt/e/Robert/DROPBOX/Linux/,file:///mnt/e/Robert/DROPBOX/Linux/other/,file:///mnt/e/Robert/DROPBOX/Linux/bkp_txt/,file:///mnt/e/Robert/DROPBOX/,file:///run/media/robi/ESD-USB/,file:///media/USB/,file:///media/,file:///,file:///run/media/robi/KINGSTON/
-PopularUrlsRank=2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrls=file:///home/robi/,file:///home/Data/steam/,file:///home/Data/,file:///home/Data/steam/Steam/,file:///home/Data/steam/Steam/appcache/,file:///home/,file:///home/Data/HS/,file:///,file:///home2/,file:///home/Data/steam/steamapps/,file:///home/Data/steam/steamapps/common/,file:///mnt/,file:///mnt/e/,file:///mnt/d/lin_games/Steam/steamapps/common/,file:///mnt/d/lin_games/Steam/steamapps/,file:///mnt/d/lin_games/Steam/,file:///mnt/d/lin_games/,file:///mnt/d/,file:///mnt/d/lin_games/Steam/steamapps/common/Counter-Strike Global Offensive/,file:///home2/steamapps/common/Counter-Strike Global Offensive/csgo/,file:///home2/steamapps/common/,file:///home/robi/.dotfiles/,file:///home2/steamapps/common/Counter-Strike Global Offensive/,file:///home2/steamapps/,file:///mnt/d/csgopart/,file:///mnt/e/pack/Witcher 3 GOTY/,file:///mnt/e/pack/Witcher 3 GOTY/Polish/,file:///mnt/e/pack/,file:///mnt/e/Robert/,file:///mnt/e/pack/Risen/,file:///mnt/e/Downloads/
+PopularUrlsRank=2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Start Position=19,29
 Start Size=928,1026
 cmdline history=

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd /mnt/e/Robert/DROPBOX/Linux/
+
+git add -u
+
+echo "What comment?"
+read comment
+git commit -m "$comment"
+
+git push -u origin master

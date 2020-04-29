@@ -29,8 +29,11 @@ alias \
 	sdn="sudo shutdown -h now" \
 	rdn="sudo reboot" \
 	f="$FILE" \
+	sf="sudo $FILE" \
 	e="$EDITOR" \
 	v="$EDITOR" \
+    sv="sudo $EDITOR" \
+    se="sudo $EDITOR" \
 	p="sudo pacman" \
 
 alias monitor2off="xrandr --output DVI-I-0 --off"
@@ -49,13 +52,11 @@ alias tli="trash-list"
 alias tra="tremc"
 alias wttr="curl wttr.in"
 alias emoticon="echo 😺"
-#alias cheat="curl cheat.sh/ "
 alias stock="mop"
 alias bitcoin="cointop"
 alias bitcoin2="curl rate.sx"
 alias corona="curl -L covid19.trackercli.com"
 alias google="googler"
-alias MEGA="DO_NOT_UNSET_QT_QPA_PLATFORMTHEME=1 DO_NOT_SET_DESKTOP_SETTINGS_UNAWARE=1 megasync"
 
 alias tilixp="tilix --preferences"
 alias tmuxSrc="tmux source-file ~/.tmux.conf"
@@ -166,6 +167,7 @@ alias yayfzf="pacman -Qeq | fzf --preview 'pacman -Qil {}' --layout=reverse --bi
 # remove orphans
 alias yayxorphans="sudo yay -Rns $(yay -Qtdq)"
 
+#
 ## python pip
 #
 

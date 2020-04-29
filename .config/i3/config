@@ -2,15 +2,11 @@ set $term --no-startup-id $TERMINAL
 set $browser --no-startup-id $BROWSER
 set $mod Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# Window titles font
 font pango:Noto Sans 8
 
-# Custom hack for adjusted titlebar centered text
+# Tabs titles
 for_window [class=".*"] title_format " %title"
-
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -56,7 +52,7 @@ bindsym $mod+y			sticky toggle
 #bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3_resize left
 
-bindsym $mod+u			exec --no-startup-id %browser
+bindsym $mod+u			exec --no-startup-id /usr/bin/firefox
 bindsym $mod+Shift+u		exec --no-startup-id i3_resize down
 
 bindsym $mod+i			exec $term -e pulsemixer
@@ -178,13 +174,11 @@ bindsym $mod+0 workspace number $ws10
 
 # Multiple monitors
 
-workspace 1 output HDMI-1
-workspace 2 output HDMI-1
-workspace 3 output HDMI-1
-workspace 4 output HDMI-1
-workspace 5 output HDMI-1
-workspace 6 output HDMI-1
-workspace 7 output HDMI-1
+workspace 1 output HDMI-A-0
+workspace 2 output HDMI-A-0
+workspace 3 output HDMI-A-0
+workspace 4 output HDMI-A-0
+workspace 5 output HDMI-A-0
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -231,7 +225,11 @@ bindsym $mod+r mode "resize"
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 
 bindsym $mod+period 		exec kill_urgent
+
 bindsym $mod+bracketleft        exec --no-startup-id mpc toggle
+bindsym $mod+Shift+bracketleft        exec --no-startup-id mpc prev
+
+bindsym $mod+Shift+bracketright       exec --no-startup-id mpc next
 bindsym $mod+bracketright       exec --no-startup-id amixer set Master toggle
 
 bindsym Print 			exec --no-startup-id maim pic-full-"$(date '+%y%m%d-%H%M-%S').png"
@@ -248,6 +246,7 @@ bindsym $mod+F2         exec --no-startup-id krusader
 bindsym $mod+Shift+F2         exec --no-startup-id screenkey
 bindsym $mod+F3		exec --no-startup-id displayselect
 bindsym $mod+F4		exec --no-startup-id dmenulogout
+bindsym $mod+Shift+F4		exec --no-startup-id redshiftgui
 #bindsym $mod+F5		exec --no-startup-id $netrefresh
 #bindsym $mod+F6		exec --no-startup-id torwrap
 bindsym $mod+F5		exec $term -e tremc
@@ -280,7 +279,7 @@ for_window [class="mpv"] border pixel 0
 for_window [class=MEGAsync] border pixel 0
 #for_window [workspace=1]  border pixel 0
 
-# Gaps    #a1429b #d8dee8
+# Gaps
 
 gaps inner 15
 gaps outer 15
@@ -288,8 +287,8 @@ gaps left 5
 gaps right 5
 gaps bottom 5
 
-workspace $ws5 gaps inner 0
-workspace $ws5 gaps outer 0
+workspace $ws6 gaps inner 0
+workspace $ws6 gaps outer 0
 
 # colour of                 border,   bg  ,  text, indicator,child_border  # changed last two of those
 client.focused              #d8dee8 #2f343f #d8dee8 #9d6da3 #9d6da3
@@ -311,7 +310,7 @@ exec_always wal -i ~/.config/wall.png
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-exec_always --no-startup-id polybar barTOP
+exec --no-startup-id polybar barTOP
 #exec_always --no-startup-id pbr
 #exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
@@ -324,7 +323,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Riot|Steam] 3
-assign [class=csgo_linux64|dota2|quakelive_steam.exe|steam_app_282440|MEGAsync] 4
+assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync] 4
 assign [class=discord] 5
 
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/chats.json'"
@@ -337,8 +336,8 @@ exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
+exec --no-startup-id i3-msg "workspace $ws1"
 
-#exec_always --nostartup-id i3_fib
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 
@@ -382,5 +381,5 @@ exec_always --no-startup-id $term -c dropdown_term -e tmux new -s dd
 bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 for_window [class="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
 
-# apply i3-fibonacci
+# Apply i3-fibonacci at the end after everything has been loaded up
 exec_always ~/.dotfiles/.local/bin/i3_fib
