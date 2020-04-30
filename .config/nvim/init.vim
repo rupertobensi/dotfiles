@@ -32,7 +32,7 @@ set expandtab
 set tabstop=4
 
 " Indentation amount for < and > commands.
-"@set shiftwidth=2
+" @set shiftwidth=2
 set shiftwidth=4
 
 " do not wrap long lines by default
@@ -346,6 +346,9 @@ endtry
 " ============================================================================ "
 " ===                             KEY MAPPINGS                             === "
 " ============================================================================ "
+
+" Ctrl+q to exit vim
+nnoremap <C-q> :q<CR>
 
 " === Denite shorcuts === "
 "   <leader>d - Browser currently open buffers

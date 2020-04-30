@@ -369,7 +369,8 @@ type = internal/date
 interval = 1
 
 
-date =%{T1}%A %d.%m.%Y
+date =%{T1}%A %d.%m
+#date =%{T1}%A %d.%m.%Y
 #date = %d%{F#a1429b}/%{F-}%m%{F#a1429b}/%{F-}%y
 #date-alt = " %Y-%m-%d" 
 

@@ -99,5 +99,8 @@ Plug 'justinmk/vim-sneak'
 " Vim Startify
 Plug 'mhinz/vim-startify'
 
+" Vim-commentary
+Plug 'tpope/vim-commentary'
+
 " Initialize plugin system
 call plug#end()

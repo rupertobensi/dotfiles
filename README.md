@@ -1,12 +1,12 @@
 rupertobensi's dotfiles
 =======================
 
-In this repository I've gathered all of my essential .dotfiles. I use **i3** as my
-tiling window manager, and rest as follows:
+In this repository I've gathered all of my essential .dotfiles. Directory .local/bin contains scripts.
+I use **i3** as my tiling window manager, and rest as follows:
 
 * Shell: **zsh**
 * Multiplexer: **tmux**
-* Launchers: **dmenu2 and rofi**
+* Launchers: **dmenu2/rofi**
 * Compositor: **tmux**
 * Text editor: **neovim**
 * File manager: **ranger**

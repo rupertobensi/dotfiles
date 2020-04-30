@@ -46,8 +46,12 @@ alias ncm="ncmpcpp"
 alias audio="pulsemixer"
 alias newsb="newsboat"
 alias kal="calcurse"
+
+# trash-cli
 alias tp="trash-put"
 alias tli="trash-list"
+alias tre="trash-restore"
+alias tem="trash-empty"
 
 alias tra="tremc"
 alias wttr="curl wttr.in"
@@ -74,17 +78,20 @@ alias notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.txt"
 
 
 # Changing "ls" to "exa"
-alias ls='exa -a --color=always --group-directories-first' # my preferred listing
-alias ll='exa -al --color=always --group-directories-first' # my preferred listing
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias li='exa -a --color=always --icons --group-directories-first' # my pref with icons
+alias \
+    ls="exa --group-directories-first --color=always" \
+    l='ls -l' \
+    la='ls -a' \
+    lla='ls -la' \
+    lt='ls --tree' \
+    li='ls -a --icons'
 
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 alias xc="xclip -sel clipboard"
 
 # copy with progress bars:
-alias pmv="pymv --preserve --global-pbar -i"
-alias pcp="pycp --preserve --global-pbar -i"
+alias mv="pymv --preserve --global-pbar -i"
+alias cp="pycp --preserve --global-pbar -i"
 
 # scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
@@ -96,6 +103,9 @@ alias kdeL="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
 alias i3e="i3 exit"
 alias i3s="i3-save-tree"
 
+# Run megasync client without some QT variables
+alias megax="DO_NOT_UNSET_QT_QPA_PLATFORMTHEME=1 DO_NOT_SET_DESKTOP_SETTINGS_UNAWARE=1 megasync"
+# KDE aliases for locking/unlocking plasma
 #alias kdew='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(false)'
 #alias kdeW='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(true)'
 
