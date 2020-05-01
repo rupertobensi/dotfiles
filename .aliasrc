@@ -36,12 +36,13 @@ alias \
     se="sudo $EDITOR" \
 	p="sudo pacman" \
 
-alias monitor2off="xrandr --output DVI-I-0 --off"
-alias monitor2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-A-0; (pbr &)"
+alias m2off="xrandr --output DVI-I-0 --off"
+alias m2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-A-0; (pbr &)"
 
-alias du='cdu -idh'
+alias du="cdu -idh"
 alias vifm="vifmrun"
 
+alias keep="keepassxc-cli"
 alias ncm="ncmpcpp"
 alias audio="pulsemixer"
 alias newsb="newsboat"
@@ -90,8 +91,8 @@ alias \
 alias xc="xclip -sel clipboard"
 
 # copy with progress bars:
-alias mv="pymv --preserve --global-pbar -i"
-alias cp="pycp --preserve --global-pbar -i"
+alias pmv="pymv --preserve --global-pbar -i"
+alias pcp="pycp --preserve --global-pbar -i"
 
 # scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"

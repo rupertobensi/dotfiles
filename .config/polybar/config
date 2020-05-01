@@ -26,7 +26,7 @@ alert = #b55598
 #alert = #222
 #222 is fallback
 
-[bar/barTOP]
+[bar/bar1]
 top = true
 #bottom = true
 monitor = ${env:MONITOR:HDMI-A-0}
@@ -182,6 +182,7 @@ mount-0 = /
 label-mounted = %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+
 
 [module/bspwm]
 type = internal/bspwm
@@ -392,7 +393,7 @@ date = %d-%m
 #date-alt = " %Y-%m-%d"
 
 time = %{T5}%H:%M
-#time-alt = %H:%M:%S
+time-alt =%{T5%}%H:%M:%S
 
 #format-prefix = 
 #format-prefix-foreground = ${colors.foreground-alt}

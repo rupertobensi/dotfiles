@@ -272,7 +272,7 @@ bindsym $mod+F8		exec --no-startup-id dmenumount
 #border_radius 4
 
 hide_edge_borders smart
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 2
 for_window [floating]  border pixel 0
 for_window [class="mpv"] border pixel 0
 
@@ -290,8 +290,13 @@ gaps bottom 5
 workspace $ws6 gaps inner 0
 workspace $ws6 gaps outer 0
 
+# Load pywal resources for i3 colors
+set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+
+client.focused          $bg     $bg     $fg  $bg       $bg
 # colour of                 border,   bg  ,  text, indicator,child_border  # changed last two of those
-client.focused              #d8dee8 #2f343f #d8dee8 #9d6da3 #9d6da3
+#client.focused              #d8dee8 #2f343f #d8dee8 #9d6da3 #9d6da3
 #client.focused             #d8dee8 #2f343f #d8dee8 #d8dee8 #d8dee8
 #client.focused             #bf616a #2f343f #d8dee8 #bf616a #d8dee8
 client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f #2f343f
@@ -310,7 +315,7 @@ exec_always wal -i ~/.config/wall.png
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-exec --no-startup-id polybar barTOP
+exec --no-startup-id polybar bar1
 #exec_always --no-startup-id pbr
 #exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
