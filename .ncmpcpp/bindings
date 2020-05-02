@@ -489,6 +489,11 @@ def_key "."
 def_key ","
   seek_backward
 
+def_key "K"
+  seek_forward
+def_key "J"
+  seek_backward
+
 def_key "L"
     show_lyrics
 
