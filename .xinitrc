@@ -6,7 +6,8 @@ xrandr --output DVI-I-0 --off
 radcard set high
 
 # Fix hinting outside of PLASMA/GNOME
-xrdb -merge .Xdefaults &
+#xrdb -merge .Xresources &
+#xrdb -merge .Xdefaults &
 
 # Apply pywal at the startup
 wal -R
@@ -23,9 +24,3 @@ exec xautolock -time 5 -locker 'i3_lock' &
 # Start i3wm/KDE plasma
 #exec startplasma-x11
 exec i3
-
-
-# for the font size to be right on every resolution/dpi (alacritty)
-#WINIT_X11_SCALE_FACTOR=1
-#
-#fbset -xres 1920 -yres 1080

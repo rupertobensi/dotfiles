@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo rsync -aAXv --delete --progress --stats ~/.dotfiles/ /home/backups/.dotfiles/
