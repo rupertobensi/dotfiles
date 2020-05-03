@@ -466,7 +466,6 @@ nmap <leader>z :JsDoc<CR>
 " Vim's default buffer
 vnoremap <leader>p "_dP
 
-
 " Toggle wrap
 map <F5> :set wrap!<CR>
 
@@ -490,6 +489,9 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+
+nmap <silent> <leader>u :exec 'silent !firefox % &'
+nmap <silent> <leader>i :exec 'silent !okular % &'
 
 " ============================================================================ "
 " ===                                 MISC.                                === "

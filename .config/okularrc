@@ -3,35 +3,35 @@ State=AAAA/wAAAAD9AAAAAAAAA6AAAAPkAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG
 Width 1920=928
 
 [Desktop Entry]
-FullScreen=true
+FullScreen=false
 shouldShowMenuBarComingFromFullScreen=false
 shouldShowToolBarComingFromFullScreen=false
 
 [MainWindow]
-Height 1080=1080
+Height 1080=1028
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAA6AAAAQCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1920
+Width 1920=930
 
 [Recent Files]
-File1[$e]=$HOME/Dropbox/Linux/other/TLCL-17.10.pdf
-File10[$e]=/mnt/e/Robert/BOOKS/ebook/[Bret_Easton_Ellis]_American_Psycho(z-lib.org).pdf
-File2[$e]=/mnt/e/Robert/DATA/linux_ppls_configs/rice-master/README.md
-File3[$e]=$HOME/Dropbox/Linux/KDE.md
-File4[$e]=/mnt/e/Robert/DROPBOX/Linux/README.md
-File5[$e]=$HOME/.dotfiles/README.md
-File6[$e]=/mnt/e/Robert/DROPBOX/Linux/other/TLCL-17.10.pdf
-File7[$e]=$HOME/Calibre Library/Stephen M. Stahl/Case Studies_ Stahl's Essential Psychopharmacology_ Volume 2 (52)/Case Studies_ Stahl's Essential Psychophar - Stephen M. Stahl.pdf
-File8[$e]=$HOME/Calibre Library/George Orwel/1984 (24)/1984 - George Orwel.epub
-File9[$e]=$HOME/Calibre Library/Mark Manson/Models - A Comprehensive Guide to Attracting Women (31)/Models - A Comprehensive Guide to Attracti - Mark Manson.epub
-Name1[$e]=TLCL-17.10.pdf
-Name10[$e]=[Bret_Easton_Ellis]_American_Psycho(z-lib.org).pdf
+File1[$e]=/mnt/e/Robert/DROPBOX/Linux/README.md
+File10[$e]=$HOME/.dotfiles/.config/.ayyconfig/nvim_init.vim
+File2[$e]=$HOME/.dotfiles/README.md
+File3[$e]=/mnt/e/Robert/DROPBOX/Linux/other/TLCL-17.10.pdf
+File4[$e]=$HOME/Calibre Library/Stephen M. Stahl/Case Studies_ Stahl's Essential Psychopharmacology_ Volume 2 (52)/Case Studies_ Stahl's Essential Psychophar - Stephen M. Stahl.pdf
+File5[$e]=$HOME/Calibre Library/George Orwel/1984 (24)/1984 - George Orwel.epub
+File6[$e]=$HOME/Calibre Library/Mark Manson/Models - A Comprehensive Guide to Attracting Women (31)/Models - A Comprehensive Guide to Attracti - Mark Manson.epub
+File7[$e]=/mnt/e/Robert/BOOKS/ebook/[Bret_Easton_Ellis]_American_Psycho(z-lib.org).pdf
+File8[$e]=/mnt/e/Robert/DROPBOX/Linux/yaypacman.md
+File9[$e]=$HOME/.dotfiles/.config/.ayyconfig/nvim_plugins
+Name1[$e]=README.md
+Name10[$e]=nvim_init.vim
 Name2[$e]=README.md
-Name3[$e]=KDE.md
-Name4[$e]=README.md
-Name5[$e]=README.md
-Name6[$e]=TLCL-17.10.pdf
-Name7[$e]=Case Studies_ Stahl's Essential Psychophar - Stephen M. Stahl.pdf
-Name8[$e]=1984 - George Orwel.epub
-Name9[$e]=Models - A Comprehensive Guide to Attracti - Mark Manson.epub
+Name3[$e]=TLCL-17.10.pdf
+Name4[$e]=Case Studies_ Stahl's Essential Psychophar - Stephen M. Stahl.pdf
+Name5[$e]=1984 - George Orwel.epub
+Name6[$e]=Models - A Comprehensive Guide to Attracti - Mark Manson.epub
+Name7[$e]=[Bret_Easton_Ellis]_American_Psycho(z-lib.org).pdf
+Name8[$e]=yaypacman.md
+Name9[$e]=nvim_plugins

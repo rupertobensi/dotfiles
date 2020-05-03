@@ -43,7 +43,7 @@ alias du="cdu -idh"
 alias vifm="vifmrun"
 
 alias keep="keepassxc-cli"
-alias ncm="ncmpcpp"
+alias nc="ncmpcpp"
 alias audio="pulsemixer"
 alias newsb="newsboat"
 alias kal="calcurse"
@@ -64,8 +64,8 @@ alias corona="curl -L covid19.trackercli.com"
 alias google="googler"
 
 alias tilixp="tilix --preferences"
-alias tmuxSrc="tmux source-file ~/.tmux.conf"
 alias imgur="imgur_downloader"
+alias visudo!="sudo EDITOR=nvim visudo"
 alias nitrogens="nitrogen --set-zoom-fill --save"
 alias walr="wal -R"
 alias wali="wal -i"
@@ -96,7 +96,7 @@ alias pcp="pycp --preserve --global-pbar -i"
 
 # scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
-alias nc="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
+alias ncm="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.
 alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
@@ -118,6 +118,7 @@ alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 alias tkso='tmux kill-session -a'
+alias tmuxSrc="tmux source-file ~/.tmux.conf"
 
 # Reloading configurations
 alias Src="source ~/.dotfiles/.zprezto/runcoms/.zshrc"
@@ -176,7 +177,7 @@ alias yayfzfa="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bi
 # browse installed by ME packages with an instant preview of each package:
 alias yayfzf="pacman -Qeq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 # remove orphans
-alias yayxorphans="sudo yay -Rns $(yay -Qtdq)"
+alias yayxorphans="sudo pacman -Rns $(pacman -Qtdq)"
 
 #
 ## python pip

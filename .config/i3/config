@@ -97,6 +97,9 @@ bindsym $mod+Shift+Tab workspace prev
 # Send to next free workspace
 bindsym $mod+z exec i3-msg move to container workspace $(($(wmctrl -d | wc -l) + 1))
 
+# i3_lock
+bindsym $mod+x		exec --no-startup-id i3_lock
+
 # dmenu and rofi
 bindsym $mod+c exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 11'
 bindsym $mod+d exec dmen
@@ -250,7 +253,8 @@ bindsym $mod+Shift+F4		exec --no-startup-id redshiftgui
 #bindsym $mod+F5		exec --no-startup-id $netrefresh
 #bindsym $mod+F6		exec --no-startup-id torwrap
 bindsym $mod+F5		exec $term -e tremc
-bindsym $mod+F6		exec --no-startup-id td-toggle
+bindsym $mod+Shift+F5		exec --no-startup-id td-toggle
+#bindsym $mod+F6		exec --no-startup-id i3_lock
 #bindsym $mod+F8		exec --no-startup-id mailsync
 bindsym $mod+F7 	exec --no-startup-id dmenuumount
 bindsym $mod+F8		exec --no-startup-id dmenumount
