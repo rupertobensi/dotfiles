@@ -62,6 +62,7 @@ alias bitcoin="cointop"
 alias bitcoin2="curl rate.sx"
 alias corona="curl -L covid19.trackercli.com"
 alias google="googler"
+alias duck="ddgr"
 
 alias tilixp="tilix --preferences"
 alias imgur="imgur_downloader"
@@ -70,7 +71,7 @@ alias nitrogens="nitrogen --set-zoom-fill --save"
 alias walr="wal -R"
 alias wali="wal -i"
 
-
+alias note="nvim /mnt/e/Robert/DROPBOX/Linux/index.md"
 alias notes="nvim /mnt/e/Robert/DROPBOX/notes.txt"
 alias notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md"
 alias notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md"

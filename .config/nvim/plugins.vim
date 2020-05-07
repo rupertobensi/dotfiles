@@ -102,5 +102,8 @@ Plug 'mhinz/vim-startify'
 " Vim-commentary
 Plug 'tpope/vim-commentary'
 
+" VimWiki
+Plug 'vimwiki/vimwiki'
+
 " Initialize plugin system
 call plug#end()

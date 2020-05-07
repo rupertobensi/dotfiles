@@ -235,7 +235,7 @@ bindsym $mod+Shift+bracketleft        exec --no-startup-id mpc prev
 bindsym $mod+Shift+bracketright       exec --no-startup-id mpc next
 bindsym $mod+bracketright       exec --no-startup-id amixer set Master toggle
 
-bindsym Print 			exec --no-startup-id maim pic-full-"$(date '+%y%m%d-%H%M-%S').png"
+bindsym Print 			exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-"$(date '+%y%m%d-%H%M-%S').png"
 bindsym $mod+Print              exec maimpick
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Scroll_Lock        exec simplescreenrecorder
@@ -254,7 +254,7 @@ bindsym $mod+Shift+F4		exec --no-startup-id redshiftgui
 #bindsym $mod+F6		exec --no-startup-id torwrap
 bindsym $mod+F5		exec $term -e tremc
 bindsym $mod+Shift+F5		exec --no-startup-id td-toggle
-#bindsym $mod+F6		exec --no-startup-id i3_lock
+bindsym $mod+F6		exec --no-startup-id keepassxc
 #bindsym $mod+F8		exec --no-startup-id mailsync
 bindsym $mod+F7 	exec --no-startup-id dmenuumount
 bindsym $mod+F8		exec --no-startup-id dmenumount

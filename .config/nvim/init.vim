@@ -249,6 +249,9 @@ let g:indentLine_enabled = 0
 "set conceallevel=1
 "let g:indentLine_conceallevel=1
 
+" enable markdown by default for VimWiki
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " ============================================================================ "
 " ===                                UI                                    === "
@@ -451,8 +454,8 @@ map <leader>h :%s///<left><left>
 nmap <silent> <leader>/ :nohlsearch<CR>
 
 " === Easy-motion shortcuts ==="
-"   <leader>w - Easy-motion highlights first word letters bi-directionally
-map <leader>w <Plug>(easymotion-bd-w)
+"   <leader>e - Easy-motion highlights first word letters bi-directionally
+map <leader>e <Plug>(easymotion-bd-w)
 
 " Allows you to save files you opened without write permissions via sudo
 cmap w!! w !sudo tee %
@@ -539,26 +542,49 @@ let g:startify_padding_left = 28
 " End try closure
 endtry
 
-"set statusline=
-"set statusline+=%#DiffAdd#%{(mode()=='n')?'\ \ NORMAL\ ':''}
-"set statusline+=%#DiffChange#%{(mode()=='i')?'\ \ INSERT\ ':''}
-"set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
-"set statusline+=%#Cursor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+
+"" Status line
+"" Currently instead of vim-airline as status line line/column numbers cause screen flickering inside of tmux
+set laststatus=2
+set statusline+=%{StatuslineMode()}
+
+function! StatuslineMode()
+  let l:mode=mode()
+  if l:mode==#"n"
+    return "NORMAL"
+  elseif l:mode==?"v"
+    return "VISUAL"
+  elseif l:mode==?"CTRL+V"
+    return "V-BLOCK"
+  elseif l:mode==#"i"
+    return "INSERT"
+  elseif l:mode==#"R"
+    return "REPLACE"
+  elseif l:mode==?"s"
+    return "SELECT"
+  elseif l:mode==#"t"
+    return "TERMINAL"
+  elseif l:mode==#"c"
+    return "COMMAND"
+  elseif l:mode==#"!"
+    return "SHELL"
+  endif
+endfunction
+
 "set statusline+=\ %n\           " buffer number
-set statusline+=%#Visual#       " colour
-set statusline+=%{&paste?'\ PASTE\ ':''}
-set statusline+=%{&spell?'\ SPELL\ ':''}
+" set statusline+=%#Visual#       " colour
+" set statusline+=%{&paste?'\ PASTE\ ':''}
+" set statusline+=%{&spell?'\ SPELL\ ':''}
 set statusline+=%#CursorIM#     " colour
 set statusline+=%R                        " readonly flag
-set statusline+=%M                        " modified [+] flag
 set statusline+=%#Cursor#               " colour
 set statusline+=%#CursorLine#     " colour
 set statusline+=\ %t\                   " short file name
-set statusline+=%=                          " right align
-set statusline+=%#CursorLine#   " colour
-set statusline+=\ %Y\                   " file type
-set statusline+=%#CursorIM#     " colour
-"set statusline+=\ %3l:%-2c\         " line + column
-set statusline+=%#Cursor#       " colour
-"set statusline+=\ %3p%%\                " percentage
-
+set statusline+=%M                        " modified [+] flag
+" set statusline+=%=                          " right align
+"set statusline+=%#CursorLine#   " colour
+" set statusline+=\ %Y\                   " file type
+"set statusline+=%#CursorIM#     " colour
+" set statusline+=\ %3l:%-2c\         " line + column
+" set statusline+=%#Cursor#       " colour
+" set statusline+=\ %3p%%\                " percentage
