@@ -13,8 +13,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-background = #00502e59
+background = ${xrdb:color0:#222}
+; background = #00502e59
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -48,32 +48,30 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 1
 
 module-margin-left = 0
 module-margin-right = 1
 
 
-font-0 = Ubuntu:pixelsize=10;1  # main
-font-1 = unifont:fontformat=truetype:size=9:antialias=false;1  # polyweather text
-font-2 = siji:pixelsize=10;2
-font-3 = FontAwesome:pixelsize=14;4
-font-4 = Ubuntu:pixelsize=11:weight=bold;4        # time center
-font-5 = Ubuntu:italic:pixelsize=10;3
-font-6 = Weather Icons:pixelsize=13;3
-font-7 = Symbola:pixelsize=10;1
+font-0 = Gohu GohuFont:pixelsize=13;1                                # MAIN FONT
+font-1 = Gohu GohuFont:pixelsize=13;2                                # time center
+font-2 = Gohu GohuFont:pixelsize=13:antialias=true;1                 # weather text
+font-3 = GohuFont Nerd Font:pixelsize=10;1                           # weather icon
+font-4 = Symbola:pixelsize=8;2                                       # separators
+font-5 = FontAwesome:pixelsize=14;4
 
 modules-left = i3
 modules-center = datecen
-modules-right = pulseaudio separator weather separator filesystem separator cpu separator memory separator date
+modules-right = pulseaudio separator weather separator filesystem separator cpu separator memory separator date separator
 #modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
 
 tray-position = right
 tray-padding = 3
 tray-detached = false
 tray-offset-x = 0
-tray-offset-y = 1
-tray-scale = 0.90
+tray-offset-y = 0
+tray-scale = 1.00
 #tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -179,7 +177,7 @@ interval = 25
 mount-0 = /
 
 #label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-mounted = %percentage_used%%
+label-mounted =[ %percentage_used%%]
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -190,20 +188,20 @@ type = internal/bspwm
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-occupied = %index%
-label-occupied-padding = 2
+label-occupied-padding = 1
 
 label-urgent = %index%!
 label-urgent-background = ${colors.background}
 # DISABLED BACKGROUND URGENT
 #label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -292,9 +290,9 @@ card = intel_backlight
 #red
 type = internal/cpu
 interval = 2
-format =cpu<label>
+format =[cpu<label>]
 #format =cpu<label> <ramp-coreload>
-format-prefix = ""
+; format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 #format-underline = #f90000
 label =%percentage:3%%
@@ -312,10 +310,10 @@ ramp-coreload-7 = █
 #teal color
 type = internal/memory
 interval = 2
-format-prefix = ""
+; format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 #format-underline = #4bffdc
-label =ram %percentage_used%%
+label =[ram %percentage_used%%]
 
 [module/wlan]
 type = internal/network
@@ -392,8 +390,8 @@ interval = 1
 date = %d-%m
 #date-alt = " %Y-%m-%d"
 
-time = %{T5}%H:%M
-time-alt =%{T5%}%H:%M:%S
+time = %{T2}%H:%M
+time-alt =%{T2%}%H:%M:%S
 
 #format-prefix = 
 #format-prefix-foreground = ${colors.foreground-alt}
@@ -440,7 +438,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = custom/script
 exec = ~/.config/polybar/polybar-scripts/openweathermap-detailed.sh
 interval = 600
-label-font = 7
+label-font = 3
 
 [module/battery]
 type = internal/battery

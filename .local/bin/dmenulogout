@@ -4,7 +4,7 @@
 #
 ###
 
-DMENU='dmenu -i -h "22" -fn "Consolas-11" -sb #9770ae '
+DMENU='dmenu -i -h "22" -fn "monospace-11" -sb #9770ae '
 
 choice=$(echo -e "reboot\nshutdown\nlogout\nsuspend\nhibernate" | $DMENU)
 

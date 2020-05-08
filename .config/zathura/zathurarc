@@ -10,3 +10,6 @@ map K zoom in
 map J zoom out
 map i recolor
 map p print
+
+set font "Noto Sans 8"
+/* set font "Gohu GohuFont 10" */

@@ -51,5 +51,5 @@ Color Template Editable Placeholder=40,42,54
 Color Template Focused Editable Placeholder=40,42,54
 Color Template Not Editable Placeholder=68,71,90
 Color Word Wrap Marker=40,42,54
-Font=Hack,9,-1,5,50,0,0,0,0,0
+Font=Monospace,11,-1,5,50,0,0,0,0,0
 dummy=prevent-empty-group

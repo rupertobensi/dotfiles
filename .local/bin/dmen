@@ -1,4 +1,6 @@
 #!/bin/sh
 # Import the colors
 . "${HOME}/.cache/wal/colors.sh"
-dmenu_run -h "22" -fn "Consolas-11" -sb "$color2"
+dmenu_run -h "22" -fn "monospace-11" -sb "$color2"
+# dmenu_run -h "22" -fn "Gohu GohuFont-11" -sb "$color2"
+# dmenu_run -h "22" -fn "Consolas-11" -sb "$color2"
