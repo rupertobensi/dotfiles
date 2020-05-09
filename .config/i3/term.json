@@ -1,0 +1,22 @@
+// vim:ts=4:sw=4:et
+{
+  "border": "pixel",
+  "current_border_width": 3,
+  "floating": "auto_off",
+  "geometry": {
+    "height": 336,
+    "width": 640,
+    "x": 0,
+    "y": 0
+  },
+  "name": "1:1: - \"lem\" ",
+  "percent": 1,
+  "swallows": [
+    {
+      "class": "^St$",
+      "instance": "^st$"
+      // "title": "^1\\:1\\:\\ \\-\\ \\\"lem\\\"\\ $"
+    }
+  ],
+  "type": "con"
+}

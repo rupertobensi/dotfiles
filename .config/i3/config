@@ -337,13 +337,17 @@ assign [class=Caprine|Riot|Steam] 3
 assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync] 4
 assign [class=discord] 5
 
-exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/chats.json'"
+exec --no-startup-id i3-msg "workspace $ws1"
 
+exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/robi/.config/i3/term.json'"
+
+exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/chats.json'"
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/riot-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
+
 
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'

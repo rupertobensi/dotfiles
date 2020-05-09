@@ -63,7 +63,8 @@ font-5 = FontAwesome:pixelsize=14;4
 
 modules-left = i3
 modules-center = datecen
-modules-right = pulseaudio separator weather separator filesystem separator cpu separator memory separator date separator
+; modules-right = pulseaudio separator weather separator filesystem separator cpu separator memory separator date separator
+modules-right = pulseaudio weather filesystem cpu memory date
 #modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
 
 tray-position = right
@@ -407,7 +408,7 @@ content-foreground = ${colors.primary}
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = VOL  <label-volume> <bar-volume>
+format-volume = [VOL  <label-volume><bar-volume>]
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
