@@ -266,7 +266,7 @@ bindsym $mod+F8		exec --no-startup-id dmenumount
 #================================================================================
 #================================================================================
 #================================================================================
-#                                   end of keybinds
+#                               end of keybinds
 #================================================================================
 #================================================================================
 #================================================================================
@@ -277,7 +277,7 @@ bindsym $mod+F8		exec --no-startup-id dmenumount
 #border_radius 4
 
 hide_edge_borders smart
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 2
 for_window [floating]  border pixel 0
 for_window [class="mpv"] border pixel 0
 
@@ -387,14 +387,14 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 #for_window [class="^Steam$" title="Steam"] floating enable
 
 # dropdown alacritty
-# exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/dropdown.yml --class dropdown_term -e tmux new -s dd
-# bindsym F12 [instance="dropdown_term"] scratchpad show, move position 60 -2
-# for_window [instance="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
+exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/dropdown.yml --class dropdown_term -e tmux new -s dd
+bindsym F12 [instance="dropdown_term"] scratchpad show, move position 60 -2
+for_window [instance="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
 
 # dropdown st
-exec_always --no-startup-id $term -c dropdown_term -e tmux new -s dd
-bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
-for_window [class="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
+# exec_always --no-startup-id $term -c dropdown_term -e tmux new -s dd
+# bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
+# for_window [class="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
 
 # Apply i3-fibonacci at the end after everything has been loaded up
 exec_always ~/.dotfiles/.local/bin/i3_fib

@@ -34,7 +34,7 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 0
+    x: 1
     y: 0
 
   # Spread additional padding evenly around the terminal content.
@@ -49,7 +49,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  decorations: full
+  decorations: none
 
   # Startup Mode (changes require restart)
   #
@@ -108,7 +108,9 @@ font:
     #   - (Windows) Consolas
     #family: monospace
     #family: Fira Code
-    family: Consolas
+    # family: Gohu GohuFont
+    family: Gohu GohuFont
+    # family: Consolas
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -149,6 +151,7 @@ font:
   # Point size
   # size: 8.5
   size: 11
+  #size: 11.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -290,7 +293,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.93
+background_opacity: 0.98
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -315,7 +318,7 @@ cursor:
   unfocused_hollow: true
 
 # Live config reload (changes require restart)
-live_config_reload: false
+live_config_reload: true
 
 # Shell
 #
@@ -565,28 +568,28 @@ mouse_bindings:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x030E18'
-    foreground: '0xa7c0c3'
+    background: '0x171428'
+    foreground: '0xc7e5ed'
   cursor:
-    text:       '0x030E18'
-    cursor:     '0xa7c0c3'
+    text:       '0x171428'
+    cursor:     '0xc7e5ed'
   normal:
-    black:      '0x030E18'
-    red:        '0x2E4953'
-    green:      '0x2B5562'
-    yellow:     '0x595F66'
-    blue:       '0x8A7774'
-    magenta:    '0x7E8A67'
-    cyan:       '0x4F7686'
-    white:      '0xa7c0c3'
+    black:      '0x171428'
+    red:        '0x5C5FE5'
+    green:      '0x976BC2'
+    yellow:     '0x5FBADB'
+    blue:       '0x5E9EE7'
+    magenta:    '0xAEA2BF'
+    cyan:       '0xA2A1E0'
+    white:      '0xc7e5ed'
   bright:
-    black:      '0x748688'
-    red:        '0x2E4953'
-    green:      '0x2B5562'
-    yellow:     '0x595F66'
-    blue:       '0x8A7774'
-    magenta:    '0x7E8A67'
-    cyan:       '0x4F7686'
-    white:      '0xa7c0c3'
+    black:      '0x8ba0a5'
+    red:        '0x5C5FE5'
+    green:      '0x976BC2'
+    yellow:     '0x5FBADB'
+    blue:       '0x5E9EE7'
+    magenta:    '0xAEA2BF'
+    cyan:       '0xA2A1E0'
+    white:      '0xc7e5ed'
 
 # END ACE

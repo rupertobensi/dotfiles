@@ -1,17 +1,10 @@
 #!/bin/bash
-#
-# a simple dmenu session script 
-#
-###
 
-DMENU='dmenu -i -h "22" -fn "monospace-11" -sb #9770ae '
+RET=$(echo -e "shutdown\nreboot\nlogout\ncancel" | dmenu -l 5 -h "22" -fn "monospace-11" -sb "#9770ae" -p "Logout")
 
-choice=$(echo -e "reboot\nshutdown\nlogout\nsuspend\nhibernate" | $DMENU)
-
-case "$choice" in
-  reboot) shutdown -r now & ;;
-  shutdown) shutdown -h now & ;;
-  logout) i3-msg exit & ;;
-  suspend) pm-suspend & ;;
-  hibernate) pm-hibernate & ;;
+case $RET in
+	shutdown) sudo shutdown -h now & ;;
+	reboot) sudo reboot ;;
+	logout) i3-msg exit & ;;
+	*) ;;
 esac

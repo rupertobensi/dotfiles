@@ -13,9 +13,10 @@
   "percent": 1,
   "swallows": [
     {
-      "class": "^St$",
-      "instance": "^st$"
-      // "title": "^1\\:1\\:\\ \\-\\ \\\"lem\\\"\\ $"
+      "class": "^Alacritty$",
+      "instance": "^Alacritty$"
+      //"class": "^St$",
+      //"instance": "^st$"
     }
   ],
   "type": "con"

@@ -5,14 +5,15 @@ In this repository I've gathered all of my essential .dotfiles. Directory .local
 I use **i3** as my tiling window manager, and rest as follows:
 
 * Shell: **zsh**
+* Terminal emulator: **alacritty/st**
 * Multiplexer: **tmux**
 * Launchers: **dmenu2/rofi**
 * Compositor: **tmux**
 * Text editor: **neovim**
-* File manager: **ranger**
+* File manager: **ranger/vifm**
 * Image viewer: **sxiv**
 * Video player: **mpv**
-* Music player: **ncmpcpp**
+* Music player: **ncmpcpp/cmus**
 
 ![current setup](desktop.png)
 

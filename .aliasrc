@@ -40,7 +40,7 @@ alias m2off="xrandr --output DVI-I-0 --off"
 alias m2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-A-0; (pbr &)"
 
 alias du="cdu -idh"
-alias vifm="vifmrun"
+alias fm="vifmrun"
 
 alias keep="keepassxc-cli"
 alias nc="ncmpcpp"
@@ -230,3 +230,21 @@ if (( $+commands[apt-get] )); then
   alias aptL="dpkg-deb -c"
   alias aptor="sudo apt autoremove"
 fi
+
+# q quits ranger normally
+# capital Q quits and changed dir
+function ranger {
+    local IFS=$'\t\n'
+    local tempfile="$(mktemp -t tmp.XXXXXX)"
+    local ranger_cmd=(
+        command
+        ranger
+        --cmd="map Q chain shell echo %d > "$tempfile"; quitall"
+    )
+
+    ${ranger_cmd[@]} "$@"
+    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$PWD" ]]; then
+        cd -- "$(cat "$tempfile")" || return
+    fi
+    command rm -f -- "$tempfile" 2>/dev/null
+}
