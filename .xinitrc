@@ -10,7 +10,7 @@ radcard set high
 #xrdb -merge .Xdefaults &
 
 # Apply pywal at the startup
-wal -R
+#wal -R
 
 # run rebinds script to swap caps etc.
 rebinds &

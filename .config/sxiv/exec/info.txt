@@ -1,0 +1,3 @@
+Ctrl+x
+then
+Ctrl+d/r/c/n/w

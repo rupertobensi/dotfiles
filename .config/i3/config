@@ -337,17 +337,17 @@ assign [class=Caprine|Riot|Steam] 3
 assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync] 4
 assign [class=discord] 5
 
+# multiple i3-msg ws1 as certain programs start faster than the others
 exec --no-startup-id i3-msg "workspace $ws1"
 
 exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/robi/.config/i3/term.json'"
-
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/chats.json'"
+
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/riot-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
-
 
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
@@ -387,9 +387,10 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 #for_window [class="^Steam$" title="Steam"] floating enable
 
 # dropdown alacritty
-exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/dropdown.yml --class dropdown_term -e tmux new -s dd
-bindsym F12 [instance="dropdown_term"] scratchpad show, move position 60 -2
-for_window [instance="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
+exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/dd.yml --class dd -e tmux new -s dd
+# exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/dd.yml --class dropdown_term -e tmux new -s dd
+bindsym F12 [instance="dd"] scratchpad show, move position 60 -2
+for_window [instance="dd"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
 
 # dropdown st
 # exec_always --no-startup-id $term -c dropdown_term -e tmux new -s dd

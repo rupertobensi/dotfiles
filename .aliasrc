@@ -39,8 +39,8 @@ alias \
 alias m2off="xrandr --output DVI-I-0 --off"
 alias m2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-A-0; (pbr &)"
 
-alias du="cdu -idh"
 alias fm="vifmrun"
+alias spc="cdu -idh"
 
 alias keep="keepassxc-cli"
 alias nc="ncmpcpp"
@@ -72,11 +72,11 @@ alias walr="wal -R"
 alias wali="wal -i"
 
 alias note="nvim /mnt/e/Robert/DROPBOX/Linux/index.md"
-alias notes="nvim /mnt/e/Robert/DROPBOX/notes.txt"
+alias notes="nvim /mnt/e/Robert/DROPBOX/Linux/notes.md"
 alias notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md"
 alias notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md"
 alias notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
-alias notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.txt"
+alias notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.md"
 
 
 # Changing "ls" to "exa"

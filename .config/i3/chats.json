@@ -91,13 +91,13 @@
                        "x": 1447,
                        "y": 29
                     },
-                    "name": "akiyuki",
+                    "name": "odes",
                     "percent": 0.25,
                     "swallows": [
                        {
                         "class": "^Steam$",
                         "instance": "^Steam$",
-                        "title": "^akiyuki$"
+                        "title": "^odes$"
                        }
                     ],
                     "type": "con"
