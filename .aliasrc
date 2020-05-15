@@ -24,7 +24,6 @@ alias \
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
-	g="git" \
 	yt="straw-viewer" \
 	sdn="sudo shutdown -h now" \
 	rdn="sudo reboot" \
