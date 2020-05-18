@@ -3,10 +3,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Enable colors and change prompt:
-#autoload -U colors && colors
-#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
 # History in cache directory:
 ## HISTSIZE=10000
 ## SAVEHIST=10000
@@ -78,9 +74,7 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 #[ -f "$HOME/.shortcutrc" ] && source "$HOME/.shortcutrc"
 
-# Load zsh-syntax-highlighting; should be last.
-# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
+# Increase Ctrl+d's for logout
 set -o ignoreeof
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -95,5 +89,6 @@ ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,bold
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,bold
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue,bold
 
+# z - automatic bookmarks
+[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
-source ~/.local/bin/bashmarks/bashmarks.sh

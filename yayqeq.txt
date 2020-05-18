@@ -1,3 +1,4 @@
+absolutely-proprietary
 adobe-source-sans-pro-fonts
 adobe-source-serif-pro-fonts
 alacritty
@@ -13,6 +14,7 @@ ark
 asciiquarium
 aspell-en
 atool
+audacity
 autoconf
 automake
 baobab
@@ -20,7 +22,6 @@ base
 bashtop
 binutils
 bison
-bitwig-studio
 bleachbit
 brave-bin
 breeze-gtk
@@ -239,6 +240,7 @@ simple-mtpfs
 simplescreenrecorder
 slurm
 snapper
+soundkonverter
 spacefm
 spotify
 stacer
@@ -254,9 +256,9 @@ syncthing
 tamzen-font
 telegram-desktop
 terminus-font
+termite
 texinfo
 thunderbird
-tilix
 tmux
 transmission-cli
 trash-cli
@@ -359,6 +361,7 @@ yay
 you-get
 youtube-dl
 youtube-viewer-git
+z
 zathura
 zathura-pdf-mupdf
 zip

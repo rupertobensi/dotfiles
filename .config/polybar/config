@@ -55,7 +55,7 @@ module-margin-right = 1
 
 
 font-0 = Gohu GohuFont:pixelsize=13;2                                # MAIN FONT
-font-1 = Gohu GohuFont:pixelsize=13;2                                # time center
+font-1 = Gohu GohuFont:pixelsize=13;3                                # time center
 font-2 = Gohu GohuFont:pixelsize=13:antialias=true;2                 # weather text
 font-3 = GohuFont Nerd Font:pixelsize=10;2                           # weather icon
 font-4 = Symbola:pixelsize=8;2                                       # separators

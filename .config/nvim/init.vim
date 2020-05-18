@@ -173,53 +173,55 @@ let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir
 " Wrap in try/catch to avoid errors on initial install before plugin is available
 try
 
-" === Vim airline ==== "
-" Enable extensions
-"@let g:airline_extensions = ['branch', 'hunks', 'coc']
+" " === Vim airline ==== " @DISABLED DUE TO ARTIFACTS INSIDE NVIM+TMUX
+" " Enable extensions
+" let g:airline_extensions = ['branch', 'hunks', 'coc']
 
-" Update section z to just have line number
-"@ let g:airline_section_z = airline#section#create(['linenr'])
+" " Update section z to just have line number
+" let g:airline_section_z = airline#section#create(['linenr'])
 
-" Do not draw separators for empty sections (only for the active window) >
-"@let g:airline_skip_empty_sections = 1
+" " Do not draw separators for empty sections (only for the active window) >
+" let g:airline_skip_empty_sections = 1
 
-" Smartly uniquify buffers names with similar filename, suppressing common parts of paths.
-"@let g:airline#extensions#tabline#formatter = 'unique_tail'
+" " Smartly uniquify buffers names with similar filename, suppressing common parts of paths.
+" let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-" Custom setup that removes filetype/whitespace from default vim airline bar
-"@let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
+" " Custom setup that removes filetype/whitespace from default vim airline bar
+" let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
 
-"@let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
+" let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
 
-"@let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
+" let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
 
-" Configure error/warning section to use coc.nvim
-"@let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
-"@let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
+" " Configure error/warning section to use coc.nvim
+" let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+" let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 
-" Hide the Nerdtree status line to avoid clutter
-let g:NERDTreeStatusline = ''
+" " Hide the Nerdtree status line to avoid clutter
+" let g:NERDTreeStatusline = ''
 
-" Disable vim-airline in preview mode
-"@let g:airline_exclude_preview = 1
+" " Disable vim-airline in preview mode
+" let g:airline_exclude_preview = 1
 
-" Enable powerline fonts
-"@let g:airline_powerline_fonts = 1
+" " Enable powerline fonts
+" let g:airline_powerline_fonts = 1
 
-" Enable caching of syntax highlighting groups
-"@let g:airline_highlighting_cache = 1
+" " Enable caching of syntax highlighting groups
+" let g:airline_highlighting_cache = 1
 
-" Define custom airline symbols
-"@if !exists('g:airline_symbols')
-"@  let g:airline_symbols = {}
-"@endif
+" " Define custom airline symbols
+" if !exists('g:airline_symbols')
+"   let g:airline_symbols = {}
+" endif
 
-" Don't show git changes to current file in airline
-"@let g:airline#extensions#hunks#enabled=0
+" " Don't show git changes to current file in airline
+" let g:airline#extensions#hunks#enabled=0
 
-"@ catch
-"@   echo 'Airline not installed. It should work after running :PlugInstall'
-"@ endtry
+"  catch
+"    echo 'Airline not installed. It should work after running :PlugInstall'
+"  endtry
+
+
 
 " === echodoc === "
 " Enable echodoc on startup
@@ -244,6 +246,7 @@ let g:signify_sign_delete = '-'
 let g:indentLine_char ='▏'
 " Enable/disable indentline
 let g:indentLine_enabled = 0
+" Examples below
 "let g:indentLine_color_term = 141
 " ¦, ┆, │, ⎸, or ▏
 "set conceallevel=1
@@ -496,6 +499,9 @@ vnoremap <leader>P "+P
 nmap <silent> <leader>u :exec 'silent !firefox % &'
 nmap <silent> <leader>i :exec 'silent !okular % &'
 
+" execute a script inside nvim
+map <leader>R :!./% <CR>
+
 " ============================================================================ "
 " ===                                 MISC.                                === "
 " ============================================================================ "
@@ -542,8 +548,10 @@ let g:startify_padding_left = 28
 " End try closure
 endtry
 
-
-"" Status line
+" ============================================================================ "
+" ===                           DEFAULT STATUSLINE.                        === "
+" ============================================================================ "
+"
 "" Currently instead of vim-airline as status line line/column numbers cause screen flickering inside of tmux
 set laststatus=2
 set statusline+=%{StatuslineMode()}

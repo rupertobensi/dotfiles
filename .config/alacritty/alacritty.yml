@@ -106,9 +106,9 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: monospace
-    #family: Fira Code
-    # family: Gohu GohuFont
+    # family: monospace
+    # family: Fira Code
+    family: Gohu GohuFont
     # family: Consolas
 
     # The `style` can be specified to pick a specific face.
@@ -567,28 +567,28 @@ mouse_bindings:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x060612'
-    foreground: '0xc5bfcc'
+    background: '0x090a02'
+    foreground: '0xc2c0c4'
   cursor:
-    text:       '0x060612'
-    cursor:     '0xc5bfcc'
+    text:       '0x090a02'
+    cursor:     '0xc2c0c4'
   normal:
-    black:      '0x060612'
-    red:        '0x314479'
-    green:      '0x575367'
-    yellow:     '0x374D87'
-    blue:       '0x606497'
-    magenta:    '0x7F7D96'
-    cyan:       '0x8679A1'
-    white:      '0xc5bfcc'
+    black:      '0x090a02'
+    red:        '0x4A556F'
+    green:      '0x575F74'
+    yellow:     '0x6C6978'
+    blue:       '0x3B6587'
+    magenta:    '0x656F89'
+    cyan:       '0x85828E'
+    white:      '0xc2c0c4'
   bright:
-    black:      '0x89858e'
-    red:        '0x314479'
-    green:      '0x575367'
-    yellow:     '0x374D87'
-    blue:       '0x606497'
-    magenta:    '0x7F7D96'
-    cyan:       '0x8679A1'
-    white:      '0xc5bfcc'
+    black:      '0x878689'
+    red:        '0x4A556F'
+    green:      '0x575F74'
+    yellow:     '0x6C6978'
+    blue:       '0x3B6587'
+    magenta:    '0x656F89'
+    cyan:       '0x85828E'
+    white:      '0xc2c0c4'
 
 # END ACE

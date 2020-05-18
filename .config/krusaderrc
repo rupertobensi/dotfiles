@@ -283,8 +283,8 @@ FrameShape=Panel
 Layout=krusader:compact
 
 [Private]
-PopularUrls=file:///mnt/e/Downloads/Torrents/,file:///mnt/e/Downloads/stuff/,file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/[media]/,file:///mnt/e/Robert/,file:///mnt/e/[media]/[tv series]/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///mnt/e/[media]/[movies]/,file:///home/Data/steam/,file:///home/Data/,file:///home/Data/steam/Steam/,file:///home/Data/steam/Steam/appcache/,file:///home/,file:///home/Data/HS/,file:///,file:///home2/,file:///home/Data/steam/steamapps/,file:///home/Data/steam/steamapps/common/,file:///mnt/,file:///mnt/e/,file:///mnt/d/lin_games/Steam/steamapps/common/,file:///mnt/d/lin_games/Steam/steamapps/,file:///mnt/d/lin_games/Steam/,file:///mnt/d/lin_games/,file:///mnt/d/,file:///mnt/d/lin_games/Steam/steamapps/common/Counter-Strike Global Offensive/
-PopularUrlsRank=19,17,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrls=file:///mnt/e/[media]/[music]/,file:///mnt/e/[media]/[music]/albums/,file:///mnt/e/Downloads/Torrents/,file:///mnt/e/Downloads/stuff/,file:///mnt/e/Downloads/,file:///home/robi/.config/.ayyconfig/,file:///mnt/e/[media]/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///mnt/e/[media]/[tv series]/,file:///mnt/e/[media]/[movies]/,file:///home/Data/steam/,file:///home/Data/,file:///home/Data/steam/Steam/,file:///home/Data/steam/Steam/appcache/,file:///home/,file:///home/Data/HS/,file:///,file:///home2/,file:///home/Data/steam/steamapps/,file:///home/Data/steam/steamapps/common/,file:///mnt/,file:///mnt/e/,file:///mnt/d/lin_games/Steam/steamapps/common/,file:///mnt/d/lin_games/Steam/steamapps/,file:///mnt/d/lin_games/Steam/,file:///mnt/d/lin_games/
+PopularUrlsRank=16,15,6,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Start Position=19,29
 Start Size=928,1026
 cmdline history=
