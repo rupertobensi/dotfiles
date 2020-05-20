@@ -567,28 +567,28 @@ mouse_bindings:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x090a02'
-    foreground: '0xc2c0c4'
+    background: '0x030E18'
+    foreground: '0xa7c0c3'
   cursor:
-    text:       '0x090a02'
-    cursor:     '0xc2c0c4'
+    text:       '0x030E18'
+    cursor:     '0xa7c0c3'
   normal:
-    black:      '0x090a02'
-    red:        '0x4A556F'
-    green:      '0x575F74'
-    yellow:     '0x6C6978'
-    blue:       '0x3B6587'
-    magenta:    '0x656F89'
-    cyan:       '0x85828E'
-    white:      '0xc2c0c4'
+    black:      '0x030E18'
+    red:        '0x2E4953'
+    green:      '0x2B5562'
+    yellow:     '0x595F66'
+    blue:       '0x8A7774'
+    magenta:    '0x7E8A67'
+    cyan:       '0x4F7686'
+    white:      '0xa7c0c3'
   bright:
-    black:      '0x878689'
-    red:        '0x4A556F'
-    green:      '0x575F74'
-    yellow:     '0x6C6978'
-    blue:       '0x3B6587'
-    magenta:    '0x656F89'
-    cyan:       '0x85828E'
-    white:      '0xc2c0c4'
+    black:      '0x748688'
+    red:        '0x2E4953'
+    green:      '0x2B5562'
+    yellow:     '0x595F66'
+    blue:       '0x8A7774'
+    magenta:    '0x7E8A67'
+    cyan:       '0x4F7686'
+    white:      '0xa7c0c3'
 
 # END ACE

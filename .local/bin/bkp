@@ -14,7 +14,7 @@ or...
 " option
 
 if [ $option -eq 1 ]
-  then sudo rsync -aAXv --delete --progress --stats ~/.dotfiles/ /home/backups/.dotfiles/
+  then sudo rsync -aAXv --delete --progress --stats ~/.dotfiles/ /mnt/d/backup/.dotfiles
 
 elif [ $option -eq 2 ]
   then sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/.Trash-0/*","/home/backups/*","/home/Data/*","/home2/*","/home/System Volume Information/*","~/.thunderbird/*"} / /home/backups/bkp/

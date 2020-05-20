@@ -49,6 +49,7 @@ ddgr
 deezloader-remix-git
 discord
 dmenu2
+dnsmasq
 doas
 dolphin
 dolphin-plugins
@@ -57,6 +58,7 @@ drive-bin
 dropbox
 dunst
 dvd+rw-tools
+ebtables
 efibootmgr
 envypn-powerline-git
 ephifonts-no-helvetica
@@ -211,6 +213,7 @@ python-pywal
 python-ueberzug
 python2-backports.functools_lru_cache
 python2-pip
+qemu
 qt5-styleplugins
 qt5ct
 qterminal
@@ -288,6 +291,8 @@ unclutter
 unzip
 vifm
 vim
+vimv-git
+virt-manager
 vlc
 vulkan-mesa-layer
 vulkan-radeon

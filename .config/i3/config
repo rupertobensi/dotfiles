@@ -1,3 +1,9 @@
+#=====================================================
+#=               i3 configuration file               =
+#=                github: rupertobensi               =
+#=====================================================
+
+
 set $term --no-startup-id $TERMINAL
 set $browser --no-startup-id $BROWSER
 set $mod Mod4
@@ -224,6 +230,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+# @ @ @
 bindsym $mod+r mode "resize"
 
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
@@ -286,15 +293,17 @@ for_window [class=MEGAsync] border pixel 0
 
 # Gaps
 
-gaps inner 8
-gaps outer 8
-gaps top 18
+gaps inner 0
+gaps outer 0
+gaps top 23
 gaps bottom 0
 gaps left 0
 gaps right 0
 
 workspace $ws7 gaps inner 0
 workspace $ws7 gaps outer 0
+workspace $ws8 gaps inner 0
+workspace $ws8 gaps outer 0
 
 # Load pywal resources for i3 colors
 set_from_resource $bg i3wm.color2 #f0f0f0
@@ -388,14 +397,20 @@ for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Require
 for_window [title="^Steam Keyboard$"] floating enable; border none
 #for_window [class="^Steam$" title="Steam"] floating enable
 
-# DROPDOWN TERMINALS
+#
+## DROPDOWN TERMINALS
+#
+
+# ** use one only, comment out the second
 
 # dropdown alacritty
+
 exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/alacritty_dd.yml --class dd -e tmux new -s dd
 bindsym F12 [instance="dd"] scratchpad show, move position 60 -2
-for_window [instance="dd"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
+for_window [instance="dd"] floating enable, resize set 1800 750, move scratchpad, border pixel 2
 
 # dropdown st
+
 # exec_always --no-startup-id $term -c dropdown_term -e tmux new -s dd
 # bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 # for_window [class="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2

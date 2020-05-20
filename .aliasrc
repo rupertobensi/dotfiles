@@ -68,12 +68,14 @@ alias m2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0
 
 alias fm="vifmrun"
 alias spc="cdu -idh"
-
 alias keep="keepassxc-cli"
 alias nc="ncmpcpp"
 alias audio="pulsemixer"
 alias newsb="newsboat"
 alias kal="calcurse"
+alias tra="tremc"
+alias imgur="imgur_downloader"
+alias ab-pr="absolutely-proprietary"
 
 # trash-cli
 alias tp="trash-put"
@@ -81,7 +83,6 @@ alias tli="trash-list"
 alias tre="trash-restore"
 alias tem="trash-empty"
 
-alias tra="tremc"
 alias wttr="curl wttr.in"
 alias emoticon="echo 😺"
 alias stock="mop"
@@ -92,14 +93,12 @@ alias google="googler"
 alias duck="ddgr"
 
 alias tilixp="tilix --preferences"
-alias imgur="imgur_downloader"
 alias visudo!="sudo EDITOR=nvim visudo"
 alias nitrogens="nitrogen --set-zoom-fill --save"
 alias walr="wal -R"
 alias wali="wal -i"
 
-alias ab-pr="absolutely-proprietary"
-
+# notes (compatible with VimWiki plugin)
 alias note="nvim /mnt/e/Robert/DROPBOX/Linux/index.md"
 alias notes="nvim /mnt/e/Robert/DROPBOX/Linux/notes.md"
 alias notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md"
@@ -107,23 +106,11 @@ alias notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md"
 alias notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
 alias notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.md"
 
-
-# Changing "ls" to "exa"
-alias \
-    ls="exa --group-directories-first --color=always" \
-    l='ls -l' \
-    la='ls -a' \
-    lla='ls -la' \
-    lt='ls --tree' \
-    li='ls -a --icons'
-
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 alias xc="xclip -sel clipboard"
-
 # copy with progress bars:
 alias pmv="pymv --preserve --global-pbar -i"
 alias pcp="pycp --preserve --global-pbar -i"
-
 # scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
 alias ncm="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
@@ -140,6 +127,15 @@ alias megs="mega-sync"
 # KDE aliases for locking/unlocking plasma
 #alias kdew='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(false)'
 #alias kdeW='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(true)'
+
+# Changing "ls" to "exa"
+alias \
+    ls="exa --group-directories-first --color=always" \
+    l='ls -l' \
+    la='ls -a' \
+    lla='ls -la' \
+    lt='ls --tree' \
+    li='ls -a --icons'
 
 # Tmux aliases
 alias ta='tmux attach -t'
@@ -260,6 +256,7 @@ if (( $+commands[apt-get] )); then
   alias aptor="sudo apt autoremove"
 fi
 
+# Ranger
 # q quits ranger normally
 # capital Q quits and changed dir
 function ranger {
@@ -276,4 +273,11 @@ function ranger {
         cd -- "$(cat "$tempfile")" || return
     fi
     command rm -f -- "$tempfile" 2>/dev/null
+}
+
+# mkdir n cd
+mkcdir ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
 }
