@@ -1,0 +1,1 @@
+/home/robi/.dotfiles/.config/nvim/init.vim
