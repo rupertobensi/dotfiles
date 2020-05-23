@@ -5,11 +5,26 @@ Xft.rgba: rgb
 
 rofi.font: Consolas 11
 
+/* Sxiv status bar font and bg/fg settings */
+Xft.dpi: 100
+Sxiv.foreground: lightgray
+Sxiv.background: #000000
+
 
 /* Xcursor.theme: Breeze_Snow */
 
 
+
+
+
+
+
+
+
+/* ====================== */
 /* suckless terminal: */
+/* ====================== */
+
 
 !! Transparency (0-1):
 *.alpha: 0.80

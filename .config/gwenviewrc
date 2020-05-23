@@ -2,42 +2,46 @@
 update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
 
 [General]
+SideBarPage=operations
 ThumbnailActions=ThumbnailActions::None
+ThumbnailBarIsVisible=true
 ThumbnailBarOrientation=Vertical
 
 [ImageView]
 MouseWheelBehavior=MouseWheelBehavior::Zoom
-ThumbnailSplitterSizes=882,133
+ThumbnailSplitterSizes=879,132
 
 [MainWindow]
 Height 1080=1027
-State=AAAA/wAAAAD9AAAAAAAAA/oAAAK0AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+Height 540=382
+State=AAAA/wAAAAD9AAAAAAAAA/wAAAKzAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1920
+Width 960=510
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=$HOME/Screenshots/2020-03-07-212710_1920x1080_scrot.png
-File10[$e]=/mnt/e/Robert/DATA/memes/not-now-ambien-walrus.gif
-File2[$e]=$HOME/Screenshots/2020-03-12-153002_1920x1080_scrot.png
-File3[$e]=$HOME/Screenshots/python_screenkay_error.jpg
-File4[$e]=$HOME/Screenshots/aq.png
-File5[$e]=$HOME/Dropbox/Linux/other/installations/MINE_noluks/Using Btrfs for Easy Backup and Rollback | John Ramsden_files/a_data/avatar92.jpg
-File6[$e]=$HOME/Dropbox/Linux/other/5fmqo3b0i1j31.png
-File7[$e]=$HOME/Wallpapers/gallery_XOygnM3/003-NENbpbY.jpg
-File8[$e]=/mnt/e/Robert/DATA/archives/old_pulpit.bmp
-File9[$e]=$HOME/.cache/qutebrowser/webengine/Cache/f_000056
-Name1[$e]=2020-03-07-212710_1920x1080_scrot.png
-Name10[$e]=not-now-ambien-walrus.gif
-Name2[$e]=2020-03-12-153002_1920x1080_scrot.png
-Name3[$e]=python_screenkay_error.jpg
-Name4[$e]=aq.png
-Name5[$e]=avatar92.jpg
-Name6[$e]=5fmqo3b0i1j31.png
-Name7[$e]=003-NENbpbY.jpg
-Name8[$e]=old_pulpit.bmp
-Name9[$e]=f_000056
+File1[$e]=$HOME/Wallpapers/cobweb_grid_netting_117583_3840x2400.jpg
+File10[$e]=$HOME/Downloads/untitled - Paint_files/2019-winter-update-candy-cane.gif
+File2[$e]=$HOME/Wallpapers/cas4.jpg
+File3[$e]=$HOME/Wallpapers/cas3.jpg
+File4[$e]=$HOME/Wallpapers/cas2.jpg
+File5[$e]=$HOME/Wallpapers/cas1.jpg
+File6[$e]=$HOME/Wallpapers/buddha_buddhism_meditation_grass_112087_3840x2400.jpg
+File7[$e]=$HOME/Wallpapers/22JZRPa.png
+File8[$e]=$HOME/Wallpapers/ql3o2km.jpg
+File9[$e]=$HOME/Wallpapers/349902.jpg
+Name1[$e]=cobweb_grid_netting_117583_3840x2400.jpg
+Name10[$e]=2019-winter-update-candy-cane.gif
+Name2[$e]=cas4.jpg
+Name3[$e]=cas3.jpg
+Name4[$e]=cas2.jpg
+Name5[$e]=cas1.jpg
+Name6[$e]=buddha_buddhism_meditation_grass_112087_3840x2400.jpg
+Name7[$e]=22JZRPa.png
+Name8[$e]=ql3o2km.jpg
+Name9[$e]=349902.jpg
 
 [SideBar]
 IsVisible ViewMode=false
-SideBarSplitterSizes=242,1675
+SideBarSplitterSizes=242,988

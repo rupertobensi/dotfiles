@@ -407,7 +407,6 @@ def_key "9"
 def_key "0"
     volume_up
 
-
 def_key "+"
     show_clock
 def_key "="
