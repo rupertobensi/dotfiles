@@ -39,7 +39,7 @@ Width 1920=1920
 
 [Open-with settings]
 CompletionMode=1
-History=torrent,tran,torr,subd,zat,gea
+History=kate,torrent,tran,torr,subd,zat,gea
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs

@@ -284,7 +284,7 @@ bindsym $mod+F8		exec --no-startup-id dmenumount
 #border_radius 4
 
 hide_edge_borders smart
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 1
 for_window [floating]  border pixel 0
 for_window [class="mpv"] border pixel 0
 

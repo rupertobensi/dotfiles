@@ -282,3 +282,8 @@ mkcdir ()
     mkdir -p -- "$1" &&
       cd -P -- "$1"
 }
+
+#prevent rm -rf /
+# alias rm -rf /="echo BAD IDEA"
+# alias rm -rf /*="echo BAD IDEA"
+

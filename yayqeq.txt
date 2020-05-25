@@ -25,6 +25,7 @@ bison
 bleachbit
 brave-bin
 breeze-gtk
+btrbk
 btrfs-progs
 calc
 calcurse
@@ -53,7 +54,6 @@ dnsmasq
 doas
 dolphin
 dolphin-plugins
-drawing
 drive-bin
 dropbox
 dunst
@@ -71,7 +71,6 @@ exfat-utils
 expac
 fakeroot
 fd
-feh
 ffmpegthumbnailer
 ffmpegthumbs
 file
@@ -97,10 +96,12 @@ grep
 groff
 gst-libav
 gst-plugins-good
+gwenview
 gzdoom
 gzip
 hideit.sh-git
 highlight
+howdoi
 htop-vim-git
 httrack
 i3-gaps
@@ -125,6 +126,7 @@ keepassxc
 kfind
 kid3
 kmenuedit
+kolourpaint
 kompare
 krusader
 ksysguard
@@ -206,6 +208,7 @@ pulseaudio
 pulseaudio-alsa
 pulsemixer
 pycp
+python-eyed3
 python-i3-py
 python-pip
 python-pynvim
@@ -242,6 +245,7 @@ siji-git
 simple-mtpfs
 simplescreenrecorder
 slurm
+smloadr
 snapper
 soundkonverter
 spacefm
@@ -262,6 +266,7 @@ terminus-font
 termite
 texinfo
 thunderbird
+tldr
 tmux
 transmission-cli
 trash-cli
@@ -366,6 +371,7 @@ yay
 you-get
 youtube-dl
 youtube-viewer-git
+ytmdl
 z
 zathura
 zathura-pdf-mupdf

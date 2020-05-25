@@ -496,8 +496,9 @@ nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 
-nmap <silent> <leader>u :exec 'silent !firefox % &'
-nmap <silent> <leader>U :exec 'silent !brave % &'
+nmap <silent> <leader>u :exec 'silent !chromium % &'
+" nmap <silent> <leader>u :exec 'silent !brave % &'
+nmap <silent> <leader>U :exec 'silent !firefox % &'
 nmap <silent> <leader>i :exec 'silent !okular % &'
 
 " execute a script inside nvim

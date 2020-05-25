@@ -22,8 +22,8 @@ I use **i3** as my tiling window manager, and rest as follows:
 How to deploy this very setup?
 ------------------------------
 
-I've found GNU Stow to be the easiest program to help with it. Simply clone
-these .dotfiles, cd into .dotfiles and use command:
+I've found GNU Stow to be the easiest program to help with it. Simply git clone this repo
+, cd into .dotfiles and use command:
 
 `$ stow .`
 
