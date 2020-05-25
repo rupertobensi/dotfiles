@@ -23,7 +23,6 @@ bashtop
 binutils
 bison
 bleachbit
-brave-bin
 breeze-gtk
 btrbk
 btrfs-progs
@@ -34,6 +33,7 @@ caprine
 cdrdao
 cdrtools
 cdu
+chromium
 cli-visualizer
 clockywock
 clyrics
