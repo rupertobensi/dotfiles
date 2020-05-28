@@ -29,6 +29,7 @@ btrfs-progs
 calc
 calcurse
 calibre
+cantata
 caprine
 cdrdao
 cdrtools
@@ -73,6 +74,7 @@ fakeroot
 fd
 ffmpegthumbnailer
 ffmpegthumbs
+figlet
 file
 findutils
 firefox

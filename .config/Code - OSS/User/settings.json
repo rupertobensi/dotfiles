@@ -10,8 +10,8 @@
   "vim.startInInsertMode": true,
   "vim.useCtrlKeys": false,
   "editor.fontLigatures": null,
-  "editor.fontSize": 13,
   "json.schemas": [],
-  "debug.console.fontSize": 12
+  "debug.console.fontSize": 12,
+  "editor.fontSize": 13
 }
 

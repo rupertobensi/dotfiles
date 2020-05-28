@@ -295,7 +295,7 @@ for_window [class=MEGAsync] border pixel 0
 
 gaps inner 0
 gaps outer 0
-gaps top 23
+gaps top 20
 gaps bottom 0
 gaps left 0
 gaps right 0

@@ -30,7 +30,7 @@ Sxiv.background: #000000
 *.alpha: 0.80
 
 !! Set a default font and font size as below
-*.font: Gohu GohuFont:pixelsize=16:antialias=true:autohint=true
+*.font: GohuNew:pixelsize=16:antialias=true:autohint=true
 /* *.font: Consolas:pixelsize=15:antialias=true:autohint=true */
 !! *.font: Fira Code:pixelsize=15:antialias=true:autohint=true
 
