@@ -18,8 +18,8 @@ rebinds &
 # Hide mouse cursor after X seconds
 unclutter -idle 3 &
 
-# i3_lock after a time period of inactivity
-exec xautolock -time 5 -locker 'i3_lock' &
+# i3_lock after a time period (minutes) of inactivity
+exec xautolock -time 10 -locker 'i3_lock' &
 
 # Start i3wm/KDE plasma
 #exec startplasma-x11

@@ -347,7 +347,7 @@ label = %time%
 
 [module/string1]
 type = custom/text
-content = VOL
+content = EXAMPLE
 content-foreground = ${colors.primary}
 
 [module/pulseaudio]
@@ -356,6 +356,7 @@ type = internal/pulseaudio
 format-volume = VOL <label-volume> <bar-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
+; label-volume-foreground = ${colors.primary}
 
 label-muted = 🔇 muted
 label-muted-foreground = #666

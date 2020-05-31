@@ -91,6 +91,7 @@ git
 glances
 glow-bin
 gnome-disk-utility
+gohu-ttf
 gohufont
 googler
 gparted
@@ -247,6 +248,7 @@ siji-git
 simple-mtpfs
 simplescreenrecorder
 slurm
+smartmontools
 smloadr
 snapper
 soundkonverter

@@ -11,6 +11,7 @@ alias \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
 	YT="youtube-dl --add-metadata -i" \
+    YTmp3="youtube-dl -x --audio-format mp3" \
 	YTA="YT -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner"
 
@@ -33,6 +34,7 @@ alias \
 	v="$EDITOR" \
     sv="sudo $EDITOR" \
     se="sudo $EDITOR" \
+	n="nnn" \
 	p="sudo pacman" \
 
 

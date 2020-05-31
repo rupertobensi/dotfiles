@@ -251,7 +251,7 @@ bindsym Pause 	              	exec audiodevice_swapcurrent
 bindsym $mod+Pause              exec cool-retro-term
 
 # #---Function Buttons---# #
-bindsym $mod+F1		exec --no-startup-id dolphin
+bindsym $mod+F1		exec --no-startup-id code
 bindsym $mod+Shift+F1		exec --no-startup-id onboard
 bindsym $mod+F2         exec --no-startup-id krusader
 bindsym $mod+Shift+F2         exec --no-startup-id screenkey
@@ -264,8 +264,9 @@ bindsym $mod+F5		exec $term -e tremc
 bindsym $mod+Shift+F5		exec --no-startup-id td-toggle
 bindsym $mod+F6		exec --no-startup-id keepassxc
 #bindsym $mod+F8		exec --no-startup-id mailsync
-bindsym $mod+F7 	exec --no-startup-id dmenuumount
+bindsym $mod+F7		exec --no-startup-id lollypop
 bindsym $mod+F8		exec --no-startup-id dmenumount
+bindsym $mod+Shift+F8 	exec --no-startup-id dmenuumount
 #bindsym $mod+F11	exec --no-startup-id ducksearch
 #bindsym $mod+F12	exec $term -e nmtui
 

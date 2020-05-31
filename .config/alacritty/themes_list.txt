@@ -1666,3 +1666,34 @@ colors:
      magenta: '#ff00ff'
      cyan:    '#00ffff'
      white:   '#ffffff'
+
+
+=====================
+
+Bench
+
+colors:
+  primary:
+    background: '0x030E18'
+    foreground: '0xa7c0c3'
+  cursor:
+    text:       '0x030E18'
+    cursor:     '0xa7c0c3'
+  normal:
+    black:      '0x030E18'
+    red:        '0x2E4953'
+    green:      '0x2B5562'
+    yellow:     '0x595F66'
+    blue:       '0x8A7774'
+    magenta:    '0x7E8A67'
+    cyan:       '0x4F7686'
+    white:      '0xa7c0c3'
+  bright:
+    black:      '0x748688'
+    red:        '0x2E4953'
+    green:      '0x2B5562'
+    yellow:     '0x595F66'
+    blue:       '0x8A7774'
+    magenta:    '0x7E8A67'
+    cyan:       '0x4F7686'
+    white:      '0xa7c0c3'
