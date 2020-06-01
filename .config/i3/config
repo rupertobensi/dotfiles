@@ -270,6 +270,12 @@ bindsym $mod+Shift+F8 	exec --no-startup-id dmenuumount
 #bindsym $mod+F11	exec --no-startup-id ducksearch
 #bindsym $mod+F12	exec $term -e nmtui
 
+# remote mpv control (with numlock on)
+bindsym $mod+Mod2+KP_1 exec xdotool key --window "$(xdotool search --class mpv)" j
+bindsym $mod+Mod2+KP_2 exec xdotool key --window "$(xdotool search --class mpv)" p
+bindsym $mod+Mod2+KP_3 exec xdotool key --window "$(xdotool search --class mpv)" k
+
+
 #================================================================================
 #================================================================================
 #================================================================================
@@ -418,3 +424,4 @@ for_window [instance="dd"] floating enable, resize set 1800 750, move scratchpad
 
 # Apply i3-fibonacci at the end after everything has been loaded up
 exec_always ~/.dotfiles/.local/bin/i3_fib
+

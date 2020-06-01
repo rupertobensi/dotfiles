@@ -105,5 +105,12 @@ Plug 'tpope/vim-commentary'
 " VimWiki
 Plug 'vimwiki/vimwiki'
 
+"vim close-tag
+Plug 'alvan/vim-closetag'
+
+"vim-surround
+Plug 'tpope/vim-surround'
+
 " Initialize plugin system
 call plug#end()
+
