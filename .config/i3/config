@@ -274,6 +274,8 @@ bindsym $mod+Shift+F8 	exec --no-startup-id dmenuumount
 bindsym $mod+Mod2+KP_1 exec xdotool key --window "$(xdotool search --class mpv)" j
 bindsym $mod+Mod2+KP_2 exec xdotool key --window "$(xdotool search --class mpv)" p
 bindsym $mod+Mod2+KP_3 exec xdotool key --window "$(xdotool search --class mpv)" k
+bindsym $mod+Mod2+KP_4 exec xdotool key --window "$(xdotool search --class mpv)" h
+bindsym $mod+Mod2+KP_6 exec xdotool key --window "$(xdotool search --class mpv)" l
 
 
 #================================================================================

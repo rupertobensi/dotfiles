@@ -634,5 +634,9 @@ set statusline+=%M                        " modified [+] flag
 " set statusline+=\ %3l:%-2c\         " line + column
 " set statusline+=%#Cursor#       " colour
 " set statusline+=\ %3p%%\                " percentage
+"========================================================
+
+" disable automatic comment insertion
+au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 

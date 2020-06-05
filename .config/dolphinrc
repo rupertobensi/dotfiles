@@ -27,8 +27,8 @@ FontWeight=50
 PreviewSize=48
 
 [KPropertiesDialog]
-Height 1080=350
-Width 1920=312
+Height 1080=422
+Width 1920=394
 
 [MainWindow]
 Height 1080=1060
@@ -39,7 +39,7 @@ Width 1920=1920
 
 [Open-with settings]
 CompletionMode=1
-History=subd,kate,torrent,tran,torr,zat,gea
+History=vlc,subd,kate,torrent,tran,torr,zat,gea
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
