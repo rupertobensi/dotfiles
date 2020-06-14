@@ -45,7 +45,7 @@ History=vlc,subd,kate,torrent,tran,torr,zat,gea
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
 
 [SettingsDialog]
-Height 1080=444
+Height 1080=388
 Width 1920=540
 
 [VersionControl]

@@ -95,7 +95,8 @@ bindsym $mod+Shift+l		move right 30
 bindsym $mod+Ctrl+l		move workspace to output right
 
 bindsym $mod+shift+grave        move scratchpad
-bindsym $mod+grave              scratchpad show, resize set 1400 700, move position center
+bindsym $mod+grave              scratchpad show
+# bindsym $mod+grave              scratchpad show, resize set 1400 700, move position center
 
 #Pseudo alt+tab
 bindsym $mod+Tab workspace next
@@ -275,6 +276,7 @@ bindsym $mod+Mod2+KP_1 exec xdotool key --window "$(xdotool search --class mpv)"
 bindsym $mod+Mod2+KP_2 exec xdotool key --window "$(xdotool search --class mpv)" p
 bindsym $mod+Mod2+KP_3 exec xdotool key --window "$(xdotool search --class mpv)" k
 bindsym $mod+Mod2+KP_4 exec xdotool key --window "$(xdotool search --class mpv)" h
+bindsym $mod+Mod2+KP_5 exec xdotool key --window "$(xdotool search --class mpv)" o
 bindsym $mod+Mod2+KP_6 exec xdotool key --window "$(xdotool search --class mpv)" l
 
 
@@ -410,7 +412,7 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 ## DROPDOWN TERMINALS
 #
 
-# ** use one only, comment out the second
+# ** Use only one, comment out the second
 
 # dropdown alacritty
 

@@ -55,10 +55,11 @@ module-margin-right = 1
 
 
 ; font-0 = Gohu GohuFont:pixelsize=12;2                                # MAIN FONT
-font-0 = GohuNew:pixelsize=12;2                                # MAIN FONT
-font-1 = GohuNew:pixelsize=12;2                                # time center
+; font-0 = GohuNew:pixelsize=12;2                                # MAIN FONT
+font-0 = xos4 Terminus:pixelsize=12;2                                # MAIN FONT
+font-1 = xos4 Terminus:pixelsize=13;2                                # time center
 
-font-2 = GohuNew:pixelsize=12:antialias=true;2                 # weather text
+font-2 = xos4 Terminus:pixelsize=12:antialias=true;2                 # weather text
 font-3 = GohuFont Nerd Font:pixelsize=10;2                           # weather icon
 font-4 = Symbola:pixelsize=5;1                                       # Vol bar/separators
 font-5 = FontAwesome:pixelsize=14;4
@@ -259,7 +260,7 @@ interval = 2
 ; format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 #format-underline = #4bffdc
-label =[ ram %percentage_used%%]
+label =[  ram %percentage_used%%]
 
 [module/wlan]
 type = internal/network

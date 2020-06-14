@@ -3,7 +3,9 @@ Xft.hintstyle: hintslight
 Xft.antialias: 1
 Xft.rgba: rgb
 
+
 rofi.font: Consolas 11
+
 
 /* Sxiv status bar font and bg/fg settings */
 Xft.dpi: 100
@@ -12,11 +14,6 @@ Sxiv.background: #000000
 
 
 /* Xcursor.theme: Breeze_Snow */
-
-
-
-
-
 
 
 
