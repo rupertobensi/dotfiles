@@ -164,6 +164,7 @@ man-db
 mc
 megacmd-bin
 mesa-vdpau
+mlocate
 mop-git
 mpc
 mpd
@@ -286,8 +287,9 @@ ttf-droid
 ttf-fira-code
 ttf-font-awesome
 ttf-font-awesome-4
-ttf-inconsolata
+ttf-ibm-plex
 ttf-iosevka
+ttf-jetbrains-mono
 ttf-liberation
 ttf-linux-libertine
 ttf-mac-fonts
@@ -296,6 +298,7 @@ ttf-symbola
 ttf-ubuntu-font-family
 ttf-weather-icons
 tty-clock
+tuir
 unclutter
 unzip
 vifm
@@ -303,7 +306,7 @@ vim
 vimv-git
 virt-manager
 vlc
-vulkan-mesa-layer
+vulkan-mesa-layers
 vulkan-radeon
 vulkan-tools
 w3m

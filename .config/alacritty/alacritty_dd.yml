@@ -108,8 +108,8 @@ font:
     #   - (Windows) Consolas
     # family: monospace
     # family: Fira Code
-    # family: Gohu GohuFont
-    family: xos4 Terminus
+    family: Gohu GohuFont
+    # family: xos4 Terminus
 
     # family: Consolas
     # family: Jetbrains Mono Nerd Font
