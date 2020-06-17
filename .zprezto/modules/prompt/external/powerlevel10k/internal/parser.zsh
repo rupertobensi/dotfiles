@@ -54,6 +54,8 @@ typeset -grA __p9k_pb_precommand=(
   'sudo'      '-[^aghpuUCcrtT]#[aghpuUCcrtT]|--(close-from|group|host|prompt|role|type|other-user|command-timeout|user)'
   'ssh-agent' '-[^aEPt]#[aEPt]'
   'tabbed'    '-[^gnprtTuU]#[gnprtTuU]'
+  'chronic'   ''
+  'ifne'      ''
 )
 
 typeset -grA __p9k_pb_redirect=(
@@ -294,7 +296,7 @@ function _p9k_parse_buffer() {
         if [[ $token == $~var ]]; then
           n=${${token##[^[:IDENT:]]}%%[^[:IDENT:]]}
           [[ $token == *'"' ]] && v=("${(P)n}") || v=(${(P)n})
-          tokens[1,0]=(${(qq)v})
+          tokens[1,0]=(${(@qq)v})
           continue
         fi
       fi

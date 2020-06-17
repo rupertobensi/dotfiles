@@ -1,11 +1,7 @@
-typeset -gr __p9k_wizard_columns=55
-typeset -gr __p9k_wizard_lines=21
+typeset -gr __p9k_wizard_columns=51
+typeset -gr __p9k_wizard_lines=12
 typeset -gr __p9k_zd=${ZDOTDIR:-$HOME}
 typeset -gr __p9k_zd_u=${${${(q)__p9k_zd}/#(#b)${(q)HOME}(|\/*)/'~'$match[1]}//\%/%%}
-typeset -gr __p9k_cfg_basename=.p10k.zsh
-typeset -gr __p9k_cfg_path_o=$__p9k_zd/$__p9k_cfg_basename
-typeset -gr __p9k_cfg_path=${__p9k_cfg_path_o:A}
-typeset -gr __p9k_cfg_path_u=$__p9k_zd_u/$__p9k_cfg_basename
 typeset -gr __p9k_zshrc=${${:-$__p9k_zd/.zshrc}:A}
 typeset -gr __p9k_zshrc_u=$__p9k_zd_u/.zshrc
 typeset -gr __p9k_root_dir_u=${${${(q)__p9k_root_dir}/#(#b)${(q)HOME}(|\/*)/'~'$match[1]}//\%/%%}
@@ -15,6 +11,10 @@ function _p9k_can_configure() {
   function $0_error() {
     (( q )) || print -rP "%1F[ERROR]%f %Bp10k configure%b: $1" >&2
   }
+  typeset -g __p9k_cfg_path_o=${POWERLEVEL9K_CONFIG_FILE:=${ZDOTDIR:-~}/.p10k.zsh}
+  typeset -g __p9k_cfg_basename=${__p9k_cfg_path_o:t}
+  typeset -g __p9k_cfg_path=${__p9k_cfg_path_o:A}
+  typeset -g __p9k_cfg_path_u=${${${(q)__p9k_cfg_path_o}/#(#b)${(q)HOME}(|\/*)/'~'$match[1]}//\%/%%}
   {
     [[ -o multibyte ]]         || { $0_error "multibyte option is not set";      return 1 }
     [[ -e $__p9k_zd ]]         || { $0_error "$__p9k_zd_u does not exist";       return 1 }
@@ -27,14 +27,6 @@ function _p9k_can_configure() {
       $0_error "$__p9k_cfg_path_u is a special file"
       return 1
     }
-    [[ -r $__p9k_root_dir/config/p10k-lean.zsh ]]                          || {
-      $0_error "cannot read $__p9k_root_dir_u/config/p10k-lean.zsh"
-      return 1
-    }
-    [[ -r $__p9k_root_dir/config/p10k-classic.zsh ]]                       || {
-      $0_error "cannot read $__p9k_root_dir_u/config/p10k-classic.zsh"
-      return 1
-    }
     [[ ! -e $__p9k_zshrc || -f $__p9k_zshrc || -h $__p9k_zshrc ]]          || {
       $0_error "$__p9k_zshrc_u a special file"
       return 1
@@ -43,10 +35,14 @@ function _p9k_can_configure() {
       $0_error "$__p9k_zshrc_u is not readable"
       return 1
     }
-    [[ ! -e $__p9k_zshrc || -w $__p9k_zshrc ]]                             || {
-      $0_error "$__p9k_zshrc_u is not writable"
-      return 1
-    }
+    local style
+    for style in lean lean-8colors classic rainbow pure; do
+      [[ -r $__p9k_root_dir/config/p10k-$style.zsh ]]                      || {
+        $0_error "$__p9k_root_dir_u/config/p10k-$style.zsh is not readable"
+        return 1
+      }
+    done
+
     (( LINES >= __p9k_wizard_lines && COLUMNS >= __p9k_wizard_columns ))   || {
       $0_error "terminal size too small; must be at least $__p9k_wizard_columns x $__p9k_wizard_lines"
       return 1
@@ -60,6 +56,7 @@ function _p9k_can_configure() {
 
 function p9k_configure() {
   eval "$__p9k_intro"
+  _p9k_can_configure || return
   (
     set -- -f
     source $__p9k_root_dir/internal/wizard.zsh

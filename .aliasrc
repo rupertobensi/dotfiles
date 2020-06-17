@@ -61,7 +61,7 @@ alias \
 	cfxinitrc="nvim ~/.xinitrc" \
 	cfxprofile="nvim ~/.xprofile" \
 	cfXresources="nvim ~/.Xresources" \
-	cfzprezto="nvim ~/.zshrc" \
+	cfzprezto="nvim ~/.zprezto/runcoms/.zpreztorc" \
 	cfzprofile="nvim ~/.zprofile" \
 	cfzshenv="nvim ~/.zshenv" \
 	cfzshrc="nvim ~/.zshrc"

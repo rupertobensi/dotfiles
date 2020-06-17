@@ -310,7 +310,7 @@ set splitbelow
 " Don't dispay mode in command line (airilne already shows it)
 set noshowmode
 
-" Set floating window to be slightly transparent
+" Set floating window to be slightly transparent (might cause error if plugin is not installed)
 set winbl=10
 
 " ============================================================================ "
