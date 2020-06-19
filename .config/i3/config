@@ -426,6 +426,6 @@ for_window [instance="dd"] floating enable, resize set 1800 750, move scratchpad
 # bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 # for_window [class="dropdown_term"] floating enable, resize set 1800 600, move scratchpad, border pixel 2
 
+
 # Apply i3-fibonacci at the end after everything has been loaded up
 exec_always ~/.dotfiles/.local/bin/i3_fib
-
