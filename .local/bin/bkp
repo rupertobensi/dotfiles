@@ -9,7 +9,7 @@ read -p "Choose a number. Do you want to backup:
 1. .dotfiles
 2. WHOLE /
 or...
-3. prepare a Dropbox (notes-only) backup
+3. prepare a DROPBOX folder (inside Robert directory) backup
 4. 'Robert' folder
 5. create a [music] backup
 " option

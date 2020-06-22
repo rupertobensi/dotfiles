@@ -66,49 +66,56 @@ alias \
 	cfzshenv="nvim ~/.zshenv" \
 	cfzshrc="nvim ~/.zshrc"
 
+# Monitor configuration shortcuts
 alias m2off="xrandr --output DVI-I-0 --off"
 alias m2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-A-0; (pbr &)"
 
-alias fm="vifmrun"
-alias spc="cdu -idh"
-alias keep="keepassxc-cli"
-alias nc="ncmpcpp"
-alias audio="pulsemixer"
-alias newsb="newsboat"
-alias Cal="calcurse"
-alias tra="tremc"
-alias imgur="imgur_downloader"
-alias ab-pr="absolutely-proprietary"
+# Various programs
+alias \
+    ab-pr="absolutely-proprietary" \
+    audio="pulsemixer" \
+    Cal="calcurse" \
+    fm="vifmrun" \
+    imgur="imgur_downloader" \
+    keep="keepassxc-cli" \
+    nc="ncmpcpp" \
+    newsb="newsboat" \
+    rtv="tuir" \
+    spc="cdu -idh" \
+    tra="tremc"
 
 # trash-cli
-alias tp="trash-put"
-alias tli="trash-list"
-alias tre="trash-restore"
-alias tem="trash-empty"
+alias \
+tli="trash-list" \
+tp="trash-put" \
+tre="trash-restore"lias tem="trash-empty" 
 
-alias bitcoin="cointop"
-alias bitcoin2="curl rate.sx"
-alias corona="curl -L covid19.trackercli.com"
-alias emoticon="echo 😺"
-alias sudoku="nudoku"
-alias stock="mop"
-alias google="googler"
-alias duck="ddgr"
-alias wttr="curl wttr.in"
+alias \
+bitcoin2="curl rate.sx" \
+bitcoin="cointop" \
+corona="curl -L covid19.trackercli.com" \
+duck="ddgr" \
+emoticon="echo 😺" \
+google="googler" \
+nitrogens="nitrogen --set-zoom-fill --save" \
+stock="mop" \
+sudoku="nudoku" \
+tilixp="tilix --preferences"
 
-alias tilixp="tilix --preferences"
-alias visudo!="sudo EDITOR=nvim visudo"
-alias nitrogens="nitrogen --set-zoom-fill --save"
-alias walr="wal -R"
-alias wali="wal -i"
+alias \
+visudo!="sudo EDITOR=nvim visudo" \
+wali="wal -i" \
+walr="wal -R" \
+wttr="curl wttr.in"
 
 # notes (compatible with VimWiki plugin)
-alias note="nvim /mnt/e/Robert/DROPBOX/Linux/index.md"
-alias notes="nvim /mnt/e/Robert/DROPBOX/Linux/notes.md"
-alias notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md"
-alias notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md"
-alias notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
-alias notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.md"
+alias \
+note="nvim /mnt/e/Robert/DROPBOX/Linux/index.md" \
+notes="nvim /mnt/e/Robert/DROPBOX/Linux/notes.md" \
+notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md" \
+notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md" \
+notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.md" \
+notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
 
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 alias xc="xclip -sel clipboard"
@@ -143,14 +150,15 @@ alias \
     li='ls -a --icons'
 
 # Tmux aliases
-alias ta='tmux attach -t'
-alias tad='tmux attach -d -t'
-alias ts='tmux new-session -s'
-alias tl='tmux list-sessions'
-alias tksv='tmux kill-server'
-alias tkss='tmux kill-session -t'
-alias tkso='tmux kill-session -a'
-alias tmuxSrc="tmux source-file ~/.tmux.conf"
+alias \
+ta='tmux attach -t' \
+tad='tmux attach -d -t' \
+tkso='tmux kill-session -a' \
+tkss='tmux kill-session -t' \
+tksv='tmux kill-server' \
+tl='tmux list-sessions' \
+tmuxSrc="tmux source-file ~/.tmux.conf" \
+ts='tmux new-session -s'
 
 # Reloading configurations
 alias Src="source ~/.dotfiles/.zprezto/runcoms/.zshrc"
