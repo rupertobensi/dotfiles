@@ -7,10 +7,11 @@
 
 read -p "Choose a number. Do you want to backup:
 1. .dotfiles
-2. everything
+2. WHOLE /
 or...
 3. prepare a Dropbox (notes-only) backup
-4. create a [albums] backup
+4. 'Robert' folder
+5. create a [music] backup
 " option
 
 if [ $option -eq 1 ]
@@ -24,7 +25,10 @@ elif [ $option -eq 3 ]
        dropbox &
 
 elif [ $option -eq 4 ]
-  then sudo rsync -aAXv --delete --progress --stats /mnt/e/[media]/[music]/albums/  /mnt/d/backup/albums/
+  then sudo rsync -aAXv --delete --progress --stats /mnt/e/Robert/  /mnt/d/backup/Robert/
+
+elif [ $option -eq 5 ]
+  then sudo rsync -aAXv --delete --progress --stats /mnt/e/[media]/[music]/  /mnt/d/backup/[music]/
 
 else
   echo "Wrong choice..."

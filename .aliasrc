@@ -118,6 +118,7 @@ alias pcp="pycp --preserve --global-pbar -i"
 # scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
 alias ncm="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
+alias Ncm="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tmux window
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.
 alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
