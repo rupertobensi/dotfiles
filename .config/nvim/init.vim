@@ -55,6 +55,9 @@ set cmdheight=1
 " or 'The only match'
 "set shortmess+=c
 
+" Disable automatic comment insertion
+au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " ============================================================================ "
 " ===                           PLUGIN SETUP                               === "
 " ============================================================================ "
@@ -514,10 +517,10 @@ map <F5> :set wrap!<CR>
 map <F6> :IndentLinesToggle <CR>
 
 "Toggle Nerdtree
-nmap <F8> :NERDTreeToggle<CR>
+" nmap <F8> :NERDTreeToggle<CR>
 
 " Goyo mode
-map <F9> :Goyo <CR>
+map <F8> :Goyo <CR>
 
 " Copy to clipboard using leader
 vnoremap  <leader>y  "+y
@@ -628,15 +631,10 @@ set statusline+=%#CursorLine#     " colour
 set statusline+=\ %t\                   " short file name
 set statusline+=%M                        " modified [+] flag
 " set statusline+=%=                          " right align
-"set statusline+=%#CursorLine#   " colour
+" set statusline+=%#CursorLine#   " colour
 " set statusline+=\ %Y\                   " file type
-"set statusline+=%#CursorIM#     " colour
+" set statusline+=%#CursorIM#     " colour
 " set statusline+=\ %3l:%-2c\         " line + column
 " set statusline+=%#Cursor#       " colour
 " set statusline+=\ %3p%%\                " percentage
 "========================================================
-
-" disable automatic comment insertion
-au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-

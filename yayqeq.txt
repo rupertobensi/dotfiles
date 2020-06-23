@@ -172,6 +172,7 @@ mpd-notification
 mpv
 mtpfs
 mutt-wizard-git
+myman
 nano
 napi-bash
 navi
@@ -188,6 +189,7 @@ nnn
 nodejs-mapscii
 nsnake
 ntfs-3g
+nudoku-git
 ocs-url
 octopi
 office-code-pro
@@ -239,7 +241,6 @@ reflector
 riot-desktop
 rofi
 rsync
-rtv
 screenkey
 sddm
 sddm-kcm
@@ -254,6 +255,7 @@ smloadr
 snapper
 soundkonverter
 spacefm
+spectre-meltdown-checker
 spotify
 stacer
 steam

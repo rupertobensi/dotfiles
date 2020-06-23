@@ -122,7 +122,7 @@ alias xc="xclip -sel clipboard"
 # copy with progress bars:
 alias pmv="pymv --preserve --global-pbar -i"
 alias pcp="pycp --preserve --global-pbar -i"
-# scripts:
+# ncmpcpp scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
 alias ncm="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
 alias Ncm="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tmux window
