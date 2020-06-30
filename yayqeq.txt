@@ -38,7 +38,6 @@ chromium
 cli-visualizer
 clockywock
 clyrics
-cmatrix
 cmus
 code
 cointop
@@ -109,7 +108,6 @@ htop-vim-git
 httrack
 i3-gaps
 i3-layout-manager-git
-i3ipc-python-git
 i3keys
 i3lock
 icedtea-web
@@ -216,6 +214,7 @@ pulsemixer
 pycp
 python-eyed3
 python-i3-py
+python-i3ipc
 python-pip
 python-pynvim
 python-pywal
@@ -302,6 +301,7 @@ ttf-weather-icons
 tty-clock
 tuir
 unclutter
+unimatrix-git
 unzip
 vifm
 vim
@@ -321,6 +321,7 @@ wmctrl
 xautolock
 xcape
 xclip
+xdo
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-vesa
@@ -347,6 +348,7 @@ xorg-smproxy
 xorg-x11perf
 xorg-xauth
 xorg-xbacklight
+xorg-xclock
 xorg-xcmsdb
 xorg-xcursorgen
 xorg-xdpyinfo
