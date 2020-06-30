@@ -54,14 +54,14 @@ module-margin-left = 0
 module-margin-right = 1
 
 
-; font-0 = Gohu GohuFont:pixelsize=12;2                                # MAIN FONT
-; font-0 = GohuNew:pixelsize=12;2                                # MAIN FONT
-font-0 = Jetbrains Mono Nerd Font:pixelsize=8;2                                # MAIN FONT
-font-1 = Jetbrains Mono Nerd Font:pixelsize=9:weight=bold;2                                # time center
+; font-0 = Gohu GohuFont:pixelsize=12;2                               # MAIN FONT
+; font-0 = GohuNew:pixelsize=12;2                                     # MAIN FONT
+font-0 = Jetbrains Mono Nerd Font:pixelsize=8;2                       # MAIN FONT
+font-1 = Jetbrains Mono Nerd Font:pixelsize=9:weight=bold;3           # time center
 
-font-2 = Jetbrains Mono Nerd Font:pixelsize=8:antialias=true;2                 # weather text
-font-3 = Jetbrains Mono Nerd Font:pixelsize=10;2                           # weather icon
-font-4 = Symbola:pixelsize=5;1                                       # Vol bar/separators
+font-2 = Jetbrains Mono Nerd Font:pixelsize=8:antialias=true;2        # weather text
+font-3 = Jetbrains Mono Nerd Font:pixelsize=10;2                      # weather icon
+font-4 = Symbola:pixelsize=5;1                                        # Vol bar/separators
 font-5 = FontAwesome:pixelsize=14;4
 
 modules-left = i3 xwindow
