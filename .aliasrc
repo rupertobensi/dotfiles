@@ -31,11 +31,9 @@ alias \
 	f="$FILE" \
 	sf="sudo $FILE" \
 	e="$EDITOR" \
-	v="$EDITOR" \
-    sv="sudo $EDITOR" \
     se="sudo $EDITOR" \
 	n="nnn" \
-	p="sudo pacman" \
+	p="sudo pacman"
 
 
 # Config shortcuts
@@ -88,7 +86,8 @@ alias \
 alias \
 tli="trash-list" \
 tp="trash-put" \
-tre="trash-restore"lias tem="trash-empty" 
+tre="trash-restore" \
+tem="trash-empty"
 
 alias \
 bitcoin2="curl rate.sx" \

@@ -263,6 +263,7 @@ bindsym $mod+Shift+F4		exec --no-startup-id redshiftgui
 bindsym $mod+F5		exec $term -e tremc
 bindsym $mod+Shift+F5		exec --no-startup-id td-toggle
 bindsym $mod+F6		exec --no-startup-id keepassxc
+bindsym $mod+Shift+F6		exec --no-startup-id lutris
 #bindsym $mod+F8		exec --no-startup-id mailsync
 bindsym $mod+F7		exec --no-startup-id chromium
 bindsym $mod+Shift+F7		exec --no-startup-id lollypop
@@ -352,7 +353,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### i3-save-tree --workspace 4 > ws4.json
 ### sudo i3-msg -t get_workspaces
 
-assign [class=Caprine|Riot|Steam] 3
+assign [class=Caprine|Element|Steam] 3
 assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync] 5
 assign [class=discord] 6
 
@@ -364,7 +365,7 @@ exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/w
 
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/dolphin'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/riot-desktop'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
