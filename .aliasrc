@@ -73,6 +73,7 @@ alias \
     ab-pr="absolutely-proprietary" \
     audio="pulsemixer" \
     Cal="calcurse" \
+    deezer="smloadr" \
     fm="vifmrun" \
     imgur="imgur_downloader" \
     keep="keepassxc-cli" \

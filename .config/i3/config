@@ -27,7 +27,9 @@ set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -69,10 +71,11 @@ bindsym $mod+Shift+o		exec --no-startup-id i3_resize right
 
 #bindsym $mod+p 	              	exec --no-startup-id $term -e tmux split-window -h nvim
 
-bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
-bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
-bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
-bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
+# bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-show $(pamixer --get-volume)
+bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-s
+bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+; exec --no-startup-id volnoti-s
+bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%-; exec --no-startup-id volnoti-s
+bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%-; exec --no-startup-id volnoti-s
 
 bindsym $mod+bar		exec $term -e htop
 bindsym $mod+Shift+bar		exec ksysguard
@@ -339,6 +342,7 @@ exec_always wal -i ~/.config/wall.png
 #exec --no-startup-id nitrogen --restore
 #exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
 
+exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
 exec --no-startup-id polybar bar1
