@@ -69,7 +69,7 @@ bindsym $mod+Shift+i		exec --no-startup-id i3_resize up
 bindsym $mod+o 			exec --no-startup-id $term -e tmux split-window -h ranger
 bindsym $mod+Shift+o		exec --no-startup-id i3_resize right
 
-#bindsym $mod+p 	              	exec --no-startup-id $term -e tmux split-window -h nvim
+# bindsym $mod+p 	              	exec --no-startup-id $term -e tmux split-window -h nvim
 
 # bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-show $(pamixer --get-volume)
 bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-s
@@ -359,7 +359,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 
 assign [class=Caprine|Element|Steam] 3
 assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync] 5
-assign [class=discord] 6
+assign [class=discord|Lutris|battle.net.exe] 6
 
 # Multiple i3-msg ws1 as certain programs start faster than the others
 

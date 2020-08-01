@@ -1,5 +1,5 @@
 2:/home/robi/.dotfiles
-':/home/robi
+':/home/robi/.dotfiles
 6:/home/robi/.dotfiles/system_media
 t:/mnt/e/[media]/[tv series]
 a:/mnt/e/[media]/[music]/albums
@@ -17,3 +17,4 @@ T:/mnt/e/[media]/[tv series]/Ozark/Ozark.S01.720p.WEBRip.x264-STRiFE
 b:/mnt/e/Robert/BOOKS
 m:/mnt/e/Robert
 D:/home/robi/DOWNLOADS
+S:/home/robi/.dotfiles/.config/nvim

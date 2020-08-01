@@ -15,6 +15,8 @@ I use **i3** as my tiling window manager, and rest as follows:
 * Video player: **mpv**
 * Music player: **ncmpcpp/cmus**
 
+## Screenshots
+
 ![current setup](desktop.png)
 
 ![+1](desktop2.png)
