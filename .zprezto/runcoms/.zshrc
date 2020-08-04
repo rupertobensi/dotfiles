@@ -26,7 +26,6 @@ bindkey -v '^?' backward-delete-char
 bindkey -v
 export KEYTIMEOUT=1
 
-
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
@@ -48,7 +47,7 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-
+# Change directory with ctrl+o via ranger
 rangercd () {
     tmp="$(mktemp)"
     ranger --choosedir="$tmp" "$@"

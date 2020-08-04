@@ -266,9 +266,9 @@ bindsym $mod+Shift+F4		exec --no-startup-id redshiftgui
 bindsym $mod+F5		exec $term -e tremc
 bindsym $mod+Shift+F5		exec --no-startup-id td-toggle
 bindsym $mod+F6		exec --no-startup-id keepassxc
-bindsym $mod+Shift+F6		exec --no-startup-id lutris
+bindsym $mod+Shift+F6		exec --no-startup-id chromium
 #bindsym $mod+F8		exec --no-startup-id mailsync
-bindsym $mod+F7		exec --no-startup-id chromium
+bindsym $mod+F7		exec --no-startup-id lutris
 bindsym $mod+Shift+F7		exec --no-startup-id lollypop
 bindsym $mod+F8		exec --no-startup-id dmenumount
 bindsym $mod+Shift+F8 	exec --no-startup-id dmenuumount
