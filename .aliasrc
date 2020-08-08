@@ -48,6 +48,8 @@ alias \
 	cfmpv_input.conf="nvim ~/.config/mpv/input.conf" \
 	cfncmpcpp_bindings="nvim ~/.ncmpcpp/bindings" \
 	cfncmpcpp_config="nvim ~/.ncmpcpp/config" \
+	cfnewsboat_config="nvim ~/.config/newsboat/config" \
+	cfnewsboat_urls="nvim ~/.config/newsboat/urls" \
 	cfnvim_init.vim="nvim ~/.config/nvim/init.vim" \
 	cfnvim_plugins="nvim ~/.config/nvim/plugins.vim" \
 	cfpicom.conf="nvim ~/.config/picom/picom.conf" \
