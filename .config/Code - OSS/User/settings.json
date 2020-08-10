@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Dracula",
-  "editor.fontFamily": "'Jetbrains Mono Medium', 'monospace', monospace, 'Hack Fallback'",
+  "editor.fontFamily": "'Jetbrains Mono Medium', monospace, 'Hack Fallback'",
   "window.zoomLevel": 0,
   "editor.wordWrap": "on",
   "keyboard.dispatch": "keyCode",
