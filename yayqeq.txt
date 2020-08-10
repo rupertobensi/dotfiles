@@ -60,6 +60,7 @@ dunst
 dvd+rw-tools
 ebtables
 efibootmgr
+element-desktop
 envypn-powerline-git
 ephifonts-no-helvetica
 epr-git
@@ -120,6 +121,7 @@ inxi
 jre8-openjdk
 k3b
 kate
+kcalc
 kcolorchooser
 kdenlive
 keditbookmarks
@@ -218,7 +220,6 @@ python-i3ipc
 python-pip
 python-pynvim
 python-pywal
-python-ueberzug
 python2-backports.functools_lru_cache
 python2-pip
 qemu
@@ -237,7 +238,6 @@ refind
 refind-theme-minimal-git
 refind-theme-regular-git
 reflector
-riot-desktop
 rofi
 rsync
 screenkey
@@ -266,6 +266,7 @@ sudo
 sxiv
 sxiv-rifle
 syncthing
+taffy
 tamzen-font
 telegram-desktop
 terminus-font
@@ -300,6 +301,7 @@ ttf-ubuntu-font-family
 ttf-weather-icons
 tty-clock
 tuir
+ueberzug
 unclutter
 unimatrix-git
 unzip
@@ -308,6 +310,7 @@ vim
 vimv-git
 virt-manager
 vlc
+volnoti
 vulkan-mesa-layers
 vulkan-radeon
 vulkan-tools
