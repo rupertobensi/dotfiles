@@ -51,6 +51,7 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 # auto startx at login
+# COMMENT IT OUT on debian!
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx
 fi
