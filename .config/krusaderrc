@@ -283,8 +283,8 @@ FrameShape=Panel
 Layout=krusader:compact
 
 [Private]
-PopularUrls=file:///mnt/e/Work/webpages/,file:///mnt/e/Work/webpages/outdoors-website_YT/,file:///mnt/e/Work/,file:///home/robi/Wallpapers/,file:///home/robi/.dotfiles/,file:///mnt/e/[media]/[music]/albums/alt-j/,file:///mnt/e/Downloads/,file:///home/robi/.config/.myconfig/,file:///mnt/e/[media]/[music]/albums/Bitamina/,file:///home/robi/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/[media]/[music]/albums/,file:///mnt/e/[media]/[music]/,file:///mnt/e/[media]/,file:///home/robi/.config/,file:///mnt/e/Downloads/Torrents/,file:///mnt/e/Downloads/stuff/,file:///home/robi/.config/.ayyconfig/,file:///mnt/e/[media]/[tv series]/,file:///mnt/e/[media]/[movies]/,file:///home/Data/steam/,file:///home/Data/,file:///home/Data/steam/Steam/,file:///home/Data/steam/Steam/appcache/,file:///home/,file:///home/Data/HS/,file:///,file:///home2/,file:///home/Data/steam/steamapps/
-PopularUrlsRank=19,18,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrls=file:///mnt/e/Downloads/stuff/29.07.2020/,file:///mnt/e/Work/webpages/,file:///mnt/e/Work/webpages/outdoors-website_YT/,file:///home/robi/.config/.myconfig/,file:///mnt/e/[media]/,file:///mnt/e/Downloads/,file:///mnt/e/Downloads/stuff/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///mnt/e/Work/,file:///home/robi/Dropbox/Linux/,file:///home/robi/Wallpapers/,file:///mnt/e/[media]/[music]/albums/alt-j/,file:///mnt/e/[media]/[music]/albums/Bitamina/,file:///mnt/e/[media]/[music]/albums/,file:///mnt/e/[media]/[music]/,file:///home/robi/.config/,file:///mnt/e/Downloads/Torrents/,file:///home/robi/.config/.ayyconfig/,file:///mnt/e/[media]/[tv series]/,file:///mnt/e/[media]/[movies]/,file:///home/Data/steam/,file:///home/Data/,file:///home/Data/steam/Steam/,file:///home/Data/steam/Steam/appcache/,file:///home/,file:///home/Data/HS/,file:///,file:///home2/
+PopularUrlsRank=16,6,5,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Start Position=0,23
 Start Size=1920,1057
 cmdline history=

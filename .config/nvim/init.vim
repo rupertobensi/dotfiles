@@ -301,8 +301,10 @@ let g:closetag_close_shortcut = '<leader>>'
 " Enable true color support
 set termguicolors
 
+"# use dracula, onedark or oceanicNext (change o to capital O like Oceanic) for color scheme
+
 " Vim airline theme
-" let g:airline_theme='dracula'
+" let g:airline_theme='onedark'
 
 " Change vertical split character to be a space (essentially hide it)
 set fillchars+=vert:.
@@ -363,7 +365,7 @@ function! s:custom_jarvis_colors()
 endfunction
 
  autocmd! ColorScheme * call TrailingSpaceHighlights()
- autocmd! ColorScheme dracula call s:custom_jarvis_colors()
+ autocmd! ColorScheme onedark call s:custom_jarvis_colors()
 
 " Call method on window enter
 augroup WindowManagement
@@ -380,12 +382,12 @@ endfunction
 
 " Editor theme. Change 1 for 0 for transparency (?)
 
-let g:dracula_colorterm = 1
+let g:onedark_colorterm = 1
 set background=dark
 try
-  colorscheme dracula
+  colorscheme onedark
 catch
-  colorscheme dracula
+  colorscheme onedark
 endtry
 " ============================================================================ "
 " ===                             KEY MAPPINGS                             === "

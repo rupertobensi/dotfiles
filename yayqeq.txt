@@ -23,6 +23,7 @@ bashtop
 binutils
 bison
 bleachbit
+bpytop
 breeze-gtk
 btrbk
 btrfs-progs
@@ -268,6 +269,7 @@ sxiv-rifle
 syncthing
 taffy
 tamzen-font
+tdrop-git
 telegram-desktop
 terminus-font
 termite
@@ -311,6 +313,7 @@ vimv-git
 virt-manager
 vlc
 volnoti
+vrms-arch
 vulkan-mesa-layers
 vulkan-radeon
 vulkan-tools
@@ -386,6 +389,7 @@ you-get
 youtube-dl
 youtube-viewer-git
 ytmdl
+ytop
 z
 zathura
 zathura-pdf-mupdf

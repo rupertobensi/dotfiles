@@ -75,8 +75,8 @@ Plug 'scrooloose/nerdtree'
 
 " Colorscheme
 Plug 'dracula/vim', { 'as': 'dracula' }
-"Plug 'mhartington/oceanic-next'
-
+Plug 'mhartington/oceanic-next'
+Plug 'joshdick/onedark.vim'
 " Customized vim status line
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
