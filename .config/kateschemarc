@@ -2,6 +2,35 @@
 update_info=fonts_kate.upd:Plasma_Fonts_Kate
 
 [Breeze Dark]
+Color Background[$d]
+Color Code Folding[$d]
+Color Current Line Number[$d]
+Color Highlighted Bracket[$d]
+Color Highlighted Line[$d]
+Color Icon Bar[$d]
+Color Indentation Line[$d]
+Color Line Number[$d]
+Color MarkType 1[$d]
+Color MarkType 2[$d]
+Color MarkType 3[$d]
+Color MarkType 4[$d]
+Color MarkType 5[$d]
+Color MarkType 6[$d]
+Color MarkType 7[$d]
+Color Modified Lines[$d]
+Color Replace Highlight[$d]
+Color Saved Lines[$d]
+Color Search Highlight[$d]
+Color Selection[$d]
+Color Separator[$d]
+Color Spelling Mistake Line[$d]
+Color Tab Marker[$d]
+Color Template Background[$d]
+Color Template Editable Placeholder[$d]
+Color Template Focused Editable Placeholder[$d]
+Color Template Not Editable Placeholder[$d]
+Color Word Wrap Marker[$d]
+Font=Monospace,9,-1,5,50,0,0,0,0,0
 dummy=prevent-empty-group
 
 [KDE]
@@ -10,6 +39,37 @@ dummy=prevent-empty-group
 [Normal]
 Color Background=255,255,255
 Font=Ubuntu Mono,11,-1,5,50,0,0,0,0,0,Regular
+dummy=prevent-empty-group
+
+[One (dark)]
+Color Background=39,43,51
+Color Code Folding=72,81,96
+Color Highlighted Bracket=55,62,75
+Color Highlighted Line=43,49,58
+Color Icon Bar=39,43,51
+Color Indentation Line=72,81,96
+Color Line Number=72,81,96
+Color MarkType 1=77,131,177
+Color MarkType 2=170,87,96
+Color MarkType 3=187,160,108
+Color MarkType 4=190,117,213
+Color MarkType 5=160,160,164
+Color MarkType 6=210,155,103
+Color MarkType 7=186,78,67
+Color Modified Lines=250,233,235
+Color Replace Highlight=94,107,127
+Color Saved Lines=213,250,226
+Color Search Highlight=43,49,58
+Color Selection=61,67,80
+Color Separator=72,81,96
+Color Spelling Mistake Line=218,68,83
+Color Tab Marker=72,81,96
+Color Template Background=39,43,51
+Color Template Editable Placeholder=213,250,226
+Color Template Focused Editable Placeholder=213,250,226
+Color Template Not Editable Placeholder=250,233,235
+Color Word Wrap Marker=72,81,96
+Font=Monospace,10,-1,5,50,0,0,0,0,0
 dummy=prevent-empty-group
 
 [Solarized (dark)]

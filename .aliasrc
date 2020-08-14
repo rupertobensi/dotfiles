@@ -41,6 +41,7 @@ alias \
 	cfalacritty.yml="nvim ~/.config/alacritty/alacritty.yml" \
 	cfalacritty_dd.yml="nvim ~/.config/alacritty/alacritty_dd.yml" \
 	cfaliasrc="nvim ~/.aliasrc" \
+    cfcode_settings.json="nvim ~/.config/Code\ -\ OSS/User/settings.json" \
 	cffonts.conf="nvim ~/.config/fontconfig/fonts.conf" \
 	cfi3_config="nvim ~/.config/i3/config" \
 	cfmpd.conf="nvim ~/.mpd/mpd.conf" \
