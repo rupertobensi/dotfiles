@@ -118,7 +118,8 @@ notes="nvim /mnt/e/Robert/DROPBOX/Linux/notes.md" \
 notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md" \
 notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md" \
 notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.md" \
-notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
+notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md" \
+notesw="nvim /mnt/e/Robert/DROPBOX/Linux/windows.md"
 
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 alias xc="xclip -sel clipboard"
@@ -129,6 +130,20 @@ alias pcp="pycp --preserve --global-pbar -i"
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
 alias ncm="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
 alias Ncm="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tmux window
+
+# root privileges
+alias doas="doas --"
+
+# get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+# get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+# the terminal rickroll
+alias rickroll='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.
 alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
@@ -176,7 +191,7 @@ alias -g W="| wc -w"
 alias -g L="| wc -l"
 
 #
-## yay-pacman
+## YAY-PACMAN
 #
 
 if (( $+commands[yay] )); then
@@ -219,11 +234,11 @@ alias yay100="expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n 100"
 alias yayfzfa="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 # browse installed by ME packages with an instant preview of each package:
 alias yayfzf="pacman -Qeq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
-# remove orphans
-alias yayxorphans="sudo pacman -Rns $(pacman -Qtdq)"
+# remove orphaned packages
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 #
-## python pip
+## PYTHON PIP
 #
 
 if (( $+commands[pip] )); then
@@ -250,7 +265,7 @@ fi
 
 
 #
-## apt equivalent
+## APT
 #
 
 if (( $+commands[apt-get] )); then
@@ -272,7 +287,7 @@ if (( $+commands[apt-get] )); then
   alias aptor="sudo apt autoremove"
 fi
 
-# Ranger
+### RANGER
 # q quits ranger normally
 # capital Q quits and changed dir
 function ranger {
@@ -291,6 +306,8 @@ function ranger {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
+
+
 # mkdir n cd
 mkcdir ()
 {
@@ -298,7 +315,7 @@ mkcdir ()
       cd -P -- "$1"
 }
 
+
 #prevent rm -rf /
 # alias rm -rf /="echo BAD IDEA"
 # alias rm -rf /*="echo BAD IDEA"
-

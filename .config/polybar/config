@@ -19,6 +19,8 @@ background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
+#below test
+foreground2 = ${xrdb:color1:#222}
 primary = ${xrdb:color2:#222}
 #primary = #a1429b
 secondary = #e60053
@@ -66,8 +68,8 @@ font-5 = FontAwesome:pixelsize=14;4
 
 modules-left = i3 xwindow
 modules-center = datecen
+modules-right = pulseaudio weather space cpu ram date
 ; modules-right = pulseaudio separator weather separator filesystem separator cpu separator memory separator date separator
-modules-right = pulseaudio weather filesystem cpu memory date
 #modules-right = #mpd pulseaudio separator separator2 weather separator #xkeyboard filesystem separator #eth #separator cpu separator memory separator battery temperature date #powermenu
 
 tray-position = right
@@ -98,6 +100,7 @@ scroll-down = i3wm-wsprev
 type = internal/xwindow
 ; label = %title:0:30:...%
 label = [%title:0:75:...%]
+format-foreground=${colors.foreground2}
 ; " ¦, ┆, │, ⎸, or ▏
 
 
@@ -117,12 +120,14 @@ label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 #label-indicator-underline = ${colors.secondary}
 
-[module/filesystem]
+[module/space]
 type = internal/fs
 interval = 25
 
 mount-0 = /
 
+#below, an example showing how it should be formatted
+format-mounted-foreground=${colors.foreground2}
 #label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-mounted =[ %percentage_used%%]
 label-unmounted = %mountpoint% not mounted
@@ -238,6 +243,7 @@ card = intel_backlight
 type = internal/cpu
 interval = 2
 format =[ cpu<label>]
+format-foreground=${colors.foreground2}
 #format =CPU<label> <ramp-coreload>
 ; format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
@@ -253,11 +259,12 @@ ramp-coreload-5 = ▆
 ramp-coreload-6 = ▇
 ramp-coreload-7 = █
 
-[module/memory]
-#teal color
+[module/ram]
 type = internal/memory
 interval = 2
 ; format-prefix = ""
+; format-prefix-foreground = ${colors.foreground-alt}
+format-foreground=${colors.foreground2}
 format-prefix-foreground = ${colors.foreground-alt}
 #format-underline = #4bffdc
 label =[  ram %percentage_used%%]
@@ -388,6 +395,7 @@ exec = ~/.config/polybar/polybar-scripts/openweathermap-detailed.sh
 interval = 600
 label-font = 3
 click-left = $TERMINAL -e w3m wttr.in &
+format-foreground=${colors.foreground2}
 
 [module/battery]
 type = internal/battery

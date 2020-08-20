@@ -17,9 +17,7 @@
   "editor.lineNumbers": "relative",
   "editor.links": false,
   "launch": {
-
     "configurations": [],
     "compounds": []
   }
 }
-

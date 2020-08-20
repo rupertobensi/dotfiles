@@ -41,7 +41,6 @@ clockywock
 clyrics
 cmus
 code
-cointop
 consolas-font
 cool-retro-term
 cowsay

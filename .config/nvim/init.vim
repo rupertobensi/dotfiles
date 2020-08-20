@@ -536,10 +536,11 @@ nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 
+" Shortcuts, e.g. <space> then <u> then <enter> launcher chromium
 nmap <silent> <leader>u :exec 'silent !chromium % &'
 nmap <silent> <leader>U :exec 'silent !firefox % &'
-nmap <silent> <leader>i :exec 'silent !kate % &'
-nmap <silent> <leader>I :exec 'silent !code % &'
+nmap <silent> <leader>i :exec 'silent !code % &'
+nmap <silent> <leader>I :exec 'silent !kate % &'
 nmap <silent> <leader>o :exec 'silent !okular % &'
 
 " execute a script inside nvim

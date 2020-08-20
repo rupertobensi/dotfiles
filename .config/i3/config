@@ -268,8 +268,8 @@ bindsym $mod+Shift+F5		exec --no-startup-id td-toggle
 bindsym $mod+F6		exec --no-startup-id keepassxc
 bindsym $mod+Shift+F6		exec --no-startup-id chromium
 #bindsym $mod+F8		exec --no-startup-id mailsync
-bindsym $mod+F7		exec --no-startup-id lutris
-bindsym $mod+Shift+F7		exec --no-startup-id lollypop
+bindsym $mod+F7		exec --no-startup-id lollypop
+bindsym $mod+Shift+F7		exec --no-startup-id lutris
 bindsym $mod+F8		exec --no-startup-id dmenumount
 bindsym $mod+Shift+F8 	exec --no-startup-id dmenuumount
 #bindsym $mod+F11	exec --no-startup-id ducksearch
