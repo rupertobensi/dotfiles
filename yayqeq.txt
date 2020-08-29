@@ -118,6 +118,7 @@ imgur-downloader-git
 inotify-tools
 intel-ucode
 inxi
+jitsi
 jre8-openjdk
 k3b
 kate
@@ -323,6 +324,7 @@ which
 windows-xp-icons-git
 wine
 wmctrl
+xampp
 xautolock
 xcape
 xclip

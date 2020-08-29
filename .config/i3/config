@@ -55,7 +55,7 @@ bindsym $mod+s			gaps inner current plus 5
 bindsym $mod+Shift+s		gaps inner current minus 5
 
 bindsym $mod+g		gaps inner current set 0; gaps outer current set 0
-bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0;gaps top current set 24
+bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0;gaps top current set 20
 
 bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3_resize left
@@ -358,7 +358,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Element|Steam] 3
-assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync|Lutris] 5
+assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync|Lutris|Lollypop] 5
 assign [class=discord] 6
 # assign [class=discord|] 6        #  | at the end causes ALL programs to stark on new workspaces
 
