@@ -20,7 +20,8 @@ background-alt = #444
 foreground = #dfdfdf
 foreground-alt = #555
 #below test
-foreground2 = ${xrdb:color1:#222}
+foreground2 = ${xrdb:color4:#222}
+; foreground2 = ${xrdb:color1:#222}
 primary = ${xrdb:color2:#222}
 #primary = #a1429b
 secondary = #e60053

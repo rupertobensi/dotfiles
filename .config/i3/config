@@ -54,8 +54,8 @@ bindsym $mod+Shift+a		gaps outer current minus 5
 bindsym $mod+s			gaps inner current plus 5
 bindsym $mod+Shift+s		gaps inner current minus 5
 
-bindsym $mod+g		gaps inner current set 0; gaps outer current set 0
-bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0;gaps top current set 20
+bindsym $mod+g		gaps inner current set 0; gaps outer current set 0;gaps top current set 20
+bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0
 
 bindsym $mod+y			sticky toggle
 bindsym $mod+Shift+y		exec --no-startup-id i3_resize left
@@ -72,10 +72,10 @@ bindsym $mod+Shift+o		exec --no-startup-id i3_resize right
 # bindsym $mod+p 	              	exec --no-startup-id $term -e tmux split-window -h nvim
 
 # bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-show $(pamixer --get-volume)
-bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-s
-bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+; exec --no-startup-id volnoti-s
-bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%-; exec --no-startup-id volnoti-s
-bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%-; exec --no-startup-id volnoti-s
+bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+
+bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 10%+; exec --no-startup-id volnoti-s
+bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%-
+bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 10%-; exec --no-startup-id volnoti-s
 
 bindsym $mod+bar		exec $term -e htop
 bindsym $mod+Shift+bar		exec ksysguard
@@ -314,8 +314,21 @@ gaps bottom 0
 gaps left 0
 gaps right 0
 
+workspace $ws3 gaps inner 15
+workspace $ws3 gaps outer 15
+workspace $ws3 gaps left 5
+workspace $ws3 gaps right 5
+workspace $ws3 gaps bottom 5
+
+workspace $ws4 gaps inner 15
+workspace $ws4 gaps outer 15
+workspace $ws4 gaps left 5
+workspace $ws4 gaps right 5
+workspace $ws4 gaps bottom 5
+
 workspace $ws7 gaps inner 0
 workspace $ws7 gaps outer 0
+
 workspace $ws8 gaps inner 0
 workspace $ws8 gaps outer 0
 
