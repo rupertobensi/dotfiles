@@ -237,7 +237,7 @@ alias yayfzfa="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bi
 # browse installed by ME packages with an instant preview of each package:
 alias yayfzf="pacman -Qeq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 # remove orphaned packages
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias yayxorphans='sudo pacman -Rns $(pacman -Qtdq)'
 
 #
 ## PYTHON PIP

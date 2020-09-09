@@ -13,8 +13,8 @@
 ;==========================================================
 
 [colors]
+; background=#262f3b
 background = ${xrdb:color0:#222}
-; background = #00502e59
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -47,8 +47,9 @@ foreground = ${colors.foreground}
 ; line-size = 2 #underline for current workspace
 line-color = #f00
 
-border-size = 0
-border-color = #00000000
+; border-bottom-size = 1
+; border-color = ${xrdb:color1:#222}
+; border-color = #a1429b
 
 padding-left = 0
 padding-right = 1
@@ -326,7 +327,7 @@ interval = 1
 date =%{T1}%A %d.%m
 #date =%{T1}%A %d.%m.%Y
 #date = %d%{F#a1429b}/%{F-}%m%{F#a1429b}/%{F-}%y
-#date-alt = " %Y-%m-%d" 
+#date-alt = " %Y-%m-%d"  
 
 time = %H:%M
 #time-alt = %H:%M:%S

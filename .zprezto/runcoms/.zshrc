@@ -91,3 +91,5 @@ ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue,bold
 # z - automatic bookmarks
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
+# change directory to home - needed for WSL debian
+cd

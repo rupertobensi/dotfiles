@@ -21,26 +21,26 @@ Width 960=510
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=$HOME/Wallpapers/cas4.jpg
-File10[$e]=$HOME/Swallow/Swallow.gif
-File2[$e]=$HOME/Wallpapers/cas3.jpg
-File3[$e]=$HOME/Wallpapers/cas2.jpg
-File4[$e]=$HOME/Wallpapers/cas1.jpg
-File5[$e]=$HOME/Wallpapers/buddha_buddhism_meditation_grass_112087_3840x2400.jpg
-File6[$e]=$HOME/Wallpapers/ql3o2km.jpg
-File7[$e]=$HOME/Wallpapers/349902.jpg
-File8[$e]=/mnt/e/Robert/DATA/memes/boomer.gif
-File9[$e]=/mnt/e/Robert/DATA/memes/vEbHYME.gif
-Name1[$e]=cas4.jpg
-Name10[$e]=Swallow.gif
-Name2[$e]=cas3.jpg
-Name3[$e]=cas2.jpg
-Name4[$e]=cas1.jpg
-Name5[$e]=buddha_buddhism_meditation_grass_112087_3840x2400.jpg
-Name6[$e]=ql3o2km.jpg
-Name7[$e]=349902.jpg
-Name8[$e]=boomer.gif
-Name9[$e]=vEbHYME.gif
+File1[$e]=$HOME/Wallpapers/buddha_buddhism_meditation_grass_112087_3840x2400.jpg
+File10[$e]=/mnt/e/Robert/DATA/Screenshots/pic-full-200906-1646-19.png
+File2[$e]=$HOME/Wallpapers/ql3o2km.jpg
+File3[$e]=$HOME/Wallpapers/349902.jpg
+File4[$e]=/mnt/e/Robert/DATA/memes/boomer.gif
+File5[$e]=/mnt/e/Robert/DATA/memes/vEbHYME.gif
+File6[$e]=/mnt/e/Robert/DATA/Screenshots/twitch-2020-08-13_14.41.02.gif
+File7[$e]=/mnt/e/Robert/DATA/Screenshots/twitch-2020-08-13_14.41.23.mkv
+File8[$e]=/mnt/e/Robert/DATA/Screenshots/simplescreenrecorder-2020-03-29_00.48.09.mkv
+File9[$e]=/mnt/e/Robert/DATA/Screenshots/python_screenkay_error.jpg
+Name1[$e]=buddha_buddhism_meditation_grass_112087_3840x2400.jpg
+Name10[$e]=pic-full-200906-1646-19.png
+Name2[$e]=ql3o2km.jpg
+Name3[$e]=349902.jpg
+Name4[$e]=boomer.gif
+Name5[$e]=vEbHYME.gif
+Name6[$e]=twitch-2020-08-13_14.41.02.gif
+Name7[$e]=twitch-2020-08-13_14.41.23.mkv
+Name8[$e]=simplescreenrecorder-2020-03-29_00.48.09.mkv
+Name9[$e]=python_screenkay_error.jpg
 
 [SideBar]
 IsVisible ViewMode=false

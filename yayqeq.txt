@@ -49,6 +49,7 @@ dconf-editor
 ddgr
 deezloader-remix-git
 discord
+diskonaut
 dmenu2
 dnsmasq
 doas
@@ -163,6 +164,7 @@ maim
 make
 man-db
 mc
+mediainfo
 megacmd-bin
 mesa-vdpau
 mlocate
@@ -183,7 +185,6 @@ neofetch
 neovim
 nerd-fonts-complete
 nethack
-networkmanager
 newsboat
 nitrogen
 nnn
@@ -275,6 +276,7 @@ terminus-font
 termite
 texinfo
 thunderbird
+tig
 tldr
 tmux
 transmission-cli
