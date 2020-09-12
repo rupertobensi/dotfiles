@@ -434,7 +434,7 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 
 # ** Use only one **
 
-# bindsym F12 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd alacritty --config-file /home/robi/.config/alacritty/alacritty_dd.yml
+# bindsym F11 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd alacritty --config-file /home/robi/.config/alacritty/alacritty_dd.yml
 
 
 # Dropdown alacritty (homemade)

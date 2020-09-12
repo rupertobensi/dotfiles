@@ -10,9 +10,9 @@ alias \
 	mv="mv -iv" \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
-	YT="youtube-dl --add-metadata -i" \
-    YTmp3="youtube-dl -x --audio-format mp3" \
-	YTA="YT -x -f bestaudio/best" \
+	yt="youtube-dl --add-metadata -i" \
+    ytmp3="youtube-dl -x --audio-format mp3" \
+	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
@@ -25,7 +25,7 @@ alias \
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
-	yt="straw-viewer" \
+	YT="straw-viewer" \
 	sdn="sudo shutdown -h now" \
 	rdn="sudo reboot" \
 	f="$FILE" \
@@ -145,7 +145,6 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
 # the terminal rickroll
 alias rickroll='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
-alias piotrbiu='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.
 alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"

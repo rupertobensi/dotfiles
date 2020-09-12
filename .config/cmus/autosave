@@ -196,7 +196,7 @@ bind common s toggle shuffle
 bind common space win-toggle
 bind common t toggle show_remaining_time
 bind common tab win-next
-bind common u shell /home/robi/.config/cmus/update.sh
+bind common u shell /home/robi/.dotfiles/.config/cmus/update.sh
 bind common up win-up
 bind common v player-stop
 bind common w win-activate
