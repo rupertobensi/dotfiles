@@ -4,21 +4,25 @@
   "editor.wordWrap": "on",
   "keyboard.dispatch": "keyCode",
   "window.menuBarVisibility": "toggle",
-  "vim.leader": ",",
+  "vim.leader": "<space>",
   "vim.sneak": true,
-  "vim.startInInsertMode": true,
-  "vim.useCtrlKeys": false,
   "editor.fontLigatures": null,
   "json.schemas": [],
   "debug.console.fontSize": 12,
   "editor.fontSize": 13,
   "workbench.statusBar.visible": true,
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.editor.enablePreview": false,
   "editor.lineNumbers": "relative",
   "editor.links": false,
   "launch": {
     "configurations": [],
     "compounds": []
   },
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "vim.easymotion": true,
+  "vim.normalModeKeyBindings": [],
+  "workbench.iconTheme": "material-icon-theme",
+  "vim.useCtrlKeys": false,
+  "workbench.colorTheme": "Atom One Dark"
 }

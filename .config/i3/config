@@ -328,6 +328,18 @@ workspace $ws4 gaps left 5
 workspace $ws4 gaps right 5
 workspace $ws4 gaps bottom 5
 
+workspace $ws5 gaps inner 15
+workspace $ws5 gaps outer 15
+workspace $ws5 gaps left 5
+workspace $ws5 gaps right 5
+workspace $ws5 gaps bottom 5
+
+workspace $ws6 gaps inner 15
+workspace $ws6 gaps outer 15
+workspace $ws6 gaps left 5
+workspace $ws6 gaps right 5
+workspace $ws6 gaps bottom 5
+
 workspace $ws7 gaps inner 0
 workspace $ws7 gaps outer 0
 
@@ -373,7 +385,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Element|Steam] 3
-assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync|Lutris|Lollypop] 5
+assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync|Lutris|Lollypop|KeePassXC] 5
 assign [class=discord] 6
 # assign [class=discord|] 6        #  | at the end causes ALL programs to stark on new workspaces
 
