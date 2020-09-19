@@ -111,6 +111,9 @@ Plug 'alvan/vim-closetag'
 "vim-surround
 Plug 'tpope/vim-surround'
 
+"vim-emmet
+Plug 'mattn/emmet-vim'
+
 " Initialize plugin system
 call plug#end()
 
