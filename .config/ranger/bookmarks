@@ -1,5 +1,5 @@
 2:/home/robi/.dotfiles
-':/home/robi/.dotfiles/.config/.myscripts
+':/home/robi
 6:/home/robi/.dotfiles/system_media
 t:/mnt/e/[media]/[tv series]
 a:/mnt/e/[media]/[music]/albums
@@ -15,7 +15,7 @@ w:/mnt/e/Work/webpages/Marcin_OG
 p:/mnt/e/[media]/vids/programming
 T:/mnt/e/[media]/[tv series]/Deadwood/Deadwood Season 1  (1080p x265 10bit FS86 Joy)
 b:/mnt/e/Robert/BOOKS
-m:/home/robi
+m:/home/robi/.mpd/playlists
 D:/home/robi/DOWNLOADS
 S:/home/robi/.dotfiles/.config/nvim
 7:/mnt/e/[media]/vids

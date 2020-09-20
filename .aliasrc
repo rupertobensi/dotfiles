@@ -202,6 +202,7 @@ alias -g L="| wc -l"
 #
 
 if (( $+commands[yay] )); then
+  alias yay!="yay --noconfirm"
   alias yayu="yay -Suy"
   alias yayU="yay -Su"
   alias yayy="yay -Sy"

@@ -8,5 +8,8 @@ send-keys '~/.ncmpcpp/cover.sh' C-m
 split-window -h
 send-keys 'vis' C-m
 select-pane -t 1
-resize-pane -t 1 -y 45
 resize-pane -t 2 -x 39
+resize-pane -t 1 -y 42
+
+# below alacritty setting:
+# resize-pane -t 1 -y 45
