@@ -9,6 +9,7 @@ alias \
 	cp="cp -iv" \
     fd="fd -a -j4" \
 	mv="mv -iv" \
+    rg="rg --no-ignore-vcs" \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
 	yt="youtube-dl --add-metadata -i" \
@@ -82,11 +83,12 @@ alias \
     fm="vifmrun" \
     imgur="imgur_downloader" \
     keep="keepassxc-cli" \
-    myip='curl api.ipify.org' \
+    myip="curl api.ipify.org" \
     nc="ncmpcpp" \
+    ncdu="ncdu --color dark" \
     newsb="newsboat" \
     rtv="tuir" \
-    spc="cdu -idh" \
+    spc="cdu -sidh" \
     tra="tremc"
 
 # trash-cli
@@ -138,15 +140,15 @@ alias Ncm="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tm
 alias doas="doas --"
 
 # get top process eating memory
-alias psmem='ps auxf | sort -nr -k 4'
-alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias psmem="ps auxf | sort -nr -k 4"
+alias psmem10="ps auxf | sort -nr -k 4 | head -10"
 
 # get top process eating cpu ##
-alias pscpu='ps auxf | sort -nr -k 3'
-alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+alias pscpu="ps auxf | sort -nr -k 3"
+alias pscpu10="ps auxf | sort -nr -k 3 | head -10"
 
 # the terminal rickroll
-alias rickroll='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
+alias rickroll="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
 
 # KDE logout with confirmation, without and locking widgets. Also, i3 exit.
 alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
@@ -158,32 +160,32 @@ alias i3s="i3-save-tree"
 #alias megax="DO_NOT_UNSET_QT_QPA_PLATFORMTHEME=1 DO_NOT_SET_DESKTOP_SETTINGS_UNAWARE=1 megasync"
 alias megs="mega-sync"
 # KDE aliases for locking/unlocking plasma
-#alias kdew='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(false)'
-#alias kdeW='qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(true)'
+#alias kdew="qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(false)"
+#alias kdeW="qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(true)"
 
 # Changing "ls" to "exa"
 alias \
     ls="exa --group-directories-first --color=always" \
-    l='ls -l' \
-    la='ls -a' \
-    lla='ls -la' \
-    lt='ls --tree' \
-    li='ls -a --icons'
+    l="ls -l" \
+    la="ls -a" \
+    lla="ls -la" \
+    lt="ls --tree" \
+    li="ls -a --icons"
 
 # Tmux aliases
 alias \
-ta='tmux attach -t' \
-tad='tmux attach -d -t' \
-tkso='tmux kill-session -a' \
-tkss='tmux kill-session -t' \
-tksv='tmux kill-server' \
-tl='tmux list-sessions' \
+ta="tmux attach -t" \
+tad="tmux attach -d -t" \
+tkso="tmux kill-session -a" \
+tkss="tmux kill-session -t" \
+tksv="tmux kill-server" \
+tl="tmux list-sessions" \
 tmuxSrc="tmux source-file ~/.tmux.conf" \
-ts='tmux new-session -s'
+ts="tmux new-session -s"
 
 # Reloading configurations
 alias Src="source ~/.dotfiles/.zprezto/runcoms/.zshrc"
-alias Xrdb='xrdb ~/.Xresources'
+alias Xrdb="xrdb ~/.Xresources"
 
 # Pipe shortcuts
 alias -g E="| $EDITOR"
@@ -193,9 +195,68 @@ alias -g C="| wc -m"
 alias -g W="| wc -w"
 alias -g L="| wc -l"
 
+
+###
+### PROGRAMS
+###
+
+### RANGER q/Q
+# q quits ranger normally
+# capital Q quits and changed dir
+function ranger {
+    local IFS=$'\t\n'
+    local tempfile="$(mktemp -t tmp.XXXXXX)"
+    local ranger_cmd=(
+        command
+        ranger
+        --cmd="map Q chain shell echo %d > "$tempfile"; quitall"
+    )
+
+    ${ranger_cmd[@]} "$@"
+    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$PWD" ]]; then
+        cd -- "$(cat "$tempfile")" || return
+    fi
+    command rm -f -- "$tempfile" 2>/dev/null
+}
+
+### MKDIR n CD
+mkcdir () {
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
+
+### I3 CHEATSHEET
+function i3c {
+  grep -E "^bindsym" ~/.config/i3/config | awk '{$1=""; print $0}' | sed 's/^ *//g' | grep -vE "^XF86" | fzf
+}
+
 ###
 ### PACKAGE MANAGERS
 ###
+
+#
+## APT
+#
+
+if (( $+commands[apt-get] )); then
+  alias aptu="sudo apt update; sudo apt full-upgrade"
+  alias aptU="sudo apt full-upgrade"
+  alias apty="sudo apt update"
+  alias apti="sudo apt install"
+  alias aptI="sudo dpkg --install"
+  alias aptx="sudo apt remove"
+  alias aptr="sudo apt purge"
+  alias aptc="sudo apt clean"
+  alias aptq="apt show"
+  alias aptp="apt policy"
+  alias apts="apt search"
+  alias aptS="dpkg-query -l"
+  alias apto="dpkg-query -S"
+  alias aptl="dpkg-query -L"
+  alias aptL="dpkg-deb -c"
+  alias aptor="sudo apt autoremove"
+fi
+
 
 #
 ## YAY-PACMAN
@@ -243,7 +304,7 @@ alias yayfzfa="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bi
 # browse installed by ME packages with an instant preview of each package:
 alias yayfzf="pacman -Qeq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 # remove orphaned packages
-alias yayxorphans='sudo pacman -Rns $(pacman -Qtdq)'
+alias yayxorphans="sudo pacman -Rns $(pacman -Qtdq)"
 
 #
 ## PYTHON PIP
@@ -271,60 +332,165 @@ if (( $+commands[pip] )); then
   alias pyd="deactivate"
 fi
 
-
 #
-## APT
+## GIT
 #
 
-if (( $+commands[apt-get] )); then
-  alias aptu="sudo apt update; sudo apt full-upgrade"
-  alias aptU="sudo apt full-upgrade"
-  alias apty="sudo apt update"
-  alias apti="sudo apt install"
-  alias aptI="sudo dpkg --install"
-  alias aptx="sudo apt remove"
-  alias aptr="sudo apt purge"
-  alias aptc="sudo apt clean"
-  alias aptq="apt show"
-  alias aptp="apt policy"
-  alias apts="apt search"
-  alias aptS="dpkg-query -l"
-  alias apto="dpkg-query -S"
-  alias aptl="dpkg-query -L"
-  alias aptL="dpkg-deb -c"
-  alias aptor="sudo apt autoremove"
-fi
+alias g="git"
+alias g..="cd \$(git rev-parse --show-toplevel)"
+alias gcheck="git fsck --no-reflogs --unreachable"
+alias gclean="git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc --aggressive"
 
-###
-### PROGRAMS
-###
+alias gb="git branch"
+alias gbc="git checkout -b"
+alias gbl="git branch -vv"
+alias gbL="git branch --all -vv"
+alias gbm="git branch --move"
+alias gbM="git branch --move --force"
+alias gbs="git show-branch"
+alias gbS="git show-branch --all"
+alias gbx="git branch --delete"
+alias gbX="git branch --delete --force"
 
-### RANGER q/Q
-# q quits ranger normally
-# capital Q quits and changed dir
-function ranger {
-    local IFS=$'\t\n'
-    local tempfile="$(mktemp -t tmp.XXXXXX)"
-    local ranger_cmd=(
-        command
-        ranger
-        --cmd="map Q chain shell echo %d > "$tempfile"; quitall"
-    )
+alias gc="git commit --verbose"
+alias gca="git commit --verbose --all"
+alias gcm="git commit --message"
+alias gcM="git commit --all --message"
+alias gcf="git commit --amend --verbose"
+alias gcF="git commit --amend --verbose --all"
+alias gcr="git commit --amend --reuse-message HEAD"
+alias gcR="git commit --amend --reuse-message HEAD --all"
+alias gco="git checkout"
+alias gcO="git checkout --patch"
+alias gcp="git cherry-pick --ff"
+alias gcP="git cherry-pick --no-commit"
+alias gcd="git show"
+alias gcD="git show --stat"
+alias gcs="git commit -S"
+alias gcS="git show --show-signature"
+alias gcv="git verify-commit"
+alias gcy="git cherry -v --abbrev"
+alias gcY="git cherry -v"
 
-    ${ranger_cmd[@]} "$@"
-    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$PWD" ]]; then
-        cd -- "$(cat "$tempfile")" || return
-    fi
-    command rm -f -- "$tempfile" 2>/dev/null
-}
+alias gCl="git --no-pager diff --diff-filter=U --name-only"
+alias gCa="git add \$(gCl)"
+alias gCe="git mergetool \$(gCl)"
+alias gCo="git checkout --ours --"
+alias gCO="gCo \$(gCl)"
+alias gCt="git checkout --theirs --"
+alias gCT="gCt \$(gCl)"
 
-### MKDIR n CD
-mkcdir () {
-    mkdir -p -- "$1" &&
-      cd -P -- "$1"
-}
+alias gd="git ls-files"
+alias gdc="git ls-files --cached"
+alias gdx="git ls-files --deleted"
+alias gdm="git ls-files --modified"
+alias gdu="git ls-files --other --exclude-standard"
+alias gdk="git ls-files --killed"
+alias gdi="git status --porcelain --short --ignored | sed -n 's/^!! //p'"
 
-### I3 CHEATSHEET
-function i3c {
-  grep -E "^bindsym" ~/.config/i3/config | awk '{$1=""; print $0}' | sed 's/^ *//g' | grep -vE "^XF86" | fzf
-}
+alias gf="git fetch"
+alias gfa="git fetch --all"
+alias gfc="git clone"
+alias gfC="git clone --recurse-submodules"
+alias gfm="git pull"
+alias gfr="git pull --rebase"
+alias gfu="git fetch --all --prune && git merge --ff-only @\{u\}"
+
+alias gg="git grep"
+alias ggi="git grep --ignore-case"
+alias ggl="git grep --files-with-matches"
+alias ggL="git grep --files-without-match"
+alias ggv="git grep --invert-match"
+alias ggw="git grep --word-regexp"
+
+alias gia="git add"
+alias giA="git add --patch"
+alias giu="git add --update"
+alias giU="git add --all"
+alias gid="git diff --cached"
+alias giD="git diff --cached --stat"
+alias gir="git reset"
+alias giR="git reset --patch"
+alias gib="git reset 'HEAD^'"
+alias gix="git rm --cached -r"
+alias giX="git rm --cached -rf"
+
+alias gl="git log --topo-order"
+alias glo="git log --topo-order --pretty=oneline"
+alias gls="git log --topo-order --stat"
+alias glp="git log --topo-order --patch"
+alias glP="git log --topo-order --patch --full-diff"
+alias glg="git log --topo-order --all --graph"
+alias glG="git log --topo-order --all --graph --date=relative"
+alias glt="git log --graph --decorate --oneline \$(git rev-list -g --all)"
+alias glv="git log --topo-order --show-signature"
+alias glc="git shortlog --summary --numbered"
+
+alias gm="git mere"
+alias gmC="git merge --no-commit"
+alias gmF="git merge --no-ff"
+alias gma="git merge --abort"
+alias gmt="git mergetool"
+
+alias gp="git push"
+alias gpf="git push --force-with-lease"
+alias gpF="git push --force"
+alias gpa="git push --all"
+alias gpA="git push --all && git push --tags"
+alias gpb="git push -u origin"
+alias gpt="git push --tags"
+
+alias gr="git rebase"
+alias gra="git rebase --abort"
+alias grc="git rebase --continue"
+alias gri="git rebase --interactive"
+alias grs="git rebase --skip"
+
+alias gR="git remote"
+alias gRl="git remote --verbose"
+alias gRa="git remote add"
+alias gRx="git remote rm"
+alias gRm="git remote rename"
+alias gRu="git remote update"
+alias gRp="git remote prune"
+alias gRs="git remote show"
+
+alias gs="git stash"
+alias gsa="git stash apply"
+alias gsx="git stash drop"
+alias gsl="git stash list"
+alias gsd="git stash show --patch --stat"
+alias gsp="git stash pop"
+alias gss="git stash save --include-untracked"
+alias gsS="git stash save --patch --no-keep-index"
+alias gsw="git stash save --include-untracked --keep-index"
+alias gsu="git stash show --patch | git apply --reverse"
+
+alias gS="git submodule"
+alias gSa="git submodule add"
+alias gSf="git submodule foreach"
+alias gSi="git submodule init"
+alias gSI="git submodule update --init"
+alias gSd="git submodule deinit"
+alias gSl="git submodule status"
+alias gSs="git submodule sync"
+alias gSu="git submodule update"
+alias gSU="git submodule update --merge"
+alias gSr="git submodule update --remote"
+alias gSR="git submodule update --remote --merge"
+
+alias gt="git tag"
+alias gts="git tag --sign"
+alias gtv="git verify-tag"
+alias gtx="git tag --delete"
+
+alias gws="git status --short"
+alias gwS="git status"
+alias gwd="git diff --no-ext-diff"
+alias gwD="git diff --stat"
+alias gwr="git reset --soft"
+alias gwR="git reset --hard"
+alias gwc="git clean --dry-run"
+alias gwC="git clean -d --force"
+alias gwx="git rm -r"
+alias gwX="git rm -rf"g
