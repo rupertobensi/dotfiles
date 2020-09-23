@@ -77,6 +77,7 @@ alias m2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0
 alias \
     ab-pr="absolutely-proprietary" \
     audio="pulsemixer" \
+    cdu="cdu -sidh" \
     Cal="calcurse" \
     deezer="smloadr" \
     disko="diskonaut" \
@@ -88,7 +89,6 @@ alias \
     ncdu="ncdu --color dark" \
     newsb="newsboat" \
     rtv="tuir" \
-    spc="cdu -sidh" \
     tra="tremc"
 
 # trash-cli
@@ -305,6 +305,11 @@ alias yayfzfa="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bi
 alias yayfzf="pacman -Qeq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 # remove orphaned packages
 alias yayxorphans="sudo pacman -Rns $(pacman -Qtdq)"
+# pipe out list of programs
+yayqeq () {
+      cd &&
+      yay -Qeq >! yayqeq.txt
+}
 
 #
 ## PYTHON PIP
