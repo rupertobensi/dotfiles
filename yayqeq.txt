@@ -214,6 +214,7 @@ pkgconf
 pkgstats
 plasma5-applets-netspeed
 polybar
+profile-sync-daemon
 pulseaudio
 pulseaudio-alsa
 pulsemixer

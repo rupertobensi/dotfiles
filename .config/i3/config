@@ -248,7 +248,7 @@ bindsym $mod+bracketright       exec --no-startup-id amixer set Master toggle
 
 #@
 # bindsym Print 			exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-/mnt/e/Robert/DATA/Screenshots/$(date '+%y%m%d-%H%M-%S').png
-bindsym Print 			exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-"$(date '+%y%m%d-%H%M-%S').png"
+bindsym Print 			exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-"$(date '+%d_%m_%Y-%H_%M_%S').png"
 bindsym $mod+Print              exec maimpick
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Scroll_Lock        exec simplescreenrecorder
@@ -446,22 +446,23 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 # ** Use only one **
 
 # bindsym F11 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd alacritty --config-file /home/robi/.config/alacritty/alacritty_dd.yml
+# bindsym F11 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd st
 
 #
 ## Dropdown alacritty (homemade)
 #
 
-# exec_always --no-startup-id $term --config-file /home/robi/.config/alacritty/alacritty_dd.yml --class dd -e tmux new -s dd
-# bindsym F12 [instance="dd"] scratchpad show, move position 60 -2
+# exec_always --no-startup-id alacritty --config-file /home/robi/.config/alacritty/alacritty_dd.yml --class dd -e tmux new -s dd
 # for_window [instance="dd"] floating enable, resize set 1800 750, move scratchpad, border pixel 2
+# bindsym F12 [instance="dd"] scratchpad show, move position 60 -2
 
 #
 ## Dropdown st
 #
 
+for_window [class="dropdown_term"] floating enable, resize set 1920 600, move scratchpad
 exec_always --no-startup-id st -c dropdown_term -e tmux new -s dd
 bindsym F12 [class="dropdown_term"] scratchpad show, move position 0 0
-for_window [class="dropdown_term"] floating enable, resize set 1920 600, move scratchpad
 
 # bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 # for_window [class="dropdown_term"] floating enable, resize set 1800 750, move scratchpad, border pixel 2

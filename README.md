@@ -21,7 +21,7 @@ I use **i3** as my tiling window manager, and rest as follows:
 
 ![+1](desktop2.png)
 
-older variant with gaps:
+*older variant with gaps:*
 ![++](desktop3.png)
 
 How to deploy this very setup?
