@@ -7,27 +7,31 @@
 
 read -p "Choose a number. Do you want to backup:
 1. .dotfiles
-2. WHOLE /
+2. Work folder
+3. WHOLE /
 or...
-3. prepare a DROPBOX folder (inside Robert directory) backup
-4. 'Robert' folder
-5. create a [music] backup
+4. prepare a DROPBOX folder (inside Robert directory) backup
+5. 'Robert' folder
+6. create a [music] backup
 " option
 
 if [ $option -eq 1 ]
-  then sudo rsync -aAXv --delete --progress --stats ~/.dotfiles/ /mnt/d/backup/.dotfiles
+  then sudo rsync -aAXv --delete --progress --stats ~/.dotfiles/ /mnt/d/backup/.dotfiles/
 
 elif [ $option -eq 2 ]
-  then sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/.Trash-0/*","/home/backups/*","/home/Data/*","/home2/*","/home/System Volume Information/*","~/.thunderbird/*"} / /mnt/d//backup/.arch/
+  then sudo rsync -aAXv --delete --progress --stats /mnt/e/Work/ /mnt/d/backup/Work/
 
 elif [ $option -eq 3 ]
+  then sudo rsync -aAXv --delete --progress --stats --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/.Trash-0/*","/home/backups/*","/home/Data/*","/home2/*","/home/System Volume Information/*","~/.thunderbird/*"} / /mnt/d//backup/.arch/
+
+elif [ $option -eq 4 ]
   then sudo rsync -aAXv --delete --progress --stats /mnt/e/Robert/DROPBOX/ ~/Dropbox/
        dropbox &
 
-elif [ $option -eq 4 ]
+elif [ $option -eq 5 ]
   then sudo rsync -aAXv --delete --progress --stats /mnt/e/Robert/  /mnt/d/backup/Robert/
 
-elif [ $option -eq 5 ]
+elif [ $option -eq 6 ]
   then sudo rsync -aAXv --delete --progress --stats /mnt/e/[media]/[music]/  /mnt/d/backup/[music]/
 
 else

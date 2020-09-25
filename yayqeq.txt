@@ -17,6 +17,7 @@ atool
 audacity
 autoconf
 automake
+bandwhich
 baobab
 base
 bashtop

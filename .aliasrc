@@ -133,8 +133,8 @@ alias pmv="pymv --preserve --global-pbar -i"
 alias pcp="pycp --preserve --global-pbar -i"
 # ncmpcpp scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
-alias ncm="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
-alias Ncm="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tmux window
+alias ncm="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tmux window
+alias Ncm="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
 
 # root privileges
 alias doas="doas --"
@@ -263,7 +263,7 @@ fi
 #
 
 if (( $+commands[yay] )); then
-  alias yay!="yay --noconfirm"
+  alias yay!="yes | yay --noconfirm"
   alias yayu="yay -Suy"
   alias yayU="yay -Su"
   alias yayy="yay -Sy"

@@ -1,39 +1,39 @@
 ## SETTINGS ##
 
-mpd_music_dir = "/mnt/e/[media]/[music]/albums/"  
+mpd_music_dir = "/mnt/e/[media]/[music]/albums/"
 lyrics_directory  = ~/.ncmpcpp/lyrics
 ncmpcpp_directory  = ~/.ncmpcpp
 mpd_host = "localhost"
-mpd_port = "6600"  
-mpd_connection_timeout = "5"  
-mpd_crossfade_time = "5"  
+mpd_port = "6600"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
 
 # Playlist
-playlist_disable_highlight_delay = "0"  
-playlist_display_mode = "columns"  
+playlist_disable_highlight_delay = "0"
+playlist_display_mode = "columns"
 playlist_show_remaining_time = "yes"
 
-browser_display_mode = "columns"  
-autocenter_mode = "yes"  
- fancy_scrolling = "yes"  
- follow_now_playing_lyrics = "yes"  
- display_screens_numbers_on_start = "yes"  
- ignore_leading_the = "yes"  
- lyrics_database = "1"  
-song_columns_list_format = "(10)[blue]{l} (30)[green]{a} (30)[magenta]{b} (50)[yellow]{t}"  
- colors_enabled = "yes"  
- 
+browser_display_mode = "columns"
+autocenter_mode = "yes"
+ fancy_scrolling = "yes"
+ follow_now_playing_lyrics = "yes"
+ display_screens_numbers_on_start = "yes"
+ ignore_leading_the = "yes"
+ lyrics_database = "1"
+song_columns_list_format = "(10)[blue]{l} (30)[green]{a} (30)[magenta]{b} (50)[yellow]{t}"
+ colors_enabled = "yes"
+
  main_window_highlight_color =  "blue"
-header_window_color = "cyan"  
-volume_color = "white"  
-progressbar_color = "magenta"  
-statusbar_color = "magenta"  
-#active_column_color = "cyan"  
+header_window_color = "cyan"
+volume_color = "white"
+progressbar_color = "magenta"
+statusbar_color = "magenta"
+#active_column_color = "cyan"
 #WARNING: Variable 'active_column_color' is deprecated and will be removed in 0.9 (replaced by current_item_inactive_column_prefix and current_item_inactive_column_suffix).
 #current_item_inactive_column_prefix="cyan"
 #current_item_inactive_column_suffix="cyan"
 active_window_border = "blue"
-main_window_color = white  
+main_window_color = white
 color1 = white
 color2 = white
 
@@ -44,7 +44,7 @@ alternative_header_second_line_format = "{{$6%b$9}{ [$6%y$9]}}|{%D}"
 song_list_format = "{$3%n │ $9}{$7%a - $9}{$5%t$9}|{$8%f$9}$R{$6 │ %b$9}{$3 │ %l$9}"
 
 #user_interface = "alternative"
-user_interface = "classic" 
+user_interface = "classic"
 default_place_to_search_in = "database"
 
 
@@ -116,4 +116,3 @@ media_library_primary_tag = album_artist
 startup_screen = media_library
 
 execute_on_song_change = "~/.ncmpcpp/art.sh"
-
