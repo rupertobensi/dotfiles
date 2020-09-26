@@ -24,5 +24,6 @@
   "vim.normalModeKeyBindings": [],
   "workbench.iconTheme": "material-icon-theme",
   "vim.useCtrlKeys": false,
-  "workbench.colorTheme": "Atom One Dark"
+  "workbench.colorTheme": "Atom One Dark",
+  "liveServer.settings.useLocalIp": true
 }

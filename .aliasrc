@@ -79,7 +79,7 @@ alias \
     audio="pulsemixer" \
     cdu="cdu -sidh" \
     Cal="calcurse" \
-    deezer="smloadr" \
+    deezer="smloadr --path ~/Downloads" \
     disko="diskonaut" \
     fm="vifmrun" \
     imgur="imgur_downloader" \

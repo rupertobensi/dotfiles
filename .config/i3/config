@@ -64,7 +64,7 @@ bindsym $mod+Shift+u		exec --no-startup-id i3_resize down
 bindsym $mod+i			exec $term -e pulsemixer
 bindsym $mod+Shift+i		exec --no-startup-id i3_resize up
 
-bindsym $mod+o 			exec --no-startup-id $term -e tmux split-window -h ranger
+# bindsym $mod+o 			exec --no-startup-id $term -e tmux split-window -h ranger
 bindsym $mod+Shift+o		exec --no-startup-id i3_resize right
 
 # bindsym $mod+p 	              	exec --no-startup-id $term -e tmux split-window -h nvim

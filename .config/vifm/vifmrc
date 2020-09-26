@@ -1,7 +1,3 @@
-" | | | || |    http://www.youtube.com/c/DistroTube
-" | |_| || |    http://www.gitlab.com/dwt1/
-" |____/ |_|
-
 " vim: filetype=vifm :
 " My config file for the vifm terminal file manager.
 " ------------------------------------------------------------------------------
@@ -522,12 +518,3 @@ map < :!vifmimg dec<CR>
 "     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
 "
 " let $VIFM_SERVER_NAME = v:servername
-
-
-
-
-
-
-
-
-
