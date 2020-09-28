@@ -114,6 +114,8 @@ Plug 'tpope/vim-surround'
 "vim-emmet
 Plug 'mattn/emmet-vim'
 
+"vim-eunuch
+Plug 'tpope/vim-eunuch'
+
 " Initialize plugin system
 call plug#end()
-

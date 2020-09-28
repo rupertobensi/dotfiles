@@ -1,4 +1,4 @@
-set aaa_mode=all
+set aaa_mode=artist
 set altformat_current= %F 
 set altformat_playlist= %f%= %d 
 set altformat_title=%f
@@ -122,15 +122,14 @@ set start_view=tree
 set status_display_program=/usr/local/bin/cmus-notify
 set time_show_leading_zero=true
 set wrap_search=true
-bind browser backspace browser-up
 bind browser i toggle show_hidden
 bind browser space win-activate
 bind browser u win-update
 bind common ! push shell 
 bind common + vol +10%
-bind common , seek -1m
+bind common , seek -5
 bind common - vol -10%
-bind common . seek +1m
+bind common . seek +5
 bind common / search-start
 bind common 1 view tree
 bind common 2 view sorted

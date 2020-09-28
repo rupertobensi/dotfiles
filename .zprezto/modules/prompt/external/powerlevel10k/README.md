@@ -183,8 +183,8 @@ Here's the relevant parameter for kubernetes context:
 
 ```zsh
 # Show prompt segment "kubecontext" only when the command you are typing
-# invokes kubectl, helm, kubens, kubectx, oc, istioctl or kogito.
-typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito'
+# invokes kubectl, helm, kubens, kubectx, oc, istioctl, kogito, k9s or helmfile.
+typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito|k9s|helmfile'
 ```
 
 To customize when different prompt segments are shown, open `~/.p10k.zsh`, search for
@@ -366,14 +366,14 @@ make sure to disable the current theme in your plugin manager. See
 ### Oh My Zsh
 
 ```zsh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 Users in mainland China can use the official mirror on gitee.com for faster download.<br>
 中国大陆用户可以使用 gitee.com 上的官方镜像加速下载.
 
 ```zsh
-git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
@@ -426,10 +426,10 @@ echo 'source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 
 ### Arch Linux
 
-There is [zsh-theme-powerlevel10k](
-  https://www.archlinux.org/packages/community/any/zsh-theme-powerlevel10k/) community package and
-[zsh-theme-powerlevel10k-git](https://aur.archlinux.org/packages/zsh-theme-powerlevel10k-git/) AUR
-package. Both are old and broken. **Do not use them.**
+```zsh
+yay -Sy --noconfirm zsh-theme-powerlevel10k-git
+echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+```
 
 ## Configuration
 
@@ -550,6 +550,19 @@ applications on your system. Configure your terminal to use this font:
 - **Blink** Type `config`, go to *Appearance*, tap *Add a new font*, tap *Open Gallery*, select
   *MesloLGS NF.css*, tap *import* and type `exit` in the home view to reload the font.
 - **Terminus**: Open *Settings → Appearance* and set *Font* to `MesloLGS NF`.
+- **Terminator**: Open *Preferences* using the context menu. Under *Profiles* select the *General*
+  tab (should be selected already), uncheck *Use the system fixed width font* (if not already)
+  and select `MesloLGS NF Regular`. Exit the Preferences dialog by clicking *Close*.
+- **Guake**: Right Click on an open terminal and open *Preferences*. Under *Appearance* 
+  tab, uncheck *Use the system fixed width font* (if not already) and select `MesloLGS NF Regular`. 
+  Exit the Preferences dialog by clicking *Close*.  
+- **Alacritty**: Create or open `~/.config/alacritty/alacritty.yml` and and the following section
+  to it:
+  ```yaml
+  font:
+    normal:
+      family: "MesloLGS NF"
+  ```
 
 **IMPORTANT:** Run `p10k configure` after changing terminal font. The old `~/.p10k.zsh` may work
 incorrectly with the new font.
@@ -588,18 +601,19 @@ Powerlevel10k is released under the
 
 The command to update Powerlevel10k depends on how it was installed.
 
-| Installation            | Update command                                 |
-|-------------------------|------------------------------------------------|
-| [Manual](#manual)       | `git -C ~/powerlevel10k pull`                  |
-| [Oh My Zsh](#oh-my-zsh) | `git -C ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k pull` |
-| [Prezto](#prezto)       | `zprezto-update`                               |
-| [Zim](#zim)             | `zimfw update`                                 |
-| [Antigen](#antigen)     | `antigen update`                               |
-| [Zplug](#zplug)         | `zplug update`                                 |
-| [Zgen](#zgen)           | `zgen update`                                  |
-| [Zplugin](#zplugin)     | `zplugin update`                               |
-| [Zinit](#zinit)         | `zinit update`                                 |
-| [Homebrew](#homebrew)   | `brew update && brew upgrade`                  |
+| Installation              | Update command                                              |
+|---------------------------|-------------------------------------------------------------|
+| [Manual](#manual)         | `git -C ~/powerlevel10k pull`                               |
+| [Oh My Zsh](#oh-my-zsh)   | `git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull` |
+| [Prezto](#prezto)         | `zprezto-update`                                            |
+| [Zim](#zim)               | `zimfw update`                                              |
+| [Antigen](#antigen)       | `antigen update`                                            |
+| [Zplug](#zplug)           | `zplug update`                                              |
+| [Zgen](#zgen)             | `zgen update`                                               |
+| [Zplugin](#zplugin)       | `zplugin update`                                            |
+| [Zinit](#zinit)           | `zinit update`                                              |
+| [Homebrew](#homebrew)     | `brew update && brew upgrade`                               |
+| [Arch Linux](#arch-linux) | `yay -Syu --noconfirm --needed zsh-theme-powerlevel10k-git` |
 
 **IMPORTANT**: Restart Zsh after updating Powerlevel10k. [Do not use `source ~/.zshrc`](
   #weird-things-happen-after-typing-source-zshrc).
@@ -637,18 +651,19 @@ The command to update Powerlevel10k depends on how it was installed.
    Powerlevel10k. The command to delete them depends on which installation method you'd chosen.
    Refer to the [installation instructions](#installation) if you need a reminder.
 
-   | Installation            | Uninstall command                                                   |
-   |-------------------------|---------------------------------------------------------------------|
-   | [Manual](#manual)       | `rm -rf ~/powerlevel10k`                                            |
-   | [Oh My Zsh](#oh-my-zsh) | `rm -rf -- ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k` |
-   | [Prezto](#prezto)       | n/a                                                                 |
-   | [Zim](#zim)             | `zimfw uninstall`                                                   |
-   | [Antigen](#antigen)     | `antigen purge romkatv/powerlevel10k`                               |
-   | [Zplug](#zplug)         | `zplug clean`                                                       |
-   | [Zgen](#zgen)           | `zgen reset`                                                        |
-   | [Zplugin](#zplugin)     | `zplugin delete romkatv/powerlevel10k`                              |
-   | [Zinit](#zinit)         | `zinit delete romkatv/powerlevel10k`                                |
-   | [Homebrew](#homebrew)   | `brew uninstall powerlevel10k; brew untap romkatv/powerlevel10k`    |
+   | Installation              | Uninstall command                                                |
+   |---------------------------|------------------------------------------------------------------|
+   | [Manual](#manual)         | `rm -rf ~/powerlevel10k`                                         |
+   | [Oh My Zsh](#oh-my-zsh)   | `rm -rf -- ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k` |
+   | [Prezto](#prezto)         | n/a                                                              |
+   | [Zim](#zim)               | `zimfw uninstall`                                                |
+   | [Antigen](#antigen)       | `antigen purge romkatv/powerlevel10k`                            |
+   | [Zplug](#zplug)           | `zplug clean`                                                    |
+   | [Zgen](#zgen)             | `zgen reset`                                                     |
+   | [Zplugin](#zplugin)       | `zplugin delete romkatv/powerlevel10k`                           |
+   | [Zinit](#zinit)           | `zinit delete romkatv/powerlevel10k`                             |
+   | [Homebrew](#homebrew)     | `brew uninstall powerlevel10k; brew untap romkatv/powerlevel10k` |
+   | [Arch Linux](#arch-linux) | `yay -R --noconfirm zsh-theme-powerlevel10k-git`                 |
 5. Restart Zsh. [Do not use `source ~/.zshrc`](#weird-things-happen-after-typing-source-zshrc).
 
 ### Where can I ask for help and report bugs?
@@ -682,6 +697,7 @@ Powerlevel10k does not affect:
 - Colors used by `ls`.
 - Content and style of command completions.
 - Command line colors (syntax highlighting, autosuggestions, etc.).
+- Key bindings.
 - Prompt parameters other than `PS1` and `RPS1`.
 - Zsh options other than those [related to prompt](
     http://zsh.sourceforge.net/Doc/Release/Options.html#Prompting).
@@ -693,7 +709,7 @@ Powerlevel10k does not affect:
 # Add powerlevel10k to the list of Oh My Zsh themes.
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 # Replace ZSH_THEME="powerlevel9k/powerlevel9k" with ZSH_THEME="powerlevel10k/powerlevel10k".
-sed 's/powerlevel9k/powerlevel10k/g' -i ~/.zshrc
+sed -i.bak 's/powerlevel9k/powerlevel10k/g' ~/.zshrc
 # Restart Zsh.
 exec zsh
 ```
@@ -912,8 +928,8 @@ a relevant tool.
 
 ```zsh
 # Show prompt segment "kubecontext" only when the command you are typing
-# invokes kubectl, helm, kubens, kubectx, oc, istioctl or kogito.
-typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito'
+# invokes kubectl, helm, kubens, kubectx, oc, istioctl, kogito, k9s or helmfile.
+typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito|k9s|helmfile'
 ```
 
 Configs created by `p10k configure` may contain parameters of this kind. To customize when different
@@ -929,7 +945,7 @@ function kube-toggle() {
   if (( ${+POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND} )); then
     unset POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND
   else
-    POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito'
+    POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito|k9s|helmfile'
   fi
   p10k reload
   if zle; then
@@ -1360,11 +1376,6 @@ configuration wizard won't offer prompt styles that use them. *Fix*: Restart you
 install [the recommended font](#meslo-nerd-font-patched-for-powerlevel10k). Verify by running
 `p10k configure` and checking that all glyphs render correctly.
 
-The minimum screen size at which configuration wizard can function is 55 columns by 21 lines.
-However, not all prompt styles are offered at such small screen size as there is simply not enough
-space to present them. *Fix*: Resize your terminal to at least 84 columns by 25 lines prior to
-running `p10k configure`. Verify with `print ${COLUMNS}x${LINES}`.
-
 ### Cannot install the recommended font
 
 Once you download [the recommended font](#meslo-nerd-font-patched-for-powerlevel10k),
@@ -1583,14 +1594,19 @@ upon terminal shrinking due to the command line wrapping around.
 
 #### Zsh patch
 
-The bug described above has been fixed in [this branch](
+The bug described above has been partially fixed (only for some terminals) in [this branch](
   https://github.com/romkatv/zsh/tree/fix-winchanged). The idea behind the fix is to use `sc` (save
 cursor) terminal capability before printing prompt and `rc` (restore cursor) to move cursor back
-to the same position when prompt needs to be refreshed.
+to the original position when prompt needs to be refreshed.
 
-*Note*: The patch doesn't work on Alacritty. On the plus side, it doesn't make things worse.
+The patch works only on terminals that reflow saved cursor position together with text when the
+terminal window is resized. The patch has no observable effect on terminals that don't reflow text
+on resize (both patched and unpatched Zsh behave correctly) and on terminals that reflow text but
+not saved cursor position (both patched and unpatched Zsh redraw prompt at the same incorrect
+position). In other words, the patch fixes the resizing issue on some terminals while keeping the
+behavior unchanged on others.
 
-There are two alternative approaches to fixing the bug that may seem to work at fight glance but in
+There are two alternative approaches to fixing the bug that may seem to work at first glance but in
 fact don't:
 
 - Instead of `sc`, use `u7` terminal capability to query the current cursor position and then `cup`
@@ -1610,19 +1626,21 @@ There is no ETA for the patch making its way into upstream Zsh. See [discussion]
 There are a few mitigation options for this issue.
 
 - Apply [the patch](#zsh-patch) and [rebuild Zsh from source](
-    https://github.com/zsh-users/zsh/blob/master/INSTALL). It won't help if you are using Alacritty.
+    https://github.com/zsh-users/zsh/blob/master/INSTALL). It won't help if you are using Alacritty,
+  Kitty or some other terminal that reflows text on resize but doesn't reflow saved cursor position.
+  On such terminals the patch will have no visible effect.
 - Disable text reflowing on window resize in terminal settings. If your terminal doesn't have this
   setting, try a different terminal.
 - Avoid long lines between the start of prompt and cursor.
   1. Disable ruler with `POWERLEVEL9K_SHOW_RULER=false`.
-  1. Disable prompt connection with `POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' '`.
-  1. Disable right frame with `POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX=` and
-     `POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX=` and
-     `POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX=`.
-  1. Remove all elements from `POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS`. Right prompt on the last prompt
-     line will cause resizing issues only when the cursor is below it. This isn't very common, so
-     you might want to keep some elements in `POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS` provided that
-     none of them are succeeded by `newline`.
+  2. Disable prompt connection with `POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' '`.
+  3. Disable right frame with `POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX=''`,
+     `POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX=''` and
+     `POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX=''`.
+  4. Set `POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()`. Right prompt on the last prompt line will cause
+     resizing issues only when the cursor is below it. This isn't very common, so you might want to
+     keep some elements in `POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS` provided that none of them are
+     succeeded by `newline`.
 
 ### Icons cut off in Konsole
 

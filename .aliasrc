@@ -61,6 +61,7 @@ alias \
 	cfranger_rifle.conf="nvim ~/.config/ranger/rifle.conf" \
 	cfst_config.h="nvim ~/st/config.h" \
 	cftmux.conf="nvim ~/.tmux.conf" \
+	cfvifmrc="nvim ~/.config/vifm/vifmrc" \
 	cfxinitrc="nvim ~/.xinitrc" \
 	cfxprofile="nvim ~/.xprofile" \
 	cfXresources="nvim ~/.Xresources" \

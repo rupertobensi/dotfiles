@@ -12,6 +12,9 @@ MouseWheelBehavior=MouseWheelBehavior::Zoom
 ThumbnailSplitterSizes=881,132
 
 [MainWindow]
+HDMI-A-0 Window-Maximized 1080x1920=true
+HDMI-A-0 XPosition=449
+HDMI-A-0 YPosition=157
 Height 1080=1027
 Height 540=382
 State=AAAA/wAAAAD9AAAAAAAAA/4AAAK1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
@@ -21,27 +24,27 @@ Width 960=510
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=$HOME/Wallpapers/buddha_buddhism_meditation_grass_112087_3840x2400.jpg
-File10[$e]=/mnt/e/Robert/DATA/Screenshots/pic-full-200906-1646-19.png
-File2[$e]=$HOME/Wallpapers/ql3o2km.jpg
-File3[$e]=$HOME/Wallpapers/349902.jpg
-File4[$e]=/mnt/e/Robert/DATA/memes/boomer.gif
-File5[$e]=/mnt/e/Robert/DATA/memes/vEbHYME.gif
-File6[$e]=/mnt/e/Robert/DATA/Screenshots/twitch-2020-08-13_14.41.02.gif
-File7[$e]=/mnt/e/Robert/DATA/Screenshots/twitch-2020-08-13_14.41.23.mkv
-File8[$e]=/mnt/e/Robert/DATA/Screenshots/simplescreenrecorder-2020-03-29_00.48.09.mkv
-File9[$e]=/mnt/e/Robert/DATA/Screenshots/python_screenkay_error.jpg
-Name1[$e]=buddha_buddhism_meditation_grass_112087_3840x2400.jpg
-Name10[$e]=pic-full-200906-1646-19.png
-Name2[$e]=ql3o2km.jpg
-Name3[$e]=349902.jpg
-Name4[$e]=boomer.gif
-Name5[$e]=vEbHYME.gif
-Name6[$e]=twitch-2020-08-13_14.41.02.gif
-Name7[$e]=twitch-2020-08-13_14.41.23.mkv
-Name8[$e]=simplescreenrecorder-2020-03-29_00.48.09.mkv
-Name9[$e]=python_screenkay_error.jpg
+File1[$e]=$HOME/Wallpapers/ql3o2km.jpg
+File10[$e]=/mnt/e/Robert/DATA/wallpapers_PC/e8rqe8md.jpeg
+File2[$e]=$HOME/Wallpapers/349902.jpg
+File3[$e]=/mnt/e/Robert/DATA/memes/boomer.gif
+File4[$e]=/mnt/e/Robert/DATA/memes/vEbHYME.gif
+File5[$e]=/mnt/e/Robert/DATA/Screenshots/twitch-2020-08-13_14.41.23.mkv
+File6[$e]=/mnt/e/Robert/DATA/Screenshots/simplescreenrecorder-2020-03-29_00.48.09.mkv
+File7[$e]=/mnt/e/Robert/DATA/Screenshots/python_screenkay_error.jpg
+File8[$e]=/mnt/e/Robert/DATA/Screenshots/pic-full-200906-1646-19.png
+File9[$e]=$HOME/Wallpapers/luke/Tech/1459310577295.png
+Name1[$e]=ql3o2km.jpg
+Name10[$e]=e8rqe8md.jpeg
+Name2[$e]=349902.jpg
+Name3[$e]=boomer.gif
+Name4[$e]=vEbHYME.gif
+Name5[$e]=twitch-2020-08-13_14.41.23.mkv
+Name6[$e]=simplescreenrecorder-2020-03-29_00.48.09.mkv
+Name7[$e]=python_screenkay_error.jpg
+Name8[$e]=pic-full-200906-1646-19.png
+Name9[$e]=1459310577295.png
 
 [SideBar]
 IsVisible ViewMode=false
-SideBarSplitterSizes=242,769
+SideBarSplitterSizes=242,771

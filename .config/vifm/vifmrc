@@ -250,7 +250,8 @@ fileviewer *.[1-8] man ./%c | col -b
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in sxiv}
-        \ sxiv -ia %f &,
+         \ sxiv-rifle -a %f &,
+        " \ sxiv -ia %f &,
         \ {View in imv}
         \ imv -b 1D2330 -d %d &,
         \ {View in feh}
@@ -472,7 +473,8 @@ nnoremap cc cw<c-u>
 nnoremap A cw
 
 " Open console in current directory
-nnoremap ,t :!xterm &<cr>
+"nnoremap ,t :!xterm &<cr>
+nnoremap ,t :!st &<cr>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
