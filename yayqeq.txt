@@ -401,6 +401,8 @@ ytmdl
 ytop
 z
 zathura
+zathura-cb
+zathura-djvu
 zathura-pdf-mupdf
 zip
 zsh

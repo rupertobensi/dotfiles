@@ -316,7 +316,7 @@ set splitbelow
 set noshowmode
 
 " Set floating window to be slightly transparent (might cause error if plugin is not installed)
-set winbl=10
+" set winbl=10
 
 " ============================================================================ "
 " ===                      CUSTOM COLORSCHEME CHANGES                      === "
@@ -640,4 +640,3 @@ let g:startify_padding_left = 28
 "let g:sneak#label = 1
 " End try closure
 endtry
-
