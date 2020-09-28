@@ -89,6 +89,7 @@ alias \
     nc="ncmpcpp" \
     ncdu="ncdu --color dark" \
     newsb="newsboat" \
+    rs="redshift -PO" \
     rtv="tuir" \
     tra="tremc"
 

@@ -194,6 +194,7 @@ nnn
 nodejs-mapscii
 nsnake
 ntfs-3g
+ntfsfixboot
 nudoku-git
 ocs-url
 octopi
@@ -209,6 +210,7 @@ pamixer
 paselect
 patch
 pavucontrol-qt
+picard
 picom
 pipes.sh
 pkgconf
@@ -315,7 +317,6 @@ unclutter
 unimatrix-git
 unzip
 vifm
-vim
 vimv-git
 virt-manager
 vlc
