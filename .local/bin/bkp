@@ -25,8 +25,8 @@ elif [ $option -eq 3 ]
   then sudo rsync -aAXv --delete --progress --stats /mnt/e/Work/ /mnt/d/backup/Work/
 
 elif [ $option -eq 4 ]
-  then sudo rsync -aAXv --delete --progress --stats /mnt/e/Robert/DROPBOX/ ~/Dropbox/
-       dropbox &
+  then sudo rsync -aAXv --delete --progress --stats /mnt/e/Robert/DROPBOX/ ~/Dropbox/ && dropbox &
+# when rsync is done THEN run dropbox in background
 
 elif [ $option -eq 5 ]
   then sudo rsync -aAXv --delete --progress --stats /mnt/e/Robert/  /mnt/d/backup/Robert/
