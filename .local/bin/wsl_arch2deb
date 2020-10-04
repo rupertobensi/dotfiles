@@ -1,0 +1,5 @@
+#!/bin/bash
+# Script will comment out certain lines to prevent errors on wsl debian.
+
+sed -i '1 s/^/#/' ~/.tmux.conf
+sed -i '55,57 s/^/#/' ~/.zprofile
