@@ -391,9 +391,11 @@ exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/robi/.config/i3/w
 exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/robi/.config/i3/ws2.json'"
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/ws3.json'"
 exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/ws4.json'"
+exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/ws5.json'"
 
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/dolphin'
+exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
