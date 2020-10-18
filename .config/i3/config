@@ -343,7 +343,8 @@ workspace $ws8 gaps outer 0
 
 # Load pywal resources for i3 colors
 set_from_resource $bg i3wm.color2 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
+# @@
+# set_from_resource $bg i3wm.color2 #f0f0f0
 
 client.focused          $bg     $bg     $fg  $bg       $bg
 # colour of                 border,   bg  ,  text, indicator,child_border  # changed last two of those
@@ -381,8 +382,9 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Element|Steam] 3
-assign [class=csgo_linux64|dota2|quakelive_steam.exe|MEGAsync|Lutris|Lollypop|KeePassXC] 5
-assign [class=discord] 6
+assign [class=MEGAsync|Lutris|Lollypop|KeePassXC] 5
+assign [class=csgo_linux64|dota2|quakelive_steam.exe] 6
+assign [class=discord] 7
 # assign [class=discord|] 6        #  | at the end causes ALL programs to stark on new workspaces
 
 # Multiple i3-msg ws1 as certain programs start faster than the others

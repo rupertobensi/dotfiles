@@ -3,7 +3,6 @@ adobe-source-sans-pro-fonts
 adobe-source-serif-pro-fonts
 alacritty
 alsa-utils
-amarok
 amdvlk
 apper
 arandr
@@ -28,6 +27,7 @@ bpytop
 breeze-gtk
 btrbk
 btrfs-progs
+bullshit
 calc
 calcurse
 calibre
@@ -83,6 +83,7 @@ file
 findutils
 firefox
 flex
+fontpreview
 fortune-mod
 freetype2-demos
 fzf
@@ -108,7 +109,6 @@ gzdoom
 gzip
 hideit.sh-git
 highlight
-howdoi
 htop-vim-git
 httrack
 i3-gaps
@@ -158,6 +158,7 @@ lollypop
 lsdesktopf
 lshw
 lsof
+luit
 lutris
 lxappearance
 lxdm-themes
@@ -348,7 +349,6 @@ xorg-fonts-100dpi
 xorg-fonts-75dpi
 xorg-fonts-encodings
 xorg-iceauth
-xorg-luit
 xorg-mkfontscale
 xorg-server
 xorg-server-common
