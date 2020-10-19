@@ -60,6 +60,7 @@ module-margin-right = 1
 
 ; font-0 = Gohu GohuFont:pixelsize=12;2                               # MAIN FONT
 ; font-0 = GohuNew:pixelsize=12;2                                     # MAIN FONT
+; font-0 = Noto Sans:pixelsize=9;2                                    # MAIN FONT
 font-0 = Jetbrains Mono Nerd Font:pixelsize=9;2                       # MAIN FONT
 font-1 = Jetbrains Mono Nerd Font:pixelsize=9:weight=bold;2           # time center
 
