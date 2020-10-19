@@ -126,8 +126,8 @@ notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md" \
 notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md" \
 notesg="nvim /mnt/e/Robert/DROPBOX/Linux/games.md" \
 notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.md" \
-notesw="nvim /mnt/e/Robert/DROPBOX/Linux/windows.md"
-notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md" \
+notesw="nvim /mnt/e/Robert/DROPBOX/Linux/windows.md" \
+notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
 
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 alias xc="xclip -sel clipboard"

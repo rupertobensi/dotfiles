@@ -144,6 +144,7 @@ kvantum-qt5
 kvantum-theme-arc
 leafpad
 lf-bin
+lfs
 lib32-vulkan-icd-loader
 lib32-vulkan-radeon
 libmpack
@@ -348,6 +349,7 @@ xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
 xorg-fonts-encodings
+xorg-fonts-misc
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
@@ -369,6 +371,7 @@ xorg-xcursorgen
 xorg-xdpyinfo
 xorg-xdriinfo
 xorg-xev
+xorg-xfd
 xorg-xgamma
 xorg-xhost
 xorg-xinit
