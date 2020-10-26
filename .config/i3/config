@@ -382,10 +382,11 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Element|Steam] 3
-assign [class=MEGAsync|Lutris|Lollypop|KeePassXC] 5
+assign [class=Lollypop] 5
+assign [class=MEGAsync|Lutris|KeePassXC] 6
 assign [class=csgo_linux64|dota2|quakelive_steam.exe] 6
 assign [class=discord] 7
-# assign [class=discord|] 6        #  | at the end causes ALL programs to stark on new workspaces
+# assign [class=discord|] 7        #  | at the end causes ALL programs to stark on new workspaces
 
 # Multiple i3-msg ws1 as certain programs start faster than the others
 

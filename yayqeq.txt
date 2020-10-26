@@ -19,11 +19,9 @@ automake
 bandwhich
 baobab
 base
-bashtop
 binutils
 bison
 bleachbit
-bpytop
 breeze-gtk
 btrbk
 btrfs-progs
@@ -96,9 +94,11 @@ git
 glances
 glow-bin
 gnome-disk-utility
+go
 gohu-ttf
 gohufont
 googler
+gotop
 gparted
 grep
 groff
@@ -109,7 +109,7 @@ gzdoom
 gzip
 hideit.sh-git
 highlight
-htop-vim-git
+htop
 httrack
 i3-gaps
 i3-layout-manager-git

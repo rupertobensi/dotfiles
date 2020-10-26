@@ -12,7 +12,7 @@ radcard set high
 # Apply pywal at the startup
 wal -R
 
-# run rebinds script to swap caps etc.
+# run rebinds script (xset, swap caps)
 rebinds &
 
 # Hide mouse cursor after X seconds
