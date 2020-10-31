@@ -280,6 +280,7 @@ syncthing
 taffy
 tamzen-font
 tdrop-git
+teamviewer
 telegram-desktop
 terminus-font
 termite
