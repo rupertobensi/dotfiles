@@ -401,6 +401,7 @@ exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/dolphin'
 exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 
 exec --no-startup-id i3-msg "workspace $ws1"
