@@ -109,7 +109,7 @@ gzdoom
 gzip
 hideit.sh-git
 highlight
-htop
+htop-vim-git
 httrack
 i3-gaps
 i3-layout-manager-git
@@ -120,6 +120,7 @@ id3v2
 iftop
 imgur-downloader-git
 inotify-tools
+instaloader
 intel-ucode
 inxi
 jitsi
@@ -185,7 +186,7 @@ nano
 napi-bash
 navi
 ncdu
-ncmpcpp-git
+ncmpcpp
 neofetch
 neovim
 nerd-fonts-complete
@@ -315,6 +316,7 @@ ttf-ubuntu-font-family
 ttf-weather-icons
 tty-clock
 tuir
+typespeed
 ueberzug
 unclutter
 unimatrix-git
@@ -359,7 +361,6 @@ xorg-server-devel
 xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
-xorg-server-xwayland
 xorg-sessreg
 xorg-setxkbmap
 xorg-smproxy
@@ -392,6 +393,7 @@ xorg-xrefresh
 xorg-xset
 xorg-xsetroot
 xorg-xvinfo
+xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud

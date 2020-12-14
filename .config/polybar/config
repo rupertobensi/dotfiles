@@ -92,8 +92,8 @@ wm-restack = i3
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+scroll-up= i3wm-wsprev
+scroll-down = i3wm-wsnext
 
 #cursor-click = pointer
 #cursor-scroll = ns-resize
@@ -439,7 +439,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-%format-underline = #f50a4d
+; %format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
