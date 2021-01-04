@@ -85,6 +85,7 @@ fontpreview
 fortune-mod
 freetype2-demos
 fzf
+g810-led-git
 gawk
 gcc
 gconf-gtk2
@@ -186,7 +187,7 @@ nano
 napi-bash
 navi
 ncdu
-ncmpcpp
+ncmpcpp-git
 neofetch
 neovim
 nerd-fonts-complete
@@ -272,6 +273,7 @@ stacer
 steam
 stow
 straw-viewer-git
+stress-ng
 subdl
 subdownloader
 sudo
@@ -293,7 +295,7 @@ tmux
 transmission-cli
 trash-cli
 tree
-tremc
+tremc-git
 ttf-anonymous-pro
 ttf-bitstream-vera
 ttf-conkyweather

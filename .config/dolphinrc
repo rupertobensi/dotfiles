@@ -46,13 +46,13 @@ HDMI-A-0 YPosition=29
 Height 1080=1032
 MenuBar=Disabled
 RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAwAAAAAAAACSAAAD3vwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAqAAAD3gAAADoA////AAAAAQAAALQAAAPe/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAACoAAAPeAAAA2wD///8AAAADAAAHWgAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAHWgAAAAIA////AAAGBgAAA94AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAwAAAAAAAACSAAAD3vwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAqAAAD3gAAADoA////AAAAAQAAALQAAAPe/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAACoAAAPeAAAA2gD///8AAAADAAAHWgAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAHWgAAAAIA////AAAGBgAAA94AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1920=1882
 
 [Open-with settings]
 CompletionMode=1
-History=mpv,vlc,subd,kate,torrent,tran,torr,zat,gea
+History=gwe,sxiv,mpv,vlc,subd,kate,torrent,tran,torr,zat,gea
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs

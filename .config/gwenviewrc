@@ -9,41 +9,41 @@ ThumbnailBarOrientation=Vertical
 
 [ImageView]
 MouseWheelBehavior=MouseWheelBehavior::Zoom
-ThumbnailSplitterSizes=883,132
+ThumbnailSplitterSizes=881,132
 
 [MainWindow]
 HDMI-A-0 Window-Maximized 1080x1920=true
-HDMI-A-0 XPosition=448
-HDMI-A-0 YPosition=156
+HDMI-A-0 XPosition=404
+HDMI-A-0 YPosition=158
 Height 1080=1027
 Height 540=382
-State=AAAA/wAAAAD9AAAAAAAABAAAAAK3AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA/4AAAK1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1920
 Width 960=510
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=/mnt/e/Robert/DATA/memes/boomer.gif
-File10[$e]=$HOME/pic-selected-04_10_2020-13_22_20.png
-File2[$e]=/mnt/e/Robert/DATA/memes/vEbHYME.gif
-File3[$e]=/mnt/e/Robert/DATA/Screenshots/twitch-2020-08-13_14.41.23.mkv
-File4[$e]=/mnt/e/Robert/DATA/Screenshots/simplescreenrecorder-2020-03-29_00.48.09.mkv
-File5[$e]=/mnt/e/Robert/DATA/Screenshots/python_screenkay_error.jpg
-File6[$e]=/mnt/e/Robert/DATA/Screenshots/pic-full-200906-1646-19.png
-File7[$e]=$HOME/Wallpapers/luke/Tech/1459310577295.png
-File8[$e]=/mnt/e/Robert/DATA/wallpapers_PC/e8rqe8md.jpeg
-File9[$e]=$HOME/pic-selected-04_10_2020-13_21_05.png
-Name1[$e]=boomer.gif
-Name10[$e]=pic-selected-04_10_2020-13_22_20.png
-Name2[$e]=vEbHYME.gif
-Name3[$e]=twitch-2020-08-13_14.41.23.mkv
-Name4[$e]=simplescreenrecorder-2020-03-29_00.48.09.mkv
-Name5[$e]=python_screenkay_error.jpg
-Name6[$e]=pic-full-200906-1646-19.png
-Name7[$e]=1459310577295.png
-Name8[$e]=e8rqe8md.jpeg
-Name9[$e]=pic-selected-04_10_2020-13_21_05.png
+File1[$e]=$HOME/Screenshots/pic-full-200801-2038-37.png
+File10[$e]=$HOME/Screenshots/python_screenkay_error.jpg
+File2[$e]=$HOME/Screenshots/pic-full-200901-2228-06.png
+File3[$e]=$HOME/Screenshots/pic-full-200906-1631-38.png
+File4[$e]=$HOME/Screenshots/pic-full-200906-1646-19.png
+File5[$e]=$HOME/Screenshots/pic-full-200906-2213-16.png
+File6[$e]=$HOME/Screenshots/pic-full-200908-0014-32.png
+File7[$e]=$HOME/Screenshots/pic-full-200908-2313-52.png
+File8[$e]=$HOME/Screenshots/pic-full-200908-2317-33.png
+File9[$e]=$HOME/Screenshots/pic-window-200908-1802-31.png
+Name1[$e]=pic-full-200801-2038-37.png
+Name10[$e]=python_screenkay_error.jpg
+Name2[$e]=pic-full-200901-2228-06.png
+Name3[$e]=pic-full-200906-1631-38.png
+Name4[$e]=pic-full-200906-1646-19.png
+Name5[$e]=pic-full-200906-2213-16.png
+Name6[$e]=pic-full-200908-0014-32.png
+Name7[$e]=pic-full-200908-2313-52.png
+Name8[$e]=pic-full-200908-2317-33.png
+Name9[$e]=pic-window-200908-1802-31.png
 
 [SideBar]
 IsVisible ViewMode=false

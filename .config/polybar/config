@@ -92,8 +92,10 @@ wm-restack = i3
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
 
-scroll-up= i3wm-wsprev
-scroll-down = i3wm-wsnext
+; scroll-up= i3wm-wsprev
+; scroll-down = i3wm-wsnext
+scroll-up= #i3.prev
+scroll-down = #i3.next
 
 #cursor-click = pointer
 #cursor-scroll = ns-resize
@@ -482,7 +484,8 @@ menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
 [settings]
-screenchange-reload = true
+; @@@
+; screenchange-reload = true
 ;compositing-background = xor
 ;compositing-background = screen
 ;compositing-foreground = source

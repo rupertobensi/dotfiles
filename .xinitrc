@@ -19,7 +19,7 @@ rebinds &
 unclutter -idle 3 &
 
 # i3_lock after a time period (minutes) of inactivity
-exec xautolock -time 10 -locker 'i3_lock' &
+exec xautolock -time 20 -locker 'i3_lock' &
 
 # Should be last
 # Start i3wm/KDE plasma

@@ -10,7 +10,7 @@
        "y": 30
     },
     "name": "Messenger",
-    "percent": 0.37,
+    "percent": 0.40,
     "swallows": [
        {
         "class": "^Caprine$",
@@ -27,7 +27,7 @@
     "border": "normal",
     "floating": "auto_off",
     "layout": "splitv",
-    "percent": 0.63,
+    "percent": 0.60,
     "type": "con",
     "nodes": [
         {
