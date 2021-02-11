@@ -52,7 +52,6 @@ discord
 diskonaut
 dmenu2
 dnsmasq
-doas
 dolphin
 dolphin-plugins
 downgrade
@@ -205,6 +204,7 @@ octopi
 office-code-pro
 okular
 onboard
+opendoas
 os-prober
 otf-fira-code
 packup
