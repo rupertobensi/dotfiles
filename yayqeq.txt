@@ -121,7 +121,6 @@ id3v2
 iftop
 imgur-downloader-git
 inotify-tools
-instaloader
 intel-ucode
 inxi
 jitsi
@@ -176,6 +175,7 @@ megacmd-bin
 mesa-vdpau
 mlocate
 mop-git
+mosh
 mpc
 mpd
 mpd-notification

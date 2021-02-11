@@ -34,7 +34,6 @@ alias \
 	sf="sudo $FILE" \
 	e="$EDITOR" \
     se="sudo $EDITOR" \
-	n="nnn" \
 	p="sudo pacman"
 
 
@@ -89,7 +88,8 @@ alias \
     nc="ncmpcpp" \
     ncdu="ncdu --color dark" \
     newsb="newsboat" \
-    rs="redshift -PO" \
+    rs="redshift -PO 4500" \
+    rsx="redshift -x" \
     rtv="tuir" \
     tra="tremc"
 
@@ -136,8 +136,8 @@ alias pmv="pymv --preserve --global-pbar -i"
 alias pcp="pycp --preserve --global-pbar -i"
 # ncmpcpp scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
-alias ncm="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tmux window
-alias Ncm="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
+alias n="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tmux window
+alias N="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
 
 # root privileges
 alias doas="doas --"

@@ -406,6 +406,10 @@ def_key "9"
     volume_down
 def_key "0"
     volume_up
+def_key "down"
+    volume_down
+def_key "up"
+    volume_up
 
 def_key "-"
     volume_down
@@ -495,6 +499,10 @@ def_key ","
 def_key "K"
   seek_forward
 def_key "J"
+  seek_backward
+def_key "right"
+  seek_forward
+def_key "left"
   seek_backward
 
 def_key "L"
