@@ -26,7 +26,7 @@ ConfirmClosingMultipleTabs=false
 ShowFullPath=true
 UseTabForSwitchingSplitView=true
 Version=200
-ViewPropsTimestamp=2020,3,15,0,43,44
+ViewPropsTimestamp=2021,2,20,11,28,25.208
 
 [IconsMode]
 FontWeight=50
@@ -39,27 +39,44 @@ Height 1080=422
 Width 1920=394
 
 [MainWindow]
+HDMI-0 Height 1920x1080=1032
+HDMI-0 Width 1920x1080=1882
+HDMI-0 XPosition 1920x1080=19
+HDMI-0 YPosition 1920x1080=29
 HDMI-A-0 Height 1080=1032
+HDMI-A-0 Height 1920x1080=1058
 HDMI-A-0 Width 1920=1882
+HDMI-A-0 Width 1920x1080=958
 HDMI-A-0 XPosition=19
+HDMI-A-0 XPosition 1920x1080=961
 HDMI-A-0 YPosition=29
+HDMI-A-0 YPosition 1920x1080=21
 Height 1080=1032
 MenuBar=Disabled
-RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAwAAAAAAAACSAAAD3vwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAqAAAD3gAAADoA////AAAAAQAAALQAAAPe/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAACoAAAPeAAAA2gD///8AAAADAAAHWgAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAHWgAAAAIA////AAAGBgAAA94AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAwAAAAAAAACFAAAD+vwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAoAAAD+gAAADoA////AAAAAQAAAKgAAAP6/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAACgAAAP6AAAA2wD///8AAAADAAAHWgAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAHWgAAAAIA////AAACgwAAA/oAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1920=1882
 
+[Notification Messages]
+ConfirmDelete=true
+
 [Open-with settings]
 CompletionMode=1
-History=gwe,sxiv,mpv,vlc,subd,kate,torrent,tran,torr,zat,gea
+History=vimi,vim,gwe,sxiv,mpv,vlc,subd,kate,torrent,tran,torr,zat,gea
+
+[PlacesPanel]
+IconSize=16
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
+Plugins=kraorathumbnail,ebookthumbnail,audiothumbnail,mltpreview,directorythumbnail,comicbookthumbnail,windowsexethumbnail,jpegthumbnail,cursorthumbnail,fontthumbnail,ffmpegthumbs,svgthumbnail,appimagethumbnail,opendocumentthumbnail,windowsimagethumbnail,imagethumbnail,djvuthumbnail,exrthumbnail
 
 [SettingsDialog]
+HDMI-0 Height 1920x1080=471
+HDMI-0 Width 1920x1080=598
 HDMI-A-0 Height 1080=386
+HDMI-A-0 Height 1920x1080=379
 HDMI-A-0 Width 1920=540
+HDMI-A-0 Width 1920x1080=544
 Height 1080=388
 Width 1920=540
 

@@ -258,19 +258,19 @@ bindsym $mod+Shift+F2         exec --no-startup-id screenkey
 bindsym $mod+F3		exec --no-startup-id displayselect
 bindsym $mod+F4		exec --no-startup-id dmenulogout
 bindsym $mod+Shift+F4		exec --no-startup-id redshiftgui
-#bindsym $mod+F5		exec --no-startup-id $netrefresh
-#bindsym $mod+F6		exec --no-startup-id torwrap
-bindsym $mod+F5		exec $term -e tremc
+# bindsym $mod+F5		exec --no-startup-id $netrefresh
+# bindsym $mod+F6		exec --no-startup-id torwrap
+# bindsym $mod+F5		exec $term -e tremc
 bindsym $mod+Shift+F5		exec --no-startup-id td-toggle
 bindsym $mod+F6		exec --no-startup-id keepassxc
 bindsym $mod+Shift+F6		exec --no-startup-id chromium
-#bindsym $mod+F8		exec --no-startup-id mailsync
+# bindsym $mod+F8		exec --no-startup-id mailsync
 bindsym $mod+F7		exec --no-startup-id lollypop
 bindsym $mod+Shift+F7		exec --no-startup-id lutris
 bindsym $mod+F8		exec --no-startup-id dmenumount
 bindsym $mod+Shift+F8 	exec --no-startup-id dmenuumount
-#bindsym $mod+F11	exec --no-startup-id ducksearch
-#bindsym $mod+F12	exec $term -e nmtui
+# bindsym $mod+F11	exec --no-startup-id ducksearch
+# bindsym $mod+F12	exec $term -e nmtui
 
 # Remote mpv control (with numlock on)
 bindsym $mod+Mod2+KP_1 exec xdotool key --window "$(xdotool search --class mpv)" j
@@ -383,7 +383,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 
 assign [class=Caprine|Element|Steam] 3
 assign [class=Lollypop] 5
-assign [class=MEGAsync|Lutris|KeePassXC] 6
+assign [class=MEGAsync|Lutris|KeePassXC|qBittorrent*] 6
 assign [class=csgo_linux64|dota2|quakelive_steam.exe] 6
 assign [class=discord] 7
 # assign [class=discord|] 7        #  | at the end causes ALL programs to stark on new workspaces
@@ -402,8 +402,8 @@ exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
-# exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
-exec --no-startup-id i3-msg 'workspace 2; exec sleepfirefox'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
+# exec --no-startup-id i3-msg 'workspace 2; exec sleepfirefox'
 
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
@@ -411,9 +411,9 @@ exec --no-startup-id i3-msg "workspace $ws1"
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 
-for_window [class=feh|mpv|gwenview|Sxiv|Leafpad|MEGAsync|#Lutris|SimpleScreenRecorder] floating enable
-for_window [class=feh|mpv|gwenview|Sxiv|Leafpad] resize set 1024 768
-for_window [class=feh|mpc|gwenview|Sxiv|Leafpad] move position center
+for_window [class=feh|mpv|gwenview|Sxiv|Leafpad|MEGAsync|#Lutris|SimpleScreenRecorder|Vimiv] floating enable
+for_window [class=feh|mpv|gwenview|Sxiv|Leafpad|Vimiv] resize set 1024 768
+for_window [class=feh|mpc|gwenview|Sxiv|Leafpad|vImiv] move position center
 for_window [class=MEGAsync] move position 765 425
 #for_window [class=libreoffice*|okular] focus
 for_window [class=feh] --auto-zoom --scale-down
@@ -446,9 +446,6 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 
 # ** Use only one **
 
-# bindsym F11 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd alacritty --config-file /home/robi/.config/alacritty/alacritty_dd.yml
-# bindsym F11 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd st
-
 #
 ## Dropdown alacritty (homemade)
 #
@@ -467,6 +464,9 @@ bindsym F12 [class="dropdown_term"] scratchpad show, move position 0 0
 
 # bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 # for_window [class="dropdown_term"] floating enable, resize set 1800 750, move scratchpad, border pixel 2
+
+# bindsym F11 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd alacritty --config-file /home/robi/.config/alacritty/alacritty_dd.yml
+# bindsym F11 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd st
 
 #####################################################################################################
 
