@@ -78,6 +78,7 @@ file
 findutils
 firefox
 flex
+fontmatrix
 fontpreview
 fortune-mod
 freetype2-demos
@@ -226,6 +227,7 @@ python2-pip
 qbittorrent
 qemu
 qogir-gtk-theme
+qps
 qt5-styleplugins
 qt5ct
 qterminal
@@ -247,6 +249,8 @@ soundkonverter
 spacefm
 steam
 stow
+strace
+straw-viewer-git
 subdl
 subdownloader
 sudo

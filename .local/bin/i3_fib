@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+### Dependencies:
+### python-i3-py
+
 import i3
 import re
 import subprocess
