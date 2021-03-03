@@ -19,6 +19,7 @@ automake
 bandwhich
 baobab
 base
+bat
 binutils
 bison
 bleachbit
@@ -51,6 +52,7 @@ discord
 diskonaut
 dmenu2
 dnsmasq
+doge
 dolphin
 dolphin-plugins
 downgrade
@@ -93,6 +95,7 @@ git
 glances
 glow-bin
 gnome-disk-utility
+go
 gohu-ttf
 gohufont
 googler
@@ -170,6 +173,7 @@ maim
 make
 mc
 mediainfo
+megasync
 mesa-vdpau
 mlocate
 mop-git
@@ -180,7 +184,6 @@ mpv
 mtpfs
 mutt-wizard-git
 myman
-nano
 napi-bash
 navi
 ncdu
@@ -206,10 +209,12 @@ opendoas
 os-prober
 pacman
 pamixer
+paru
 patch
 pavucontrol-qt
 picard
 picom
+pipe-viewer-git
 pkgconf
 pkgstats
 polybar
@@ -218,6 +223,7 @@ pulseaudio
 pulseaudio-alsa
 pulsemixer
 python-eyed3
+python-i3-py
 python-i3ipc
 python-pip
 python-pynvim
@@ -242,15 +248,16 @@ sassc
 screenkey
 sddm
 sed
+simple-mtpfs-git
 simplescreenrecorder
 smartmontools
+smloadr-git
 snapper
 soundkonverter
 spacefm
 steam
 stow
 strace
-straw-viewer-git
 subdl
 subdownloader
 sudo
@@ -261,9 +268,11 @@ terminus-font
 termite
 texinfo
 thunderbird
+tidal-hifi-git
 tig
 tldr
 tmux-git
+tokei
 transmission-cli
 trash-cli
 tree
@@ -280,6 +289,7 @@ ttf-liberation
 ttf-linux-libertine
 ttf-symbola
 ttf-ubuntu-font-family
+tuxi-git
 typespeed
 ueberzug
 unclutter
@@ -288,6 +298,7 @@ vifm
 vimiv
 virt-manager
 vlc
+volnoti
 vulkan-mesa-layers
 vulkan-radeon
 vulkan-tools
@@ -358,9 +369,9 @@ xorg-xwininfo
 xorg-xwud
 xsel
 xsettingsd
-yay
 you-get
 youtube-dl
+ytfzf-git
 z
 zathura
 zathura-cb

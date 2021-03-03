@@ -27,7 +27,8 @@ alias \
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
-	YT="straw-viewer" \
+	YT="ytfzf -t" \
+	YTP="pipe-viewer" \
 	sdn="sudo shutdown -h now" \
 	rdn="sudo reboot" \
 	f="$FILE" \
@@ -124,7 +125,7 @@ note="nvim /mnt/e/Robert/DROPBOX/Linux/index.md" \
 notes="nvim /mnt/e/Robert/DROPBOX/Linux/notes.md" \
 notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md" \
 notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md" \
-notesg="nvim /mnt/e/Robert/DROPBOX/Linux/games.md" \
+notesg="nvim /mnt/e/Robert/DROPBOX/Linux/gamesMovies.md" \
 notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.md" \
 notesw="nvim /mnt/e/Robert/DROPBOX/Linux/windows.md" \
 notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
@@ -273,39 +274,41 @@ fi
 
 
 #
-## YAY-PACMAN
+## AUR HELPER
 #
 
-if (( $+commands[yay] )); then
-  alias yayu="yay -Suy"
-  alias yayU="yay -Su"
-  alias yayy="yay -Sy"
-  alias yayY="sudo yay -Fy"
-  alias yayi="yay -S"
-  alias yayI="sudo yay -U"
-  alias yays="yay --sync --search"
-  alias yayS="yay --query --search"
-  alias yayq="yay --sync --info -i"
-  alias yayQ="yay --query --info"
-  alias yayl="yay --files --list"
-  alias yayL="yay --query --list"
-  alias yayo="yay --files --regex"
-  alias yayO="yay --query --owns"
-  alias yayk="sudo yay --query --check"
-  alias yayc="sudo yay -Scc"
-  alias yayx="sudo yay --remove --nosave"
-  alias yayX="sudo yay --remove --nosave --recursive"
-  alias yayr="sudo yay --remove --nosave --recursive --cascade"
-  alias yayR="sudo yay --remove --nosave --recursive --recursive --cascade"
-  alias yayol="yay -Qdt"
-  alias yayor="yayr \$(yay -Qdtq)"
+alias yay="paru"
+
+if (( $+commands[paru] )); then
+  alias yayu="paru -Suy"
+  alias yayU="paru -Su"
+  alias yayy="paru -Sy"
+  alias yayY="sudo paru -Fy"
+  alias yayi="paru -S"
+  alias yayI="sudo paru -U"
+  alias yays="paru --sync --search"
+  alias yayS="paru --query --search"
+  alias yayq="paru --sync --info -i"
+  alias yayQ="paru --query --info"
+  alias yayl="paru --files --list"
+  alias yayL="paru --query --list"
+  alias yayo="paru --files --regex"
+  alias yayO="paru --query --owns"
+  alias yayk="sudo paru --query --check"
+  alias yayc="sudo paru -Scc"
+  alias yayx="sudo paru --remove --nosave"
+  alias yayX="sudo paru --remove --nosave --recursive"
+  alias yayr="sudo paru --remove --nosave --recursive --cascade"
+  alias yayR="sudo paru --remove --nosave --recursive --recursive --cascade"
+  alias yayol="paru -Qdt"
+  alias yayor="yayr \$(paru -Qdtq)"
   alias yayb="makepkg -scCif"
-  alias yayd="yay -G"
-  alias yayD="yay -Gd"
+  alias yayd="paru -G"
+  alias yayD="paru -Gd"
 
   aurd() git clone https://aur.archlinux.org/$1.git
 
-  compdef '_dispatch pacman pacman' yay
+  compdef '_dispatch pacman pacman' paru
 fi
 
 # last 20 installed packages:
