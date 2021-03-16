@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Simple btrfs snapshot-taking script
+
+# date=$(date)
+date=$(date +%d-%m-%Y)
+
+sudo btrfs subv snapshot / /.snapshots/$date-root
+sudo btrfs subv snapshot /home /.snapshots/$date-home

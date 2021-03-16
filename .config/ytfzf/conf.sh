@@ -1,1 +1,1 @@
-YTFZF_PLAYER="mpv --geometry=860:45"
+YTFZF_PLAYER="mpv --keep-open=yes --geometry=860:45"

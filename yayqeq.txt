@@ -81,7 +81,7 @@ findutils
 firefox
 flex
 fontmatrix
-fontpreview
+fontpreview-ueberzug-git
 fortune-mod
 freetype2-demos
 fzf
@@ -121,7 +121,7 @@ i3lock
 icedtea-web
 id3v2
 iftop
-imgur-downloader-git
+imgur-downloader
 inotify-tools
 intel-ucode
 inxi
@@ -184,6 +184,7 @@ mpv
 mtpfs
 mutt-wizard-git
 myman
+nano
 napi-bash
 navi
 ncdu
@@ -252,7 +253,6 @@ simple-mtpfs-git
 simplescreenrecorder
 smartmontools
 smloadr-git
-snapper
 soundkonverter
 spacefm
 steam
