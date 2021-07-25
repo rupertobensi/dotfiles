@@ -27,24 +27,26 @@ Width 960=510
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=/mnt/e/Robert/PHOTOS_VIDS/2014/2014-05-25 15.33.51.jpg
-File2[$e]=/mnt/e/Robert/PHOTOS_VIDS/2014/2014-05-25 15.33.54.jpg
-File3[$e]=/mnt/e/Robert/PHOTOS_VIDS/2014/2014-05-25 15.33.56-2.jpg
-File4[$e]=/mnt/e/Robert/PHOTOS_VIDS/2014/2014-05-25 15.33.58.jpg
-File5[$e]=/mnt/e/Robert/PHOTOS_VIDS/2014/2014-05-25 15.54.50.jpg
-File6[$e]=/mnt/e/Robert/PHOTOS_VIDS/2014/2014-05-25 15.41.41.jpg
-File7[$e]=/mnt/e/Robert/PHOTOS_VIDS/2014/2014-05-25 15.41.43.jpg
-File8[$e]=$HOME/Downloads/IMG_20210226_230542.jpg
-File9[$e]=$HOME/Downloads/2017-06-25 23.35.09.jpg
-Name1[$e]=2014-05-25 15.33.51.jpg
-Name2[$e]=2014-05-25 15.33.54.jpg
-Name3[$e]=2014-05-25 15.33.56-2.jpg
-Name4[$e]=2014-05-25 15.33.58.jpg
-Name5[$e]=2014-05-25 15.54.50.jpg
-Name6[$e]=2014-05-25 15.41.41.jpg
-Name7[$e]=2014-05-25 15.41.43.jpg
-Name8[$e]=IMG_20210226_230542.jpg
-Name9[$e]=2017-06-25 23.35.09.jpg
+File1[$e]=$HOME/Screenshots/pic-full-25_01_2021-14_17_23.png
+File10[$e]=$HOME/pic-full-18_07_2021-15_50_10.png
+File2[$e]=$HOME/Wallpapers/824911868_preview_Wallpaper_Image.jpg
+File3[$e]=$HOME/Wallpapers/AA_fern_plant_foliage_118838_3840x2400.jpg
+File4[$e]=$HOME/Wallpapers/arch_leaves.png
+File5[$e]=$HOME/Wallpapers/waterbus.jpg
+File6[$e]=$HOME/Wallpapers/wolf.jpg
+File7[$e]=$HOME/Wallpapers/wolff.jpg
+File8[$e]=$HOME/Wallpapers/wp4788614.jpg
+File9[$e]=$HOME/Downloads/199208058_697134947752712_2256524707514886143_n.jpg
+Name1[$e]=pic-full-25_01_2021-14_17_23.png
+Name10[$e]=pic-full-18_07_2021-15_50_10.png
+Name2[$e]=824911868_preview_Wallpaper_Image.jpg
+Name3[$e]=AA_fern_plant_foliage_118838_3840x2400.jpg
+Name4[$e]=arch_leaves.png
+Name5[$e]=waterbus.jpg
+Name6[$e]=wolf.jpg
+Name7[$e]=wolff.jpg
+Name8[$e]=wp4788614.jpg
+Name9[$e]=199208058_697134947752712_2256524707514886143_n.jpg
 
 [SideBar]
 IsVisible ViewMode=false

@@ -77,6 +77,7 @@ ffmpegthumbnailer
 ffmpegthumbs
 figlet
 file
+filezilla
 findutils
 firefox
 flex
@@ -173,7 +174,7 @@ maim
 make
 mc
 mediainfo
-megasync
+megasync-bin
 mesa-vdpau
 mlocate
 mop-git
@@ -249,6 +250,7 @@ sassc
 screenkey
 sddm
 sed
+signal-desktop
 simple-mtpfs-git
 simplescreenrecorder
 smartmontools
@@ -263,6 +265,7 @@ subdownloader
 sudo
 sxiv
 syncthing
+teams
 telegram-desktop
 terminus-font
 termite
@@ -371,7 +374,7 @@ xsel
 xsettingsd
 you-get
 youtube-dl
-ytfzf-git
+ytfzf
 z
 zathura
 zathura-cb

@@ -9,13 +9,13 @@
     "x": 0,
     "y": 0
   },
-  "name": "Mozilla Firefox",
+  "name": firefox,
   "percent": 1,
   "swallows": [
     {
       "class": "^firefox$",
       "instance": "^Navigator$",
-      "title": "^Mozilla\\ Firefox$",
+      "title": "^firefox$",
       "window_role": "^browser$"
     }
   ],
