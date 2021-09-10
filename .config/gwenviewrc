@@ -2,6 +2,7 @@
 update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
 
 [General]
+LastUsedVersion=210800
 SideBarPage=operations
 ThumbnailActions=ThumbnailActions::None
 ThumbnailBarIsVisible=true
@@ -9,7 +10,7 @@ ThumbnailBarOrientation=Vertical
 
 [ImageView]
 MouseWheelBehavior=MouseWheelBehavior::Zoom
-ThumbnailSplitterSizes=881,132
+ThumbnailSplitterSizes=883,132
 
 [MainWindow]
 HDMI-A-0 Window-Maximized 1080x1920=true
@@ -27,26 +28,26 @@ Width 960=510
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=$HOME/Screenshots/pic-full-25_01_2021-14_17_23.png
-File10[$e]=$HOME/pic-full-18_07_2021-15_50_10.png
-File2[$e]=$HOME/Wallpapers/824911868_preview_Wallpaper_Image.jpg
-File3[$e]=$HOME/Wallpapers/AA_fern_plant_foliage_118838_3840x2400.jpg
-File4[$e]=$HOME/Wallpapers/arch_leaves.png
-File5[$e]=$HOME/Wallpapers/waterbus.jpg
-File6[$e]=$HOME/Wallpapers/wolf.jpg
-File7[$e]=$HOME/Wallpapers/wolff.jpg
-File8[$e]=$HOME/Wallpapers/wp4788614.jpg
-File9[$e]=$HOME/Downloads/199208058_697134947752712_2256524707514886143_n.jpg
-Name1[$e]=pic-full-25_01_2021-14_17_23.png
-Name10[$e]=pic-full-18_07_2021-15_50_10.png
-Name2[$e]=824911868_preview_Wallpaper_Image.jpg
-Name3[$e]=AA_fern_plant_foliage_118838_3840x2400.jpg
-Name4[$e]=arch_leaves.png
-Name5[$e]=waterbus.jpg
-Name6[$e]=wolf.jpg
-Name7[$e]=wolff.jpg
-Name8[$e]=wp4788614.jpg
-Name9[$e]=199208058_697134947752712_2256524707514886143_n.jpg
+File1[$e]=$HOME/Wallpapers/824911868_preview_Wallpaper_Image.jpg
+File10[$e]=$HOME/Screenshots/x/pic-selected-28_08_2021-23_09_50.png
+File2[$e]=$HOME/Wallpapers/AA_fern_plant_foliage_118838_3840x2400.jpg
+File3[$e]=$HOME/Wallpapers/arch_leaves.png
+File4[$e]=$HOME/Wallpapers/waterbus.jpg
+File5[$e]=$HOME/Wallpapers/wolf.jpg
+File6[$e]=$HOME/Wallpapers/wolff.jpg
+File7[$e]=$HOME/Wallpapers/wp4788614.jpg
+File8[$e]=$HOME/Downloads/199208058_697134947752712_2256524707514886143_n.jpg
+File9[$e]=$HOME/Screenshots/x/pic-selected-28_08_2021-23_10_02.png
+Name1[$e]=824911868_preview_Wallpaper_Image.jpg
+Name10[$e]=pic-selected-28_08_2021-23_09_50.png
+Name2[$e]=AA_fern_plant_foliage_118838_3840x2400.jpg
+Name3[$e]=arch_leaves.png
+Name4[$e]=waterbus.jpg
+Name5[$e]=wolf.jpg
+Name6[$e]=wolff.jpg
+Name7[$e]=wp4788614.jpg
+Name8[$e]=199208058_697134947752712_2256524707514886143_n.jpg
+Name9[$e]=pic-selected-28_08_2021-23_10_02.png
 
 [SideBar]
 IsVisible ViewMode=false

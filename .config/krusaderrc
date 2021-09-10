@@ -289,8 +289,8 @@ FrameShape=Panel
 Layout=krusader:compact
 
 [Private]
-PopularUrls=file:///mnt/e/Robert/DATA/wallpapers_PC/,file:///mnt/e/Robert/DATA/,file:///home/robi/,file:///home/robi/.config/,file:///mnt/e/,file:///mnt/e/Downloads/Torrents/,file:///mnt/e/Downloads/,file:///home/robi/.config/.myconfig/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Work/,file:///mnt/e/Downloads/stuff/29.07.2020/,file:///mnt/e/Work/webpages/,file:///mnt/e/Work/webpages/outdoors-website_YT/,file:///mnt/e/[media]/,file:///mnt/e/Downloads/stuff/,file:///home/robi/Wallpapers/,file:///mnt/e/[media]/[music]/albums/alt-j/,file:///mnt/e/[media]/[music]/albums/Bitamina/,file:///mnt/e/[media]/[music]/albums/,file:///mnt/e/[media]/[music]/,file:///home/robi/.config/.ayyconfig/,file:///mnt/e/[media]/[tv series]/,file:///mnt/e/[media]/[movies]/,file:///home/Data/steam/,file:///home/Data/,file:///home/Data/steam/Steam/,file:///home/Data/steam/Steam/appcache/,file:///home/
-PopularUrlsRank=3,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrls=file:///mnt/e/Downloads/,file:///mnt/e/Downloads/Torrents/,file:///home/robi/.config/.myconfig/,file:///home/robi/,file:///home/robi/.dotfiles/,file:///mnt/e/Robert/,file:///home/robi/Dropbox/Linux/,file:///mnt/e/Robert/DATA/wallpapers_PC/,file:///mnt/e/Work/,file:///mnt/e/Robert/DATA/,file:///home/robi/.config/,file:///mnt/e/,file:///mnt/e/Downloads/stuff/29.07.2020/,file:///mnt/e/Work/webpages/,file:///mnt/e/Work/webpages/outdoors-website_YT/,file:///mnt/e/[media]/,file:///mnt/e/Downloads/stuff/,file:///home/robi/Wallpapers/,file:///mnt/e/[media]/[music]/albums/alt-j/,file:///mnt/e/[media]/[music]/albums/Bitamina/,file:///mnt/e/[media]/[music]/albums/,file:///mnt/e/[media]/[music]/,file:///home/robi/.config/.ayyconfig/,file:///mnt/e/[media]/[tv series]/,file:///mnt/e/[media]/[movies]/,file:///home/Data/steam/,file:///home/Data/,file:///home/Data/steam/Steam/,file:///home/Data/steam/Steam/appcache/,file:///home/
+PopularUrlsRank=2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Start Position=0,23
 Start Size=1920,1057
 cmdline history=
@@ -326,7 +326,7 @@ Show Terminal Emulator=false
 Show status bar=false
 Splitter Sizes=958,955
 Start To Tray=false
-State=\x00\x00\x00\xff\x00\x00\x00\x00\xfd\x00\x00\x00\x00\x00\x00\x07Z\x00\x00\x03\xc1\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x08\xfc\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x16\x00m\x00a\x00i\x00n\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x01\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00j\x00o\x00b\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1c\x00a\x00c\x00t\x00i\x00o\x00n\x00s\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00
+State=\x00\x00\x00\xff\x00\x00\x00\x00\xfd\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\xdd\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x08\xfc\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x16\x00m\x00a\x00i\x00n\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x01\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00j\x00o\x00b\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1c\x00a\x00c\x00t\x00i\x00o\x00n\x00s\x00T\x00o\x00o\x00l\x00B\x00a\x00r\x00\x00\x00\x02\xbe\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00
 Terminal Emulator Splitter Sizes=100,100
 Update Default Panel Settings=true
 Vertical Mode=false

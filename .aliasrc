@@ -89,7 +89,6 @@ alias \
     nc="ncmpcpp" \
     ncdu="ncdu --color dark" \
     newsb="newsboat" \
-    pulseR="pulseaudio -k; pulseaudio -D" \
     rs="redshift -PO 4500" \
     rsx="redshift -x" \
     rtv="tuir" \
