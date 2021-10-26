@@ -1,8 +1,8 @@
-[ignore]
 # This notification will not be displayed
 # ...to ignore all:
-appname = "*"
-format = ""
+[ignore]
+summary = "*"
+skip_display = true
 
 
 
