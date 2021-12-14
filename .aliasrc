@@ -199,6 +199,8 @@ alias -g C="| wc -m"
 alias -g W="| wc -w"
 alias -g L="| wc -l"
 
+# macOS shenanigans
+# brewup='brew update; brew upgrade; brew cask upgrade; brew cleanup; brew doctor'
 
 ###
 ### PROGRAMS
