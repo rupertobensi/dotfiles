@@ -18,7 +18,7 @@ HDMI-A-0 YPosition=21
 HDMI-A-0 YPosition 1920x1080=21
 Height 1080=1058
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAA74AAAP6AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAAA74AAAP6AAAABAAAAAQAAAAIAAAACPwAAAACAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAACIAYQBuAG4AbwB0AGEAdABpAG8AbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1920=958
 
@@ -30,6 +30,7 @@ File4[$e]=/mnt/e/Robert/DROPBOX/Linux/cheatsheet.md
 File5[$e]=/mnt/e/Robert/BOOKS/ebook/[Ellis_Bret_Easton]_American_Psycho(z-lib.org).epub
 File6[$e]=/mnt/e/Robert/DROPBOX/Linux/README.md
 File7[$e]=/mnt/e/Robert/BOOKS/ebook/[Bret_Easton_Ellis]_American_Psycho(z-lib.org).pdf
+File8[$e]=/mnt/e/Work/webpages/Marcin_OG_REDESIGN/2205/README.md
 Name1[$e]=KDE.md
 Name2[$e]=index.md
 Name3[$e]=yaypacman.md
@@ -37,3 +38,4 @@ Name4[$e]=cheatsheet.md
 Name5[$e]=[Ellis_Bret_Easton]_American_Psycho(z-lib.org).epub
 Name6[$e]=README.md
 Name7[$e]=[Bret_Easton_Ellis]_American_Psycho(z-lib.org).pdf
+Name8[$e]=README.md

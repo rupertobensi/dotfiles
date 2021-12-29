@@ -378,7 +378,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 assign [class=Caprine|Element|Steam] 3
 assign [class=Lollypop] 5
 assign [class=discord|tidal-hifi] 6
-assign [class=MEGAsync|Lutris|KeePassXC|qBittorrent*] 7
+assign [class=Lutris|KeePassXC|qBittorrent*] 7
 assign [class=csgo_linux64|dota2|quakelive_steam.exe] 8
 # assign [class=discord|] 7        #  | at the end causes ALL programs to stark on new workspaces
 
@@ -400,6 +400,7 @@ exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/signal-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/megasync'
 
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'

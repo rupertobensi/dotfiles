@@ -1,6 +1,6 @@
 absolutely-proprietary
-adobe-source-sans-pro-fonts
-adobe-source-serif-pro-fonts
+adobe-source-sans-fonts
+adobe-source-serif-fonts
 alacritty
 alsa-utils
 amdvlk
@@ -109,7 +109,6 @@ grub-customizer
 gst-libav
 gst-plugins-good
 gwenview
-gzdoom
 gzip
 hideit.sh-git
 highlight
@@ -230,12 +229,14 @@ python-i3ipc
 python-pip
 python-pynvim
 python-pywal
+python-wheel
 python2-backports.functools_lru_cache
 python2-pip
 qbittorrent
 qemu
 qogir-gtk-theme
 qps
+qt4-bin
 qt5-styleplugins
 qt5ct
 qterminal

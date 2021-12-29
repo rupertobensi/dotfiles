@@ -28,26 +28,26 @@ Width 960=510
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=$HOME/pic-full-22_10_2021-15_00_13.png
-File10[$e]=$HOME/Downloads/dailymadmen_222810407_329980508825380_8299143036786113960_n.jpg
-File2[$e]=$HOME/pic-full-22_10_2021-16_35_11.png
-File3[$e]=$HOME/pic-full-22_10_2021-16_35_17.png
-File4[$e]=$HOME/pic-selected-18_09_2021-13_39_18.png
-File5[$e]=$HOME/pic-full-01_11_2021-14_56_18.png
-File6[$e]=$HOME/pic-full-04_10_2021-15_48_34.png
-File7[$e]=$HOME/pic-full-10_09_2021-15_48_01.png
-File8[$e]=$HOME/pic-full-10_09_2021-15_50_37.png
-File9[$e]=$HOME/pic-full-10_09_2021-15_50_39.png
-Name1[$e]=pic-full-22_10_2021-15_00_13.png
-Name10[$e]=dailymadmen_222810407_329980508825380_8299143036786113960_n.jpg
-Name2[$e]=pic-full-22_10_2021-16_35_11.png
-Name3[$e]=pic-full-22_10_2021-16_35_17.png
-Name4[$e]=pic-selected-18_09_2021-13_39_18.png
-Name5[$e]=pic-full-01_11_2021-14_56_18.png
-Name6[$e]=pic-full-04_10_2021-15_48_34.png
-Name7[$e]=pic-full-10_09_2021-15_48_01.png
-Name8[$e]=pic-full-10_09_2021-15_50_37.png
-Name9[$e]=pic-full-10_09_2021-15_50_39.png
+File1[$e]=$HOME/pic-full-04_10_2021-15_48_34.png
+File10[$e]=$HOME/pic-full-22_10_2021-16_35_11.png
+File2[$e]=$HOME/pic-full-10_09_2021-15_48_01.png
+File3[$e]=$HOME/pic-full-10_09_2021-15_50_37.png
+File4[$e]=$HOME/pic-full-10_09_2021-15_50_39.png
+File5[$e]=$HOME/pic-full-11_10_2021-20_06_46.png
+File6[$e]=$HOME/pic-full-18_09_2021-13_37_20.png
+File7[$e]=$HOME/pic-full-22_10_2021-15_00_13.png
+File8[$e]=$HOME/pic-selected-18_09_2021-13_39_18.png
+File9[$e]=$HOME/pic-full-22_10_2021-16_35_17.png
+Name1[$e]=pic-full-04_10_2021-15_48_34.png
+Name10[$e]=pic-full-22_10_2021-16_35_11.png
+Name2[$e]=pic-full-10_09_2021-15_48_01.png
+Name3[$e]=pic-full-10_09_2021-15_50_37.png
+Name4[$e]=pic-full-10_09_2021-15_50_39.png
+Name5[$e]=pic-full-11_10_2021-20_06_46.png
+Name6[$e]=pic-full-18_09_2021-13_37_20.png
+Name7[$e]=pic-full-22_10_2021-15_00_13.png
+Name8[$e]=pic-selected-18_09_2021-13_39_18.png
+Name9[$e]=pic-full-22_10_2021-16_35_17.png
 
 [SideBar]
 IsVisible ViewMode=false
