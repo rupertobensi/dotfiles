@@ -1,0 +1,49 @@
+#!/bin/bash
+BACKGROUND_RED="`tput setaf 1` "
+$BACKGROUND_WHITE="`tput setaf 6` "
+FORGROUND_BLACK="`tput setaf 0` "
+DIM="`tput dim` "
+INVERT="`tput smso`"
+BOLD="`tput bold` "
+RESET="`tput sgr0` "
+CLEAR="`tput clear` "
+
+echo -e "$CLEAR" 
+pactl list short sinks >&2
+# ------------------------------------
+
+if [ -z "$1" ]; then
+   echo -en "Usage: $0 <sinkId/sinkName>" >&2
+   echo -en "Valid sinks:" >&2
+   exit 1
+fi
+
+if [ "$1" == '-' ]; then
+   echo -en "$INVERT$BACKGROUND_WHITE Current sink : $RESET    " >&2
+   currentSink=$(pactl list short sinks | grep RUNNING | awk '{print $1}' | head -1)
+   if [ -e $currentSink ];then
+       currentSink=$(pactl list short sinks | awk '{print $1}' | head -1)
+   fi
+   pactl list short sinks | grep "^$currentSink" | awk '{print $1,$2}' >&2
+   sinks=( $(pactl list short sinks | awk '{print $1}') )
+   for (( index=0; index <= (${#sinks[@]} * 2); index++ )); do
+       if [ "${sinks[$((index % ${#sinks[@]}))]}" == "$currentSink" ]; then
+           newSink="${sinks[$((++index % ${#sinks[@]}))]}"
+           break
+       fi
+   done
+else
+   newSink="$1"
+fi
+   echo "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_"
+   echo -en "$INVERT$BACKGROUND_RED New sink : $RESET     "
+   pactl list short sinks | grep --color "^$newSink" | awk '{print $1,$2}' >&2
+
+pacmd set-default-sink "$newSink" >&2
+
+pactl list short sink-inputs|while read stream; do
+   streamId=$(echo -en $stream|cut '-d ' -f1)
+   echo -e "$FORGROUND_BLACK$DIM moving stream $streamId $RESET" >&2
+   pactl move-sink-input "$streamId" "$newSink" >&2
+done
+

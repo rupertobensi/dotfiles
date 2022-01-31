@@ -49,8 +49,10 @@ cronie
 dconf-editor
 ddgr
 discord
+diskmonitor
 diskonaut
 dmenu2
+dmidecode
 dnsmasq
 doge
 dolphin
@@ -144,7 +146,7 @@ krusader
 ksysguard
 ktexteditor
 kunst-git
-kvantum-qt5
+kvantum
 kvantum-theme-arc
 kvantum-theme-qogir-git
 leafpad

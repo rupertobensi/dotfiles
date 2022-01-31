@@ -1,5 +1,5 @@
 2:/home/robi/.dotfiles
-':/home/robi/.dotfiles/.config/nvim
+':/home/robi/.dotfiles/.local/bin
 6:/home/robi/.dotfiles/system_media
 t:/mnt/e/[media]/[tv series]
 a:/mnt/e/[media]/[music]/albums
@@ -25,3 +25,4 @@ W:/mnt/e/Work/webpages/AUTO-WERYFIKATOR
 n:/mnt/e/Work/webpages/Marcin_OG_REDESIGN
 f:/home/robi/.config/qutebrowser
 g:/mnt/e/Robert/DATA/wallpapers_PC/girls
+9:/mnt/e/Robert/BOOKS/ebook/g

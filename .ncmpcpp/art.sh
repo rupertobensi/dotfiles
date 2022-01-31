@@ -5,7 +5,7 @@
 # ffmpeg version                #
 #-------------------------------#
 
-MUSIC_DIR="/mnt/e/[media]/[music]/albums/" 
+MUSIC_DIR="/mnt/d/[media]/[music]/albums/" 
 COVER="$HOME/.dotfiles/.ncmpcpp/cover.png"
 COVER_SIZE=300
 

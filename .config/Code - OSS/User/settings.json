@@ -1,6 +1,5 @@
 {
   "editor.fontFamily": "'Jetbrains Mono Medium', monospace, 'Hack Fallback'",
-  "window.zoomLevel": 0,
   "editor.wordWrap": "on",
   "keyboard.dispatch": "keyCode",
   "window.menuBarVisibility": "toggle",
@@ -24,6 +23,6 @@
   "vim.normalModeKeyBindings": [],
   "workbench.iconTheme": "material-icon-theme",
   "vim.useCtrlKeys": false,
-  "workbench.colorTheme": "Atom One Dark",
-  "liveServer.settings.useLocalIp": true
+  "liveServer.settings.useLocalIp": true,
+  "workbench.colorTheme": "Atom One Dark"
 }

@@ -1,0 +1,4 @@
+#!/bin/sh
+#This kills all polybar instances and restarts pulseaudio
+
+killall -q polybar && pulseaudio -k; pulseaudio -D && sleep 1; pbr &

@@ -1,6 +1,6 @@
 ## SETTINGS ##
 
-mpd_music_dir = "/mnt/e/[media]/[music]/albums/"
+mpd_music_dir = "/mnt/d/[media]/[music]/albums/"
 lyrics_directory  = ~/.ncmpcpp/lyrics
 ncmpcpp_directory  = ~/.ncmpcpp
 mpd_host = "localhost"

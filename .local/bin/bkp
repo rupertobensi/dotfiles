@@ -32,7 +32,7 @@ elif [ $option -eq 5 ]
   then sudo rsync -aAXv --delete --progress --stats /mnt/e/Robert/  /mnt/d/backup/Robert/
 
 elif [ $option -eq 6 ]
-  then sudo rsync -aAXv --delete --progress --stats /mnt/e/[media]/[music]/  /mnt/d/backup/[music]/
+  then sudo rsync -aAXv --delete --progress --stats /mnt/d/[media]/[music]/  /mnt/e/backup/[music]/
 
 else
   echo "Wrong choice..."

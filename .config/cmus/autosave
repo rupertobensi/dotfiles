@@ -1,4 +1,4 @@
-set aaa_mode=album
+set aaa_mode=artist
 set altformat_current= %F 
 set altformat_playlist= %f%= %d 
 set altformat_title=%f
@@ -47,6 +47,7 @@ set color_win_title_bg=blue
 set color_win_title_fg=white
 set confirm_run=true
 set continue=true
+set continue_album=true
 set device=/dev/cdrom
 set display_artist_sort_name=false
 set dsp.alsa.device=
@@ -79,7 +80,6 @@ set input.ffmpeg.priority=30
 set input.flac.priority=50
 set input.mad.priority=55
 set input.modplug.priority=50
-set input.mp4.priority=50
 set input.mpc.priority=50
 set input.vorbis.priority=50
 set input.wav.priority=50
@@ -97,7 +97,7 @@ set output_plugin=pulse
 set passwd=
 set pl_sort=
 set play_library=true
-set play_sorted=false
+set play_sorted=true
 set repeat=false
 set repeat_current=false
 set replaygain=disabled
@@ -119,7 +119,10 @@ set softvol=false
 set softvol_state=0 0
 set start_view=tree
 set status_display_program=/usr/local/bin/cmus-notify
+set stop_after_queue=false
 set time_show_leading_zero=true
+set tree_width_max=0
+set tree_width_percent=33
 set wrap_search=true
 bind browser i toggle show_hidden
 bind browser space win-activate

@@ -6,7 +6,7 @@ skip_display = true
 
 
 
-# notify-send "Title" "NOW" 
+# notify-send "Title" "NOW"
 
 
 [global]
