@@ -74,6 +74,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
+Plug 'overcache/NeoSolarized'
 
 " Customized vim status line
 Plug 'vim-airline/vim-airline'

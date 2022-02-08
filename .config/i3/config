@@ -247,8 +247,10 @@ bindsym Print 			exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec 
 bindsym $mod+Print              exec maimpick
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Scroll_Lock        exec simplescreenrecorder
-bindsym Pause 	              	exec audiodevice_swapcurrent
-bindsym $mod+Pause              exec cool-retro-term
+# bindsym Pause 	              	exec audiodevice_swapcurrent
+bindsym Pause 	              	exec sound 0
+bindsym $mod+Pause              exec sound 1
+# bindsym $mod+Pause              exec cool-retro-term
 
 # Function buttons
 bindsym $mod+F1		exec --no-startup-id code

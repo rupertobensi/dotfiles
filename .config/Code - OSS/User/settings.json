@@ -24,5 +24,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "vim.useCtrlKeys": false,
   "liveServer.settings.useLocalIp": true,
-  "workbench.colorTheme": "Atom One Dark"
+  "workbench.colorTheme": "Atom One Dark",
+  "liveServer.settings.donotVerifyTags": true
 }
