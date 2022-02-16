@@ -75,6 +75,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'overcache/NeoSolarized'
+Plug 'artanikin/vim-synthwave84'
 
 " Customized vim status line
 Plug 'vim-airline/vim-airline'

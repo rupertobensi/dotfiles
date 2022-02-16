@@ -1,5 +1,5 @@
 2:/home/robi/.dotfiles
-':/home/robi/.dotfiles/.local/bin
+':/home/robi/.dotfiles
 6:/home/robi/.dotfiles/system_media
 t:/mnt/d/[media]/[tv series]
 a:/mnt/e/[media]/[music]/albums
@@ -18,7 +18,7 @@ b:/mnt/e/Robert/BOOKS
 m:/home/robi/.mpd/playlists
 D:/mnt/e/Robert/.priv/docs
 S:/home/robi/.dotfiles/.config/nvim
-7:/mnt/e/[media]/vids
+7:/mnt/e/Robert/PHOTOS_VIDS/vids
 A:/mnt/e/Robert/DATA/avatars
 L:/mnt/e/[media]/[movies]/The.Art.of.Self.Defense.2019.1080p.BluRay.1400MB.DD5.1.x264-GalaxyRG[TGx]
 W:/mnt/e/Work/webpages/AUTO-WERYFIKATOR
