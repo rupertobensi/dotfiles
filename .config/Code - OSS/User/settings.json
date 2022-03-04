@@ -11,7 +11,6 @@
   "editor.fontSize": 13,
   "workbench.statusBar.visible": true,
   "workbench.editor.enablePreview": false,
-  "editor.lineNumbers": "relative",
   "editor.links": false,
   "launch": {
     "configurations": [],
@@ -25,5 +24,8 @@
   "vim.useCtrlKeys": false,
   "liveServer.settings.useLocalIp": true,
   "liveServer.settings.donotVerifyTags": true,
-  "workbench.colorTheme": "Atom One Dark"
+  "workbench.colorTheme": "Atom One Dark",
+  "clangd.path": "/home/robi/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/13.0.0/clangd_13.0.0/bin/clangd",
+  "code-runner.runInTerminal": true,
+  "explorer.confirmDelete": false
 }

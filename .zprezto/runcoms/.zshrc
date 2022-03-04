@@ -94,5 +94,6 @@ ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue,bold
 ### macOS shenanigans
 export PATH=/opt/homebrew/bin:$PATH
 
-# change directory to home - needed for WSL debian
+# Windows shenanigans
+chmod +rw /mnt/e/Robert/DROPBOX/Linux/*
 cd

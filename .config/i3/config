@@ -243,8 +243,9 @@ bindsym $mod+bracketright       exec --no-startup-id amixer set Master toggle
 bindsym $mod+Shift+bracketleft        exec --no-startup-id mpc prev
 bindsym $mod+Shift+bracketright       exec --no-startup-id mpc next
 
-bindsym Print 			exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-"$(date '+%d_%m_%Y-%H_%M_%S').png"
+bindsym Print 			        exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-"$(date '+%d_%m_%Y-%H_%M_%S').png"
 bindsym $mod+Print              exec maimpick
+bindsym $mod+Shift+Print              maim -s | xclip -selection clipboard -t image/png
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Scroll_Lock        exec simplescreenrecorder
 # bindsym Pause 	              	exec audiodevice_swapcurrent
