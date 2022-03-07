@@ -56,7 +56,7 @@ alias \
 	cfnvim_init.vim="nvim ~/.config/nvim/init.vim" \
 	cfnvim_plugins="nvim ~/.config/nvim/plugins.vim" \
 	cfpicom.conf="nvim ~/.config/picom/picom.conf" \
-	cfpolybar_config="nvim ~/.config/polybar/config" \
+	cfpolybar_config="nvim ~/.config/polybar/config.ini" \
 	cfranger_rc.conf="nvim ~/.config/ranger/rc.conf" \
 	cfranger_rifle.conf="nvim ~/.config/ranger/rifle.conf" \
 	cfst_config.h="nvim ~/st/config.h" \

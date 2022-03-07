@@ -9,7 +9,7 @@ set $browser --no-startup-id $BROWSER
 set $mod Mod4
 
 # Window titles font
-font pango:Noto Sans 8
+font pango:Noto Sans 11
 
 # Tabs titles
 for_window [class=".*"] title_format " %title"
@@ -52,7 +52,7 @@ bindsym $mod+Shift+a		gaps outer current minus 5
 bindsym $mod+s			gaps inner current plus 5
 bindsym $mod+Shift+s		gaps inner current minus 5
 
-bindsym $mod+g		gaps inner current set 0; gaps outer current set 0;gaps top current set 20
+bindsym $mod+g		gaps inner current set 0; gaps outer current set 0; gaps top current set 20
 bindsym $mod+Shift+g		gaps inner current set 0; gaps outer current set 0
 
 bindsym $mod+y			sticky toggle
@@ -314,6 +314,12 @@ gaps bottom 0
 gaps left 0
 gaps right 0
 
+workspace $ws1 gaps inner 15
+workspace $ws1 gaps outer 15
+workspace $ws1 gaps left 5
+workspace $ws1 gaps right 5
+workspace $ws1 gaps bottom 5
+
 workspace $ws3 gaps inner 15
 workspace $ws3 gaps outer 15
 workspace $ws3 gaps left 5
@@ -460,7 +466,7 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 ## Dropdown st
 #
 
-for_window [class="dropdown_term"] floating enable, resize set 1920 600, move scratchpad
+for_window [class="dropdown_term"] floating enable, resize set 2560 800, move scratchpad
 exec_always --no-startup-id st -c dropdown_term -e tmux new -s dd
 bindsym F12 [class="dropdown_term"] scratchpad show, move position 0 0
 
