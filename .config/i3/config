@@ -9,7 +9,7 @@ set $browser --no-startup-id $BROWSER
 set $mod Mod4
 
 # Window titles font
-font pango:Noto Sans 11
+font pango:Noto Sans 10
 
 # Tabs titles
 for_window [class=".*"] title_format " %title"
@@ -43,7 +43,7 @@ bindsym $mod+Shift+q kill
 # Stop/hide everything:
 bindsym $mod+Shift+Delete	exec --no-startup-id amixer sset Master mute ; exec --no-startup-id mpv pause && pkill -RTMIN+10 i3blocks ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e htop
 
-bindsym $mod+t		gaps inner current set 15; gaps outer current set 15; gaps left current set 5; gaps right current set 5; gaps bottom current set 5
+bindsym $mod+t		gaps inner current set 15; gaps outer current set 20; gaps left current set 5; gaps right current set 5; gaps bottom current set 5
 bindsym $mod+Shift+t			split toggle
 
 bindsym $mod+a			gaps outer current plus 5
@@ -109,7 +109,7 @@ bindsym $mod+z exec i3-msg move to container workspace $(($(wmctrl -d | wc -l) +
 bindsym $mod+x		exec --no-startup-id i3_lock
 
 # dmenu and rofi
-bindsym $mod+c exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 11'
+bindsym $mod+c exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 13'
 bindsym $mod+d exec dmen
 #bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-11" -sb "#9770ae"
 
@@ -186,11 +186,17 @@ bindsym $mod+0 workspace number $ws10
 
 # Multiple monitors
 
-workspace 1 output HDMI-A-0
-workspace 2 output HDMI-A-0
-workspace 3 output HDMI-A-0
-workspace 4 output HDMI-A-0
-workspace 5 output HDMI-A-0
+workspace 1 output DisplayPort-0
+workspace 2 output DisplayPort-0
+workspace 3 output DisplayPort-0
+workspace 4 output DisplayPort-0
+workspace 5 output DisplayPort-0
+
+workspace 6 output HDMI-0
+workspace 7 output HDMI-0
+workspace 8 output HDMI-0
+
+# workspace 5 output HDMI-A-0
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -315,34 +321,28 @@ gaps left 0
 gaps right 0
 
 workspace $ws1 gaps inner 15
-workspace $ws1 gaps outer 15
+workspace $ws1 gaps outer 20
 workspace $ws1 gaps left 5
 workspace $ws1 gaps right 5
 workspace $ws1 gaps bottom 5
 
 workspace $ws3 gaps inner 15
-workspace $ws3 gaps outer 15
+workspace $ws3 gaps outer 20
 workspace $ws3 gaps left 5
 workspace $ws3 gaps right 5
 workspace $ws3 gaps bottom 5
 
 workspace $ws4 gaps inner 15
-workspace $ws4 gaps outer 15
+workspace $ws4 gaps outer 20
 workspace $ws4 gaps left 5
 workspace $ws4 gaps right 5
 workspace $ws4 gaps bottom 5
 
-# workspace $ws6 gaps inner 15
-# workspace $ws6 gaps outer 15
-# workspace $ws6 gaps left 5
-# workspace $ws6 gaps right 5
-# workspace $ws6 gaps bottom 5
+workspace $ws6 gaps inner 0
+workspace $ws6 gaps outer 0
 
-# workspace $ws8 gaps inner 0
-# workspace $ws8 gaps outer 0
-
-# workspace $ws9 gaps inner 0
-# workspace $ws9 gaps outer 0
+workspace $ws7 gaps inner 0
+workspace $ws7 gaps outer 0
 
 # Load pywal resources for i3 colors
 set_from_resource $bg i3wm.color2 #f0f0f0
@@ -366,7 +366,7 @@ exec --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
 # exec_always --no-startup-id wal -R
 # exec_always wal -i ~/.config/wall.png
 
-# exec --no-startup-id nitrogen --restore
+exec --no-startup-id nitrogen --restore
 # exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
 
 exec_always --no-startup-id volnoti
@@ -385,8 +385,8 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Element|Steam] 3
-assign [class=Lollypop] 5
-assign [class=discord|tidal-hifi] 6
+assign [class=tidal-hifi|Lollypop] 5
+assign [class=discord] 6
 assign [class=Lutris|KeePassXC|qBittorrent*] 7
 assign [class=csgo_linux64|dota2|quakelive_steam.exe] 8
 # assign [class=discord|] 7        #  | at the end causes ALL programs to stark on new workspaces
@@ -397,13 +397,13 @@ exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/robi/.config/i3/w
 exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/robi/.config/i3/ws2.json'"
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/ws3.json'"
 exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/ws4.json'"
-exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/ws5.json'"
+exec --no-startup-id "i3-msg 'workspace 5; append_layout /home/robi/.config/i3/ws5.json'"
 
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec caprine'
-exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/tidal-hifi'
-exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/dolphin'
+exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
+exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/tidal-hifi'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/signal-desktop'
@@ -417,6 +417,7 @@ exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg "workspace $ws1"
+exec --no-startup-id i3-msg 'workspace 7; exec /usr/bin/firefox'
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 

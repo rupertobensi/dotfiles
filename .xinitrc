@@ -1,9 +1,9 @@
 # Monitor settings
-xrandr --output HDMI-0 --mode 2560x1440
+xrandr --output DisplayPort-0 --primary --mode 2560x1440 --rate 180
+xrandr --output HDMI-0 --mode 1920x1080 --right-of DisplayPort-0 --rate 60.00
 
 # Disable monitor 2
-# xrandr --output HDMI-A-0 --primary --rate 60 --mode 1920x1080 --output DVI-I-0 --off
-# xrandr --output DVI-I-0 --off
+# xrandr --output HDMI-0 --off
 
 # Disable dpm for my radeon r9 280 using radcard script
 radcard set high

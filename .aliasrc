@@ -71,8 +71,8 @@ alias \
 	cfzshrc="nvim ~/.zshrc"
 
 # Monitor configuration shortcuts
-alias m2off="xrandr --output DVI-I-0 --off"
-alias m2on="xrandr --output HDMI-A-0 --primary --mode 1920x1080 --output DVI-I-0 --mode 1280x1024 --right-of HDMI-A-0; (pbr &)"
+alias m2off="xrandr --output HDMI-0 --off"
+alias m2on="xrandr --output DisplayPort-0 --primary --mode 2560x1440 --output HDMI-0 --mode 1920x1080 --right-of DisplayPort-0; (pbr &)"
 
 # Various programs
 alias \
