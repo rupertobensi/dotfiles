@@ -15,14 +15,17 @@ radcard set high
 # Apply pywal at the startup
 wal -R
 
-# run rebinds script (xset, swap caps)
+# Run rebinds script (xset, swap caps)
 rebinds &
 
 # Hide mouse cursor after X seconds
 unclutter -idle 3 &
 
 # i3_lock after a time period (minutes) of inactivity
-exec xautolock -time 20 -locker 'i3_lock' &
+# exec xautolock -time 20 -locker 'i3_lock' &
+
+# Wallpaper (nitrogen)
+# exec --no-startup-id nitrogen --restore
 
 # Should be last
 # Start i3wm/KDE plasma
