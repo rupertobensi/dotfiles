@@ -3,11 +3,15 @@ State=AAAA/wAAAAD9AAAAAAAAA6AAAAPkAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG
 Width 1920=928
 
 [Desktop Entry]
-FullScreen=true
+FullScreen=false
 shouldShowMenuBarComingFromFullScreen=false
 shouldShowToolBarComingFromFullScreen=true
 
 [MainWindow]
+DisplayPort-0 HDMI-0 Height 2560x1440=1381
+DisplayPort-0 HDMI-0 Width 2560x1440=1248
+DisplayPort-0 HDMI-0 XPosition 2560x1440=1290
+DisplayPort-0 HDMI-0 YPosition 2560x1440=37
 HDMI-0 Height 1920x1080=1080
 HDMI-0 Width 1920x1080=1920
 HDMI-0 XPosition 1920x1080=0
@@ -22,7 +26,7 @@ HDMI-A-0 YPosition=21
 HDMI-A-0 YPosition 1920x1080=21
 Height 1080=1058
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAQ4AAAABAAAAAQAAAAIAAAACPwAAAACAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAACIAYQBuAG4AbwB0AGEAdABpAG8AbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAAAABOAAAAU9AAAABAAAAAQAAAAIAAAACPwAAAACAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAACIAYQBuAG4AbwB0AGEAdABpAG8AbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1920=958
 
@@ -35,7 +39,7 @@ File5[$e]=/mnt/e/Robert/BOOKS/ebook/[Ellis_Bret_Easton]_American_Psycho(z-lib.or
 File6[$e]=/mnt/e/Robert/DROPBOX/Linux/README.md
 File7[$e]=/mnt/e/Robert/BOOKS/ebook/[Bret_Easton_Ellis]_American_Psycho(z-lib.org).pdf
 File8[$e]=/mnt/e/Work/webpages/Marcin_OG_REDESIGN/2205/README.md
-File9[$e]=/mnt/e/Work/PP/6. 22.02 cpp/homework.md
+File9[$e]=/mnt/e/Robert/BOOKS/Programming/cpp/C++. Przewodnik dla początkujących by Alex Allain (z-lib.org).pdf
 Name1[$e]=KDE.md
 Name2[$e]=index.md
 Name3[$e]=yaypacman.md
@@ -44,4 +48,4 @@ Name5[$e]=[Ellis_Bret_Easton]_American_Psycho(z-lib.org).epub
 Name6[$e]=README.md
 Name7[$e]=[Bret_Easton_Ellis]_American_Psycho(z-lib.org).pdf
 Name8[$e]=README.md
-Name9[$e]=homework.md
+Name9[$e]=C++. Przewodnik dla początkujących by Alex Allain (z-lib.org).pdf

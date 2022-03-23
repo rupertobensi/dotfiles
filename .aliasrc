@@ -303,7 +303,7 @@ if (( $+commands[paru] )); then
   alias yayr="sudo paru --remove --nosave --recursive --cascade"
   alias yayR="sudo paru --remove --nosave --recursive --recursive --cascade"
   alias yayol="paru -Qdt"
-  alias yayor="yayr \$(paru -Qdtq)"
+  alias yayor="yayr \$(paru -Qdtq)" ## orphans
   alias yayb="makepkg -scCif"
   alias yayd="paru -G"
   alias yayD="paru -Gd"
@@ -321,8 +321,10 @@ alias yay100="expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n 100"
 alias yayfzfa="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 # browse installed by ME packages with an instant preview of each package:
 alias yayfzf="pacman -Qeq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
+
 # remove orphaned packages
 # alias yayxorphans="sudo pacman -Rns $(pacman -Qtdq)"
+
 # pipe out list of programs
 yayqeq () {
       cd &&

@@ -1,6 +1,9 @@
 [$Version]
 update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
 
+[FullScreen]
+FullScreenModeActive=true
+
 [General]
 LastUsedVersion=210800
 SideBarPage=operations
@@ -17,6 +20,10 @@ Places Icons Auto-resize=false
 Places Icons Static Size=32
 
 [MainWindow]
+DisplayPort-0 HDMI-0 Height 2560x1440=762
+DisplayPort-0 HDMI-0 Width 2560x1440=1018
+DisplayPort-0 HDMI-0 XPosition 2560x1440=0
+DisplayPort-0 HDMI-0 YPosition 2560x1440=0
 HDMI-0 Height 1920x1080=766
 HDMI-0 Width 1920x1080=1022
 HDMI-0 XPosition 1920x1080=449
@@ -29,33 +36,33 @@ HDMI-A-0 YPosition=157
 HDMI-A-0 YPosition 1920x1080=157
 Height 1080=1027
 Height 540=382
-State=AAAA/wAAAAD9AAAAAAAAA/4AAALfAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA/oAAALXAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1920
 Width 960=510
 Window-Maximized 1080x1920=true
 
 [Recent Files]
-File1[$e]=/mnt/e/Robert/DATA/wallpapers_PC/fitness/thedutchgiant_67405424_1420185781468736_5139093016734132295_n.jpg
-File10[$e]=$HOME/pic-selected-09_02_2022-19_42_36.png
-File2[$e]=/mnt/e/Robert/.priv/K_Miś/13446291_10201576642014168_818985075_o.jpg
-File3[$e]=/mnt/e/Robert/.priv/K_Miś/13460887_10201576642054169_1221728115_o.jpg
-File4[$e]=/mnt/e/Robert/.priv/K_Miś/Krzysztof-Miś-Robert_6.pdf
-File5[$e]=/mnt/e/Robert/.priv/K_Miś/Poradnik pisania prac licencjackich_Tadeusz Mendel.pdf
-File6[$e]=/mnt/e/Robert/.priv/K_Miś/Praca Licencjacka Sebastian Chowanski 4307.pdf
-File7[$e]=/mnt/e/Robert/.priv/K_Miś/Praca licencjacka Szymon Borowiak.doc.pdf
-File8[$e]=/mnt/e/Robert/.priv/K_Miś/13410572_10201576642094170_84531117_o.jpg
-File9[$e]=$HOME/pic-full-11_02_2022-18_09_07.png
-Name1[$e]=thedutchgiant_67405424_1420185781468736_5139093016734132295_n.jpg
-Name10[$e]=pic-selected-09_02_2022-19_42_36.png
-Name2[$e]=13446291_10201576642014168_818985075_o.jpg
-Name3[$e]=13460887_10201576642054169_1221728115_o.jpg
-Name4[$e]=Krzysztof-Miś-Robert_6.pdf
-Name5[$e]=Poradnik pisania prac licencjackich_Tadeusz Mendel.pdf
-Name6[$e]=Praca Licencjacka Sebastian Chowanski 4307.pdf
-Name7[$e]=Praca licencjacka Szymon Borowiak.doc.pdf
-Name8[$e]=13410572_10201576642094170_84531117_o.jpg
-Name9[$e]=pic-full-11_02_2022-18_09_07.png
+File1[$e]=/mnt/e/Robert/.priv/K_Miś/Praca licencjacka Szymon Borowiak.doc.pdf
+File10[$e]=/mnt/d/ff/jak_tworzyc_rozbudowany_program/Screenshot 2022-03-17 at 20-13-37 Jak stworzyć rozbudowany program .png
+File2[$e]=/mnt/e/Robert/.priv/K_Miś/13410572_10201576642094170_84531117_o.jpg
+File3[$e]=$HOME/pic-full-11_02_2022-18_09_07.png
+File4[$e]=$HOME/pic-full-24_02_2022-20_47_35.png
+File5[$e]=$HOME/pic-full-27_02_2022-22_00_21.png
+File6[$e]=$HOME/pic-selected-07_03_2022-16_45_30.png
+File7[$e]=$HOME/pic-selected-27_02_2022-21_50_08.png
+File8[$e]=$HOME/pic-selected-09_02_2022-19_42_36.png
+File9[$e]=$HOME/pic-selected-27_02_2022-21_46_51.png
+Name1[$e]=Praca licencjacka Szymon Borowiak.doc.pdf
+Name10[$e]=Screenshot 2022-03-17 at 20-13-37 Jak stworzyć rozbudowany program .png
+Name2[$e]=13410572_10201576642094170_84531117_o.jpg
+Name3[$e]=pic-full-11_02_2022-18_09_07.png
+Name4[$e]=pic-full-24_02_2022-20_47_35.png
+Name5[$e]=pic-full-27_02_2022-22_00_21.png
+Name6[$e]=pic-selected-07_03_2022-16_45_30.png
+Name7[$e]=pic-selected-27_02_2022-21_50_08.png
+Name8[$e]=pic-selected-09_02_2022-19_42_36.png
+Name9[$e]=pic-selected-27_02_2022-21_46_51.png
 
 [SideBar]
 IsVisible ViewMode=false

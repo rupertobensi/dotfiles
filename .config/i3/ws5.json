@@ -15,6 +15,29 @@
             "geometry": {
                "height": 1418,
                "width": 1278,
+               "x": 0,
+               "y": 20
+            },
+            "marks": [],
+            "name": "Lollypop",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Lollypop$",
+               "instance": "^lollypop$",
+               "machine": "^lem$",
+               "title": "^Lollypop$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1418,
+               "width": 1278,
                "x": 641,
                "y": 11
             },
@@ -31,71 +54,6 @@
                }
             ],
             "type": "con"
-        },
-        {
-            "border": "pixel",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1418,
-               "width": 1278,
-               "x": 0,
-               "y": 20
-            },
-            "marks": [],
-            "name": "Lollypop",
-            "percent": 0.5,
-            "swallows": [
-               {
-               "class": "^Lollypop$",
-               "instance": "^lollypop$",
-               "machine": "^lem$",
-               "title": "^Lollypop$"
-               }
-            ],
-            "type": "con"
         }
     ]
 }
-
-{
-    // floating_con with 1 children
-    "border": "normal",
-    "floating": "auto_off",
-    "layout": "splith",
-    "marks": [],
-    "percent": null,
-    "rect": {
-       "height": 796,
-       "width": 2556,
-       "x": 0,
-       "y": 0
-    },
-    "type": "floating_con",
-    "nodes": [
-        {
-            "border": "pixel",
-            "current_border_width": 0,
-            "floating": "user_on",
-            "geometry": {
-               "height": 480,
-               "width": 800,
-               "x": 0,
-               "y": 0
-            },
-            "marks": [],
-            "name": "dd:1:zsh - \"lem\" ",
-            "percent": 1,
-            "swallows": [
-               {
-               // "class": "^dropdown_term$",
-               // "instance": "^st$",
-               // "machine": "^lem$",
-               // "title": "^dd\\:1\\:zsh\\ \\-\\ \\\"lem\\\"\\ $"
-               }
-            ],
-            "type": "con"
-        }
-    ]
-}
-
