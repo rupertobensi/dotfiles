@@ -36,11 +36,12 @@ cdrdao
 cdrtools
 cdu
 chromium
+clang
 cli-visualizer
 clockywock
 clyrics
 cmus
-code
+codeblocks
 cointop
 consolas-font
 cool-retro-term
@@ -86,12 +87,14 @@ flex
 fontmatrix
 fontpreview-ueberzug-git
 fortune-mod
+freemind
 freetype2-demos
 fzf
 g810-led-git
 gawk
 gcc
 gconf-gtk2
+gdb
 gettext
 gimp
 git
@@ -112,6 +115,7 @@ gst-libav
 gst-plugins-good
 gwenview
 gzip
+handbrake
 hideit.sh-git
 highlight
 htop-vim-git
@@ -215,6 +219,7 @@ pamixer
 paru
 patch
 pavucontrol-qt
+perl-image-exiftool
 picard
 picom
 pipe-viewer-git
@@ -295,7 +300,6 @@ ttf-liberation
 ttf-linux-libertine
 ttf-symbola
 ttf-ubuntu-font-family
-tuxi-git
 typespeed
 ueberzug
 unclutter
@@ -303,8 +307,10 @@ unzip
 vifm
 vimiv
 virt-manager
+visual-studio-code-bin
 vlc
 volnoti
+vscodium-bin
 vulkan-mesa-layers
 vulkan-radeon
 vulkan-tools

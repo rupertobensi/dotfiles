@@ -40,35 +40,35 @@ alias \
 
 # Config shortcuts
 alias \
-	cfalacritty.yml="nvim ~/.config/alacritty/alacritty.yml" \
-	cfalacritty_dd.yml="nvim ~/.config/alacritty/alacritty_dd.yml" \
-	cfaliasrc="nvim ~/.aliasrc" \
+    cfalacritty.yml="nvim ~/.config/alacritty/alacritty.yml" \
+    cfalacritty_dd.yml="nvim ~/.config/alacritty/alacritty_dd.yml" \
+    cfaliasrc="nvim ~/.aliasrc" \
     cfcode_settings.json="nvim ~/.config/Code\ -\ OSS/User/settings.json" \
-	cffonts.conf="nvim ~/.config/fontconfig/fonts.conf" \
-	cfi3_config="nvim ~/.config/i3/config" \
-	cfmpd.conf="nvim ~/.mpd/mpd.conf" \
-	cfmpv.conf="nvim ~/.config/mpv/mpv.conf" \
-	cfmpv_input.conf="nvim ~/.config/mpv/input.conf" \
-	cfncmpcpp_bindings="nvim ~/.ncmpcpp/bindings" \
-	cfncmpcpp_config="nvim ~/.ncmpcpp/config" \
-	cfnewsboat_config="nvim ~/.config/newsboat/config" \
-	cfnewsboat_urls="nvim ~/.config/newsboat/urls" \
-	cfnvim_init.vim="nvim ~/.config/nvim/init.vim" \
-	cfnvim_plugins="nvim ~/.config/nvim/plugins.vim" \
-	cfpicom.conf="nvim ~/.config/picom/picom.conf" \
-	cfpolybar_config="nvim ~/.config/polybar/config.ini" \
-	cfranger_rc.conf="nvim ~/.config/ranger/rc.conf" \
-	cfranger_rifle.conf="nvim ~/.config/ranger/rifle.conf" \
-	cfst_config.h="nvim ~/st/config.h" \
-	cftmux.conf="nvim ~/.tmux.conf" \
-	cfvifmrc="nvim ~/.config/vifm/vifmrc" \
-	cfxinitrc="nvim ~/.xinitrc" \
-	cfxprofile="nvim ~/.xprofile" \
-	cfXresources="nvim ~/.Xresources" \
-	cfzprezto="nvim ~/.zprezto/runcoms/.zpreztorc" \
-	cfzprofile="nvim ~/.zprofile" \
-	cfzshenv="nvim ~/.zshenv" \
-	cfzshrc="nvim ~/.zshrc"
+    cffonts.conf="nvim ~/.config/fontconfig/fonts.conf" \
+    cfi3_config="nvim ~/.config/i3/config" \
+    cfmpd.conf="nvim ~/.mpd/mpd.conf" \
+    cfmpv.conf="nvim ~/.config/mpv/mpv.conf" \
+    cfmpv_input.conf="nvim ~/.config/mpv/input.conf" \
+    cfncmpcpp_bindings="nvim ~/.ncmpcpp/bindings" \
+    cfncmpcpp_config="nvim ~/.ncmpcpp/config" \
+    cfnewsboat_config="nvim ~/.config/newsboat/config" \
+    cfnewsboat_urls="nvim ~/.config/newsboat/urls" \
+    cfnvim_init.vim="nvim ~/.config/nvim/init.vim" \
+    cfnvim_plugins="nvim ~/.config/nvim/plugins.vim" \
+    cfpicom.conf="nvim ~/.config/picom/picom.conf" \
+    cfpolybar_config="nvim ~/.config/polybar/config.ini" \
+    cfranger_rc.conf="nvim ~/.config/ranger/rc.conf" \
+    cfranger_rifle.conf="nvim ~/.config/ranger/rifle.conf" \
+    cfst_config.h="nvim ~/st/config.h" \
+    cftmux.conf="nvim ~/.tmux.conf" \
+    cfvifmrc="nvim ~/.config/vifm/vifmrc" \
+    cfxinitrc="nvim ~/.xinitrc" \
+    cfxprofile="nvim ~/.xprofile" \
+    cfXresources="nvim ~/.Xresources" \
+    cfzprezto="nvim ~/.zprezto/runcoms/.zpreztorc" \
+    cfzprofile="nvim ~/.zprofile" \
+    cfzshenv="nvim ~/.zshenv" \
+    cfzshrc="nvim ~/.zshrc"
 
 # Monitor configuration shortcuts
 alias m2off="xrandr --output HDMI-0 --off"

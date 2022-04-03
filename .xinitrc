@@ -24,6 +24,10 @@ unclutter -idle 3 &
 # i3_lock after a time period (minutes) of inactivity
 # exec xautolock -time 20 -locker 'i3_lock' &
 
+# Disable energy saving
+xset -dpms
+xset s off
+
 # Wallpaper (nitrogen)
 # exec --no-startup-id nitrogen --restore
 

@@ -11,5 +11,6 @@ map J zoom out
 map i recolor
 map p print
 
+set selection-clipboard clipboard
 set font "Noto Sans 8"
-/* set font "Gohu GohuFont 10" */
+# set font "Gohu GohuFont 10"
