@@ -46,9 +46,15 @@ Window-Maximized 1080x1920=true
 File1[$e]=/mnt/e/Robert/.priv/K_Miś/Praca licencjacka Szymon Borowiak.doc.pdf
 File2[$e]=/mnt/e/Robert/.priv/K_Miś/13410572_10201576642094170_84531117_o.jpg
 File3[$e]=$HOME/Downloads/stuff/ig/zm/244783438_358478196016689_2113512503087417971_n.jpg
+File4[$e]=$HOME/pic-full-04_04_2022-00_00_30.png
+File5[$e]=$HOME/pic-full-04_04_2022-21_30_42.png
+File6[$e]=$HOME/pic-full-04_04_2022-21_27_59.png
 Name1[$e]=Praca licencjacka Szymon Borowiak.doc.pdf
 Name2[$e]=13410572_10201576642094170_84531117_o.jpg
 Name3[$e]=244783438_358478196016689_2113512503087417971_n.jpg
+Name4[$e]=pic-full-04_04_2022-00_00_30.png
+Name5[$e]=pic-full-04_04_2022-21_30_42.png
+Name6[$e]=pic-full-04_04_2022-21_27_59.png
 
 [SideBar]
 IsVisible ViewMode=false

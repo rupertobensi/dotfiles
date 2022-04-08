@@ -9,8 +9,8 @@ xrandr --output HDMI-0 --mode 1920x1080 --right-of DisplayPort-0 --rate 60.00
 radcard set high
 
 # Fix hinting outside of PLASMA/GNOME
-#xrdb -merge .Xresources &
-#xrdb -merge .Xdefaults &
+# xrdb -merge .Xresources &
+# xrdb -merge .Xdefaults &
 
 # Apply pywal at the startup
 wal -R
@@ -28,10 +28,7 @@ unclutter -idle 3 &
 xset -dpms
 xset s off
 
-# Wallpaper (nitrogen)
-# exec --no-startup-id nitrogen --restore
-
 # Should be last
 # Start i3wm/KDE plasma
-#exec startplasma-x11
+# exec startplasma-x11
 exec i3

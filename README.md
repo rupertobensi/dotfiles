@@ -8,7 +8,7 @@ I use **i3** as my tiling window manager, and rest as follows:
 * Terminal emulator: **alacritty/st**
 * Multiplexer: **tmux**
 * Launchers: **dmenu2/rofi**
-* Compositor: **tmux**
+* Compositor: **picom**
 * Text editor: **neovim**
 * File manager: **ranger/vifm**
 * Image viewer: **sxiv**
