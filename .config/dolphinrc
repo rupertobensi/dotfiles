@@ -43,8 +43,8 @@ Height 1080=422
 Width 1920=394
 
 [MainWindow]
-DisplayPort-0 HDMI-0 Height 2560x1440=1387
-DisplayPort-0 HDMI-0 Width 2560x1440=2522
+DisplayPort-0 HDMI-0 Height 2560x1440=1381
+DisplayPort-0 HDMI-0 Width 2560x1440=1248
 HDMI-0 Height 1920x1080=1032
 HDMI-0 Height 2560x1440=1382
 HDMI-0 Height 3840x2160=2112
