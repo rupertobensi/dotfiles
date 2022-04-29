@@ -487,5 +487,4 @@ bindsym F12 [class="dropdown_term"] scratchpad show, move position 0 0
 # Apply i3-fibonacci at the end after everything has been loaded up
 exec_always ~/.dotfiles/.local/bin/i3_fib
 
-
 exec_always nitrogen --restore

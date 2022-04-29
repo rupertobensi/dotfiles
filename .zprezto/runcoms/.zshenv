@@ -7,7 +7,6 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-
 # Allows scripts to run
 export XDG_BIN_HOME="$HOME/.local/bin"
 
