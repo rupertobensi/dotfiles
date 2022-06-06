@@ -82,6 +82,7 @@ alias \
     Cal="calcurse" \
     deezer="smloadr --path ~/Downloads" \
     disko="diskonaut" \
+    docker="sudo docker" \
     fm="vifmrun" \
     imgur="imgur_downloader" \
     keep="keepassxc-cli" \

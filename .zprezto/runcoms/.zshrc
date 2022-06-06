@@ -92,7 +92,7 @@ ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue,bold
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
 ### macOS shenanigans
-export PATH=/opt/homebrew/bin:$PATH
+# export PATH=/opt/homebrew/bin:$PATH
 
 # Windows shenanigans
 chmod +rw /mnt/e/Robert/DROPBOX/Linux/*

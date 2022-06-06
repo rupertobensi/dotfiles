@@ -55,6 +55,7 @@ diskonaut
 dmenu2
 dmidecode
 dnsmasq
+docker
 doge
 dolphin
 dolphin-plugins
@@ -143,12 +144,14 @@ keditbookmarks
 keepassxc
 kfind
 kid3
+kitty
 kmenuedit
 kolourpaint
 kompare
 krusader
 ksysguard
 ktexteditor
+kubectl
 kunst-git
 kvantum
 kvantum-theme-arc
@@ -181,6 +184,7 @@ mc
 mediainfo
 megasync-bin
 mesa-vdpau
+minikube
 mlocate
 mop-git
 mosh
@@ -231,16 +235,14 @@ pulseaudio
 pulseaudio-alsa
 pulsemixer
 python-eyed3
-python-i3-py
 python-i3ipc
 python-pip
 python-pynvim
 python-pywal
 python-wheel
 python2-backports.functools_lru_cache
-python2-pip
 qbittorrent
-qemu
+qemu-desktop
 qogir-gtk-theme
 qps
 qt4-bin
@@ -249,9 +251,11 @@ qt5ct
 qterminal
 qutebrowser
 ranger
+redmine
 redshift
 refind
 reflector
+ripgrep
 rofi
 rsync
 sassc
@@ -261,6 +265,7 @@ sed
 signal-desktop
 simple-mtpfs-git
 simplescreenrecorder
+slack-desktop
 smartmontools
 smloadr-git
 soundkonverter
@@ -307,6 +312,7 @@ unzip
 vifm
 vimiv
 virt-manager
+virtualbox
 visual-studio-code-bin
 vlc
 volnoti
@@ -315,6 +321,7 @@ vulkan-mesa-layers
 vulkan-radeon
 vulkan-tools
 w3m
+warpd-git
 weechat
 wget
 which

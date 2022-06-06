@@ -235,7 +235,7 @@ let g:closetag_close_shortcut = '<leader>>'
 " Enable true color support
 set termguicolors
 
-"# use dracula, onedark or oceanicNext (change o to capital O like Oceanic) for color scheme
+"# use dracula, nightfox or oceanicNext (change o to capital O like Oceanic) for color scheme
 
 " Vim airline theme
 let g:airline_theme='dracula'
@@ -299,7 +299,7 @@ function! s:custom_jarvis_colors()
 endfunction
 
  autocmd! ColorScheme * call TrailingSpaceHighlights()
- autocmd! ColorScheme onedark call s:custom_jarvis_colors()
+ autocmd! ColorScheme nightfox call s:custom_jarvis_colors()
 
 " Call method on window enter
 augroup WindowManagement
@@ -315,12 +315,12 @@ function! Handle_Win_Enter()
 endfunction
 
 " Editor theme. Change 1 for 0 for transparency (?)
-let g:onedark_colorterm = 1
+let g:nightfox_colorterm = 1
 set background=dark
 try
-  colorscheme onedark
+  colorscheme nightfox
 catch
-  colorscheme onedark
+  colorscheme nightfox
 endtry
 
 " ============================================================================ "

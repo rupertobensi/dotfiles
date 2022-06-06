@@ -76,6 +76,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'overcache/NeoSolarized'
 Plug 'artanikin/vim-synthwave84'
+Plug 'EdenEast/nightfox.nvim' 
 
 " Customized vim status line
 Plug 'vim-airline/vim-airline'
