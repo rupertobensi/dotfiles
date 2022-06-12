@@ -5,8 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# export ZDOTDIR=$HOME/.zsh
-
 # Start configuration added by Zim install {{{
 #
 # User configuration sourced by interactive shells
@@ -65,54 +63,6 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 ### macOS shenanigans
 # export PATH=/opt/homebrew/bin:$PATH
-
-# Default programs:
-
-export EDITOR="nvim"
-export VISUAL="nvim"
-# export TERMINAL="alacritty"
-export TERMINAL="st"
-export BROWSER="firefox"
-export READER="zathura"
-export FILE="ranger"
-
-# Language
-
-if [[ -z "$LANG" ]]; then
-  export LANG='en_US.UTF-8'
-fi
-
-# extra condition so krusader in i3 has proper date formatting:
-export LC_TIME=en_IE.UTF-8
-
-# Ensure that a non-login, non-interactive shell has a defined environment.
-if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprofile"
-fi
-
-# Allows scripts to run
-export XDG_BIN_HOME="$HOME/.local/bin"
-
-typeset -U path
-path=($XDG_BIN_HOME $path)
-
-# auto startx at login
-# COMMENT IT OUT on debian! Or on fresh install
-if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx
-fi
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Prompt for spelling correction of commands.
 #setopt CORRECT
@@ -220,9 +170,6 @@ for key ('k') bindkey -M vicmd ${key} history-substring-search-up
 for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 # }}} End configuration added by Zim install
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.zsh//.p10k.zsh.
 [[ ! -f ~/.zsh//.p10k.zsh ]] || source ~/.zsh//.p10k.zsh

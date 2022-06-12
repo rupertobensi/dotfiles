@@ -65,10 +65,10 @@ alias \
     cfxinitrc="nvim ~/.xinitrc" \
     cfxprofile="nvim ~/.xprofile" \
     cfXresources="nvim ~/.Xresources" \
-    cfzprezto="nvim ~/.zprezto/runcoms/.zpreztorc" \
-    cfzprofile="nvim ~/.zprofile" \
-    cfzshenv="nvim ~/.zshenv" \
-    cfzshrc="nvim ~/.zshrc"
+    cfzimrc="nvim ~/.zsh/.zimrc" \
+    cfzprofile="nvim ~/.zsh/.zprofile" \
+    cfzshenv="nvim ~/.zsh/.zshenv" \
+    cfzshrc="nvim ~/.zsh/.zshrc"
 
 # Monitor configuration shortcuts
 alias m2off="xrandr --output HDMI-0 --off"
@@ -191,7 +191,7 @@ tmuxSrc="tmux source-file ~/.tmux.conf" \
 ts="tmux new-session -s"
 
 # Reloading configurations
-alias Src="source ~/.dotfiles/.zshrc"
+alias Src="source ~/.dotfiles/.zsh/.zshrc"
 alias Xrdb="xrdb ~/.Xresources"
 
 # Pipe shortcuts
