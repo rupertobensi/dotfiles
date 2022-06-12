@@ -191,7 +191,7 @@ tmuxSrc="tmux source-file ~/.tmux.conf" \
 ts="tmux new-session -s"
 
 # Reloading configurations
-alias Src="source ~/.dotfiles/.zprezto/runcoms/.zshrc"
+alias Src="source ~/.dotfiles/.zshrc"
 alias Xrdb="xrdb ~/.Xresources"
 
 # Pipe shortcuts
@@ -311,7 +311,7 @@ if (( $+commands[paru] )); then
 
   aurd() git clone https://aur.archlinux.org/$1.git
 
-  compdef '_dispatch pacman pacman' paru
+  # compdef '_dispatch pacman pacman' paru
 fi
 
 # last 20 installed packages:

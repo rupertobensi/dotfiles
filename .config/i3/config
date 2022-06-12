@@ -374,8 +374,9 @@ exec_always nitrogen --restore
 exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-exec_always --no-startup-id pbr
-# exec --no-startup-id polybar bar1
+# exec_always --no-startup-id pbr
+exec --no-startup-id polybar bar1
+exec --no-startup-id polybar bar2
 # exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 exec --no-startup-id setxkbmap pl -variant intl
@@ -472,7 +473,8 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 ## Dropdown st
 #
 
-for_window [class="dropdown_term"] floating enable, resize set 2560 803, move scratchpad
+for_window [class="dropdown_term"] floating enable, resize set 2567 803, move scratchpad
+# for_window [class="dropdown_term"] floating enable, resize set 2560 803, move scratchpad
 exec_always --no-startup-id st -c dropdown_term -e tmux new -s dd
 bindsym F12 [class="dropdown_term"] scratchpad show, move position 0 0
 
