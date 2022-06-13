@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <include ignore_missing="yes">conf.d</include>
+  <match target="font">
+    <edit name="antialias" mode="assign">
+      <bool>true</bool>
+    </edit>
+  </match>
+  <match target="font">
+    <edit name="rgba" mode="assign">
+      <const>rgb</const>
+    </edit>
+  </match>
+  <match target="font">
+    <edit name="lcdfilter" mode="assign">
+      <const>lcddefault</const>
+    </edit>
+  </match>
+  <match target="font">
+    <edit name="hinting" mode="assign">
+      <bool>true</bool>
+    </edit>
+  </match>
+  <match target="font">
+    <edit name="hintstyle" mode="assign">
+      <const>hintslight</const>
+    </edit>
+  </match>
+  <match target="font">
+    <edit name="autohint" mode="assign">
+      <bool>false</bool>
+    </edit>
+  </match>
+  <match target="pattern">
+    <edit name="dpi" mode="assign">
+      <double>96</double>
+    </edit>
+  </match>
+ <match target="pattern">
+  <test name="family" qual="any">
+   <string>sans-serif</string>
+  </test>
+  <edit mode="assign" name="family" binding="same">
+   <string>Noto Sans</string>
+   <!-- <string>IBM Plex Sans</string> -->
+  </edit>
+ </match>
+ <match target="pattern">
+  <test name="family" qual="any">
+   <string>serif</string>
+  </test>
+  <edit mode="assign" name="family" binding="same">
+   <string>Noto Serif</string>
+   <!-- <string>IBM Plex Serif</string> -->
+  </edit>
+ </match>
+ <match target="pattern">
+  <test name="family" qual="any">
+   <string>monospace</string>
+  </test>
+  <edit mode="assign" name="family" binding="same">
+   <!-- <string>xos4 Terminus</string> -->
+   <!-- <string>Gohu GohuFont</string> -->
+   <string>Jetbrains Mono Nerd Font</string>
+   <!-- <string>Consolas</string> -->
+  </edit>
+ </match>
+ <!-- This sets Symbola as the final fallback font for the monospace font family. -->
+ <match target="pattern">
+  <test name="family">
+   <string>monospace</string>
+  </test>
+  <edit mode="append" name="family">
+   <string>Symbola</string>
+  </edit>
+ </match>
+ <dir>~/.fonts</dir>
+</fontconfig>

@@ -172,12 +172,12 @@ alias megs="mega-sync"
 
 # Changing "ls" to "exa"
 alias \
-    ls="exa --group-directories-first --color=always" \
-    l="ls -l" \
-    la="ls -a" \
-    lla="ls -la" \
-    lt="ls --tree" \
-    li="ls -a --icons"
+ls="exa --group-directories-first --color=always" \
+l="ls -l" \
+la="ls -a" \
+lla="ls -la" \
+lt="ls --tree" \
+li="ls -a --icons"
 
 # Tmux aliases
 alias \

@@ -1,15 +1,14 @@
 .archive
 .stow_fresh
 .DS_Store
+.gitignore
 
-/* .config/Code - OSS */
 
 desktop.png
 desktop2.png
 desktop3.png
 desktop4.png
 desktop5.png
-desktop6.png
 
 system_media
 

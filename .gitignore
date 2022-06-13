@@ -1,0 +1,45 @@
+/.archive/*
+/.config/Code/*
+/.config/Code - OSS/*
+!/.config/Code - OSS/User/keybindings.json
+!/.config/Code - OSS/User/settings.json
+/.config/cmus/*
+!/.config/cmus/autosave
+!/.config/cmus/update.sh
+/.config/fontconfig/*
+!/.config/fontconfig/fonts.conf
+!/.config/fontconfig/fonts.conf_bkp
+/.config/gwenviewrc
+/.config/i3/folder/*
+/.config/mpv/*
+!/.config/mpv/input.conf
+!/.config/mpv/mpv.conf
+/.config/nitrogen/*
+!/.config/nitrogen/bg-saved.cfg
+/.config/nvim/autoload/*
+/.config/nvim/plugged/*
+/.config/qBittorrent/*
+/.config/qBittorrent/*
+!/.config/qBittorrent/qBittorrent.conf
+/.config/qutebrowser/*
+!/.config/qutebrowser/config.py
+/.config/okularrc
+/.config/ranger/plugins/__pycache__/*
+/.config/ranger/plugins/ranger_devicons/__pycache__/*
+/.config/ranger/bookmarks*
+/.config/vifm/vifm-help.txt
+/.config/vifm/vifmimgpdffile
+/.config/vifm/vifmimgpdfpage
+/.config/vifm/vifminfo.json
+/.local/bin/.old/*
+/.mpd/*
+!/.mpd/mpd.conf
+/.mpd/*
+/.ncmpcpp/*.png
+/.ncmpcpp/*.log
+/.ncmpcpp/lyrics/*
+/.stow_fresh/*
+/.zsh/.zcompdump
+/.zsh/.zcompdump.zwc
+/.zsh/.zhistory
+/.zsh/.zim/

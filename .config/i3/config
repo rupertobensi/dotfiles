@@ -375,8 +375,8 @@ exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
 # exec_always --no-startup-id pbr
-exec --no-startup-id polybar bar1
 exec --no-startup-id polybar bar2
+exec --no-startup-id polybar bar1
 # exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 exec --no-startup-id setxkbmap pl -variant intl
