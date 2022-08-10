@@ -368,15 +368,14 @@ exec --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
 # exec_always --no-startup-id wal -R
 # exec_always wal -i ~/.config/wall.png
 
-exec_always nitrogen --restore
+# exec_always nitrogen --restore
+exec --no-startup-id nitrogen --restore
 # exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
 
 exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-# exec_always --no-startup-id pbr
-exec --no-startup-id polybar bar2
-exec --no-startup-id polybar bar1
+exec_always --no-startup-id pbr
 # exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 exec --no-startup-id setxkbmap pl -variant intl
@@ -404,12 +403,12 @@ exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/w
 exec --no-startup-id "i3-msg 'workspace 5; append_layout /home/robi/.config/i3/ws5.json'"
 exec --no-startup-id "i3-msg 'workspace 7; append_layout /home/robi/.config/i3/ws2.json'"
 
-exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
 # exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/megasync'
-# exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
-exec --no-startup-id i3-msg 'workspace 2; exec Sleep_ff'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
+# exec --no-startup-id i3-msg 'workspace 2; exec Sleep_ff'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/slack'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/signal-desktop'
@@ -418,12 +417,13 @@ exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/tidal-hifi'
 # exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/chromium'
 
-exec --no-startup-id i3-msg "workspace $ws1"
-# exec --no-startup-id i3-msg "workspace $ws1"
-# exec --no-startup-id i3-msg "workspace $ws1"
-# exec --no-startup-id i3-msg "workspace $ws1"
-# exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg 'workspace 7; exec Sleep_ff'
+exec --no-startup-id i3-msg "workspace $ws1"
+exec --no-startup-id i3-msg "workspace $ws1"
+exec --no-startup-id i3-msg "workspace $ws1"
+exec --no-startup-id i3-msg "workspace $ws1"
+exec --no-startup-id i3-msg "workspace $ws1"
+exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 
@@ -489,4 +489,6 @@ bindsym F12 [class="dropdown_term"] scratchpad show, move position 0 0
 # Apply i3-fibonacci at the end after everything has been loaded up
 exec_always ~/.dotfiles/.local/bin/i3_fib
 
-exec_always nitrogen --restore
+exec --no-startup-id nitrogen --restore
+
+exec --no-startup-id i3-msg "workspace $ws1"

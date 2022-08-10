@@ -202,6 +202,10 @@ alias -g C="| wc -m"
 alias -g W="| wc -w"
 alias -g L="| wc -l"
 
+# VMs
+alias VMstart="vboxmanage startvm Deborah --type headless"
+alias VMstop="vboxmanage controlvm Deborah acpipowerbutton"
+
 
 ###
 ### PROGRAMS

@@ -70,6 +70,25 @@
                        "x": 910,
                        "y": 32
                     },
+                    "name": "Slack",
+                    "percent": 0.25,
+                    "swallows": [
+                       {
+                        "title": "^Slack$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 3,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1026,
+                       "width": 1010,
+                       "x": 910,
+                       "y": 32
+                    },
                     "name": "Steam",
                     "percent": 0.25,
                     "swallows": [

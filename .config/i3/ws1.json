@@ -10,13 +10,16 @@
        "y": 0
     },
     "marks": [],
-    "//name": "0:1:zsh - \"robi@lem: ~\" ",
+    "//name": "0:1: - \"robi@lem: ~\" ",
     "percent": 1,
     "swallows": [
        {
         "class": "^St$",
-        "instance": "^st$"
+        "instance": "^st$",
+        //"machine": "^lem$",
+        //"title": "^0\\:1\\:\\ \\-\\ \\\"robi\\@lem\\:\\ \\~\\\"\\ $"
        }
     ],
     "type": "con"
 }
+

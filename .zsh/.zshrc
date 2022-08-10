@@ -25,8 +25,8 @@ setopt HIST_IGNORE_ALL_DUPS
 # Input/output
 #
 
-# # Set editor default keymap to emacs (`-e`) or vi (`-v`)
-# bindkey -e
+# Set editor default keymap to emacs (`-e`) or vi (`-v`)
+bindkey -e
 bindkey -v
 export KEYTIMEOUT=1
 
@@ -61,8 +61,8 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # z - automatic bookmarks
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
-### macOS shenanigans
-# export PATH=/opt/homebrew/bin:$PATH
+# fzf ctrl+r search history
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Prompt for spelling correction of commands.
 #setopt CORRECT
