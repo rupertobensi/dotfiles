@@ -26,8 +26,8 @@ export LC_TIME=en_IE.UTF-8
 
 # Windows shenanigans
 # sudo chmod -R 777 /mnt/e/Robert/DROPBOX/Linux > /dev/null 2>&1
-# auto startx at login
 
+# auto startx at login
 # COMMENT IT OUT on debian! Or on fresh install
 # if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 #   exec startx
