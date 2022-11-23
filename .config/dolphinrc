@@ -30,6 +30,8 @@ Places Icons Auto-resize=false
 Places Icons Static Size=16
 
 [KPropertiesDialog]
+DisplayPort-0 HDMI-0 Height 2560x1440 DisplayPort-0=405
+DisplayPort-0 HDMI-0 Width 2560x1440 DisplayPort-0=393
 HDMI-0 Height 1920x1080=534
 HDMI-0 Width 1920x1080=394
 HDMI-A-0 Height 1080=422
