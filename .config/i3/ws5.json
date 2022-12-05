@@ -49,7 +49,7 @@
                "class": "^tidal\\-hifi$",
                "instance": "^tidal\\-hifi$",
                "machine": "^lem$",
-               "title": "^Home\\ \\–\\ TIDAL$",
+               "//title": "^Home\\ \\–\\ TIDAL$",
                "window_role": "^browser\\-window$"
                }
             ],

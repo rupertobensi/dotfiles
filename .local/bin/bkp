@@ -16,10 +16,11 @@ or...
 " option
 
 if [ $option -eq 1 ]
-  then sudo rsync -aAXv --delete --progress --stats ~/.dotfiles/ /mnt/d/backup/.dotfiles/
+  then sudo rsync -aAXv --delete --progress --stats ~/.dotfiles/ /mnt/d/backup/.dotfiles/ &
+       sudo rsync -aAXv --delete --progress --stats ~/.dotfiles/ /mnt/e/backup/.dotfiles/
 
 elif [ $option -eq 2 ]
-  then sudo rsync -aAXv --delete --progress --stats --exclude={"/.snapshots/*","/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/.Trash-0/*","/home/backups/*","/home/Data/*","/home2/*","/home/System Volume Information/*","~/.thunderbird/*"} / /mnt/d//backup/.arch/
+  then sudo rsync -aAXv --delete --progress --stats --exclude={"/.snapshots/*","/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/.Trash-0/*","/home/backups/*","/home/Data/*","/home2/*","/home/System Volume Information/*","~/.thunderbird/*"} / /mnt/d/backup/.arch/
 
 elif [ $option -eq 3 ]
   then sudo rsync -aAXv --delete --progress --stats /mnt/e/Work/ /mnt/d/backup/Work/

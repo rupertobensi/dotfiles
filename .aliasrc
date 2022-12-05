@@ -122,16 +122,16 @@ wttr="curl wttr.in"
 
 # notes (compatible with VimWiki plugin)
 alias \
-note="nvim /mnt/e/Robert/DROPBOX/Linux/index.md" \
-notes="nvim /mnt/e/Robert/DROPBOX/Linux/notes.md" \
-notesa="nvim /mnt/e/Robert/DROPBOX/Linux/README.md" \
-notesc="nvim /mnt/e/Robert/DROPBOX/Linux/cheatsheet.md" \
-notesg="nvim /mnt/e/Robert/DROPBOX/Linux/gamesMovies.md" \
-notesl="nvim /mnt/e/Robert/DROPBOX/Linux/notes_LIN.md" \
-notesm="nvim /mnt/e/Robert/DROPBOX/Linux/macOS.md" \
-notesp="nvim /mnt/e/Robert/DROPBOX/Linux/pp.md" \
-notesw="nvim /mnt/e/Robert/DROPBOX/Linux/windows.md" \
-notesyay="nvim /mnt/e/Robert/DROPBOX/Linux/yaypacman.md"
+note="nvim /mnt/e/ROBERT/SYNC/Linux/index.md" \
+notes="nvim /mnt/e/ROBERT/SYNC/Linux/notes.md" \
+notesa="nvim /mnt/e/ROBERT/SYNC/Linux/README.md" \
+notesc="nvim /mnt/e/ROBERT/SYNC/Linux/cheatsheet.md" \
+notesg="nvim /mnt/e/ROBERT/SYNC/Linux/gamesMovies.md" \
+notesl="nvim /mnt/e/ROBERT/SYNC/Linux/notes_LIN.md" \
+notesm="nvim /mnt/e/ROBERT/SYNC/Linux/macOS.md" \
+notesp="nvim /mnt/e/ROBERT/SYNC/Linux/pp.md" \
+notesw="nvim /mnt/e/ROBERT/SYNC/Linux/windows.md" \
+notesyay="nvim /mnt/e/ROBERT/SYNC/Linux/yaypacman.md"
 
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 alias xc="xclip -sel clipboard"
@@ -139,9 +139,9 @@ alias xc="xclip -sel clipboard"
 alias pmv="pymv --preserve --global-pbar -i"
 alias pcp="pycp --preserve --global-pbar -i"
 # ncmpcpp scripts:
-alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh"
-alias n="tmux source-file ~/.ncmpcpp/tmux_session_neww" # Same but in a new tmux window
-alias N="tmux source-file ~/.ncmpcpp/tmux_session" # Tmux session with ncmpcpp and cover art
+alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh" # Show album cover
+alias n="tmux source-file ~/.ncmpcpp/tmux_session_neww" # ncmpcpp + album cover + new window
+alias N="tmux source-file ~/.ncmpcpp/tmux_session" # ncmpcpp + album cover, but in the same window
 
 # root privileges
 alias doas="doas --"
@@ -203,6 +203,8 @@ alias -g W="| wc -w"
 alias -g L="| wc -l"
 
 # VMs
+alias VM="i3-msg 'workspace 9; exec vboxmanage startvm Deborah' && sleep 1.5; i3-msg 'focus output DisplayPort-0, workspace 1;'"
+alias VMssh="ssh -p 3022 robert@localhost"
 alias VMstart="vboxmanage startvm Deborah --type headless"
 alias VMstop="vboxmanage controlvm Deborah acpipowerbutton"
 

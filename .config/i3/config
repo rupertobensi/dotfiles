@@ -111,12 +111,12 @@ bindsym $mod+x		exec --no-startup-id i3_lock
 # dmenu and rofi
 bindsym $mod+c exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 13'
 bindsym $mod+d exec dmen
-#bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-11" -sb "#9770ae"
+# bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-11" -sb "#9770ae"
 
 bindsym $mod+Shift+b		bar mode toggle
 bindsym $mod+b		        floating toggle; sticky toggle; exec --no-startup-id hover left
 
-#bindsym $mod+Shift+n			exec $term -e newsboat && pkill -RTMIN+6 i3blocks
+# bindsym $mod+Shift+n			exec $term -e newsboat && pkill -RTMIN+6 i3blocks
 bindsym $mod+n		floating toggle; sticky toggle; exec --no-startup-id hover right
 
 # Alternatively, you can use the cursor keys:
@@ -125,7 +125,7 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-#alternatively, you can use the cursor keys:
+# Alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -133,15 +133,15 @@ bindsym $mod+Shift+Right move right
 
 # Currently disabled
 # split in horizontal orientation
-#bindsym $mod+h split h
+# bindsym $mod+h split h
 # split in vertical orientation
-#bindsym $mod+v split v
+# bindsym $mod+v split v
 
 # Enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split)
-#bindsym $mod+c layout stacking
+# bindsym $mod+c layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 bindsym $mod+Shift+e gaps inner current set 0; gaps outer current set 0; gaps top current set 20; gaps left current set 0; gaps right current set 0
@@ -153,10 +153,10 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # Focus the parent container
-#bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # Focus the child container
-#bindsym $mod+d focus child
+# bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -195,6 +195,8 @@ workspace 5 output DisplayPort-0
 workspace 6 output HDMI-0
 workspace 7 output HDMI-0
 workspace 8 output HDMI-0
+workspace 9 output HDMI-0
+workspace 0 output HDMI-0
 
 # workspace 5 output HDMI-A-0
 
@@ -289,6 +291,8 @@ bindsym $mod+Mod2+KP_4 exec xdotool key --window "$(xdotool search --class mpv)"
 bindsym $mod+Mod2+KP_5 exec xdotool key --window "$(xdotool search --class mpv)" o
 bindsym $mod+Mod2+KP_6 exec xdotool key --window "$(xdotool search --class mpv)" l
 
+# Swap focus between monitors
+bindsym $mod+semicolon focus output right
 
 #================================================================================
 #================================================================================
@@ -302,7 +306,7 @@ bindsym $mod+Mod2+KP_6 exec xdotool key --window "$(xdotool search --class mpv)"
 
 
 # Optional rounder borders, requires rounded corners fork
-#border_radius 4
+# border_radius 4
 
 hide_edge_borders smart
 for_window [class=".*"] border pixel 3
@@ -310,7 +314,7 @@ for_window [floating]  border pixel 0
 # for_window [class="mpv"] border pixel 0
 
 for_window [class=MEGAsync] border pixel 0
-#for_window [workspace=1]  border pixel 0
+# for_window [workspace=1]  border pixel 0
 
 # Gaps
 gaps inner 0
@@ -347,15 +351,18 @@ workspace $ws7 gaps outer 0
 workspace $ws8 gaps inner 0
 workspace $ws8 gaps outer 0
 
+workspace $ws9 gaps inner 0
+workspace $ws9 gaps outer 0
+
 # Load pywal resources for i3 colors
 set_from_resource $bg i3wm.color2 #f0f0f0
 # set_from_resource $bg i3wm.color2 #f0f0f0
 
 client.focused          $bg     $bg     $fg  $bg       $bg
 # colour of                 border,   bg  ,  text, indicator,child_border  # changed last two of those
-#client.focused              #d8dee8 #2f343f #d8dee8 #9d6da3 #9d6da3
-#client.focused             #d8dee8 #2f343f #d8dee8 #d8dee8 #d8dee8
-#client.focused             #bf616a #2f343f #d8dee8 #bf616a #d8dee8
+# client.focused              #d8dee8 #2f343f #d8dee8 #9d6da3 #9d6da3
+# client.focused             #d8dee8 #2f343f #d8dee8 #d8dee8 #d8dee8
+# client.focused             #bf616a #2f343f #d8dee8 #bf616a #d8dee8
 client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
@@ -401,7 +408,7 @@ exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/robi/.config/i3/w
 exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/robi/.config/i3/ws2.json'"
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/ws3.json'"
 exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/ws4.json'"
-exec --no-startup-id "i3-msg 'workspace 5; append_layout /home/robi/.config/i3/ws5.json'"
+# exec --no-startup-id "i3-msg 'workspace 5; append_layout /home/robi/.config/i3/ws5.json'"
 
 # exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/megasync'
@@ -409,16 +416,16 @@ exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 # exec --no-startup-id i3-msg 'workspace 2; exec Sleep_ff'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/slack'
-# exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/signal-desktop'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/dolphin'
-exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
+# exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/tidal-hifi'
 # exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/chromium'
 
 # exec --no-startup-id i3-msg 'workspace 7; exec Sleep_ff'
-exec --no-startup-id i3-msg 'workspace 7; exec firefox --class foo'
+exec --no-startup-id sleep 1 && i3-msg 'workspace 7; exec firefox --class foo'
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg "workspace $ws1"
@@ -456,7 +463,7 @@ for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable; bor
 for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable; border none
 for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable; border none
 for_window [title="^Steam Keyboard$"] floating enable; border none
-#for_window [class="^Steam$" title="Steam"] floating enable
+# for_window [class="^Steam$" title="Steam"] floating enable
 
 ######################################## DROPDOWN TERMINALS #########################################
 
@@ -491,5 +498,4 @@ bindsym F12 [class="dropdown_term"] scratchpad show, move position 0 0
 exec_always ~/.dotfiles/.local/bin/i3_fib
 
 exec --no-startup-id nitrogen --restore
-
 exec --no-startup-id i3-msg "workspace $ws1"
