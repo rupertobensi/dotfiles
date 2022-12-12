@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /mnt/e/Robert/DROPBOX/Linux/
+cd /mnt/e/ROBERT/SYNC/Linux/
 
 git add -u
 

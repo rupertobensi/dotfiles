@@ -216,10 +216,13 @@ nsnake
 ntfs-3g
 ntfsfixboot
 nudoku-git
+nvidia
+nvidia-settings
 ocs-url
 office-code-pro
 okular
 onboard
+openconnect
 opendoas
 os-prober
 pacman
@@ -233,10 +236,13 @@ picom
 pipe-viewer-git
 pkgconf
 pkgstats
+pokemonsay-newgenerations-git
 polybar
 profile-sync-daemon
+projectm-pulseaudio
 pulseaudio
 pulseaudio-alsa
+pulseaudio-control
 pulsemixer
 pycp
 python-eyed3
@@ -275,6 +281,7 @@ smartmontools
 smloadr-git
 soundkonverter
 spacefm
+sshfs
 steam
 stow
 strace
@@ -323,7 +330,6 @@ vlc
 volnoti
 vscodium-bin
 vulkan-mesa-layers
-vulkan-radeon
 vulkan-tools
 w3m
 warpd-git

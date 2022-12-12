@@ -171,5 +171,5 @@ for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 # }}} End configuration added by Zim install
 
-# To customize prompt, run `p10k configure` or edit ~/.zsh//.p10k.zsh.
-[[ ! -f ~/.zsh//.p10k.zsh ]] || source ~/.zsh//.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.zsh/.p10k.zsh.
+[[ ! -f ~/.zsh/.p10k.zsh ]] || source ~/.zsh/.p10k.zsh

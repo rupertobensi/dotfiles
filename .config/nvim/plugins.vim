@@ -106,25 +106,28 @@ Plug 'tpope/vim-commentary'
 " VimWiki
 Plug 'vimwiki/vimwiki'
 
-"vim close-tag
+" vim close-tag
 Plug 'alvan/vim-closetag'
 
-"vim-surround
+" vim-surround
 Plug 'tpope/vim-surround'
 
-"vim-emmet
+" vim-emmet
 Plug 'mattn/emmet-vim'
 
-"vim-eunuch
+" vim-eunuch
 Plug 'tpope/vim-eunuch'
 
-"ranger.vim
+" ranger.vim
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
 
 "fzf.vim
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+" firenvim
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " Initialize plugin system
 call plug#end()

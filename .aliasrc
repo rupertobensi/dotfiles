@@ -72,7 +72,7 @@ alias \
 
 # Monitor configuration shortcuts
 alias m2off="xrandr --output HDMI-0 --off"
-alias m2on="xrandr --output DisplayPort-0 --primary --mode 2560x1440 --output HDMI-0 --mode 1920x1080 --right-of DisplayPort-0; (pbr &)"
+alias m2on="xrandr --output DP-0 --primary --mode 2560x1440 --output HDMI-0 --mode 1920x1080 --right-of DP-0; (pbr &)"
 
 # Various programs
 alias \
@@ -122,16 +122,16 @@ wttr="curl wttr.in"
 
 # notes (compatible with VimWiki plugin)
 alias \
-note="nvim /mnt/e/ROBERT/SYNC/Linux/index.md" \
-notes="nvim /mnt/e/ROBERT/SYNC/Linux/notes.md" \
-notesa="nvim /mnt/e/ROBERT/SYNC/Linux/README.md" \
-notesc="nvim /mnt/e/ROBERT/SYNC/Linux/cheatsheet.md" \
-notesg="nvim /mnt/e/ROBERT/SYNC/Linux/gamesMovies.md" \
-notesl="nvim /mnt/e/ROBERT/SYNC/Linux/notes_LIN.md" \
-notesm="nvim /mnt/e/ROBERT/SYNC/Linux/macOS.md" \
-notesp="nvim /mnt/e/ROBERT/SYNC/Linux/pp.md" \
-notesw="nvim /mnt/e/ROBERT/SYNC/Linux/windows.md" \
-notesyay="nvim /mnt/e/ROBERT/SYNC/Linux/yaypacman.md"
+note="nvim /mnt/e/ROBERT/SYNC/notes/index.md" \
+notes="nvim /mnt/e/ROBERT/SYNC/notes/notes.md" \
+notesa="nvim /mnt/e/ROBERT/SYNC/notes/README.md" \
+notesc="nvim /mnt/e/ROBERT/SYNC/notes/cheatsheet.md" \
+notesg="nvim /mnt/e/ROBERT/SYNC/notes/gamesMovies.md" \
+notesl="nvim /mnt/e/ROBERT/SYNC/notes/notes_LIN.md" \
+notesm="nvim /mnt/e/ROBERT/SYNC/notes/macOS.md" \
+notesp="nvim /mnt/e/ROBERT/SYNC/notes/pp.md" \
+notesw="nvim /mnt/e/ROBERT/SYNC/notes/windows.md" \
+notesyay="nvim /mnt/e/ROBERT/SYNC/notes/yaypacman.md"
 
 # this copies the output of a program to the clipboard for easy use elsewhere (Ctrl+V). For #example, I copied the above line from my .bashrc using this: grep xclip .bashrc | xc
 alias xc="xclip -sel clipboard"

@@ -1,6 +1,6 @@
 # Monitor settings
-xrandr --output DisplayPort-0 --primary --mode 2560x1440 --rate 180
-xrandr --output HDMI-0 --mode 1920x1080 --right-of DisplayPort-0 --rate 60.00
+# xrandr --output DP-3 --primary --mode 2560x1440 --rate 180
+# xrandr --output HDMI-0 --mode 1920x1080 --left-of DP-3 --rate 60.00
 
 # Disable monitor 2
 # xrandr --output HDMI-0 --off
