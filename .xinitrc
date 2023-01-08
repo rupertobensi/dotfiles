@@ -1,16 +1,14 @@
+
 # Monitor settings
-# xrandr --output DP-3 --primary --mode 2560x1440 --rate 180
-# xrandr --output HDMI-0 --mode 1920x1080 --left-of DP-3 --rate 60.00
+xrandr --output $MONITOR1 --primary --mode 2560x1440 --rate 120
+xrandr --output $MONITOR2 --right-of DP-1 --mode 1920x1080 --rate 60
 
 # Disable monitor 2
 # xrandr --output HDMI-0 --off
 
-# Disable dpm for my radeon r9 280 using radcard script
-radcard set high
-
 # Fix hinting outside of PLASMA/GNOME
-# xrdb -merge .Xresources &
-# xrdb -merge .Xdefaults &
+xrdb -merge .Xresources &
+xrdb -merge .Xdefaults &
 
 # Apply pywal at the startup
 # wal -R

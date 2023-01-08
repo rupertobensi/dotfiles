@@ -1,10 +1,10 @@
 #!/bin/sh
 
 cd $HOME/.dotfiles/
-git add -u
+git add -A
 
 echo "What comment?"
 read comment
 git commit -m "$comment"
 
-git push -u origin master
+git push

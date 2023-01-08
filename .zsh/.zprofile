@@ -1,3 +1,6 @@
+export MONITOR1="DP-1"
+export MONITOR2="HDMI-1"
+
 # Default programs:
 
 export EDITOR="nvim"
@@ -14,6 +17,8 @@ if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
 
+export LANGUAGE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # extra condition so krusader in i3 has proper date formatting:
 export LC_TIME=en_IE.UTF-8

@@ -1,11 +1,11 @@
 #!/bin/sh
 
-cd /mnt/e/ROBERT/SYNC/Linux/
+cd /mnt/e/ROBERT/SYNC/notes/
 
-git add -u
+git add -A
 
 echo "What comment?"
 read comment
 git commit -m "$comment"
 
-git push -u origin master
+git push

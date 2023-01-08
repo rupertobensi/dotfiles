@@ -191,7 +191,7 @@ tmuxSrc="tmux source-file ~/.tmux.conf" \
 ts="tmux new-session -s"
 
 # Reloading configurations
-alias Src="source ~/.dotfiles/.zsh/.zshrc"
+alias Src="source ~/.zsh/.zshrc"
 alias Xrdb="xrdb ~/.Xresources"
 
 # Pipe shortcuts

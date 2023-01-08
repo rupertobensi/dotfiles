@@ -110,8 +110,8 @@ bindsym $mod+x		exec --no-startup-id i3_lock
 
 # dmenu and rofi
 bindsym $mod+c exec rofi -lines 12 -padding 18 -width 45 -location 0 -show drun -sidebar-mode -columns 3 -show-icons -font 'Noto Sans 13'
-bindsym $mod+d exec dmen
-bindsym $mod+shift_d exec dmenu_run
+bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmen
 # bindsym $mod+d exec dmenu_run -h "22" -fn "Consolas-11" -sb "#9770ae"
 
 bindsym $mod+Shift+b		bar mode toggle
@@ -187,29 +187,18 @@ bindsym $mod+0 workspace number $ws10
 
 # Multiple monitors
 
-workspace 1 output $MONITOR1
-workspace 2 output $MONITOR1
-workspace 3 output $MONITOR1
-workspace 4 output $MONITOR1
+ workspace 1 output DP-3
+ workspace 2 output DP-3
+ workspace 3 output DP-3
+ workspace 4 output DP-3
 
-workspace 5 output $MONITOR2
-workspace 6 output $MONITOR2
-workspace 7 output $MONITOR2
-workspace 8 output $MONITOR2
-workspace 9 output $MONITOR2
-workspace 0 output $MONITOR2
+workspace 5 output HDMI-1
+workspace 6 output HDMI-1
+workspace 7 output HDMI-1
+workspace 8 output HDMI-1
+workspace 9 output HDMI-1
+workspace 0 output HDMI-1
 
-# workspace 1 output DP-1
-# workspace 2 output DP-1
-# workspace 3 output DP-1
-# workspace 4 output DP-1
-
-# workspace 5 output HDMI-1
-# workspace 6 output HDMI-1
-# workspace 7 output HDMI-1
-# workspace 8 output HDMI-1
-# workspace 9 output HDMI-1
-# workspace 0 output HDMI-1
 # workspace 5 output HDMI-A-0
 
 # Move focused container to workspace

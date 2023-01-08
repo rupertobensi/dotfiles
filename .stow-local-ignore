@@ -1,6 +1,7 @@
 .archive
 .stow_fresh
 .DS_Store
+.git
 .gitignore
 
 
