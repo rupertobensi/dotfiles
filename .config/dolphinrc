@@ -1,25 +1,22 @@
 Height 1080=1008
-MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAADyPwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAoAAAAnwAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAoAAADyAAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAGoQAAA8gAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 Width 1920=1882
 
-[Baloo KEditCommentDialog]
-HDMI-A-0 Height 1080=230
-HDMI-A-0 Width 1920=264
-
 [DownloadDialog Settings]
-HDMI-A-0 Height 1080=400
-HDMI-A-0 Width 1920=700
 Height 1080=464
 Width 1920=700
+
+[FoldersPanel]
+HiddenFilesShown=true
 
 [General]
 AutoExpandFolders=true
 BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
 ShowFullPath=true
+ShowFullPathInTitlebar=true
 UseTabForSwitchingSplitView=true
-Version=201
+Version=202
 ViewPropsTimestamp=2021,2,20,11,28,25.208
 
 [IconsMode]
@@ -27,43 +24,14 @@ PreviewSize=80
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
-Places Icons Static Size=16
+Places Icons Static Size=32
 
 [KPropertiesDialog]
-DisplayPort-0 HDMI-0 Height 2560x1440 DisplayPort-0=405
-DisplayPort-0 HDMI-0 Width 2560x1440 DisplayPort-0=393
-HDMI-0 Height 1920x1080=534
-HDMI-0 Width 1920x1080=394
-HDMI-A-0 Height 1080=422
-HDMI-A-0 Height 1920x1080=364
-HDMI-A-0 Width 1920=394
-HDMI-A-0 Width 1920x1080=363
 Height 1080=422
 Width 1920=394
 
 [MainWindow]
-DisplayPort-0 HDMI-0 Height 2560x1440=1381
-DisplayPort-0 HDMI-0 Width 2560x1440=1248
-HDMI-0 Height 1920x1080=1032
-HDMI-0 Height 2560x1440=1382
-HDMI-0 Height 3840x2160=2112
-HDMI-0 Width 1920x1080=1882
-HDMI-0 Width 2560x1440=2512
-HDMI-0 Width 3840x2160=3802
-HDMI-0 XPosition 1920x1080=19
-HDMI-0 XPosition 2560x1440=19
-HDMI-0 YPosition 1920x1080=29
-HDMI-0 YPosition 2560x1440=29
-HDMI-A-0 Height 1080=1032
-HDMI-A-0 Height 1920x1080=1032
-HDMI-A-0 Width 1920=1882
-HDMI-A-0 Width 1920x1080=1882
-HDMI-A-0 XPosition=19
-HDMI-A-0 XPosition 1920x1080=19
-HDMI-A-0 YPosition=29
-HDMI-A-0 YPosition 1920x1080=29
 Height 1080=1032
-MenuBar=Disabled
 RestorePositionForNextInstance=false
 ToolBarsMovable=Disabled
 Width 1920=1882
@@ -76,20 +44,11 @@ CompletionMode=1
 History=vimi,vim,gwe,sxiv,mpv,vlc,subd,kate,torrent,tran,torr,zat,gea
 
 [PlacesPanel]
-IconSize=16
+IconSize=32
 
 [PreviewSettings]
-Plugins=kraorathumbnail,ebookthumbnail,audiothumbnail,mltpreview,directorythumbnail,comicbookthumbnail,windowsexethumbnail,jpegthumbnail,cursorthumbnail,fontthumbnail,ffmpegthumbs,svgthumbnail,appimagethumbnail,opendocumentthumbnail,windowsimagethumbnail,imagethumbnail,djvuthumbnail,exrthumbnail
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,opendocumentthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs
 
 [SettingsDialog]
-HDMI-0 Height 1920x1080=471
-HDMI-0 Width 1920x1080=598
-HDMI-A-0 Height 1080=386
-HDMI-A-0 Height 1920x1080=379
-HDMI-A-0 Width 1920=540
-HDMI-A-0 Width 1920x1080=544
 Height 1080=388
 Width 1920=540
-
-[VersionControl]
-enabledPlugins=Dropbox

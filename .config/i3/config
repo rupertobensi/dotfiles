@@ -70,10 +70,14 @@ bindsym $mod+Shift+o		exec --no-startup-id i3_resize right
 # bindsym $mod+p 	              	exec --no-startup-id $term -e tmux split-window -h nvim
 
 # bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-show $(pamixer --get-volume)
-bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+
-bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 10%+; exec --no-startup-id volnoti-s
-bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%-
-bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 10%-; exec --no-startup-id volnoti-s
+bindsym $mod+plus		exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym $mod+Shift+plus		exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status; exec --no-startup-id volnoti-s
+bindsym $mod+minus 		exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym $mod+Shift+minus	exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status; exec --no-startup-id volnoti-s
+# bindsym $mod+plus		exec --no-startup-id amixer sset Master 5%+
+# bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 10%+; exec --no-startup-id volnoti-s
+# bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%-
+# bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 10%-; exec --no-startup-id volnoti-s
 
 bindsym $mod+bar		exec $term -e htop
 bindsym $mod+Shift+bar		exec ksysguard
@@ -187,30 +191,17 @@ bindsym $mod+0 workspace number $ws10
 
 # Multiple monitors
 
-workspace 1 output $MONITOR1
-workspace 2 output $MONITOR1
-workspace 3 output $MONITOR1
-workspace 4 output $MONITOR1
+workspace 1 output DP-1
+workspace 2 output DP-1
+workspace 3 output DP-1
+workspace 4 output DP-1
 
-workspace 5 output $MONITOR2
-workspace 6 output $MONITOR2
-workspace 7 output $MONITOR2
-workspace 8 output $MONITOR2
-workspace 9 output $MONITOR2
-workspace 0 output $MONITOR2
-
-# workspace 1 output DP-1
-# workspace 2 output DP-1
-# workspace 3 output DP-1
-# workspace 4 output DP-1
-
-# workspace 5 output HDMI-1
-# workspace 6 output HDMI-1
-# workspace 7 output HDMI-1
-# workspace 8 output HDMI-1
-# workspace 9 output HDMI-1
-# workspace 0 output HDMI-1
-# workspace 5 output HDMI-A-0
+workspace 5 output HDMI-1
+workspace 6 output HDMI-1
+workspace 7 output HDMI-1
+workspace 8 output HDMI-1
+workspace 9 output HDMI-1
+workspace 0 output HDMI-1
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -225,7 +216,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Restart
-bindsym $mod+Shift+r restart;exec_always $HOME/.config/polybar/launch.sh
+bindsym $mod+Shift+r exec "killall compton"; restart; exec_always $HOME/.config/polybar/launch.sh; exec_always "compton -b --config ~/.config/picom/picom.conf";
 
 # Resize window (you can also use the mouse for that)
 mode "resize" {
@@ -265,10 +256,11 @@ bindsym $mod+Shift+bracketright       exec --no-startup-id mpc next
 
 bindsym Print 			        exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-"$(date '+%d_%m_%Y-%H_%M_%S').png"
 bindsym $mod+Print              exec maimpick
-bindsym $mod+Shift+Print              maim -s | xclip -selection clipboard -t image/png
+bindsym Mod2++Print              maim -s | xclip -selection clipboard -t image/png
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Scroll_Lock        exec simplescreenrecorder
-bindsym Pause 	              	exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-node
+bindsym Ctrl+bracketright 	              	exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1" next-node
+# bindsym Pause 	              	exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-node
 # bindsym Pause 	              	exec sound 0
 # bindsym $mod+Pause              exec sound 1
 # bindsym $mod+Pause              exec cool-retro-term
@@ -280,7 +272,6 @@ bindsym $mod+F2         exec --no-startup-id krusader
 bindsym $mod+Shift+F2         exec --no-startup-id onboard
 bindsym $mod+F3		exec --no-startup-id displayselect
 bindsym $mod+F4		exec --no-startup-id dmenulogout
-bindsym $mod+Shift+F4		exec --no-startup-id redshiftgui
 # bindsym $mod+F5		exec --no-startup-id $netrefresh
 # bindsym $mod+F6		exec --no-startup-id torwrap
 # bindsym $mod+F5		exec $term -e tremc
@@ -305,6 +296,12 @@ bindsym $mod+Mod2+KP_6 exec xdotool key --window "$(xdotool search --class mpv)"
 
 # Swap focus between monitors
 bindsym $mod+semicolon focus output right
+
+# Send chat workspace to monitor left or right
+bindsym $mod+Ctrl+3 i3-msg "workspace number $ws3, move workspace to output HDMI-1"
+# bindsym $mod+Ctrl+3 move workspace number $ws3 to output HDMI-1 DP-1
+# bindsym $mod+Ctrl+3 move workspace number $ws3 to output HDMI-1 DP-1
+#bindsym $mod+Ctrl+h		move workspace to output left
 
 #================================================================================
 #================================================================================
@@ -354,17 +351,8 @@ workspace $ws4 gaps left 5
 workspace $ws4 gaps right 5
 workspace $ws4 gaps bottom 5
 
-workspace $ws6 gaps inner 0
-workspace $ws6 gaps outer 0
-
-workspace $ws7 gaps inner 0
-workspace $ws7 gaps outer 0
-
-workspace $ws8 gaps inner 0
-workspace $ws8 gaps outer 0
-
-workspace $ws9 gaps inner 0
-workspace $ws9 gaps outer 0
+# workspace $ws9 gaps inner 0
+# workspace $ws9 gaps outer 0
 
 # Load pywal resources for i3 colors
 set_from_resource $bg i3wm.color2 #f0f0f0
@@ -383,7 +371,7 @@ client.background           #2f343f
 
 # Wallpaper + transparency
 # exec --no-startup-id "xrdb ~/.Xresources"
-exec --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
+exec_always --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
 
 # exec_always --no-startup-id wal -R
 # exec_always wal -i ~/.config/wall.png
@@ -396,6 +384,9 @@ exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
 exec_always --no-startup-id pbr
+exec --no-startup-id redshift-gtk
+exec_always --no-startup-id "rsx"
+# exec_always --no-startup-id "sleep 3; pkill redshift"
 # exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
 exec --no-startup-id setxkbmap pl -variant intl
@@ -408,8 +399,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 
 assign [class=Caprine|Element|Steam] 3
 assign [class=tidal-hifi|Lollypop] 5
-assign [class=discord] 6
-assign [class=Lutris|KeePassXC|qBittorrent*] 7
+assign [class=doscrd|Lutris|KeePassXC|qBittorrent*] 6
 assign [class=csgo_linux64|dota2|quakelive_steam.exe] 8
 # assign [class=discord|] 7        #  | at the end causes ALL programs to stark on new workspaces
 
@@ -420,24 +410,24 @@ exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/robi/.config/i3/w
 exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/robi/.config/i3/ws2.json'"
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/robi/.config/i3/ws3.json'"
 exec --no-startup-id "i3-msg 'workspace 4; append_layout /home/robi/.config/i3/ws4.json'"
-# exec --no-startup-id "i3-msg 'workspace 5; append_layout /home/robi/.config/i3/ws5.json'"
+exec --no-startup-id "i3-msg 'workspace 5; append_layout /home/robi/.config/i3/ws5.json'"
+exec --no-startup-id "i3-msg 'workspace 6; append_layout /home/robi/.config/i3/ws2.json'"
 
 # exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/megasync'
-exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/firefox'
+exec --no-startup-id sleep 5 && i3-msg 'workspace 2; exec firefox --class foo'
 # exec --no-startup-id i3-msg 'workspace 2; exec Sleep_ff'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/slack'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
+# exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/signal-desktop'
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/dolphin'
 # exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/tidal-hifi'
 # exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/chromium'
 
-# exec --no-startup-id i3-msg 'workspace 7; exec Sleep_ff'
-exec --no-startup-id sleep 3 && i3-msg 'workspace 7; exec firefox --class foo'
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id i3-msg "workspace $ws1"
@@ -510,4 +500,4 @@ bindsym F12 [class="dropdown_term"] scratchpad show, move position 0 0
 exec_always ~/.dotfiles/.local/bin/i3_fib
 
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id i3-msg "workspace $ws1"
+# exec --no-startup-id sleep 5; i3-msg "workspace $ws1"

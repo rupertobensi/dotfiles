@@ -14,8 +14,9 @@
     "swallows": [
        {
         "class": "^Caprine$",
-        "instance": "^caprine$",
-        "title": "^Caprine$",
+        "//instance": "^caprine$",
+        "//title": "^Messenger$",
+        //"title": "^Caprine$",
         "window_role": "^browser\\-window$"
        }
     ],

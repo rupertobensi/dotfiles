@@ -7,6 +7,7 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 alias \
 	batr="cat /sys/class/power_supply/BAT?/capacity" \
 	cp="cp -iv" \
+    cal="cal -m" \
     fd="fd -a -j4" \
 	mv="mv -iv" \
     rg="rg --no-ignore-vcs" \
@@ -71,8 +72,10 @@ alias \
     cfzshrc="nvim ~/.zsh/.zshrc"
 
 # Monitor configuration shortcuts
-alias m2off="xrandr --output HDMI-0 --off"
-alias m2on="xrandr --output DP-0 --primary --mode 2560x1440 --output HDMI-0 --mode 1920x1080 --right-of DP-0; (pbr &)"
+alias m1on="xrandr --output DP-1 --primary --mode 2560x1440 --rate 120"
+alias m1off="xrandr --output DP-1 --off"
+alias m2on="xrandr --output HDMI-1 --right-of DP-1 --mode 1920x1080 --rate 60"
+alias m2off="xrandr --output HDMI-1 --off"
 
 # Various programs
 alias \
@@ -80,20 +83,23 @@ alias \
     audio="pulsemixer" \
     cdu="cdu -sidh" \
     Cal="calcurse" \
-    deezer="smloadr --path ~/Downloads" \
     disko="diskonaut" \
     docker="sudo docker" \
-    fm="vifmrun" \
     imgur="imgur_downloader" \
     keep="keepassxc-cli" \
     myip="curl api.ipify.org" \
     nc="ncmpcpp" \
     ncdu="ncdu --color dark" \
     newsb="newsboat" \
+    snap="sudo timeshift --create --comment" \
+    snapg="sudo timeshift-gtk" \
+    snapl="sudo timeshift --list" \
     rs="redshift -PO 4500" \
-    rsx="redshift -x" \
+    rsx="pkill -USR1 redshift" \
+    rsX="redshift -x" \
     rtv="tuir" \
-    tra="tremc"
+    tra="tremc" \
+    vifm="vifmrun"
 
 # trash-cli
 alias \
@@ -203,7 +209,7 @@ alias -g W="| wc -w"
 alias -g L="| wc -l"
 
 # VMs
-alias VM="i3-msg 'workspace 9; exec vboxmanage startvm Deborah' && sleep 1.5; i3-msg 'focus output DisplayPort-0, workspace 1;'"
+alias VM="i3-msg 'workspace 9; exec vboxmanage startvm Deborah' && sleep 1.5; i3-msg 'focus output DP-1, workspace 1;'"
 alias VMssh="ssh -p 3022 robert@localhost"
 alias VMstart="vboxmanage startvm Deborah --type headless"
 alias VMstop="vboxmanage controlvm Deborah acpipowerbutton"
