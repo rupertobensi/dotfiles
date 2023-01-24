@@ -295,7 +295,8 @@ fi
 alias yay="paru"
 
 if (( $+commands[paru] )); then
-  alias yayu="paru -Suy"
+  alias yey="paru -Syu --noconfirm"
+  alias yayu="paru -Syu"
   alias yayU="paru -Su"
   alias yayy="paru -Sy"
   alias yayY="sudo paru -Fy"

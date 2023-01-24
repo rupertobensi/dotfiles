@@ -7,7 +7,7 @@ KEYBOARD_ID="11"
 # cpm: characters per minute
 # wpm: words per minute (1 word = 5 characters)
 METRIC=cpm
-FORMAT="  %d $METRIC"
+FORMAT="[  %d $METRIC]"
 INTERVAL=20
 
 # If you have a keyboard layout that is not listed here yet, create a condition

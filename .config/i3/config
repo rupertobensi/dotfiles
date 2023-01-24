@@ -80,7 +80,8 @@ bindsym $mod+Shift+minus	exec --no-startup-id pactl set-sink-volume @DEFAULT_SIN
 # bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 10%-; exec --no-startup-id volnoti-s
 
 bindsym $mod+bar		exec $term -e htop
-bindsym $mod+Shift+bar		exec ksysguard
+bindsym $mod+Shift+bar		exec gnome-system-monitor
+# bindsym $mod+Shift+bar		exec ksysguard
 
 bindsym $mod+h			focus left
 bindsym $mod+Shift+h		move left 30
@@ -259,7 +260,7 @@ bindsym $mod+Print              exec maimpick
 bindsym Mod2++Print              maim -s | xclip -selection clipboard -t image/png
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Scroll_Lock        exec simplescreenrecorder
-bindsym Ctrl+bracketright 	              	exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1" next-node
+bindsym Ctrl+bracketright 	              	exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo" next-node
 # bindsym Pause 	              	exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-node
 # bindsym Pause 	              	exec sound 0
 # bindsym $mod+Pause              exec sound 1
@@ -297,10 +298,10 @@ bindsym $mod+Mod2+KP_6 exec xdotool key --window "$(xdotool search --class mpv)"
 # Swap focus between monitors
 bindsym $mod+semicolon focus output right
 
+# @@
 # Send chat workspace to monitor left or right
-bindsym $mod+Ctrl+3 i3-msg "workspace number $ws3, move workspace to output HDMI-1"
-# bindsym $mod+Ctrl+3 move workspace number $ws3 to output HDMI-1 DP-1
-# bindsym $mod+Ctrl+3 move workspace number $ws3 to output HDMI-1 DP-1
+# bindsym $mod+Ctrl+3 move workspace number $ws3 to output HDMI-1
+# bindsym $mod+Ctrl+3 i3-msg "workspace 3; move workspace to output HDMI-1"
 #bindsym $mod+Ctrl+h		move workspace to output left
 
 #================================================================================
@@ -384,8 +385,9 @@ exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
 exec_always --no-startup-id pbr
-exec --no-startup-id redshift-gtk
+exec_always --no-startup-id redshift-gtk
 exec_always --no-startup-id "rsx"
+exec_always --no-startup-id solaar --window=hide
 # exec_always --no-startup-id "sleep 3; pkill redshift"
 # exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
 
