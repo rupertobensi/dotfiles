@@ -96,6 +96,7 @@ mailer=/usr/bin/thunderbird
 md5sum=/usr/bin/md5sum
 mount=/usr/bin/mount
 rar=/usr/bin/rar
+rm=/usr/bin/rm
 sha1sum=/usr/bin/sha1sum
 sha224sum=/usr/bin/sha224sum
 sha256sum=/usr/bin/sha256sum

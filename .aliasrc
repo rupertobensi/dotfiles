@@ -94,7 +94,9 @@ alias \
     snap="sudo timeshift --create --comment" \
     snapg="sudo timeshift-gtk" \
     snapl="sudo timeshift --list" \
-    rs="redshift -PO 4500" \
+    snapr="sudo timeshift --restore" \
+    rs="redshift-gtk &" \
+    rsm="redshift -PO 4500" \
     rsx="pkill -USR1 redshift" \
     rsX="redshift -x" \
     rtv="tuir" \
@@ -169,13 +171,6 @@ alias kdeL="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
 alias i3e="i3 exit"
 alias i3s="i3-save-tree"
 
-# Run megasync client without some QT variables
-#alias megax="DO_NOT_UNSET_QT_QPA_PLATFORMTHEME=1 DO_NOT_SET_DESKTOP_SETTINGS_UNAWARE=1 megasync"
-alias megs="mega-sync"
-# KDE aliases for locking/unlocking plasma
-#alias kdew="qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(false)"
-#alias kdeW="qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(true)"
-
 # Changing "ls" to "exa"
 alias \
 ls="exa --group-directories-first --color=always" \
@@ -214,6 +209,10 @@ alias VMssh="ssh -p 3022 robert@localhost"
 alias VMstart="vboxmanage startvm Deborah --type headless"
 alias VMstop="vboxmanage controlvm Deborah acpipowerbutton"
 
+# Mouse speed
+
+alias mouse="sudo xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed'"
+alias mousedef="sudo xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' 0"
 
 ###
 ### PROGRAMS

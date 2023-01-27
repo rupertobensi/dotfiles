@@ -13,6 +13,7 @@ HiddenFilesShown=true
 AutoExpandFolders=true
 BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
+RememberOpenedTabs=false
 ShowFullPath=true
 ShowFullPathInTitlebar=true
 UseTabForSwitchingSplitView=true
