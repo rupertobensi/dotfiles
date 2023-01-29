@@ -13,8 +13,8 @@ path=($XDG_BIN_HOME $path)
 
 export EDITOR="nvim"
 export VISUAL=$EDITOR
-# export TERMINAL="alacritty"
 export TERMINAL="st"
+# export TERMINAL="qterminal"
 export BROWSER="firefox"
 export READER="zathura"
 export FILE="ranger"

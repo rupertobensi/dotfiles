@@ -219,7 +219,8 @@ Sxiv.background: #000000
 ! Nightfox colors for Xresources
 ! Style: nightfox
 ! Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/nightfox/nightfox_xresources.Xresources
-*background: #192330
+/* *background: #192330 */
+*background: #000000
 *foreground: #cdcecf
 *color0:  #393b44
 *color1:  #c94f6d

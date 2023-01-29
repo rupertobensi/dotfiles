@@ -165,9 +165,7 @@ alias pscpu10="ps auxf | sort -nr -k 3 | head -10"
 # the terminal rickroll
 alias rickroll="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
 
-# KDE logout with confirmation, without and locking widgets. Also, i3 exit.
-alias kdel="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
-alias kdeL="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
+# i3
 alias i3e="i3 exit"
 alias i3s="i3-save-tree"
 

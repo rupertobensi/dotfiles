@@ -19,14 +19,14 @@
                "y": 20
             },
             "marks": [],
-            "name": "Lollypop",
+            "name": "Dopamine",
             "percent": 0.5,
             "swallows": [
                {
-               "class": "^Lollypop$",
-               "instance": "^lollypop$",
+               "class": "^Dopamine$",
+               "instance": "^dopamine$",
                "machine": "^lem$",
-               "title": "^Lollypop$"
+               "title": "^Dopamine$"
                }
             ],
             "type": "con"
