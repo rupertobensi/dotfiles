@@ -1,7 +1,7 @@
 configuration {
   modi: "window,drun,ssh,combi";
   combi-modi: "window,drun,ssh";
-  font: "Noto Sans Nerd Font 23";
+  font: "Noto Sans Nerd Font 18";
   show-icons: true;
   disable-history: true;
   /* modes: "drun,window"; */
@@ -31,8 +31,17 @@ window {
   height: 55%;
 }
 
+element {
+  /* spacing: 1%; */
+}
+
+element-text {
+  size: 30%;
+  vertical-align: 0.5;
+}
+
 element-icon {
-  size: 10%;
+  size: 7%;
 }
 
 /* @theme "solarized" */

@@ -203,7 +203,7 @@ alias -g L="| wc -l"
 
 # VMs
 alias VM="i3-msg 'workspace 9; exec vboxmanage startvm Deborah' && sleep 1.5; i3-msg 'focus output DP-1, workspace 1;'"
-alias VMssh="ssh -p 3022 robert@localhost"
+alias vm="ssh -p 3022 robert@localhost"
 alias VMstart="vboxmanage startvm Deborah --type headless"
 alias VMstop="vboxmanage controlvm Deborah acpipowerbutton"
 

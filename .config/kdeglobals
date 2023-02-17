@@ -4,5 +4,8 @@ TerminalApplication=$TERMINAL
 [KDE]
 ShowDeleteCommand=false
 
+[KShortcutsDialog Settings]
+Dialog Size=1024,768
+
 [PreviewSettings]
 MaximumRemoteSize=0

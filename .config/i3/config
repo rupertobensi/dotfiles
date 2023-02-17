@@ -20,7 +20,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status        killall -SIGUSR1 i3status
@@ -262,6 +262,7 @@ bindsym $mod+Shift+s            exec maim -s | xclip -selection clipboard -t ima
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Shift+Print        exec simplescreenrecorder
 bindsym Ctrl+bracketright       exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo" next-node
+bindsym Ctrl+Shift+bracketright       exec source ~/.config/polybar/polybar-scripts/redshift_env.sh && ~/.config/polybar/polybar-scripts/redshift.sh toggle
 # bindsym Pause                   exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-node
 # bindsym Pause                   exec sound 0
 # bindsym $mod+Pause              exec sound 1
@@ -269,15 +270,15 @@ bindsym Ctrl+bracketright       exec pulseaudio-control --node-blacklist "alsa_o
 
 # Function buttons
 bindsym $mod+F1                 exec --no-startup-id code
-bindsym $mod+Shift+F1           exec --no-startup-id screenkey
-bindsym $mod+F2                 exec --no-startup-id krusader
+bindsym $mod+Shift+F1           exec --no-startup-id krusader
+bindsym $mod+F2                 exec --no-startup-id screenkey
 bindsym $mod+Shift+F2           exec --no-startup-id onboard
 bindsym $mod+F3                 exec --no-startup-id displayselect
 bindsym $mod+F4                 exec --no-startup-id dmenulogout
 # bindsym $mod+F5                 exec --no-startup-id $netrefresh
 # bindsym $mod+F6                 exec --no-startup-id torwrap
 # bindsym $mod+F5                 exec $term -e tremc
-bindsym $mod+Shift+F5           exec --no-startup-id td-toggle
+# bindsym $mod+Shift+F5           exec --no-startup-id td-toggle
 bindsym $mod+F6                 exec --no-startup-id keepassxc
 bindsym $mod+Shift+F6           exec --no-startup-id chromium
 # bindsym $mod+F8                 exec --no-startup-id mailsync
@@ -380,8 +381,10 @@ exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-exec_always --no-startup-id pbr
-exec --no-startup-id redshift-gtk
+# exec_always --no-startup-id pbr
+exec_always --no-startup-id "sleep 3; pbr"
+# exec --no-startup-id redshift-gtk
+# exec --no-startup-id kwalletd5
 exec_always --no-startup-id "rsx"
 exec --no-startup-id solaar --window=hide
 # exec_always --no-startup-id "sleep 3; pkill redshift"
@@ -396,7 +399,7 @@ exec --no-startup-id setxkbmap pl -variant intl
 ### sudo i3-msg -t get_workspaces
 
 assign [class=Caprine|Element|Steam] 3
-assign [class=tidal-hifi|Lollypop] 5
+assign [class=tidal-hifi|Lollypop|MEGAsync] 5
 assign [class=doscrd|Lutris|KeePassXC|qBittorrent*] 6
 assign [class=csgo_linux64|dota2|quakelive_steam.exe] 8
 # assign [class=discord|] 7        #  | at the end causes ALL programs to stark on new workspaces
@@ -415,23 +418,21 @@ exec --no-startup-id "i3-msg 'workspace 6; append_layout /home/robi/.config/i3/w
 # exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 # exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/lollypop'
 # exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/chromium'
-exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/megasync'
-exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/firefox'
+# exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/megasync'
+exec --no-startup-id sleep 1 && megasync &
+exec --no-startup-id sleep 4 && megasync &
 exec --no-startup-id sleep 5 && i3-msg 'workspace 2; exec firefox --class foo'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/caprine'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/slack'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/element-desktop'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/signal-desktop'
-exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/dolphin'
-exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/dopamine'
-exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/tidal-hifi'
+exec --no-startup-id i3-msg 'workspace 6; exec firefox'
+exec --no-startup-id i3-msg 'workspace 3; exec caprine'
+exec --no-startup-id i3-msg 'workspace 3; exec slack'
+exec --no-startup-id i3-msg 'workspace 3; exec element-desktop'
+exec --no-startup-id i3-msg 'workspace 3; exec signal-desktop'
+exec --no-startup-id i3-msg 'workspace 4; exec dolphin'
+exec --no-startup-id i3-msg 'workspace 5; exec dopamine'
+exec --no-startup-id i3-msg 'workspace 5; exec tidal-hifi'
 
 exec --no-startup-id i3-msg "workspace $ws1"
-exec --no-startup-id i3-msg "workspace $ws1"
-exec --no-startup-id i3-msg "workspace $ws1"
-exec --no-startup-id i3-msg "workspace $ws1"
-exec --no-startup-id i3-msg "workspace $ws1"
-exec --no-startup-id i3-msg 'workspace 1; exec $term -e tmux at'
+exec --no-startup-id sleep 2 && i3-msg 'workspace 1; exec $term -e tmux at'
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 
@@ -503,4 +504,5 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 exec_always --no-startup-id ~/.dotfiles/.local/bin/i3_fib
 
 exec_always        --no-startup-id nitrogen --restore
-# exec        --no-startup-id sleep 5; i3-msg "workspace $ws1"
+exec        --no-startup-id sleep 8; i3-msg "workspace $ws1"
+# exec --no-startup-id i3-msg "workspace $ws1"
