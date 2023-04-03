@@ -22,16 +22,29 @@ call plug#begin('~/.config/nvim/plugged')
 
 " === Editing Plugins === "
 " Trailing whitespace highlighting & automatic fixing
-Plug 'ntpeters/vim-better-whitespace'
+" Plug 'ntpeters/vim-better-whitespace'
 
-" auto-close plugin
+" auto-close brackets after enter
 Plug 'rstacruz/vim-closer'
 
+" vim close-tag
+Plug 'alvan/vim-closetag'
+
+" vim-emmet
+Plug 'mattn/emmet-vim'
+
 " Improved motion in Vim
-Plug 'easymotion/vim-easymotion'
+" Plug 'easymotion/vim-easymotion'
+
+" Sneak vim
+" Plug 'justinmk/vim-sneak'
+
+" Leap.nvim
+Plug 'ggandor/leap.nvim'
 
 " Intellisense Engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+":CocInstall coc-yaml
 
 " Snippet support
 Plug 'Shougo/neosnippet'
@@ -72,11 +85,11 @@ Plug 'scrooloose/nerdtree'
 
 " Colorscheme
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'mhartington/oceanic-next'
-Plug 'joshdick/onedark.vim'
-Plug 'overcache/NeoSolarized'
-Plug 'artanikin/vim-synthwave84'
-Plug 'EdenEast/nightfox.nvim' 
+" Plug 'mhartington/oceanic-next'
+" Plug 'joshdick/onedark.vim'
+" Plug 'overcache/NeoSolarized'
+" Plug 'artanikin/vim-synthwave84'
+Plug 'EdenEast/nightfox.nvim'
 
 " Customized vim status line
 Plug 'vim-airline/vim-airline'
@@ -94,8 +107,8 @@ Plug 'junegunn/goyo.vim'
 " Indent line
 Plug 'Yggdroot/indentLine'
 
-" Sneak vim
-Plug 'justinmk/vim-sneak'
+" cheatsheet
+Plug 'liuchengxu/vim-which-key'
 
 " Vim Startify
 Plug 'mhinz/vim-startify'
@@ -106,14 +119,8 @@ Plug 'tpope/vim-commentary'
 " VimWiki
 Plug 'vimwiki/vimwiki'
 
-" vim close-tag
-Plug 'alvan/vim-closetag'
-
 " vim-surround
 Plug 'tpope/vim-surround'
-
-" vim-emmet
-Plug 'mattn/emmet-vim'
 
 " vim-eunuch
 Plug 'tpope/vim-eunuch'
@@ -127,7 +134,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " firenvim
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+" Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " Initialize plugin system
 call plug#end()

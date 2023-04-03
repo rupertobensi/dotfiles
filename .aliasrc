@@ -5,18 +5,18 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 
 # Verbosity and optimized settings
 alias \
-	batr="cat /sys/class/power_supply/BAT?/capacity" \
-	cp="cp -iv" \
-    cal="cal -m" \
-    fd="fd -a -j4" \
-	mv="mv -iv" \
-    rg="rg --no-ignore-vcs" \
-	rm="rm -vI" \
-	mkd="mkdir -pv" \
-	yt="youtube-dl --add-metadata -i" \
-    ytmp3="youtube-dl -x --audio-format mp3" \
-	yta="yt -x -f bestaudio/best" \
-	ffmpeg="ffmpeg -hide_banner"
+  batr="cat /sys/class/power_supply/BAT?/capacity" \
+  cp="cp -iv" \
+  cal="cal -m" \
+  fd="fd -a -j4" \
+  mv="mv -iv" \
+  rg="rg --no-ignore-vcs" \
+  rm="rm -vI" \
+  mkd="mkdir -pv" \
+	yt="yt-dlp --add-metadata -i" \
+  ytmp3="yt-dlp -x --audio-format mp3" \
+  yta="yt -x -f bestaudio/best" \
+  ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
 alias \
@@ -84,7 +84,6 @@ alias \
     cdu="cdu -sidh" \
     Cal="calcurse" \
     disko="diskonaut" \
-    docker="sudo docker" \
     imgur="imgur_downloader" \
     keep="keepassxc-cli" \
     myip="curl api.ipify.org" \
@@ -102,6 +101,49 @@ alias \
     rtv="tuir" \
     tra="tremc" \
     vifm="vifmrun"
+
+# Docker aliases
+alias d="docker"
+alias d1="watch -n 1 docker ps -a"
+alias dp="d ps -a"
+alias dl="d logs"
+alias dt="d top"
+alias de="d exec -it"
+alias di="d images"
+alias dx="d rm --force"
+alias dX="d rm"
+alias dr="d restart"
+alias ds="d start"
+alias dS="d stop"
+alias drmi="d rmi"
+alias drmI="d rmi --force"
+
+alias dc="docker-compose up -d"
+alias dC="docker-compose down"
+
+# Kubernetes aliases
+alias k="kubectl"
+alias k1="watch -n 1 kubectl get pods -A"
+alias ka="k apply -f"
+alias kA="k apply -fk"
+alias kc="k create -f"
+alias kC="k create -fk"
+alias kx="k delete -f"
+alias kX="k delete"
+alias ke="k exec -it"
+
+alias kgp="k get pods"
+alias kgP="k get pods -A"
+alias kgn="k get no"
+alias kgd="k get deploy"
+alias kgs="k get svc"
+alias kgpv="k get pv"
+alias kgpvc="k get pvc"
+
+alias kdp="k describe pod"
+alias kdd="k describe deploy"
+alias kl="k logs"
+alias ke="k exec -it"
 
 # trash-cli
 alias \
@@ -148,7 +190,7 @@ alias pmv="pymv --preserve --global-pbar -i"
 alias pcp="pycp --preserve --global-pbar -i"
 # ncmpcpp scripts:
 alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh" # Show album cover
-alias n="tmux source-file ~/.ncmpcpp/tmux_session_neww" # ncmpcpp + album cover + new window
+alias n="tmux source-file ~/.ncmpcpp/tmux_session_new_window" # ncmpcpp + album cover + new window
 alias N="tmux source-file ~/.ncmpcpp/tmux_session" # ncmpcpp + album cover, but in the same window
 
 # root privileges

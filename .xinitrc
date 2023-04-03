@@ -31,6 +31,9 @@ xset s off
 # Set mouse speed
 xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' 0
 
+# Turn on monitor 1 as it sometimes goes blank
+# m1on
+
 # Should be last
 # Start i3wm/KDE plasma
 # exec startplasma-x11

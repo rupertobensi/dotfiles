@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Depends = xorg-setxkbmap
+When = PostTransaction
+Exec = /home/robi/.local/bin/rebinds

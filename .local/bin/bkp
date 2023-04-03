@@ -7,7 +7,7 @@
 
 read -p "Choose a number. Do you want to backup:
 1. .dotfiles to mnt/{d,e}/backup/.dotfiles
-2. full backup to encrypted partition
+2. full backup to encrypted partition (nvme0n1p3)
 3. WORK folder to mnt/d/backup
 4. 'ROBERT' folder to mnt/d/backup
 5. create a music backup to mnt/e/backup

@@ -71,16 +71,13 @@ bindsym $mod+Shift+o        exec --no-startup-id i3_resize right
 # bindsym $mod+p              exec --no-startup-id $term -e tmux split-window -h nvim
 
 # bindsym $mod+plus           exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-show $(pamixer --get-volume)
-bindsym $mod+plus           exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
-bindsym $mod+Shift+plus     exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status; exec --no-startup-id volnoti-s
-bindsym $mod+minus          exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
-bindsym $mod+Shift+minus    exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status; exec --no-startup-id volnoti-s
-# bindsym $mod+plus           exec --no-startup-id amixer sset Master 5%+
-# bindsym $mod+Shift+plus     exec --no-startup-id amixer sset Master 10%+; exec --no-startup-id volnoti-s
-# bindsym $mod+minus          exec --no-startup-id amixer sset Master 5%-
-# bindsym $mod+Shift+minus    exec --no-startup-id amixer sset Master 10%-; exec --no-startup-id volnoti-s
 
-bindsym $mod+bar		    exec $term -e htop
+bindsym $mod+plus           exec --no-startup-id pulsemixer --change-volume +5 --max-volume 140 && $refresh_i3status
+bindsym $mod+Shift+plus     exec --no-startup-id pulsemixer --change-volume +10 --max-volume 140 && $refresh_i3status; exec --no-startup-id volnoti-s
+bindsym $mod+minus          exec --no-startup-id pulsemixer --change-volume -5 --max-volume 140 && $refresh_i3status
+bindsym $mod+Shift+minus    exec --no-startup-id pulsemixer --change-volume -10 --max-volume 140 && $refresh_i3status; exec --no-startup-id volnoti-s
+
+bindsym $mod+bar		        exec $term -e htop
 bindsym $mod+Shift+bar      exec gnome-system-monitor
 
 bindsym $mod+h              focus left
@@ -367,6 +364,9 @@ client.background          #2f343f
 # client.focused             #d8dee8 #2f343f #d8dee8 #d8dee8 #d8dee8
 # client.focused             #bf616a #2f343f #d8dee8 #bf616a #d8dee8
 
+# Rebinds script
+exec_always --no-startup-id rebinds
+
 # Wallpaper + transparency
 # exec --no-startup-id "xrdb ~/.Xresources"
 exec_always --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
@@ -381,8 +381,8 @@ exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
-# exec_always --no-startup-id pbr
-exec_always --no-startup-id "sleep 3; pbr"
+exec_always --no-startup-id pbr
+exec_always --no-startup-id "sleep 6; pbr"
 # exec --no-startup-id redshift-gtk
 # exec --no-startup-id kwalletd5
 exec_always --no-startup-id "rsx"
@@ -488,9 +488,9 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 ## Dropdown st
 #
 
- for_window   [class="dropdown_term"] floating enable, resize set 2567 803, move scratchpad
- exec_always  --no-startup-id st -c dropdown_term -e tmux new -s dd
- bindsym      F12 [class="dropdown_term"] scratchpad show, move position 0 0
+for_window   [class="dropdown_term"] floating enable, resize set 2567 803, move scratchpad
+exec_always  --no-startup-id st -c dropdown_term -e tmux new -s dd
+bindsym      F12 [class="dropdown_term"] scratchpad show, move position 0 0
 
 # bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 # for_window [class="dropdown_term"] floating enable, resize set 1800 750, move scratchpad, border pixel 2
@@ -501,8 +501,9 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 #####################################################################################################
 
 # Apply i3-fibonacci at the end after everything has been loaded up
-exec_always --no-startup-id ~/.dotfiles/.local/bin/i3_fib
+exec_always  --no-startup-id ~/.dotfiles/.local/bin/i3_fib
 
-exec_always        --no-startup-id nitrogen --restore
-exec        --no-startup-id sleep 8; i3-msg "workspace $ws1"
+exec_always  --no-startup-id nitrogen --restore
+exec         --no-startup-id sleep 6; i3-msg "workspace $ws1"
+exec         --no-startup-id m1on
 # exec --no-startup-id i3-msg "workspace $ws1"
