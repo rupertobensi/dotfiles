@@ -21,9 +21,13 @@ case $1 in
   toggle)
     if [ "$REDSHIFT" = on ];
     then
+      xrandr --output DP-1 --brightness 1
+      xrandr --output HDMI-1 --brightness 1
       changeMode "$REDSHIFT" off
       redshift -x
     else
+      xrandr --output DP-1 --brightness 0.8
+      xrandr --output HDMI-1 --brightness 0.8
       changeMode "$REDSHIFT" on
       redshift -O "$REDSHIFT_TEMP"
     fi
