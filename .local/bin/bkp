@@ -5,12 +5,12 @@
 #echo "Backup .dotfiles (1), everything (2) or prepare a Dropbox backup (3)? Choose an option - 1, 2 or 3."
 #read option
 
-read -p "Choose a number. Do you want to backup:
-1. .dotfiles to mnt/{d,e}/backup/.dotfiles
-2. full backup to encrypted partition (nvme0n1p3)
-3. WORK folder to mnt/d/backup
-4. 'ROBERT' folder to mnt/d/backup
-5. create a music backup to mnt/e/backup
+read -p "Choose rsync option.
+1. ~/.dotfiles/ /mnt/d/backup/.dotfiles/
+2. / /mnt/bkp/
+3. /mnt/e/Work/ /mnt/d/backup/Work/
+4. /mnt/e/ROBERT/  /mnt/d/backup/ROBERT/
+5. /mnt/d/media/music/  /mnt/e/backup/music/
 " option
 
 if [ $option -eq 1 ]
@@ -28,10 +28,10 @@ elif [ $option -eq 3 ]
 # when rsync is done THEN run dropbox in background
 
 elif [ $option -eq 4 ]
-  then sudo rsync -aAXv --delete --progress --stats /mnt/e/Robert/  /mnt/d/backup/Robert/
+  then sudo rsync -aAXv --delete --progress --stats /mnt/e/ROBERT/  /mnt/d/backup/ROBERT/
 
 elif [ $option -eq 5 ]
-  then sudo rsync -aAXv --delete --progress --stats /mnt/d/[media]/[music]/  /mnt/e/backup/[music]/
+  then sudo rsync -aAXv --delete --progress --stats /mnt/d/media/music/  /mnt/e/backup/music/
 
 else
   echo "Wrong choice..."

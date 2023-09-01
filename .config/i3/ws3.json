@@ -113,9 +113,10 @@
                     "percent": 0.25,
                     "swallows": [
                        {
-                        "class": "^Steam$",
-                        "instance": "^Steam$",
-                        "title": "^Steam$"
+                       "class": "^steam$",
+                       "instance": "^steamwebhelper$",
+                       "machine": "^lem$",
+                       "title": "^Steam$"
                        }
                     ],
                     "type": "con"
@@ -134,8 +135,6 @@
                     "percent": 0.25,
                     "swallows": [
                        {
-                        "class": "^Steam$",
-                        "instance": "^Steam$",
                         "title": "^odes$"
                        }
                     ],
@@ -179,8 +178,9 @@
     "percent": 0.15,
     "swallows": [
        {
-        "class": "^Steam$",
-        "instance": "^Steam$",
+        "class": "^steam$",
+        "instance": "^steamwebhelper$",
+        "machine": "^lem$",
         "title": "^Friends\\ List$"
        }
     ],

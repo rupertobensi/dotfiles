@@ -13,63 +13,63 @@ alias \
   rg="rg --no-ignore-vcs" \
   rm="rm -vI" \
   mkd="mkdir -pv" \
-	yt="yt-dlp --add-metadata -i" \
+  yt="yt-dlp --add-metadata -i" \
   ytmp3="yt-dlp -x --audio-format mp3" \
   yta="yt -x -f bestaudio/best" \
   ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
-	grep="grep --color=auto" \
-	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
+  ls="ls -hN --color=auto --group-directories-first" \
+  grep="grep --color=auto" \
+  diff="diff --color=auto" \
+  ccat="highlight --out-format=ansi"
 
 # These common commands are just too long! Abbreviate them.
 alias \
-	ka="killall" \
-	YT="ytfzf -t" \
-	YTP="pipe-viewer" \
-	sdn="sudo shutdown -h now" \
-	rdn="sudo reboot" \
-	f="$FILE" \
-	sf="sudo $FILE" \
-	e="$EDITOR" \
-    se="sudo $EDITOR" \
-	p="sudo pacman"
+  ka="killall" \
+  YT="ytfzf -t" \
+  YTP="pipe-viewer" \
+  sdn="sudo shutdown -h now" \
+  rdn="sudo reboot" \
+  f="$FILE" \
+  sf="sudo $FILE" \
+  e="$EDITOR" \
+  se="sudo $EDITOR" \
+  p="sudo pacman"
 
 
 # Config shortcuts
 alias \
-    cfalacritty.yml="nvim ~/.config/alacritty/alacritty.yml" \
-    cfalacritty_dd.yml="nvim ~/.config/alacritty/alacritty_dd.yml" \
-    cfaliasrc="nvim ~/.aliasrc" \
-    cfcode_settings.json="nvim ~/.config/Code\ -\ OSS/User/settings.json" \
-    cffonts.conf="nvim ~/.config/fontconfig/fonts.conf" \
-    cfi3_config="nvim ~/.config/i3/config" \
-    cfmpd.conf="nvim ~/.mpd/mpd.conf" \
-    cfmpv.conf="nvim ~/.config/mpv/mpv.conf" \
-    cfmpv_input.conf="nvim ~/.config/mpv/input.conf" \
-    cfncmpcpp_bindings="nvim ~/.ncmpcpp/bindings" \
-    cfncmpcpp_config="nvim ~/.ncmpcpp/config" \
-    cfnewsboat_config="nvim ~/.config/newsboat/config" \
-    cfnewsboat_urls="nvim ~/.config/newsboat/urls" \
-    cfnvim_init.vim="nvim ~/.config/nvim/init.vim" \
-    cfnvim_plugins="nvim ~/.config/nvim/plugins.vim" \
-    cfpicom.conf="nvim ~/.config/picom/picom.conf" \
-    cfpolybar_config="nvim ~/.config/polybar/config.ini" \
-    cfranger_rc.conf="nvim ~/.config/ranger/rc.conf" \
-    cfranger_rifle.conf="nvim ~/.config/ranger/rifle.conf" \
-    cfst_config.h="nvim ~/st/config.h" \
-    cftmux.conf="nvim ~/.tmux.conf" \
-    cfvifmrc="nvim ~/.config/vifm/vifmrc" \
-    cfxinitrc="nvim ~/.xinitrc" \
-    cfxprofile="nvim ~/.xprofile" \
-    cfXresources="nvim ~/.Xresources" \
-    cfzimrc="nvim ~/.zsh/.zimrc" \
-    cfzprofile="nvim ~/.zsh/.zprofile" \
-    cfzshenv="nvim ~/.zsh/.zshenv" \
-    cfzshrc="nvim ~/.zsh/.zshrc"
+  cfalacritty.yml="nvim ~/.config/alacritty/alacritty.yml" \
+  cfalacritty_dd.yml="nvim ~/.config/alacritty/alacritty_dd.yml" \
+  cfaliasrc="nvim ~/.aliasrc" \
+  cfcode_settings.json="nvim ~/.config/Code\ -\ OSS/User/settings.json" \
+  cffonts.conf="nvim ~/.config/fontconfig/fonts.conf" \
+  cfi3_config="nvim ~/.config/i3/config" \
+  cfmpd.conf="nvim ~/.mpd/mpd.conf" \
+  cfmpv.conf="nvim ~/.config/mpv/mpv.conf" \
+  cfmpv_input.conf="nvim ~/.config/mpv/input.conf" \
+  cfncmpcpp_bindings="nvim ~/.ncmpcpp/bindings" \
+  cfncmpcpp_config="nvim ~/.ncmpcpp/config" \
+  cfnewsboat_config="nvim ~/.config/newsboat/config" \
+  cfnewsboat_urls="nvim ~/.config/newsboat/urls" \
+  cfnvim_init.vim="nvim ~/.config/nvim/init.vim" \
+  cfnvim_plugins="nvim ~/.config/nvim/plugins.vim" \
+  cfpicom.conf="nvim ~/.config/picom/picom.conf" \
+  cfpolybar_config="nvim ~/.config/polybar/config.ini" \
+  cfranger_rc.conf="nvim ~/.config/ranger/rc.conf" \
+  cfranger_rifle.conf="nvim ~/.config/ranger/rifle.conf" \
+  cfst_config.h="nvim ~/st/config.h" \
+  cftmux.conf="nvim ~/.tmux.conf" \
+  cfvifmrc="nvim ~/.config/vifm/vifmrc" \
+  cfxinitrc="nvim ~/.xinitrc" \
+  cfxprofile="nvim ~/.xprofile" \
+  cfXresources="nvim ~/.Xresources" \
+  cfzimrc="nvim ~/.zsh/.zimrc" \
+  cfzprofile="nvim ~/.zsh/.zprofile" \
+  cfzshenv="nvim ~/.zsh/.zshenv" \
+  cfzshrc="nvim ~/.zsh/.zshrc"
 
 # Monitor configuration shortcuts
 alias m1on="xrandr --output DP-1 --primary --mode 2560x1440 --rate 120"
@@ -79,28 +79,28 @@ alias m2off="xrandr --output HDMI-1 --off"
 
 # Various programs
 alias \
-    ab-pr="absolutely-proprietary" \
-    audio="pulsemixer" \
-    cdu="cdu -sidh" \
-    Cal="calcurse" \
-    disko="diskonaut" \
-    imgur="imgur_downloader" \
-    keep="keepassxc-cli" \
-    myip="curl api.ipify.org" \
-    nc="ncmpcpp" \
-    ncdu="ncdu --color dark" \
-    newsb="newsboat" \
-    snap="sudo timeshift --create --comment" \
-    snapg="sudo timeshift-gtk" \
-    snapl="sudo timeshift --list" \
-    snapr="sudo timeshift --restore" \
-    rs="redshift-gtk &" \
-    rsm="redshift -PO 4500" \
-    rsx="pkill -USR1 redshift" \
-    rsX="redshift -x" \
-    rtv="tuir" \
-    tra="tremc" \
-    vifm="vifmrun"
+  ab-pr="absolutely-proprietary" \
+  audio="pulsemixer" \
+  cdu="cdu -sidh" \
+  Cal="calcurse" \
+  disko="diskonaut" \
+  imgur="imgur_downloader" \
+  keep="keepassxc-cli" \
+  myip="curl api.ipify.org" \
+  nc="ncmpcpp" \
+  ncdu="ncdu --color dark" \
+  newsb="newsboat" \
+  snap="sudo timeshift --create --comment" \
+  snapg="sudo timeshift-gtk" \
+  snapl="sudo timeshift --list" \
+  snapr="sudo timeshift --restore" \
+  rs="redshift-gtk &" \
+  rsm="redshift -PO 4500" \
+  rsx="pkill -USR1 redshift" \
+  rsX="redshift -x" \
+  rtv="tuir" \
+  tra="tremc" \
+  vifm="vifmrun"
 
 # Docker aliases
 alias d="docker"
@@ -136,9 +136,13 @@ alias kgp="k get pods"
 alias kgP="k get pods -A"
 alias kgn="k get no"
 alias kgd="k get deploy"
+alias kgD="k get deploy -A"
 alias kgs="k get svc"
+alias kgS="k get svc -A"
 alias kgpv="k get pv"
+alias kgpV="k get pv -A"
 alias kgpvc="k get pvc"
+alias kgpvC="k get pvc -A"
 
 alias kdp="k describe pod"
 alias kdd="k describe deploy"
@@ -174,10 +178,10 @@ wttr="curl wttr.in"
 alias \
 note="nvim /mnt/e/ROBERT/SYNC/notes/index.md" \
 notes="nvim /mnt/e/ROBERT/SYNC/notes/notes.md" \
-notesa="nvim /mnt/e/ROBERT/SYNC/notes/README.md" \
-notesc="nvim /mnt/e/ROBERT/SYNC/notes/cheatsheet.md" \
-notesg="nvim /mnt/e/ROBERT/SYNC/notes/gamesMovies.md" \
-notesl="nvim /mnt/e/ROBERT/SYNC/notes/notes_LIN.md" \
+notesa="nvim /mnt/e/ROBERT/SYNC/notes/arch_linux_notes.md" \
+notesc="nvim /mnt/e/ROBERT/SYNC/notes/linux_cheatsheet.md" \
+notesg="nvim /mnt/e/ROBERT/SYNC/notes/games_and_movies.md" \
+notesl="nvim /mnt/e/ROBERT/SYNC/notes/linux_unorganized_notes.md" \
 notesm="nvim /mnt/e/ROBERT/SYNC/notes/macOS.md" \
 notesp="nvim /mnt/e/ROBERT/SYNC/notes/pp.md" \
 notesw="nvim /mnt/e/ROBERT/SYNC/notes/windows.md" \
@@ -293,6 +297,9 @@ mkcdir () {
     mkdir -p -- "$1" &&
       cd -P -- "$1"
 }
+
+### fzf cd
+alias sd="cd ~ && cd \$(find * -type d | fzf)"
 
 ### I3 CHEATSHEET
 function i3c {

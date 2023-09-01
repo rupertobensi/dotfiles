@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Open VM on the right screen of mine
+i3-msg 'workspace 9; exec vboxmanage startvm Deborah' && sleep 1.5; i3-msg 'focus output DP-1, workspace 1;'
+

@@ -3,7 +3,7 @@ State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAADyPwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAG
 Width 1920=1882
 
 [CreateDialog]
-LastMimeType=application/x-7z-compressed
+LastMimeType=application/x-tar
 
 [DownloadDialog Settings]
 Height 1080=464
@@ -31,6 +31,8 @@ Places Icons Auto-resize=false
 Places Icons Static Size=32
 
 [KPropertiesDialog]
+2 screens: Height=620
+2 screens: Width=470
 DP-1 HDMI-1 Height 2560x1440 DP-1=620
 DP-1 HDMI-1 Width 2560x1440 DP-1=471
 Height 1080=422
