@@ -74,6 +74,7 @@ x-scheme-handler/irc=weechat.desktop
 x-scheme-handler/mailto=thunderbird.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-18E800.desktop
 x-scheme-handler/msteams=teams.desktop
+x-scheme-handler/etcher=balena-etcher.desktop
 
 [Removed Associations]
 image/jpeg=sxiv.desktop;okularApplication_kimgio.desktop;wine-extension-jpe.desktop;wine-extension-jfif.desktop;

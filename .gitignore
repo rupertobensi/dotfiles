@@ -27,6 +27,7 @@
 /.config/ranger/plugins/__pycache__/*
 /.config/ranger/plugins/ranger_devicons/__pycache__/*
 /.config/ranger/bookmarks*
+/.config/tmuxp/*
 /.config/vifm/vifm-help.txt
 /.config/vifm/vifmimgpdffile
 /.config/vifm/vifmimgpdfpage

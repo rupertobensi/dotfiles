@@ -449,7 +449,8 @@ exec --no-startup-id 'workspace 10; exec keepassxc'
 
 exec --no-startup-id i3-msg "workspace $ws1"
 exec --no-startup-id sleep 10 && i3-msg "workspace $ws1"
-exec --no-startup-id sleep 2 && i3-msg 'workspace 1; exec $term -e tmux at'
+#exec --no-startup-id sleep 2 && i3-msg 'workspace 1; exec $term -e tmux at'
+exec --no-startup-id sleep 2 && i3-msg 'workspace 1; exec $term -e tmuxp load ~/.dotfiles/.config/tmuxp/vm_ses1.yml'
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 

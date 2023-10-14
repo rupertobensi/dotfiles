@@ -38,6 +38,7 @@ alias \
   se="sudo $EDITOR" \
   p="sudo pacman"
 
+# sdn="VBoxManage controlvm "Deborah" acpipowerbutton && sudo shutdown -h now" \
 
 # Config shortcuts
 alias \
