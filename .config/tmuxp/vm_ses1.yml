@@ -1,0 +1,15 @@
+session_name: "one"
+windows:
+  - window_name: ""
+  - window_name: ""
+    panes:
+      - shell_command:
+        - sleep 15 && vm
+  - window_name: ""
+    panes:
+      - shell_command:
+        - sleep 15 && vm
+  - window_name: ""
+    panes:
+      - shell_command:
+        - sleep 15 && vm

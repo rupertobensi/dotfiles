@@ -1,0 +1,21 @@
+// vim:ts=4:sw=4:et
+{
+  "border": "pixel",
+  "current_border_width": 2,
+  "floating": "auto_off",
+  "geometry": {
+    "height": 1042,
+    "width": 944,
+    "x": 0,
+    "y": 0
+  },
+  "name": "Home — Dolphin",
+  "percent": 1,
+  "swallows": [
+    {
+      "class": "^dolphin$",
+      "instance": "^dolphin$"
+    }
+  ],
+  "type": "con"
+}
