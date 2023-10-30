@@ -62,6 +62,7 @@ alias \
   cfranger_rc.conf="nvim ~/.config/ranger/rc.conf" \
   cfranger_rifle.conf="nvim ~/.config/ranger/rifle.conf" \
   cfst_config.h="nvim ~/st/config.h" \
+  cfsway_config="nvim ~/.config/sway/config" \
   cftmux.conf="nvim ~/.tmux.conf" \
   cfvifmrc="nvim ~/.config/vifm/vifmrc" \
   cfxinitrc="nvim ~/.xinitrc" \

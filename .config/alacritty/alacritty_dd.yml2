@@ -51,8 +51,6 @@ window:
   #     - buttonless: Title bar, transparent background, but no title bar buttons
   decorations: none
 
-  opacity: 0.8
-
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -115,22 +113,24 @@ font:
     # family: xos4 Terminus
 
     # family: Consolas
-    family: Jetbrains Mono Nerd Font
+    family: Jetbrains Mono
 
     # The `style` can be specified to pick a specific face.
     # style: Regular
     style: Medium
 
   # Bold font face
-  #bold:
+  bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: monospace
+    family: Jetbrains Mono
 
     # The `style` can be specified to pick a specific face.
     #style: Bold
+    style: ExtraBold
 
   # Italic font face
   #italic:
@@ -156,8 +156,7 @@ font:
 
   #@ Point size
   # size: 11
-  # size: 9.5
-  size: 12
+  size: 9.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -186,7 +185,7 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  # use_thin_strokes: false
+  use_thin_strokes: false
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
@@ -300,7 +299,7 @@ bell:
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 # @
-window.opacity: 0.87
+window.opacity: 0.97
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -356,6 +355,9 @@ live_config_reload: true
 # Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
 # even if the ConPTY backend is available.
 #winpty_backend: false
+
+# Send ESC (\x1b) before characters when alt is pressed.
+alt_send_esc: true
 
 #debug:
   # Display the time it takes to redraw each frame.
@@ -568,31 +570,32 @@ key_bindings:
 mouse_bindings:
 - { mouse: Middle, action: PasteSelection }
 
+
 # BEGIN ACE
 colors:
   primary:
-    background: '0x0B0F13'
-    foreground: '0xe1e2e1'
+    background: '0x08060C'
+    foreground: '0xafbfe0'
   cursor:
-    text:       '0x0B0F13'
-    cursor:     '0xe1e2e1'
+    text:       '0x08060C'
+    cursor:     '0xafbfe0'
   normal:
-    black:      '0x0B0F13'
-    red:        '0x3A6CA4'
-    green:      '0x6D9BBB'
-    yellow:     '0x378CD1'
-    blue:       '0x5AA9DA'
-    magenta:    '0x97989B'
-    cyan:       '0x93C0D9'
-    white:      '0xe1e2e1'
+    black:      '0x08060C'
+    red:        '0x9D3B5E'
+    green:      '0x974974'
+    yellow:     '0x40489C'
+    blue:       '0x605099'
+    magenta:    '0xA35E96'
+    cyan:       '0xCB6FA5'
+    white:      '0xafbfe0'
   bright:
-    black:      '0x9d9e9d'
-    red:        '0x3A6CA4'
-    green:      '0x6D9BBB'
-    yellow:     '0x378CD1'
-    blue:       '0x5AA9DA'
-    magenta:    '0x97989B'
-    cyan:       '0x93C0D9'
-    white:      '0xe1e2e1'
+    black:      '0x7a859c'
+    red:        '0x9D3B5E'
+    green:      '0x974974'
+    yellow:     '0x40489C'
+    blue:       '0x605099'
+    magenta:    '0xA35E96'
+    cyan:       '0xCB6FA5'
+    white:      '0xafbfe0'
 
 # END ACE
