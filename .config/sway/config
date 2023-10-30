@@ -77,8 +77,9 @@ bindsym $mod+Shift+o        exec --no-startup-id i3_resize right
 
 # bindsym $mod+plus           exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-show $(pamixer --get-volume)
 
-bindsym $mod+plus           exec --no-startup-id pulsemixer --change-volume +5 --max-volume 140 && $refresh_i3status
-bindsym $mod+Shift+plus     exec --no-startup-id pulsemixer --change-volume +10 --max-volume 140 && $refresh_i3status; exec --no-startup-id volnoti-s
+# bindsym $mod+plus           exec --no-startup-id pulsemixer --change-volume +5 --max-volume 140 && $refresh_i3status
+bindsym $mod+equal           exec --no-startup-id pulsemixer --change-volume +5 --max-volume 140 && $refresh_i3status
+bindsym $mod+Shift+equal     exec --no-startup-id pulsemixer --change-volume +10 --max-volume 140 && $refresh_i3status; exec --no-startup-id volnoti-s
 bindsym $mod+minus          exec --no-startup-id pulsemixer --change-volume -5 --max-volume 140 && $refresh_i3status
 bindsym $mod+Shift+minus    exec --no-startup-id pulsemixer --change-volume -10 --max-volume 140 && $refresh_i3status; exec --no-startup-id volnoti-s
 
@@ -209,6 +210,7 @@ workspace 6 output $output2
 workspace 7 output $output2
 workspace 8 output $output2
 workspace 9 output $output2
+workspace 10 output $output2
 workspace 0 output $output2
 
 # workspace 1 output DP-1
@@ -274,10 +276,13 @@ bindsym $mod+bracketright       exec --no-startup-id amixer set Master toggle
 bindsym $mod+Shift+bracketleft  exec --no-startup-id mpc prev
 bindsym $mod+Shift+bracketright exec --no-startup-id mpc next
 
-bindsym Print                   exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-"$(date '+%d_%m_%Y-%H_%M_%S').png"
-bindsym $mod+Print              exec maimpick
-bindsym $mod+s                  exec maim -s ~/Screenshots/pic-selected-"$(date '+%d_%m_%Y-%H_%M_%S').png"
-bindsym $mod+Shift+s            exec maim -s | xclip -selection clipboard -t image/png
+# bindsym Print                   exec --no-startup-id mpv ~/.dotfiles/system_media/ss.mp3 ;exec --no-startup-id maim pic-full-"$(date '+%d_%m_%Y-%H_%M_%S').png"
+bindsym Print              exec grimshot save output ~/Screenshots/"$(date +'%Y_%m_%d-%H_%M_%S').png"
+# bindsym $mod+Print              exec maimpick
+bindsym $mod+s                  exec grimshot --cursor save area ~/Screenshots/"$(date +'%Y_%m_%d-%H_%M_%S').png"
+# bindsym $mod+s                exec maim -s ~/Screenshots/pic-selected-"$(date '+%d_%m_%Y-%H_%M_%S').png"
+bindsym $mod+Shift+s            exec grimshot --cursor copy area
+# bindsym $mod+Shift+s                  exec grimshot --cursor save area ~/Screenshots/"$(date +'%Y_%m_%d-%H_%M_%S').png"
 bindsym Scroll_Lock             exec leafpad
 bindsym $mod+Shift+Print        exec simplescreenrecorder
 bindsym Ctrl+bracketright       exec pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo" next-node
@@ -332,10 +337,10 @@ bindsym $mod+semicolon          focus output right
 
 
 # Optional rounder borders, requires rounded corners fork
-# border_radius 4
 
 hide_edge_borders smart
-for_window        [class=".*"] border pixel 3
+for_window        [class=".*"] border pixel 4
+# for_window        [class=".*"] border pixel 3
 for_window        [floating]  border pixel 0
 # for_window        [class="mpv"] border pixel 0
 
@@ -350,18 +355,19 @@ gaps bottom 0
 gaps left 0
 gaps right 0
 
-workspace $ws2 gaps inner  0
-workspace $ws2 gaps outer  0 
-workspace $ws2 gaps left   0 
-workspace $ws2 gaps right  0 
-workspace $ws2 gaps bottom 0 
-workspace $ws2 gaps top 0 
 
 workspace $ws1 gaps inner 15
 workspace $ws1 gaps outer 20
 workspace $ws1 gaps left   5
 workspace $ws1 gaps right  5
 workspace $ws1 gaps bottom 5
+
+workspace $ws2 gaps inner  0
+workspace $ws2 gaps outer  0 
+workspace $ws2 gaps left   0 
+workspace $ws2 gaps right  0 
+workspace $ws2 gaps bottom 0 
+workspace $ws2 gaps top 0 
 
 workspace $ws3 gaps inner 15
 workspace $ws3 gaps outer 20
@@ -374,6 +380,13 @@ workspace $ws4 gaps outer 20
 workspace $ws4 gaps left   5
 workspace $ws4 gaps right  5
 workspace $ws4 gaps bottom 5
+
+workspace $ws6 gaps inner  0
+workspace $ws6 gaps outer  0 
+workspace $ws6 gaps left   0 
+workspace $ws6 gaps right  0 
+workspace $ws6 gaps bottom 0 
+workspace $ws6 gaps top 0 
 
 # workspace $ws9 gaps inner 0
 # workspace $ws9 gaps outer 0
@@ -528,7 +541,7 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 ## Dropdown st
 #
 
-for_window   [class="dropdown_term"] floating enable, resize set 2525 800, move scratchpad
+for_window   [class="dropdown_term"] floating enable, resize set 2527 800, move scratchpad
 exec_always  --no-startup-id st -c dropdown_term -e tmux new -s dd
 bindsym      F12 [class="dropdown_term"] scratchpad show, move position 0 0
 
@@ -563,6 +576,8 @@ input type:keyboard {
     xkb_layout pl
 }
 
+exec xcape -e 'Control_L=Escape'
+
 # exec killall xcape 2>/dev/null ; xcape -e 'Super_L=Escape'
 
 output * bg ~/Wallpapers/fav/wp fill
@@ -584,6 +599,4 @@ exec xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' 0
 set $opacity 1
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
-
-
 

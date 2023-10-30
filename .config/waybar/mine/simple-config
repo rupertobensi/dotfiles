@@ -1,26 +1,21 @@
 {
     "height": 24, // Waybar height (to be removed for auto height)
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "temperature", "disk", "battery", "battery#bat2", "backlight", "pulseaudio", "tray"],
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["cpu", "memory", "temperature", "disk", "battery", "battery#bat2", "backlight", "pulseaudio", "tray", "idle_inhibitor", "clock"],
+    //"modules-right": ["cpu", "memory", "temperature", "disk", "battery", "battery#bat2", "backlight", "pulseaudio", "tray", "idle_inhibitor", "clock"],
+    //"idle_inhibitor": {
+    //    "format": "{icon}",
+    //    "format-icons": {
+    //        "activated": "",
+    //        "deactivated": ""
         }
     },
-
-    "sway/workspaces": {
-    "format": "{name}",
-    "disable-scroll-wraparound": true,
-    "enable-bar-scroll": true
-    },
-
     "tray": {
         // "icon-size": 21,
-        "spacing": 5
+        "spacing": 10
+        enable-bar-scroll: true
     },
     "clock": {
         "format": "{:%A %d.%m.%Y - %H:%M}",
@@ -100,8 +95,9 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
-        //"on-click: "pulseaudio-control --node-blacklist 'alsa_output.pci-0000_01_00.1.hdmi-stereo' next-node"
+        //"on-click": "pavucontrol"
+        "on-click": "pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo" next-node"
+
     }
 }
 
