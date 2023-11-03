@@ -45,3 +45,7 @@ export LC_TIME=en_GB.UTF-8
 
 ### macOS shenanigans
 # export PATH=/opt/homebrew/bin:$PATH
+
+export XDG_SESSION_TYPE=wayland 
+export XDG_CURRENT_DESKTOP=sway
+export MOZ_ENABLE_WAYLAND=1

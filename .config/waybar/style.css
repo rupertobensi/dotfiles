@@ -6,6 +6,7 @@
     font-family: "CaskaydiaCove Nerd Font";
     /* font-family: "Source Sans Pro", "Font Awesome 6 Free"; */
     font-size: 15px;
+    font-weight: 600;
     min-height: 0px;
 }
 
@@ -15,13 +16,13 @@ window#waybar {
     border: none;
     background-color: @bg0;
     color: @fg;
-    transition-property: background-color;
-    transition-duration: .5s;
+    /* transition-property: background-color; */
+    /* transition-duration: .5s; */
 }
 
 .modules-left button:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    /* border-top-left-radius: 5px; */
+    /* border-bottom-left-radius: 5px; */
     margin-left: 5px;
 }
 
@@ -32,17 +33,18 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0px 10px;
-    background-color: @bg2;
+    padding: 0px 5px;
+    /* background-color: @bg2; */
     color: @fg;
 }
 
 #workspaces button:hover {
     background-color: @bg_dim;
+    color: @aqua;
 }
 
 #workspaces button.focused {
-    background-color: @green;
+    background-color: @aqua;
     color: @bg0;
 }
 
@@ -54,14 +56,14 @@ window#waybar {
     padding: 0px 10px;
     margin: 0px 10px;
     border-radius: 5px;
-    background-color: @bg2;
+    /* background-color: @bg2; */
 }
 window#waybar.empty #window {
     background: none;
 }
 
 #cpu {
-    border-radius: 5px 0px 0px 5px;
+    /* border-radius: 5px 0px 0px 5px; */
     padding: 0px 5px;
     background-color: @yellow;
     color: @bg_yellow;
@@ -83,7 +85,7 @@ window#waybar.empty #window {
 }
 
 #disk {
-    border-radius: 0px 5px 5px 0px;
+    /* border-radius: 0px 5px 5px 0px; */
     padding: 0px 5px;
     margin-right: 5px;
     background-color: @yellow;
@@ -130,7 +132,7 @@ window#waybar.empty #window {
 }
 
 #backlight {
-    border-radius: 5px 0px 0px 5px;	
+    /* border-radius: 5px 0px 0px 5px; */	
     padding: 0px 5px;
     margin-left: 5px;
     background-color: @blue;
@@ -139,7 +141,7 @@ window#waybar.empty #window {
 
 #pulseaudio {
     padding: 0px 5px;
-    border-radius: 0px 5px 5px 0px;	
+    /* border-radius: 0px 5px 5px 0px; */	
     background-color: @blue;
     color: @bg_yellow;
 }
@@ -151,7 +153,7 @@ window#waybar.empty #window {
 
 #tray {
     padding: 0px 5px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-left: 5px;
     color: @bg_yellow;
     background-color: @bg_green;
@@ -159,7 +161,7 @@ window#waybar.empty #window {
 
 #idle_inhibitor {
     padding: 0px 5px;
-    border-radius: 5px;	
+    /* border-radius: 5px; */	
     margin-left: 5px;
     background-color: @bg2;
     color: @fg;
@@ -173,7 +175,7 @@ window#waybar.empty #window {
     padding: 0px 5px;
     border-radius: 5px;	
     margin: 0px 5px;
-    background-color: @bg2;
+    /* background-color: @bg2; */
 }
 
 

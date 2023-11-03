@@ -57,7 +57,7 @@ bindsym $mod+Shift+a        gaps outer current minus 5
 bindsym $mod+z              gaps inner current plus 5
 bindsym $mod+Shift+z        gaps inner current minus 5
 
-bindsym $mod+g              gaps inner current set 0; gaps outer current set 0; gaps top current set 20
+bindsym $mod+g              gaps inner current set 0; gaps outer current set 0; gaps top current set 0
 bindsym $mod+Shift+g        gaps inner current set 0; gaps outer current set 0
 
 bindsym $mod+y              sticky toggle
@@ -155,7 +155,7 @@ bindsym $mod+f              fullscreen toggle
 # bindsym $mod+c              layout stacking
 bindsym $mod+w              layout tabbed
 bindsym $mod+e              layout toggle split
-bindsym $mod+Shift+e        gaps inner current set 0; gaps outer current set 0; gaps top current set 20; gaps left current set 0; gaps right current set 0
+bindsym $mod+Shift+e        gaps inner current set 0; gaps outer current set 0; gaps top current set 0; gaps left current set 0; gaps right current set 0
 
 # toggle tiling / floating
 bindsym $mod+Shift+space    floating toggle
@@ -350,7 +350,8 @@ for_window        [class=MEGAsync] border pixel 0
 # Gaps
 gaps inner 0
 gaps outer 0
-gaps top 10
+gaps top 0
+# gaps top 10
 gaps bottom 0
 gaps left 0
 gaps right 0
@@ -537,13 +538,21 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 # for_window [instance="dd"] floating enable, resize set 1800 750, move scratchpad, border pixel 2
 # bindsym F12 [instance="dd"] scratchpad show, move position 60 -2
 
-#
+##
 ## Dropdown st
 #
 
-for_window   [class="dropdown_term"] floating enable, resize set 2527 800, move scratchpad
+# for_window   [class="dropdown_term"] floating enable, resize set 2527 800, move scratchpad
+for_window   [class="dropdown_term"] floating enable, resize set 2560 800, move scratchpad
 exec_always  --no-startup-id st -c dropdown_term -e tmux new -s dd
 bindsym      F12 [class="dropdown_term"] scratchpad show, move position 0 0
+
+
+
+#
+# Dropdown terminal
+#
+
 
 # bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 # for_window [class="dropdown_term"] floating enable, resize set 1800 750, move scratchpad, border pixel 2
@@ -600,3 +609,4 @@ set $opacity 1
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
 
+exec "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE; systemctl --user start sway-session.target"
