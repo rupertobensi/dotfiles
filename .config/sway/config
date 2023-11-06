@@ -1,6 +1,6 @@
 #=====================================================
-#=               i3 configuration file               =
-#=                github: rupertobensi               =
+#=             sway configuration file               =
+#=             github: rupertobensi                  =
 #=====================================================
 
 
@@ -13,10 +13,6 @@ font pango:Noto Sans 10
 
 # Tabs titles
 for_window [class=".*"] title_format " %title"
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -78,8 +74,8 @@ bindsym $mod+Shift+o        exec --no-startup-id i3_resize right
 # bindsym $mod+plus           exec --no-startup-id amixer sset Master 5%+; exec --no-startup-id volnoti-show $(pamixer --get-volume)
 
 # bindsym $mod+plus           exec --no-startup-id pulsemixer --change-volume +5 --max-volume 140 && $refresh_i3status
-bindsym $mod+equal           exec --no-startup-id pulsemixer --change-volume +5 --max-volume 140 && $refresh_i3status
-bindsym $mod+Shift+equal     exec --no-startup-id pulsemixer --change-volume +10 --max-volume 140 && $refresh_i3status; exec --no-startup-id volnoti-s
+bindsym $mod+equal          exec --no-startup-id pulsemixer --change-volume +5 --max-volume 140 && $refresh_i3status
+bindsym $mod+Shift+equal    exec --no-startup-id pulsemixer --change-volume +10 --max-volume 140 && $refresh_i3status; exec --no-startup-id volnoti-s
 bindsym $mod+minus          exec --no-startup-id pulsemixer --change-volume -5 --max-volume 140 && $refresh_i3status
 bindsym $mod+Shift+minus    exec --no-startup-id pulsemixer --change-volume -10 --max-volume 140 && $refresh_i3status; exec --no-startup-id volnoti-s
 
@@ -547,12 +543,9 @@ for_window   [class="dropdown_term"] floating enable, resize set 2560 800, move 
 exec_always  --no-startup-id st -c dropdown_term -e tmux new -s dd
 bindsym      F12 [class="dropdown_term"] scratchpad show, move position 0 0
 
-
-
 #
 # Dropdown terminal
 #
-
 
 # bindsym F12 [class="dropdown_term"] scratchpad show, move position 60 -2
 # for_window [class="dropdown_term"] floating enable, resize set 1800 750, move scratchpad, border pixel 2
@@ -576,7 +569,6 @@ exec waybar
 # bar {
 #     status_command i3status
 # }
-
 
 input type:keyboard {
     repeat_delay 300
@@ -609,4 +601,11 @@ set $opacity 1
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
 
-exec "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE; systemctl --user start sway-session.target"
+seat seat0 xcursor_theme Breeze_Snow 24
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    # gsettings set $gnome-schema gtk-theme 'Your theme'
+    # gsettings set $gnome-schema icon-theme 'Your icon theme'
+    gsettings set $gnome-schema cursor-theme Breeze_Snow
+    # gsettings set $gnome-schema font-name 'Your font name'
+}

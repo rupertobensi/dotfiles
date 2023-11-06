@@ -2,7 +2,7 @@ rupertobensi's dotfiles
 =======================
 
 In this repository I've gathered all of my essential dotfiles. Directory .local/bin contains scripts.
-I use **i3** as my tiling window manager, and rest as follows:
+I use **sway** as my tiling window manager, and rest as follows:
 
 * Shell: **zsh**
 * Terminal emulator: **alacritty/st**
