@@ -1,9 +1,11 @@
 * {
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     border-radius: 0px;
-    margin: 1px 1px;
+    /* margin: 1px 1px; */
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "CaskaydiaCove Nerd Font";
+    /* font-family: "monospace"; */
+    font-family: "sans-serif";
+    /* font-family: "CaskaydiaCove Nerd Font"; */
     /* font-family: "Source Sans Pro", "Font Awesome 6 Free"; */
     font-size: 15px;
     font-weight: 600;

@@ -1,5 +1,5 @@
 {
-    "height": 24, // Waybar height (to be removed for auto height)
+    "height": 38, // Waybar height (to be removed for auto height)
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/window"],
     "modules-center": ["clock"],
