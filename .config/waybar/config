@@ -37,7 +37,10 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "keepassxc",
+        "on-click-right": "krusader",
+        "on-click-middle": "code"
     },
     "disk": {
         "interval": 30,
@@ -101,8 +104,9 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
-        //"on-click: "pulseaudio-control --node-blacklist 'alsa_output.pci-0000_01_00.1.hdmi-stereo' next-node"
+        "on-click-right": "pavucontrol",
+        "on-click": "pulseaudio-control --node-blacklist alsa_output.pci-0000_01_00.1.hdmi-stereo next-node",
+        "on-click-middle": "code"
     }
 }
 

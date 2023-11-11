@@ -64,6 +64,8 @@ alias \
   cfst_config.h="nvim ~/st/config.h" \
   cfsway_config="nvim ~/.config/sway/config" \
   cftmux.conf="nvim ~/.tmux.conf" \
+  cfwaybarcfg="nvim ~/.config/waybar/config" \
+  cfwaybarcss="nvim ~/.config/waybar/style.css" \
   cfvifmrc="nvim ~/.config/vifm/vifmrc" \
   cfxinitrc="nvim ~/.xinitrc" \
   cfxprofile="nvim ~/.xprofile" \

@@ -193,6 +193,9 @@ bindsym $mod+0              workspace number $ws10
 
 # Multiple monitors
 
+output DP-1 pos 0 0 res 2560x1440
+output HDMI-A-1 pos 2560 0 res 1920 1080
+
 set $output1 DP-1
 set $output2 HDMI-A-1
 
@@ -391,6 +394,19 @@ workspace $ws6 gaps top 0
 # client.focused             #d8dee8 #2f343f #d8dee8 #d8dee8 #d8dee8
 # client.focused             #bf616a #2f343f #d8dee8 #bf616a #d8dee8
 
+# set $opacity 0.9
+set $opacity 1
+for_window [class=".*"] opacity $opacity
+for_window [app_id=".*"] opacity $opacity
+
+seat seat0 xcursor_theme Breeze_Snow 24
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    # gsettings set $gnome-schema gtk-theme 'Your theme'
+    # gsettings set $gnome-schema icon-theme 'Your icon theme'
+    gsettings set $gnome-schema cursor-theme Breeze_Snow
+    # gsettings set $gnome-schema font-name 'Your font name'
+}
 
 include "$HOME/.cache/wal/colors-sway"
 
@@ -407,10 +423,9 @@ exec_always --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
 # exec_always --no-startup-id wal -R
 # exec_always wal -i ~/.config/wall.png
 
-# exec_always nitrogen --restore
-exec --no-startup-id nitrogen --restore
-# exec --no-startup-id feh --bg-fill /home/robi/Wallpapers/phills.png # previous wallpaper
+output * bg ~/Wallpapers/fav/wp fill
 
+exec_always --no-startup-id waybar
 exec_always --no-startup-id volnoti
 exec_always --no-startup-id dunst
 exec_always --no-startup-id /usr/bin/mpd
@@ -458,7 +473,7 @@ exec --no-startup-id warpd
 exec --no-startup-id sleep 1 && megasync &
 exec --no-startup-id sleep 4 && megasync &
 exec --no-startup-id sleep 5 && swaymsg 'workspace 2; exec firefox --class foo'
-exec --no-startup-id swaymsg 'workspace 6; exec firefox'
+# exec --no-startup-id swaymsg 'workspace 6; exec firefox'
 exec --no-startup-id swaymsg 'workspace 3; exec caprine'
 exec --no-startup-id swaymsg 'workspace 3; exec slack'
 exec --no-startup-id swaymsg 'workspace 3; exec element-desktop'
@@ -544,17 +559,15 @@ bindsym      F12 [class="dropdown_term"] scratchpad show, move position 0 0
 # Apply i3-fibonacci at the end after everything has been loaded up
 exec_always  --no-startup-id ~/.dotfiles/.local/bin/i3_fib
 
-exec_always  --no-startup-id nitrogen --restore
 exec         --no-startup-id sleep 6; swaymsg "workspace $ws1"
 exec         --no-startup-id m1on
 exec_always  --no-startup-id mouse 0.5
+
+# Hide mouse cursor after X seconds
+exec unclutter -idle 3 &
+exec xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' 0
 # exec --no-startup-id swaymsg "workspace $ws1"
 
-exec waybar
-
-# bar {
-#     status_command i3status
-# }
 
 input type:keyboard {
     repeat_delay 300
@@ -567,31 +580,8 @@ exec xcape -e 'Control_L=Escape'
 
 # exec killall xcape 2>/dev/null ; xcape -e 'Super_L=Escape'
 
-output * bg ~/Wallpapers/fav/wp fill
-
-output DP-1 pos 0 0 res 2560x1440
-output HDMI-A-1 pos 2560 0 res 1920 1080
-
-# Hide mouse cursor after X seconds
-exec unclutter -idle 3 &
-
 # Disable energy saving
 exec xset -dpms
 exec xset s off
 
 # Set mouse speed
-exec xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' 0
-
-# set $opacity 0.9
-set $opacity 1
-for_window [class=".*"] opacity $opacity
-for_window [app_id=".*"] opacity $opacity
-
-seat seat0 xcursor_theme Breeze_Snow 24
-set $gnome-schema org.gnome.desktop.interface
-exec_always {
-    # gsettings set $gnome-schema gtk-theme 'Your theme'
-    # gsettings set $gnome-schema icon-theme 'Your icon theme'
-    gsettings set $gnome-schema cursor-theme Breeze_Snow
-    # gsettings set $gnome-schema font-name 'Your font name'
-}
