@@ -42,8 +42,8 @@ alias \
 
 # Config shortcuts
 alias \
-  cfalacritty.yml="nvim ~/.config/alacritty/alacritty.yml" \
-  cfalacritty_dd.yml="nvim ~/.config/alacritty/alacritty_dd.yml" \
+  cfalacritty.toml="nvim ~/.config/alacritty/alacritty.toml" \
+  cfalacritty_dd.toml="nvim ~/.config/alacritty/alacritty_dd.toml" \
   cfaliasrc="nvim ~/.aliasrc" \
   cfcode_settings.json="nvim ~/.config/Code\ -\ OSS/User/settings.json" \
   cffonts.conf="nvim ~/.config/fontconfig/fonts.conf" \

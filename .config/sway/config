@@ -465,6 +465,9 @@ assign [class=csgo_linux64|dota2|quakelive_steam.exe] 8
 
 exec --no-startup-id warpd
 
+# Apply i3-fibonacci
+exec_always  --no-startup-id ~/.dotfiles/.local/bin/i3_fib
+
 # exec --no-startup-id swaymsg 'workspace 3; exec /usr/bin/steam -noverifyfiles'
 # exec --no-startup-id swaymsg 'workspace 3; exec /usr/bin/telegram-desktop'
 # exec --no-startup-id swaymsg 'workspace 5; exec /usr/bin/lollypop'
@@ -555,9 +558,6 @@ bindsym      F12 [class="dropdown_term"] scratchpad show, move position 0 0
 # bindsym F11 exec tdrop -a -m -w 100% -h 60% -x 0% -y 0% -s dd st
 
 #####################################################################################################
-
-# Apply i3-fibonacci at the end after everything has been loaded up
-exec_always  --no-startup-id ~/.dotfiles/.local/bin/i3_fib
 
 exec         --no-startup-id sleep 6; swaymsg "workspace $ws1"
 exec         --no-startup-id m1on
