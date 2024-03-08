@@ -3,7 +3,6 @@ adobe-source-sans-fonts
 adobe-source-serif-fonts
 alacritty
 alsa-utils
-apper
 arandr
 arc-gtk-theme
 arc-kde
@@ -29,8 +28,10 @@ bleachbit
 blueberry
 bluez
 bluez-utils
+brave-bin
 breeze-gtk
 breeze-snow-cursor-theme
+btop
 btrfs-progs
 bullshit
 calc
@@ -41,7 +42,6 @@ caprine
 cdrdao
 cdrtools
 cdu
-chromium
 clang
 cli-visualizer-git
 clyrics
@@ -124,7 +124,7 @@ googler
 gotop
 gparted
 grep
-grimshot-bin-sway
+grimshot
 groff
 grub
 grub-customizer
@@ -169,7 +169,6 @@ kmon
 kolourpaint
 kompare
 krusader
-ksysguard
 ktexteditor5
 kubectl
 kvantum
@@ -197,7 +196,7 @@ maim
 make
 mc
 mediainfo
-megasync
+megasync-bin
 minikube
 mlocate
 mop-git
@@ -226,6 +225,7 @@ nsxiv
 ntfs-3g
 ntfsfixboot
 nudoku-git
+obs-studio
 obsidian
 ocs-url
 office-code-pro
@@ -250,6 +250,8 @@ pipewire-alsa
 pipewire-pulse
 pkgconf
 pkgstats
+plasma-systemmonitor
+podman
 pokemonsay-newgenerations-git
 polybar
 profile-sync-daemon
@@ -275,8 +277,7 @@ qterminal
 qutebrowser
 ranger
 redmine
-redshift
-redshiftconf
+redshift-wayland-git
 refind
 reflector
 remmina
@@ -287,6 +288,7 @@ sassc
 screenkey
 sddm
 sed
+showmethekey
 signal-desktop
 simple-mtpfs
 simplescreenrecorder
@@ -295,7 +297,7 @@ slack-desktop
 smartmontools
 solaar
 soundkonverter
-spacefm
+spacefm-git
 sshfs
 steam
 stow
@@ -308,6 +310,7 @@ swaybg
 swww
 sxiv
 syncthing
+tdrop
 teams
 terminus-font
 termite
@@ -376,6 +379,7 @@ wofi
 xautolock
 xcape
 xclip
+xdg-desktop-portal-wlr
 xdo
 xkeycaps
 xorg-bdftopcf
