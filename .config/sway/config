@@ -490,10 +490,11 @@ exec --no-startup-id sleep 2 && swaymsg 'workspace 1; exec $term -e tmux at'
 
 no_focus [class=firefox|dolphin|krusader|Steam|Caprine|Riot|riot|libreoffice*|MEGAsync|i3-frame]
 
-for_window [class=feh|mpv|gwenview|Sxiv|Leafpad|MEGAsync|#Lutris|SimpleScreenRecorder|Vimiv] floating enable
-for_window [class=feh|mpv|gwenview|Sxiv|Leafpad|Vimiv] resize set 1024 768
-for_window [class=feh|mpc|gwenview|Sxiv|Leafpad|Vimiv] move position center
-for_window [class=MEGAsync] move position 765 425
+# for_window [class=feh|mpv|gwenview|Sxiv|Leafpad|MEGAsync|#Lutris|SimpleScreenRecorder|Vimiv] floating enable
+for_window [title=feh|mpv|gwenview|Sxiv|Leafpad|MEGAsync|#Lutris|SimpleScreenRecorder|Vimiv] floating enable
+for_window [title=feh|mpv|gwenview|Sxiv|Leafpad|Vimiv] resize set 1024 768
+for_window [title=feh|mpc|gwenview|Sxiv|Leafpad|Vimiv] move position center
+for_window [title=MEGAsync] move position 765 425
 # for_window [class=libreoffice*|okular] focus
 # for_window [class=feh] --auto-zoom --scale-down
 
@@ -544,7 +545,8 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 
 # for_window   [class="dropdown_term"] floating enable, resize set 2527 800, move scratchpad
 # for_window   [class="dropdown_term"] floating enable, move scratchpad
-for_window   [class="dropdown_term"] gaps all 0
+# for_window   [class="dropdown_term"] gaps all 0
+for_window   [title="dropdown_term"] gaps all 0
 for_window   [class="dropdown_term"] floating enable, resize set 2560 800, move scratchpad
 exec_always  --no-startup-id st -c dropdown_term -e tmux new -s dd
 bindsym      F12 [class="dropdown_term"] scratchpad show, move position -2 -2
@@ -587,4 +589,3 @@ exec xcape -e 'Control_L=Escape'
 exec xset -dpms
 exec xset s off
 
-# Set mouse speed

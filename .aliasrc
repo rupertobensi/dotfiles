@@ -196,10 +196,11 @@ alias xc="xclip -sel clipboard"
 # copy with progress bars:
 alias pmv="pymv --preserve --global-pbar -i"
 alias pcp="pycp --preserve --global-pbar -i"
-# ncmpcpp scripts:
-alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh" # Show album cover
-alias n="tmux source-file ~/.ncmpcpp/tmux_session_new_window" # ncmpcpp + album cover + new window
-alias N="tmux source-file ~/.ncmpcpp/tmux_session" # ncmpcpp + album cover, but in the same window
+
+# ncmpcpp scripts #DEPRECATED
+# alias muzc="/home/robi/.dotfiles/.ncmpcpp/cover.sh" # Show album cover
+# alias n="tmux source-file ~/.ncmpcpp/tmux_session_new_window" # ncmpcpp + album cover + new window
+# alias N="tmux source-file ~/.ncmpcpp/tmux_session" # ncmpcpp + album cover, but in the same window
 
 # root privileges
 alias doas="doas --"
