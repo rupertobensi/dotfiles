@@ -49,3 +49,12 @@ export LC_TIME=en_GB.UTF-8
 export XDG_SESSION_TYPE=wayland 
 export XDG_CURRENT_DESKTOP=sway
 export MOZ_ENABLE_WAYLAND=1
+
+
+# systemctl --user stop pipewire pipewire-media-session xdg-desktop-portal xdg-desktop-portal-wlr
+# systemctl --user start pipewire-media-session
+# should print XDG_CURRENT_DESKTOP=$sway
+# < "/proc/$(pidof xdg-desktop-portal)/environ" tr '\0' '\n' | grep '^XDG_CURRENT_DESKTOP=' 
+
+# dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+# systemctl --user stop pipewire pipewire-media-session xdg-desktop-portal xdg-desktop-portal-wlr\nsystemctl --user start pipewire-media-session

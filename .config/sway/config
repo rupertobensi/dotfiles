@@ -588,4 +588,5 @@ exec xcape -e 'Control_L=Escape'
 # Disable energy saving
 exec xset -dpms
 exec xset s off
-
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec systemctl --user stop pipewire pipewire-media-session xdg-desktop-portal xdg-desktop-portal-wlr\nsystemctl --user start pipewire-media-session
