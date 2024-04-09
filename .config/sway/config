@@ -110,7 +110,9 @@ bindsym $mod+Shift+Tab      workspace prev
 bindsym $mod+Ctrl+z              exec swaymsg move to container workspace $(($(wmctrl -d | wc -l) + 1))
 
 # i3_lock
-bindsym $mod+x              exec --no-startup-id i3_lock
+# bindsym $mod+x              exec --no-startup-id i3_lock
+# bindsym $mod+x              exec --no-startup-id "swaylock -c 000000"
+bindsym $mod+x              exec --no-startup-id "swaylock -c 000000 -i /mnt/e/ROBERT/DATA/wallpapers/fav/wp --clock --indicator"
 
 # dmenu (script dmen) and rofi
 bindsym $mod+c              exec fuzzel -w 75 -l 25 -x 25 -y 25 -f monospace:size=17
@@ -588,5 +590,7 @@ exec xcape -e 'Control_L=Escape'
 # Disable energy saving
 exec xset -dpms
 exec xset s off
+
+# Enable screensharing
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec systemctl --user stop pipewire pipewire-media-session xdg-desktop-portal xdg-desktop-portal-wlr\nsystemctl --user start pipewire-media-session
