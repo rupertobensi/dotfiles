@@ -418,6 +418,9 @@ client.focused    $color3  $color3      $foreground $foreground $color3
 # Rebinds script
 exec_always --no-startup-id rebinds
 
+# Turn off the rival lights
+exec_always --no-startup-id rivalcfg0
+
 # Wallpaper + transparency
 # exec --no-startup-id "xrdb ~/.Xresources"
 exec_always --no-startup-id "compton -b --config ~/.config/picom/picom.conf"
@@ -435,7 +438,7 @@ exec_always --no-startup-id pbr
 exec_always --no-startup-id "sleep 6; pbr"
 # exec --no-startup-id redshift-gtk
 # exec --no-startup-id kwalletd5
-exec_always --no-startup-id "rsx"
+# exec_always --no-startup-id "rsx"
 exec --no-startup-id solaar --window=hide
 # exec_always --no-startup-id "sleep 3; pkill redshift"
 # exec_always --no-startup-id /home/robi/.config/i3/urgent.sh
@@ -483,7 +486,7 @@ exec --no-startup-id swaymsg 'workspace 3; exec caprine'
 exec --no-startup-id swaymsg 'workspace 3; exec slack'
 exec --no-startup-id swaymsg 'workspace 3; exec element-desktop'
 # exec --no-startup-id swaymsg 'workspace 3; exec signal-desktop'
-exec --no-startup-id swaymsg 'workspace 4; exec dolphin'
+# exec --no-startup-id swaymsg 'workspace 4; exec dolphin'
 # exec --no-startup-id swaymsg 'workspace 5; exec dopamine'
 exec --no-startup-id swaymsg 'workspace 5; exec tidal-hifi'
 
@@ -548,11 +551,12 @@ for_window [title="^Steam Keyboard$"] floating enable; border none
 # for_window   [class="dropdown_term"] floating enable, resize set 2527 800, move scratchpad
 # for_window   [class="dropdown_term"] floating enable, move scratchpad
 # for_window   [class="dropdown_term"] gaps all 0
+
 for_window   [title="dropdown_term"] gaps all 0
-for_window   [class="dropdown_term"] floating enable, resize set 2560 800, move scratchpad
 exec_always  --no-startup-id st -c dropdown_term -e tmux new -s dd
-bindsym      F12 [class="dropdown_term"] scratchpad show, move position -2 -2
-# bindsym      F12 [class="dropdown_term"] scratchpad show, move position 0 0
+for_window   [class="dropdown_term"] floating enable, resize set 2560 800, move scratchpad
+# bindsym      F12 [class="dropdown_term"] scratchpad show, move position -2 -2
+bindsym      F12 [class="dropdown_term"] scratchpad show, resize set 2560 800, move position 0 0
 
 #
 # Dropdown terminal
@@ -567,8 +571,8 @@ bindsym      F12 [class="dropdown_term"] scratchpad show, move position -2 -2
 #####################################################################################################
 
 exec         --no-startup-id sleep 6; swaymsg "workspace $ws1"
-exec         --no-startup-id m1on
-exec_always  --no-startup-id mouse 0.5
+# exec         --no-startup-id m1on
+# exec_always  --no-startup-id mouse 0.5
 
 # Hide mouse cursor after X seconds
 exec unclutter -idle 3 &
@@ -594,3 +598,12 @@ exec xset s off
 # Enable screensharing
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec systemctl --user stop pipewire pipewire-media-session xdg-desktop-portal xdg-desktop-portal-wlr\nsystemctl --user start pipewire-media-session
+
+#exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+#exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+exec rivalcfg --top-color black
+exec rivalcfg --middle-color black
+exec rivalcfg --bottom-color black
+
+exec --no-startup-id swaymsg 'workspace 4; exec pcmanfm'

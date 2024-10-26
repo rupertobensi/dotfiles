@@ -11,20 +11,27 @@ save-filename-format=%D-%M-%y_%H.%m.%S
 [GuiConfig]
 alwaysRememberRegion=false
 captureDelay=0
+captureMode=0
 captureModeIndex=1
+captureOnClick=true
 compressionQuality=90
-cropRegion=0,0,0,0
 includePointer=false
 lastUsedSaveMode=0
-onClickChecked=true
 printKeyActionRunning=0
 rememberLastRectangularRegion=true
+selectionRect=0,0,0,0
 showMagnifier=false
-useLightMaskColour=false
+useLightMaskColor=false
 useReleaseToCapture=false
 window-position=373,399
+
+[ImageSave]
+translatedScreenshotsFolder=Screenshots
 
 [KFileDialog Settings]
 Recent Files[$e]=desktop.png,file:$HOME/Screenshots/term.png,file:$HOME/.dotfiles/desktop.png
 Recent URLs[$e]=file:$HOME/Screenshots/
 detailViewIconSize=0
+
+[VideoSave]
+translatedScreencastsFolder=Screencasts

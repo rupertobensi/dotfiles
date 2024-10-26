@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Turn off the lights
+rivalcfg --top-color black; rivalcfg --middle-color black; rivalcfg --bottom-color black

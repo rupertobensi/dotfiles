@@ -1,4 +1,4 @@
-live_config_reload = true
+general.live_config_reload = true
 # "window.dynamic_title" = true
 # "window.opacity" = 0.87
 
@@ -74,7 +74,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 [window]
 decorations = "none"
 dynamic_padding = true
-opacity = 0.8
+opacity = 0.92
 
 [window.dimensions]
 columns = 180

@@ -36,5 +36,5 @@ xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' 0
 
 # Should be last
 # Start i3wm/KDE plasma
-# exec startplasma-x11
-exec i3
+ exec startplasma-x11
+#exec i3

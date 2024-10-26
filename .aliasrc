@@ -89,6 +89,7 @@ alias \
   Cal="calcurse" \
   disko="diskonaut" \
   imgur="imgur_downloader" \
+  kde="/usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland" \
   keep="keepassxc-cli" \
   myip="curl api.ipify.org" \
   nc="ncmpcpp" \
@@ -98,6 +99,7 @@ alias \
   snapg="sudo timeshift-gtk" \
   snapl="sudo timeshift --list" \
   snapr="sudo timeshift --restore" \
+  swey="sway --unsupported-gpu |& tee sway.log" \
   rs="redshift-gtk &" \
   rsm="redshift -PO 4500" \
   rsx="pkill -USR1 redshift" \
@@ -222,7 +224,7 @@ alias i3s="i3-save-tree"
 
 # Changing "ls" to "exa"
 alias \
-ls="exa --group-directories-first --color=always" \
+ls="eza --group-directories-first --color=always" \
 l="ls -la --icons" \
 la="ls -a" \
 lla="ls -l" \

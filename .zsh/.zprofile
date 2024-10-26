@@ -3,9 +3,11 @@
 #  #exec startx
 #fi
 
-if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec sway
-fi
+#if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+#  #exec XDG_CURRENT_DESKTOP=sway dbus-run-session sway --unsupported-gpu
+#  exec dbus-run-session sway --unsupported-gpu
+#  #exec sway
+#fi
 
 
 # Firefox wayland:

@@ -1,0 +1,14 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+
+#QT_QPA_PLATFORMTHEME=qt5ct
+QT_STYLE_OVERRIDE=kvantum
+
+# QT_QPA_PLATFORMTHEME=xcb
+# MOZ_ENABLE_WAYLAND=1
+XDG_SESSION_TYPE=wayland
+
+MOZ_ENABLE_WAYLAND=1
